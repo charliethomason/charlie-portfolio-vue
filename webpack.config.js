@@ -1,4 +1,24 @@
-const HtmlwebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const fs = require('fs')
+
+const pagenames = {
+  index: 'Homepage',
+  about: 'About Page'
+};
+
+function generateHtmlPlugins(templatesDir) {
+  const templateFiles = fs.readdirSync(path.resolve(__dirname, templatesDir));
+  return templateFiles.map(file => {
+    return new HtmlWebpackPlugin({
+      filename: `${file}`,
+      template: `${templatesDir}/${file}`,
+      title: pagenames[file.split('.')[0]]
+    });
+  });
+}
+
+const htmlPlugins = generateHtmlPlugins('./src/views');
 
 module.exports = {
   mode: 'development',
@@ -20,10 +40,5 @@ module.exports = {
       }
     ]
 	},
-  plugins: [
-    new HtmlwebpackPlugin({
-      title: 'Charlie Thomason',
-      template: 'src/index.html'
-    })
-  ]
+  plugins: [].concat(htmlPlugins)
 };

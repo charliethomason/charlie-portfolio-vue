@@ -1,4 +1,4 @@
-import homepage from './pages/homepage.hbs';
+import homepage from './templates/homepage.hbs';
 
 var greeting = 'Hello World';
 
