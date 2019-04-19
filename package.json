@@ -1,0 +1,23 @@
+{
+  "name": "charlie-portfolio-vue",
+  "version": "1.0.0",
+  "description": "Development repo for a new version of the portfolio site of Charlie Thomason",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charliethomason/charlie-portfolio-vue.git"
+  },
+  "author": "Charlie Thomason",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/charliethomason/charlie-portfolio-vue/issues"
+  },
+  "homepage": "https://github.com/charliethomason/charlie-portfolio-vue#readme",
+  "dependencies": {
+    "handlebars": "^4.1.2",
+    "vue": "^2.6.10"
+  }
+}
