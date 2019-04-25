@@ -1,5 +1,25 @@
-import homepage from './templates/homepage.hbs';
+import Vue from 'vue';
+import homepage from './templates/homepage.vue';
+import about from './templates/about.vue';
 
-var greeting = 'Hello World';
+import homepageData from './data/homepage.json';
+import aboutData from './data/about.json';
 
-document.getElementById('app-container').innerHTML = homepage({greeting});
+const page = document.getElementById('app-container').dataset.page;
+const templates = { homepage, about };
+const datasets = {
+    homepage: homepageData,
+    about: aboutData
+};
+
+new Vue({
+    el: '#app-container',
+    render: function(createElement) {
+        return createElement(templates[page], {
+            props: {
+                greeting: 'Hello world',
+                dataset: datasets[page]
+            }
+        });
+    }
+});

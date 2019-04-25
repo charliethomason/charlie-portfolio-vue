@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const fs = require('fs')
 
 const pagenames = {
@@ -35,10 +36,12 @@ module.exports = {
         exclude: /node_modules/
       },
       {
-        test: /\.hbs$/,
-        loader: 'handlebars-loader'
+        test: /\.vue$/,
+        loader: 'vue-loader'
       }
     ]
 	},
-  plugins: [].concat(htmlPlugins)
+  plugins: [
+    new VueLoaderPlugin()
+  ].concat(htmlPlugins)
 };
