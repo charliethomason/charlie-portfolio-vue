@@ -1,25 +1,28 @@
-const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
-const fs = require('fs')
 
-const pagenames = {
-  index: 'Homepage',
-  about: 'About Page'
+const pages = {
+  index: 'Charlie Thomason - Artist & Software Engineer from Chicago',
+  about: 'About - Charlie Thomason'
 };
 
-function generateHtmlPlugins(templatesDir) {
-  const templateFiles = fs.readdirSync(path.resolve(__dirname, templatesDir));
-  return templateFiles.map(file => {
+const meta = {
+  charset: 'utf-8',
+  viewport: 'width=device-width, initial-scale=1.0'
+};
+
+function generateHtmlPlugins() {
+  return Object.keys(pages).map(file => {
     return new HtmlWebpackPlugin({
-      filename: `${file}`,
-      template: `${templatesDir}/${file}`,
-      title: pagenames[file.split('.')[0]]
+      filename: `${file}.html`,
+      template: './src/layouts/main.html',
+      title: pages[file],
+      file,
+      meta
     });
   });
 }
-
-const htmlPlugins = generateHtmlPlugins('./src/views');
+const htmlPlugins = generateHtmlPlugins();
 
 module.exports = {
   mode: 'development',

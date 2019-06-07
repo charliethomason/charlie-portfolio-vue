@@ -7,7 +7,7 @@
 
 <script>
 export default {
-    name: 'homepage',
+    name: 'index',
     props: {
         greeting: String,
         dataset: Object

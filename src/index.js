@@ -1,14 +1,14 @@
 import Vue from 'vue';
-import homepage from './templates/homepage.vue';
+import index from './templates/index.vue';
 import about from './templates/about.vue';
 
-import homepageData from './data/homepage.json';
+import indexData from './data/index.json';
 import aboutData from './data/about.json';
 
 const page = document.getElementById('app-container').dataset.page;
-const templates = { homepage, about };
+const templates = { index, about };
 const datasets = {
-    homepage: homepageData,
+    index: indexData,
     about: aboutData
 };
 
