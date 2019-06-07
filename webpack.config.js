@@ -1,10 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
-
-const pages = {
-  index: 'Charlie Thomason - Artist & Software Engineer from Chicago',
-  about: 'About - Charlie Thomason'
-};
+const pages = require('./src/data/pages.json');
 
 const meta = {
   charset: 'utf-8',
