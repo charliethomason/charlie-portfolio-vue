@@ -6,11 +6,13 @@
 </template>
 
 <script>
+import dataset from '../data/index.json';
 export default {
     name: 'index',
-    props: {
-        greeting: String,
-        dataset: Object
+    data() {
+        return {
+            dataset
+        };
     }
 };
 </script>

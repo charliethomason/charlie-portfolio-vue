@@ -1,14 +1,14 @@
 <template>
     <main>
-        <h1>About page</h1>
+        <h1>Gallery page</h1>
         <h2>{{dataset.greeting}}</h2>
     </main>
 </template>
 
 <script>
-import dataset from '../data/about.json';
+import dataset from '../data/gallery.json';
 export default {
-    name: 'about',
+    name: 'gallery',
     data() {
         return {
             dataset
