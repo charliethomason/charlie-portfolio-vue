@@ -46,6 +46,14 @@ module.exports = {
             outputStyle: 'compressed'
           }
         }]
+      },
+      {
+        test: /\.(jpg|png|gif)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+          outputPath: 'img/'
+        }
       }
     ]
 	},
