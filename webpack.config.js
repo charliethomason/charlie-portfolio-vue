@@ -37,6 +37,15 @@ module.exports = {
       {
         test: /\.vue$/,
         loader: 'vue-loader'
+      },
+      {
+        test: /\.scss$/,
+        loaders: ['style-loader', 'css-loader', {
+          loader: 'sass-loader',
+          options: {
+            outputStyle: 'compressed'
+          }
+        }]
       }
     ]
 	},
