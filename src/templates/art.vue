@@ -1,17 +1,17 @@
 <template>
     <main>
         <main-header />
-        <h1>About page</h1>
+        <h1>Art page</h1>
         <h2>{{dataset.greeting}}</h2>
     </main>
 </template>
 
 <script>
-import dataset from '../data/about.json';
+import dataset from '../data/art.json';
 import MainHeader from '../partials/MainHeader.vue';
 
 export default {
-    name: 'about',
+    name: 'art',
     components: { MainHeader },
     data() {
         return {

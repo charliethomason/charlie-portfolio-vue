@@ -6,26 +6,26 @@ const meta = {
   charset: 'utf-8',
   viewport: 'width=device-width, initial-scale=1.0'
 };
-
-function generateHtmlPlugins() {
-  return Object.keys(pages).map(file => {
-    return new HtmlWebpackPlugin({
-      filename: `${file}.html`,
-      template: './src/layouts/main.html',
-      title: pages[file],
-      file,
-      meta
-    });
+const htmlPlugins = Object.keys(pages).map(file => {
+  return new HtmlWebpackPlugin({
+    filename: `${file}.html`,
+    template: './src/layouts/main.html',
+    title: pages[file],
+    chunks: [file],
+    meta
   });
-}
-const htmlPlugins = generateHtmlPlugins();
+});
+const entry = Object.keys(pages).reduce((entries, file) => {
+  entries[file] = `./src/${file}.js`;
+  return entries;
+}, {});
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.js',
+  entry,
   output: {
     path: __dirname + '/dist',
-    filename: 'bundle.js'
+    filename: '[name].js'
   },
 	module: {
 		rules: [
