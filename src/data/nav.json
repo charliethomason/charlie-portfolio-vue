@@ -1,0 +1,14 @@
+{
+  "links": [
+  	{
+  		"href": "index",
+  		"name": "Home"
+	},  	{
+  		"href": "art",
+  		"name": "Art"
+	},  	{
+  		"href": "code",
+  		"name": "Code"
+	}
+  ]
+}

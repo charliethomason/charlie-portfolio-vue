@@ -1,6 +1,6 @@
 <template>
     <main>
-        <main-header />
+        <main-header active="code" />
         <h1>Code page</h1>
         <h2>{{dataset.greeting}}</h2>
     </main>
@@ -8,7 +8,7 @@
 
 <script>
 import dataset from '../data/code.json';
-import MainHeader from '../partials/MainHeader.vue';
+import MainHeader from '../partials/Header.vue';
 
 export default {
     name: 'codeDemos',
