@@ -59,5 +59,9 @@ module.exports = {
 	},
   plugins: [
     new VueLoaderPlugin()
-  ].concat(htmlPlugins)
+  ].concat(htmlPlugins),
+  devServer: {
+    contentBase: __dirname + '/dist',
+    open: true
+  }
 };
