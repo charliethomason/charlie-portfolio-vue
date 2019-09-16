@@ -1,16 +1,64 @@
 .sr-text {
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
+  @include safeHide;
+}
+body {
+  background-color: $grey-very-dark;
 }
 .header {
+  align-items: center;
+  background-color: $teal;
+  border-bottom: 7px solid $teal-dark;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 15px;
+
   .logo {
-    background: url('../img/global/charlie-logo-gray.jpg') no-repeat scroll 0 0 transparent;
+    @include nounderline;
+    background: url('../img/global/charlie-logo-default.png') no-repeat scroll 0 0 transparent;
     display: block;
-    height: 86px;
-    width: 327px;
+    height:75px;
+    width: 275px;
+
+    @include retina {
+      background-image: url('../img/global/charlie-logo-default-2x.png');
+      background-size: 275px 75px;
+    }
+
+    @include mobile {
+      background-image: url('../img/global/charlie-logo-mobile.png');
+      background-size: 160px 44px;
+      height: 44px;
+      width: 160px;
+
+      @include retina {
+        background-image: url('../img/global/charlie-logo-mobile-2x.png');
+      }
+    }
   }
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+
+  .link {
+    @include nounderline;
+    color: $white;
+    font-weight: bold;
+    margin: 0 5px;
+    padding: 0 0 3px;
+
+    &:hover,
+    &:focus {
+      border-bottom: 2px solid $teal-dark;
+    }
+
+    &.active {
+      border-bottom: 2px solid $white;
+    }
+  }
+}
+
+.content {
+  color: $white;
 }

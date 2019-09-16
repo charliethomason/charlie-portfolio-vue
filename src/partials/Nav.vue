@@ -1,8 +1,8 @@
 <template>
-	<nav class="nav">
-		<ul>
-			<li v-for="(page, i) in pages" :class="{'active': page.href === active}">
-				<a :href="`/${page.href}.html`">{{ page.name }}</a>
+	<nav>
+		<ul class="nav">
+			<li v-for="(page, i) in pages">
+				<a :href="`/${page.href}.html`" :class="linkClasses(page)">{{ page.name }}</a>
 			</li>
 		</ul>
 	</nav>
@@ -22,6 +22,14 @@ export default {
 		return {
 			pages
 		};
+	},
+	methods: {
+		linkClasses(page) {
+			return {
+				'link': true,
+				'active': page.href === this.active
+			};
+		}
 	}
 };
 </script>

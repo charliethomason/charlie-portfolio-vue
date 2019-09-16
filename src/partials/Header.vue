@@ -1,6 +1,6 @@
 <template>
     <header class="header">
-        <a href="/" class="logo"><span class="sr-text">Charlie Thomason</span></a>
+        <a href="/" class="logo" title="Charlie Thomason"><span class="sr-text">Charlie Thomason</span></a>
         <main-nav :active="active" />
     </header>
 </template>

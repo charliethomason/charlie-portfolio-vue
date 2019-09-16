@@ -1,8 +1,10 @@
 <template>
     <main>
         <main-header active="art" />
-        <h1>Art page</h1>
-        <h2>{{dataset.greeting}}</h2>
+        <section class="content">
+            <h1>Art page</h1>
+            <h2>{{dataset.greeting}}</h2>
+        </section>
     </main>
 </template>
 

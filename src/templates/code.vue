@@ -1,8 +1,10 @@
 <template>
     <main>
         <main-header active="code" />
-        <h1>Code page</h1>
-        <h2>{{dataset.greeting}}</h2>
+        <section class="content">
+            <h1>Code page</h1>
+            <h2>{{dataset.greeting}}</h2>
+        </section>
     </main>
 </template>
 
