@@ -1,15 +1,15 @@
 <template>
 	<nav class="nav">
 		<ul>
-			<li v-for="(link, i) in navData.links" :class="{'active': link.href === active}">
-				<a :href="`/${link.href}.html`">{{ link.name }}</a>
+			<li v-for="(page, i) in pages" :class="{'active': page.href === active}">
+				<a :href="`/${page.href}.html`">{{ page.name }}</a>
 			</li>
 		</ul>
 	</nav>
 </template>
 
 <script>
-import navData from '../data/nav.json';
+import { pages } from '../data/pages.json';
 export default {
 	name: 'Nav',
 	props: {
@@ -20,7 +20,7 @@ export default {
 	},
 	data() {
 		return {
-			navData
+			pages
 		};
 	}
 };

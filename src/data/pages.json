@@ -1,5 +1,19 @@
 {
-  "index": "Charlie Thomason - Artist & Software Engineer from Chicago",
-  "art": "Art - Charlie Thomason",
-  "code": "Code - Charlie Thomason"
+  "pages": [
+  	{
+  		"href": "index",
+  		"name": "Home",
+  		"title": "Charlie Thomason - Artist & Software Engineer from Chicago"
+	},
+	{
+  		"href": "art",
+  		"name": "Art",
+  		"title": "Art - Charlie Thomason"
+	},
+	{
+  		"href": "code",
+  		"name": "Code",
+  		"title": "Code - Charlie Thomason"
+	}
+  ]
 }

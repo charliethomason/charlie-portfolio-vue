@@ -1,22 +1,22 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
-const pages = require('./src/data/pages.json');
+const { pages } = require('./src/data/pages.json');
 
 const meta = {
   charset: 'utf-8',
   viewport: 'width=device-width, initial-scale=1.0'
 };
-const htmlPlugins = Object.keys(pages).map(file => {
+const htmlPlugins = pages.map(page => {
   return new HtmlWebpackPlugin({
-    filename: `${file}.html`,
+    filename: `${page.href}.html`,
     template: './src/layouts/main.html',
-    title: pages[file],
-    chunks: [file],
+    title: page.title,
+    chunks: [page.href],
     meta
   });
 });
-const entry = Object.keys(pages).reduce((entries, file) => {
-  entries[file] = `./src/${file}.js`;
+const entry = pages.reduce((entries, page) => {
+  entries[page.href] = `./src/${page.href}.js`;
   return entries;
 }, {});
 
