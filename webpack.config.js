@@ -1,6 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
-const { pages } = require('./src/data/pages.json');
+const { pages, galleries } = require('./src/data/pages.json');
 
 const meta = {
   charset: 'utf-8',
@@ -15,10 +15,21 @@ const htmlPlugins = pages.map(page => {
     meta
   });
 });
-const entry = pages.reduce((entries, page) => {
+const galleryPlugins = galleries.map(gallery => {
+  return new HtmlWebpackPlugin({
+    filename: `art/${gallery.href}.html`,
+    template: './src/layouts/main.html',
+    title: gallery.title,
+    file: gallery.href,
+    chunks: ['gallery'],
+    meta
+  })
+});
+let entry = pages.reduce((entries, page) => {
   entries[page.href] = `./src/${page.href}.js`;
   return entries;
 }, {});
+entry['gallery'] = './src/gallery.js';
 
 module.exports = {
   mode: 'development',
@@ -59,7 +70,9 @@ module.exports = {
 	},
   plugins: [
     new VueLoaderPlugin()
-  ].concat(htmlPlugins),
+  ]
+    .concat(htmlPlugins)
+    .concat(galleryPlugins),
   devServer: {
     contentBase: __dirname + '/dist',
     open: true

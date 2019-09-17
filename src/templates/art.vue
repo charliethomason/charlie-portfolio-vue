@@ -2,14 +2,18 @@
     <main>
         <main-header active="art" />
         <section class="content">
-            <h1>Art page</h1>
-            <h2>{{dataset.greeting}}</h2>
+            <h1>Art</h1>
+            <ul>
+                <li v-for="(gallery, i) in artData.galleries" :key="i">
+                    <a :href="`/art/${gallery.href}.html`">{{ gallery.name }}</a>
+                </li>
+            </ul>
         </section>
     </main>
 </template>
 
 <script>
-import dataset from '../data/art.json';
+import artData from '../data/art.json';
 import MainHeader from '../partials/Header.vue';
 
 export default {
@@ -17,7 +21,7 @@ export default {
     components: { MainHeader },
     data() {
         return {
-            dataset
+            artData
         };
     }
 };

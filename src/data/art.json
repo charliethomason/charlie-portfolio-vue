@@ -1,3 +1,16 @@
 {
-  "greeting": "hello art page"
+    "galleries": [
+        {
+            "href": "birds",
+            "name": "Birds"
+        },
+        {
+            "href": "movies",
+            "name": "Movies"
+        },
+        {
+            "href": "other",
+            "name": "Other"
+        }
+    ]
 }

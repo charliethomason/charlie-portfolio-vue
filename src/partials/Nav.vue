@@ -1,7 +1,7 @@
 <template>
 	<nav>
 		<ul class="nav">
-			<li v-for="(page, i) in pages">
+			<li v-for="(page, i) in pages" :key="i">
 				<a :href="`/${page.href}.html`" :class="linkClasses(page)">{{ page.name }}</a>
 			</li>
 		</ul>
