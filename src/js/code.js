@@ -1,6 +1,6 @@
 import Vue from 'vue';
-import codeDemos from './templates/code.vue';
-import './styles/main.scss';
+import codeDemos from '../templates/code.vue';
+import '../styles/main.scss';
 
 new Vue({
     el: '#app-container',

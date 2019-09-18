@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const { pages } = require('./src/data/pages.json');
 
@@ -9,15 +10,15 @@ const meta = {
 };
 const htmlPlugins = pages.map(page => {
   return new HtmlWebpackPlugin({
-    filename: `${page.href}.html`,
+    filename: page.filename,
     template: './src/layouts/main.html',
     title: page.title,
-    chunks: [page.href],
+    chunks: [page.id],
     meta
   });
 });
 const entry = pages.reduce((entries, page) => {
-  entries[page.href] = `./src/${page.href}.js`;
+  entries[page.id] = `./src/js/${page.id}.js`;
   return entries;
 }, {});
 
@@ -26,7 +27,8 @@ module.exports = {
   entry,
   output: {
     path: __dirname + '/dist',
-    filename: '[name].js'
+    filename: '[name].js',
+    publicPath: '/'
   },
 	module: {
 		rules: [
@@ -41,19 +43,26 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        loaders: ['style-loader', 'css-loader', {
-          loader: 'sass-loader',
-          options: {
-            outputStyle: 'compressed'
+        loaders: [
+          'style-loader',
+          {
+            loader: 'css-loader'
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              outputStyle: 'compressed'
+            }
           }
-        }]
+        ]
       },
       {
         test: /\.(jpg|png|gif)$/,
         loader: 'file-loader',
         options: {
           name: '[folder]/[name].[ext]',
-          outputPath: 'img/'
+          outputPath: 'img/',
+          useRelativePath: true
         }
       }
     ]
@@ -66,5 +75,10 @@ module.exports = {
   devServer: {
     contentBase: __dirname + '/dist',
     open: true
+  },
+  resolve: {
+    alias: {
+      'img': path.join(__dirname, 'src/img')
+    }
   }
 };

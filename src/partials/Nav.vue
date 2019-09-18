@@ -2,7 +2,7 @@
 	<nav>
 		<ul class="nav">
 			<li v-for="(page, i) in pages" :key="i">
-				<a :href="`/${page.href}.html`" :class="linkClasses(page)">{{ page.name }}</a>
+				<a :href="page.path" :class="linkClasses(page)">{{ page.name }}</a>
 			</li>
 		</ul>
 	</nav>
@@ -27,7 +27,7 @@ export default {
 		linkClasses(page) {
 			return {
 				'link': true,
-				'active': page.href === this.active
+				'active': page.id === this.active
 			};
 		}
 	}
