@@ -2,7 +2,7 @@
     <main>
         <main-header active="index" />
         <section class="content">
-            <h1>Home page</h1>
+            <h1 class="h1">Home page</h1>
             <h2>{{dataset.greeting}}</h2>
         </section>
     </main>
@@ -10,10 +10,10 @@
 
 <script>
 import dataset from '../data/index.json';
-import MainHeader from '../partials/Header.vue';
+import MainHeader from '../partials/header.vue';
 
 export default {
-    name: 'index',
+    name: 'Homepage',
     components: { MainHeader },
     data() {
         return {

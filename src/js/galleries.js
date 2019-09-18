@@ -1,11 +1,13 @@
-import birds from '../templates/galleries/birds.vue';
-import movies from '../templates/galleries/movies.vue';
-import other from '../templates/galleries/other.vue';
+import Galleries from '../templates/galleries/galleries.vue';
+import Birds from '../templates/galleries/birds.vue';
+import Movies from '../templates/galleries/movies.vue';
+import Other from '../templates/galleries/other.vue';
 
 const routes = [
-	{ path: '/birds', component: birds },
-	{ path: '/movies', component: movies },
-	{ path: '/other', component: other }
+	{ path: '/', component: Galleries },
+	{ path: '/birds', component: Birds },
+	{ path: '/movies', component: Movies },
+	{ path: '/other', component: Other }
 ];
 
 export default routes;

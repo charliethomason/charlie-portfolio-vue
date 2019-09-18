@@ -1,10 +1,14 @@
 <template>
 	<div>
-		Birds!
+		<h2 class="h2">Birds</h2>
+		<gallery />
 	</div>	
 </template>
 <script>
+import Gallery from '../../partials/gallery.vue';
+
 export default {
-	name: 'birds'
+	name: 'Birds',
+	components: { Gallery }
 };
 </script>

@@ -1,0 +1,54 @@
+.galleries {
+    display: flex;
+    justify-content: center;
+    padding: 0 10px;
+
+    &-item {
+        padding: 10px;
+    }
+
+    &-link {
+        display: block;
+        position: relative;
+    }
+
+    &-img {
+        max-width: 100%;
+    }
+
+    &-text {
+        color: $black;
+        font-size: 20px;
+        font-weight: bold;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.display-toggle {
+    $toggle: &;
+
+    display: inline-flex;
+
+    &__radio {
+        @include safeHide;
+
+        &:checked + #{$toggle}__label {
+            border-color: $white;
+        }
+    }
+
+    &__label {
+        background: $teal;
+        border: 2px solid $teal;
+        color: $white;
+        display: inline-block;
+        padding: 5px;
+
+        &:hover {
+            background: $teal-dark;
+        }
+    }
+}
