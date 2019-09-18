@@ -4,10 +4,17 @@
         <section class="content">
             <h1>Art</h1>
             <ul>
-                <li v-for="(gallery, i) in artData.galleries" :key="i">
-                    <a :href="`/art/${gallery.href}.html`">{{ gallery.name }}</a>
-                </li>
+                <router-link
+                    v-for="(gallery, i) in artData.galleries" :key="i"
+                    tag="li"
+                    :to="gallery.href"
+                    exact-active-class="active"
+                    active-class="active"
+                >
+                    <a>{{ gallery.name }}</a>
+                </router-link>
             </ul>
+            <router-view />
         </section>
     </main>
 </template>
