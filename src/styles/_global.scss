@@ -14,24 +14,24 @@ body {
 
   .logo {
     @include nounderline;
-    background: url('/img/charlie-logo-default.png') no-repeat scroll 0 0 transparent;
+    background: url('../img/global/charlie-logo-default.png') no-repeat scroll 0 0 transparent;
     display: block;
     height:75px;
     width: 275px;
 
     @include retina {
-      background-image: url('/img/charlie-logo-default-2x.png');
+      background-image: url('../img/global/charlie-logo-default-2x.png');
       background-size: 275px 75px;
     }
 
     @include mobile {
-      background-image: url('/img/charlie-logo-mobile.png');
+      background-image: url('../img/global/charlie-logo-mobile.png');
       background-size: 160px 44px;
       height: 44px;
       width: 160px;
 
       @include retina {
-        background-image: url('/img/charlie-logo-mobile-2x.png');
+        background-image: url('../img/global/charlie-logo-mobile-2x.png');
       }
     }
   }

@@ -1,6 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
-const { pages, galleries } = require('./src/data/pages.json');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const { pages } = require('./src/data/pages.json');
 
 const meta = {
   charset: 'utf-8',
@@ -15,21 +16,10 @@ const htmlPlugins = pages.map(page => {
     meta
   });
 });
-const galleryPlugins = galleries.map(gallery => {
-  return new HtmlWebpackPlugin({
-    filename: `art/${gallery.href}.html`,
-    template: './src/layouts/main.html',
-    title: gallery.title,
-    file: gallery.href,
-    chunks: ['gallery'],
-    meta
-  })
-});
-let entry = pages.reduce((entries, page) => {
+const entry = pages.reduce((entries, page) => {
   entries[page.href] = `./src/${page.href}.js`;
   return entries;
 }, {});
-entry['gallery'] = './src/gallery.js';
 
 module.exports = {
   mode: 'development',
@@ -62,17 +52,17 @@ module.exports = {
         test: /\.(jpg|png|gif)$/,
         loader: 'file-loader',
         options: {
-          name: '[name].[ext]',
+          name: '[folder]/[name].[ext]',
           outputPath: 'img/'
         }
       }
     ]
 	},
   plugins: [
-    new VueLoaderPlugin()
+    new VueLoaderPlugin(),
+    new CleanWebpackPlugin()
   ]
-    .concat(htmlPlugins)
-    .concat(galleryPlugins),
+    .concat(htmlPlugins),
   devServer: {
     contentBase: __dirname + '/dist',
     open: true

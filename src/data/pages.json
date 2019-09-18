@@ -15,22 +15,5 @@
 			"name": "Code",
 			"title": "Code - Charlie Thomason"
 		}
-  	],
-	"galleries": [
-		{
-			"href": "birds",
-			"name": "Birds",
-			"title": "Birds - Art - Charlie Thomason"
-		},
-		{
-			"href": "movies",
-			"name": "Movies",
-			"title": "Movies - Art - Charlie Thomason"
-		},
-		{
-			"href": "other",
-			"name": "Other",
-			"title": "Other - Art - Charlie Thomason"
-		}
-	]
+  	]
 }
