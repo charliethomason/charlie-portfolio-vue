@@ -24,7 +24,7 @@ body {
       background-size: 275px 75px;
     }
 
-    @include mobile {
+    @include mobile-small {
       background-image: url(~img/global/charlie-logo-mobile.png);
       background-size: 160px 44px;
       height: 44px;
@@ -61,6 +61,7 @@ body {
 
 .content {
   color: $white;
+  padding: 0 20px;
 }
 
 .h1 {
