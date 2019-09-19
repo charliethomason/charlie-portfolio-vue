@@ -1,0 +1,43 @@
+.drawer {
+    background-color: $grey-dark;
+    color: $white;
+
+    &__heading {
+        background-color: $teal;
+        color: $white;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    &__content {
+        padding: 10px;
+    }
+
+    &__more {
+        &--hidden {
+            @include safeHide;
+        }
+    }
+
+    &__expand {
+        background: $grey-very-dark;
+        border: medium none;
+        color: $white;
+        display: block;
+        font-size: 16px;
+        font-weight: bold;
+        opacity: 0.8;
+        margin-top: 5px;
+        padding: 10px;
+        text-align: left;
+        width: 100%;
+        box-shadow: 0 -20px 20px 10px $grey-very-dark;
+
+        &:hover, &:focus {
+            background-color: $white;
+            color: $grey-very-dark;
+            opacity: 1;
+            box-shadow: none;
+        }
+    }
+}

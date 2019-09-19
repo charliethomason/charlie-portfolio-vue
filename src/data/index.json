@@ -1,1 +1,31 @@
-{}
+{
+  "experience": {
+    "heading": "Experience",
+    "current": {
+      "company": "Uptake",
+      "position": "Staff Software Engineer",
+      "location": "Chicago, IL",
+      "start": "March 2017",
+      "notes": [
+        "Build and test Vue.js and React components for Uptake’s Platform, ​Design System​, and ​Component Development Kit​ with Developer Services team.",
+        "Lead sprint planning and refinement meetings.",
+        "Specialize in web accessibility, component architecture, and CSS flexbox/grid.",
+        "Promoted from Senior Software Engineer in March 2019."
+      ]
+    },
+    "past": [
+      {
+        "company": "Razorfish",
+        "position": "Presentation Layer Engineer",
+        "location": "Chicago, IL",
+        "start": "January 2013",
+        "end": "March 2017",
+        "notes": [
+          "Promoted from Associate Presentation Layer Engineer in June 2014.",
+          "Front-end developer on 14 different clients across financial services, retail, and consumer electronics industries.",
+          "Specialized in web accessibility, browser compatibility and rapid prototyping."
+        ]
+      }
+    ]
+  }
+}

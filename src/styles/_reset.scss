@@ -51,6 +51,9 @@ a {
 		text-decoration: underline;
 	}
 }
+button, [role="button"] {
+	cursor: pointer;
+}
 b, strong {
 	font-weight:bold;
 }
