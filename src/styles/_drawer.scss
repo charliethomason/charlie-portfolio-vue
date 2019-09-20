@@ -1,16 +1,55 @@
 .drawer {
+    $drawer: &;
+
     background-color: $grey-dark;
     color: $white;
+    margin: 15px auto;
 
     &__heading {
         background-color: $teal;
         color: $white;
         font-weight: bold;
-        padding: 10px;
+        padding: 15px;
     }
 
     &__content {
-        padding: 10px;
+        line-height: 1.5;
+        padding: 15px;
+
+        .content-item {
+            border-top: 1px solid $grey-very-light;
+            margin-top: 30px;
+            padding-top: 30px;
+        }
+
+        .h3 {
+            font-size: 20px;
+        }
+
+        .details {
+            font-weight: bold;
+        }
+
+        .date {
+            font-style: italic;
+        }
+
+        .notes {
+            list-style: outside square;
+            padding-left: 20px;
+
+            li {
+                margin-top: 5px;
+            }
+        }
+    }
+
+    &__main {
+        .content-item {
+            border-top: medium none;
+            margin-top: 0;
+            padding-top: 0;
+        }
     }
 
     &__more {
@@ -20,24 +59,20 @@
     }
 
     &__expand {
-        background: $grey-very-dark;
+        background: linear-gradient($clear, $black);
         border: medium none;
+        border-bottom: 2px solid $grey-dark;
         color: $white;
         display: block;
         font-size: 16px;
         font-weight: bold;
-        opacity: 0.8;
-        margin-top: 5px;
-        padding: 10px;
+        padding: 20px 15px 15px;
         text-align: left;
         width: 100%;
-        box-shadow: 0 -20px 20px 10px $grey-very-dark;
 
         &:hover, &:focus {
-            background-color: $white;
-            color: $grey-very-dark;
-            opacity: 1;
-            box-shadow: none;
+            background: linear-gradient($clear, $teal-dark);
+            outline: none;
         }
     }
 }
