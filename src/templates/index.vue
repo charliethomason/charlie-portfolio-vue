@@ -9,11 +9,11 @@
                 </h1>
                 <div class="contact">
                     <icon-link
-                        v-for="(icon, i) in contactIcons"
+                        v-for="(icon, i) in contact"
                         :key="i"
                         :label="icon.label"
                         :href="icon.href"
-                        :icon="icon.icon"
+                        :icon="getIcon(icon.icon)"
                     />
                 </div>
                 <drawer v-bind="experienceDrawer" />
@@ -24,30 +24,25 @@
 </template>
 
 <script>
-import { experience, education } from '../data/index.json';
+import { experience, education, contact } from '../data/index.json';
 import MainHeader from '../partials/header.vue';
 import Drawer from '../partials/drawer.vue';
 import IconLink from '../partials/icon-link.vue';
-import ContactIcon from '../img/svg-icons/contact.vue';
-import LinkedinIcon from '../img/svg-icons/linkedin.vue';
-import InstagramIcon from '../img/svg-icons/instagram.vue';
-import GithubIcon from '../img/svg-icons/github.vue';
+import icons from '../img/svg-icons/icons';
 
 export default {
     name: 'Homepage',
     components: {
         MainHeader,
         Drawer,
-        IconLink,
-        ContactIcon,
-        LinkedinIcon,
-        InstagramIcon,
-        GithubIcon
+        IconLink
     },
     data() {
         return {
             experience,
-            education
+            education,
+            contact,
+            icons
         };
     },
     computed: {
@@ -58,14 +53,11 @@ export default {
         educationDrawer() {
             const { heading, main, more } = this.education;
             return { heading, main, more };
-        },
-        contactIcons() {
-            return [
-                { label: 'Email thomason.charlie@gmail.com', href: 'mailto:thomason.charlie@gmail.com', icon: ContactIcon },
-                { label: 'LinkedIn', href: 'https://linkedin.com/in/charliethomason', icon: LinkedinIcon },
-                { label: 'Instagram', href: 'http://instagram.com/charliethomason', icon: InstagramIcon },
-                { label: 'Github', href: 'https://github.com/charliethomason', icon: GithubIcon }
-            ];
+        }
+    },
+    methods: {
+        getIcon(icon) {
+            return this.icons[icon];
         }
     }
 };

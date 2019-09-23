@@ -65,5 +65,27 @@
         ]
       }
     ]
-  }
+  },
+	"contact": [
+		{
+			"label": "Email thomason.charlie@gmail.com",
+			"href": "mailto:thomason.charlie@gmail.com",
+			"icon": "ContactIcon"
+		},
+		{
+			"label": "LinkedIn",
+			"href": "https://linkedin.com/in/charliethomason",
+			"icon": "LinkedinIcon"
+		},
+		{
+			"label": "Instagram",
+			"href": "http://instagram.com/charliethomason",
+			"icon": "InstagramIcon"
+		},
+		{
+			"label": "Github",
+			"href": "https://github.com/charliethomason",
+			"icon": "GithubIcon"
+		}
+	]
 }
