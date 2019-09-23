@@ -21,3 +21,63 @@
     display: block;
     max-width: 100%;
 }
+
+.contact {
+    $contact: &;
+
+    margin-bottom: 15px;
+
+    &__tooltip {
+        background-color: $grey-very-light;
+        border-radius: 7px;
+        color: $black;
+        display: inline-block;
+        font-size: 14px;
+        left: -9999px;
+        margin-bottom: 10px;
+        padding: 5px 10px;
+        position: absolute;
+        text-align: center;
+        top: -9999px;
+
+        &:after {
+            border-left: 10px solid $clear;
+            border-right: 10px solid $clear;
+            border-top: 10px solid $grey-very-light;
+            content: '';
+            left: 50%;
+            position: absolute;
+            top: 100%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        margin: 0 5px;
+        outline: 0;
+        position: relative;
+
+        svg {
+            height: 50px;
+            width: 50px;
+        }
+
+        path {
+            fill: $teal;
+        }
+
+        &:hover, &:focus {
+            path {
+                fill: $grey-very-light;
+            }
+
+            #{$contact}__tooltip {
+                bottom: 100%;
+                left: 50%;
+                top: auto;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}

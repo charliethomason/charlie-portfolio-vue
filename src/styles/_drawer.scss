@@ -2,11 +2,13 @@
     $drawer: &;
 
     background-color: $grey-dark;
+    border-radius: 7px;
     color: $white;
     margin: 15px auto;
 
     &__heading {
         background-color: $teal;
+        border-radius: 7px 7px 0 0;
         color: $white;
         font-weight: bold;
         padding: 15px;
@@ -62,6 +64,7 @@
         background: linear-gradient($clear, $black);
         border: medium none;
         border-bottom: 2px solid $grey-dark;
+        border-radius: 0 0 7px 7px;
         color: $white;
         display: block;
         font-size: 16px;
@@ -72,7 +75,7 @@
 
         &:hover, &:focus {
             background: linear-gradient($clear, $teal-dark);
-            outline: none;
+            outline: 0;
         }
     }
 }
