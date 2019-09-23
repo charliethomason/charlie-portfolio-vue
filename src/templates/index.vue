@@ -31,7 +31,7 @@ import IconLink from '../partials/icon-link.vue';
 import ContactIcon from '../img/svg-icons/contact.vue';
 import LinkedinIcon from '../img/svg-icons/linkedin.vue';
 import InstagramIcon from '../img/svg-icons/instagram.vue';
-import PdfIcon from '../img/svg-icons/pdf.vue';
+import GithubIcon from '../img/svg-icons/github.vue';
 
 export default {
     name: 'Homepage',
@@ -42,7 +42,7 @@ export default {
         ContactIcon,
         LinkedinIcon,
         InstagramIcon,
-        PdfIcon
+        GithubIcon
     },
     data() {
         return {
@@ -63,7 +63,8 @@ export default {
             return [
                 { label: 'Email thomason.charlie@gmail.com', href: 'mailto:thomason.charlie@gmail.com', icon: ContactIcon },
                 { label: 'LinkedIn', href: 'https://linkedin.com/in/charliethomason', icon: LinkedinIcon },
-                { label: 'Instagram', href: 'http://instagram.com/charliethomason', icon: InstagramIcon }
+                { label: 'Instagram', href: 'http://instagram.com/charliethomason', icon: InstagramIcon },
+                { label: 'Github', href: 'https://github.com/charliethomason', icon: GithubIcon }
             ];
         }
     }
