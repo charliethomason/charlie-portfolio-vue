@@ -1,0 +1,20 @@
+{
+    "birds": [
+        {
+            "id": "bluejaydesert",
+            "title": "Blue Jay in the Desert"
+        },
+        {
+            "id": "ospreykingfisher",
+            "title": "Osprey and Kingfisher"
+        },
+        {
+            "id": "pelicanvenice",
+            "title": "Pelicanus Venezia"
+        },
+        {
+            "id": "screechowl",
+            "title": "Screech Owl"
+        }
+    ]
+}

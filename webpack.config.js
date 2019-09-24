@@ -59,8 +59,8 @@ module.exports = {
         test: /\.(jpg|png|gif)$/,
         loader: 'file-loader',
         options: {
-          name: '[folder]/[name].[ext]',
-          outputPath: 'img/',
+          name: '[path][name].[ext]',
+          context: 'src/',
           useRelativePath: true
         }
       }
