@@ -1,0 +1,32 @@
+{
+    "movies": [
+        {
+            "id": "cormanandpoe",
+            "title": "Corman and Poe"
+        },
+        {
+            "id": "earthvsflyingsaucers",
+            "title": "Earth vs the Flying Saucers"
+        },
+        {
+            "id": "edwardscissorhands",
+            "title": "Edward Scissorhands"
+        },
+        {
+            "id": "eternalsunshine",
+            "title": "Eternal Sunshine"
+        },
+        {
+            "id": "frankcellardoor",
+            "title": "Frank and the Cellar Door"
+        },
+        {
+            "id": "swampthing",
+            "title": "Swamp Thing"
+        },
+        {
+            "id": "vincentprice",
+            "title": "Vincent Price"
+        }
+    ]
+}

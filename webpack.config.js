@@ -33,13 +33,13 @@ module.exports = {
 	module: {
 		rules: [
       {
+        test: /\.vue$/,
+        loader: 'vue-loader'
+      },
+      {
         test: /\.js$/,
         loader: 'babel-loader',
         exclude: /node_modules/
-      },
-      {
-        test: /\.vue$/,
-        loader: 'vue-loader'
       },
       {
         test: /\.scss$/,

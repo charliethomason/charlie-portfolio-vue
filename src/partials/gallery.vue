@@ -1,10 +1,17 @@
 <template>
     <div>
+        <router-link to="/"><a>Back to Art</a></router-link>
         <display-toggle :active="activeMode" @toggle="updateMode" />
-        <ul>
-            <li v-for="work in works" :key="work.id">
-                <img :src="require('../img/art/'+name+imgSubdir+work.id+imgSize+'.jpg')" alt="" />
-                <div>{{ work.title }}</div>
+        <ul :class="galleryClass">
+            <li v-for="work in works" :key="work.id" :class="`${baseClass}__item`">
+                <button type="button" :class="`${baseClass}__btn`">
+                    <img
+                        :src="require('../img/art/'+name+imgSubdir+work.id+imgSize+'.jpg')"
+                        :alt="work.title"
+                        :class="`${baseClass}__img`"
+                    />
+                    <div :class="`${baseClass}__title`">{{ work.title }}</div>
+                </button>
             </li>
         </ul>
     </div>
@@ -26,6 +33,7 @@ export default {
     },
     data() {
         return {
+            baseClass: 'gallery',
             activeMode: 'grid'
         };
     },
@@ -35,6 +43,11 @@ export default {
         },
         imgSize() {
             return this.activeMode === 'grid' ? '-250' : '';
+        },
+        galleryClass() {
+            const { baseClass, activeMode } = this;
+            const modeClass = `${baseClass}--${activeMode}`;
+            return [baseClass, modeClass];
         }
     },
     methods: {
