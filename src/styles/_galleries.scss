@@ -1,3 +1,16 @@
+@mixin tealButton {
+        background: $teal;
+        border: 2px solid $teal;
+        color: $white;
+        cursor: pointer;
+        display: inline-block;
+        padding: 5px;
+
+        &:hover {
+            background: $teal-dark;
+        }
+}
+
 .galleries {
     display: flex;
     justify-content: center;
@@ -27,6 +40,23 @@
     }
 }
 
+.gallery-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery-nav {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+}
+
+.back-to-art {
+    @include nounderline;
+    @include tealButton;
+    margin-bottom: 10px;
+}
+
 .display-toggle {
     $toggle: &;
 
@@ -41,15 +71,7 @@
     }
 
     &__label {
-        background: $teal;
-        border: 2px solid $teal;
-        color: $white;
-        display: inline-block;
-        padding: 5px;
-
-        &:hover {
-            background: $teal-dark;
-        }
+        @include tealButton;
     }
 }
 

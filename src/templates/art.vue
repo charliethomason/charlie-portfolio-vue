@@ -2,7 +2,6 @@
     <main>
         <main-header active="art" />
         <section class="content">
-            <h1 class="h1">Art</h1>
             <router-view />
         </section>
     </main>

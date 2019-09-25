@@ -1,7 +1,15 @@
 <template>
-    <div>
-        <router-link to="/"><a>Back to Art</a></router-link>
-        <display-toggle :active="activeMode" @toggle="updateMode" />
+    <div class="gallery-wrapper">
+        <div class="gallery-header">
+            <div class="gallery-title">
+                <h1 class="h1">Art</h1>
+                <h2 class="h2">{{ title }}</h2>
+            </div>
+            <div class="gallery-nav">
+                <router-link to="/" class="back-to-art">Back to Art</router-link>
+                <display-toggle :active="activeMode" @toggle="updateMode" />
+            </div>
+        </div>
         <ul :class="galleryClass">
             <li v-for="work in works" :key="work.id" :class="`${baseClass}__item`">
                 <button type="button" :class="`${baseClass}__btn`">
@@ -22,6 +30,10 @@ export default {
     name: 'Gallery',
     components: { DisplayToggle },
     props: {
+        title: {
+            type: String,
+            default: ''
+        },
         works: {
             type: Array,
             default: () => ([])

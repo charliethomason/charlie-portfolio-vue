@@ -1,8 +1,5 @@
 <template>
-	<div>
-		<h2 class="h2">Birds</h2>
-		<gallery name="birds" :works="birds" />
-	</div>	
+	<gallery title="Birds" name="birds" :works="birds" />
 </template>
 <script>
 import Gallery from '../../partials/gallery.vue';

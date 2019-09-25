@@ -1,8 +1,5 @@
 <template>
-	<div>
-		<h2 class="h2">Movies</h2>
-		<gallery name="movies" :works="movies" />
-	</div>	
+	<gallery title="Movies" name="movies" :works="movies" />
 </template>
 <script>
 import Gallery from '../../partials/gallery.vue';
