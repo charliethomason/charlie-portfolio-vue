@@ -1,32 +1,46 @@
 {
     "movies": [
         {
-            "id": "cormanandpoe",
-            "title": "Corman and Poe"
-        },
-        {
-            "id": "earthvsflyingsaucers",
-            "title": "Earth vs the Flying Saucers"
+            "id": "swampthing",
+            "title": "Swamp Thing",
+            "year": "2014",
+            "medium": "Ink and watercolor on paper"
         },
         {
             "id": "edwardscissorhands",
-            "title": "Edward Scissorhands"
+            "title": "Edward Scissorhands",
+            "year": "2014",
+            "medium": "Ink and watercolor on paper"
         },
         {
             "id": "eternalsunshine",
-            "title": "Eternal Sunshine"
+            "title": "Eternal Sunshine",
+            "year": "2012",
+            "medium": "Ink and watercolor on paper"
         },
         {
             "id": "frankcellardoor",
-            "title": "Frank and the Cellar Door"
+            "title": "Frank and the Cellar Door",
+            "year": "2012",
+            "medium": "Ink and watercolor on paper"
         },
         {
-            "id": "swampthing",
-            "title": "Swamp Thing"
+            "id": "earthvsflyingsaucers",
+            "title": "Earth vs the Flying Saucers",
+            "year": "2012",
+            "medium": "Ink and watercolor on paper"
+        },
+        {
+            "id": "cormanandpoe",
+            "title": "Corman and Poe",
+            "year": "2007",
+            "medium": "Oil on canvas"
         },
         {
             "id": "vincentprice",
-            "title": "Vincent Price"
+            "title": "Vincent Price",
+            "year": "2006",
+            "medium": "Ink on paper"
         }
     ]
 }

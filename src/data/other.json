@@ -1,52 +1,76 @@
 {
     "other": [
         {
-            "id": "allanon",
-            "title": "Allanon"
-        },
-        {
-            "id": "andrettilongbeach",
-            "title": "Andretti vs Andretti at Long Beach"
-        },
-        {
-            "id": "chopin",
-            "title": "Frederic Chopin"
-        },
-        {
-            "id": "fqmg",
-            "title": "French Quarter Motorcycle Guitarist"
-        },
-        {
-            "id": "jimclark",
-            "title": "Jim Clark in the Lotus 49"
-        },
-        {
-            "id": "meltingdoge",
-            "title": "The Melting Doge"
-        },
-        {
-            "id": "mexicanvaquero",
-            "title": "A Mexican Vaquero"
-        },
-        {
-            "id": "mingojack",
-            "title": "Mingo Jack"
-        },
-        {
-            "id": "quanahparker",
-            "title": "Quanah Parker"
-        },
-        {
             "id": "riomendicanti",
-            "title": "Rio dei Mendicanti"
-        },
-        {
-            "id": "schumi-monaco",
-            "title": "Schumacher at Monaco"
+            "title": "Rio dei Mendicanti",
+            "year": "2018",
+            "medium": "Watercolor on paper"
         },
         {
             "id": "sotoportego",
-            "title": "Sotoportego"
+            "title": "Sotoportego",
+            "year": "2018",
+            "medium": "Watercolor on paper"
+        },
+        {
+            "id": "allanon",
+            "title": "Allanon",
+            "year": "2018",
+            "medium": "Ink on paper"
+        },
+        {
+            "id": "mexicanvaquero",
+            "title": "A Mexican Vaquero",
+            "year": "2017",
+            "medium": "Oil on canvas"
+        },
+        {
+            "id": "schumi-monaco",
+            "title": "Schumacher at Monaco",
+            "year": "2017",
+            "medium": "Watercolor on paper"
+        },
+        {
+            "id": "andrettilongbeach",
+            "title": "Andretti vs Andretti at Long Beach",
+            "year": "2017",
+            "medium": "Watercolor on paper"
+        },
+        {
+            "id": "jimclark",
+            "title": "Jim Clark in the Lotus 49",
+            "year": "2014",
+            "medium": "Ink and watercolor on paper"
+        },
+        {
+            "id": "quanahparker",
+            "title": "Quanah Parker",
+            "year": "2012",
+            "medium": "Ink on paper"
+        },
+        {
+            "id": "chopin",
+            "title": "Frederic Chopin",
+            "year": "2012",
+            "medium": "Ink and watercolor on paper"
+        },
+        {
+            "id": "fqmg",
+            "title": "French Quarter Motorcycle Guitarist",
+            "year": "2011",
+            "medium": "Oil on canvas paper"
+        },
+        {
+            "id": "meltingdoge",
+            "title": "The Melting Doge",
+            "year": "2011",
+            "medium": "Oil on canvas paper"
+        },
+        {
+            "id": "mingojack",
+            "title": "Mingo Jack",
+            "year": "2010",
+            "medium": "Oil on MDF board"
         }
     ]
 }
