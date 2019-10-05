@@ -19,6 +19,7 @@
                         :class="`${baseClass}__img`"
                     />
                     <div :class="`${baseClass}__title`">{{ work.title }}</div>
+                    <div :class="`${baseClass}__meta`">{{ work.year }} &mdash; {{ work.medium }}</div>
                 </button>
             </li>
         </ul>

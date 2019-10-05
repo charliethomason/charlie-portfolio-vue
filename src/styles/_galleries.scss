@@ -86,6 +86,10 @@
     }
     &__title {
         color: $white;
+        font-weight: bold;
+    }
+    &__meta {
+        color: $white;
     }
 
     &--grid {
