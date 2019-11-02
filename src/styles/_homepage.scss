@@ -2,8 +2,8 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    max-width: 1024px;
-    margin: 20px auto;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .contact {
@@ -11,7 +11,7 @@
 
     align-items: center;
     display: flex;
-    margin-bottom: 15px;
+    margin: 30px auto 15px;
 
     &__photo {
         display: inline-block;
@@ -19,7 +19,9 @@
     }
 
     &__info {
+        background-color: $grey-transparent;
         margin-left: 30px;
+        padding: 15px;
     }
 
     &__name {

@@ -1,6 +1,7 @@
 <template>
     <main>
         <main-header active="index" />
+        <div class="splash" />
         <section class="content">
             <div class="homepage">
                 <div class="contact">
