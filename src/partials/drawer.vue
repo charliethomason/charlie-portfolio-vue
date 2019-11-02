@@ -30,6 +30,7 @@
         <button
             type="button"
             class="drawer__expand"
+            :class="{ 'drawer__expand--collapsed': !expanded }"
             @click.stop.prevent="toggleExpanded">
             {{ buttonText }}
         </button>
@@ -60,7 +61,7 @@ export default {
     },
     computed: {
         buttonText() {
-            return this.expanded ? 'View Less': 'View More';
+            return this.expanded ? 'Collapse': 'Expand';
         }
     },
     methods: {

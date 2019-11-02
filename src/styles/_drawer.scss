@@ -2,13 +2,13 @@
     $drawer: &;
 
     background-color: $grey-dark;
-    border-radius: 7px;
+    border-radius: 5px;
     color: $white;
     margin: 15px auto;
 
     &__heading {
-        background-color: $teal;
-        border-radius: 7px 7px 0 0;
+        background-color: $green;
+        border-radius: 5px 5px 0 0;
         color: $white;
         font-weight: bold;
         padding: 15px;
@@ -55,8 +55,13 @@
     }
 
     &__more {
+        max-height: 9999px;
+        transition: max-height 0.5s ease-in-out;
+
         &--hidden {
-            @include safeHide;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
         }
     }
 
@@ -64,7 +69,7 @@
         background: linear-gradient($clear, $black);
         border: medium none;
         border-bottom: 2px solid $grey-dark;
-        border-radius: 0 0 7px 7px;
+        border-radius: 0 0 5px 5px;
         color: $white;
         display: block;
         font-size: 16px;
@@ -75,7 +80,17 @@
 
         &:hover, &:focus {
             background: linear-gradient($clear, $teal-dark);
+            border-bottom-color: $teal-dark;
             outline: 0;
+        }
+
+        &:before, &:after {
+            content: '-';
+        }
+
+        &--collapsed:before,
+        &--collapsed:after {
+            content: '+';
         }
     }
 }

@@ -4,28 +4,35 @@
     flex-direction: column;
     max-width: 1024px;
     margin: 20px auto;
-
-    .h1 {
-        font-size: 32px;
-        font-weight: 100;
-        line-height: 1.5;
-    }
-    
-    .subtitle {
-        font-size: 20px;
-        font-weight: bold;
-    }
-}
-
-.charlie-circle {
-    display: block;
-    max-width: 100%;
 }
 
 .contact {
     $contact: &;
 
+    align-items: center;
+    display: flex;
     margin-bottom: 15px;
+
+    &__photo {
+        display: inline-block;
+        width: 230px;
+    }
+
+    &__info {
+        margin-left: 30px;
+    }
+
+    &__name {
+        font-size: 32px;
+        font-weight: 100;
+        padding: 0 0 15px;
+    }
+    
+    &__subtitle {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 5px 0 0;
+    }
 
     &__tooltip {
         background-color: $grey-very-light;
@@ -54,9 +61,13 @@
 
     &__link {
         display: inline-block;
-        margin: 0 5px;
+        margin: 0 10px 0 0;
         outline: 0;
         position: relative;
+
+        &:last-child {
+            margin: 0;
+        }
 
         svg {
             height: 50px;
@@ -78,6 +89,18 @@
                 top: auto;
                 transform: translateX(-50%);
             }
+        }
+    }
+}
+
+@include mobile-large {
+    .contact {
+        display: block;
+        margin: 0;
+        text-align: center;
+
+        &__info {
+            margin: 15px 0;
         }
     }
 }

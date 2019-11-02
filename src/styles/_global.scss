@@ -1,79 +1,87 @@
 .sr-text {
-  @include safeHide;
+    @include safeHide;
 }
 body {
-  background-color: $grey-very-dark;
+    background-color: $grey-very-dark;
 }
 .header {
-  align-items: center;
-  background-color: $teal;
-  border-bottom: 7px solid $teal-dark;
-  display: flex;
-  flex-direction: column;
-  padding: 10px 10px 15px;
+    align-items: center;
+    background-color: $teal;
+    border-bottom: 7px solid $teal-dark;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 15px;
 
-  .logo {
-    @include nounderline;
-    background: url(~img/global/charlie-logo-default.png) no-repeat scroll 0 0 transparent;
-    display: block;
-    height:75px;
-    width: 275px;
-
-    @include retina {
-      background-image: url(~img/global/charlie-logo-default-2x.png);
-      background-size: 275px 75px;
+    &__logo {
+        @include nounderline;
+        background: url(~img/global/charlie-logo-default.png) no-repeat scroll 0 0 transparent;
+        display: block;
+        height:75px;
+        width: 275px;
     }
-
-    @include mobile-small {
-      background-image: url(~img/global/charlie-logo-mobile.png);
-      background-size: 160px 44px;
-      height: 44px;
-      width: 160px;
-
-      @include retina {
-        background-image: url(~img/global/charlie-logo-mobile-2x.png);
-      }
-    }
-  }
 }
 
 .nav {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 
-  .link {
-    @include nounderline;
-    color: $white;
-    font-weight: bold;
-    margin: 0 5px;
-    outline: 0;
-    padding: 0 0 3px;
+    &__link {
+        @include nounderline;
+        color: $white;
+        font-weight: bold;
+        margin: 0 5px;
+        outline: 0;
+        padding: 0 0 3px;
 
-    &:hover,
-    &:focus {
-      border-bottom: 2px solid $teal-dark;
+        &:hover,
+        &:focus {
+            border-bottom: 2px solid $teal-dark;
+        }
+
+        &--active {
+            border-bottom: 2px solid $white;
+        }
     }
-
-    &.active {
-      border-bottom: 2px solid $white;
-    }
-  }
 }
 
 .content {
-  color: $white;
-  padding: 0 20px;
+    color: $white;
+    padding: 0 20px;
 }
 
 .h1 {
-  font-size: 20px;
-  font-weight: bold;
-  padding: 20px 0 10px;
-  text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 0 10px;
+    text-align: center;
 }
 
 .h2 {
-  font-size: 18px;
-  padding: 0 0 10px;
-  text-align: center;
+    font-size: 18px;
+    padding: 0 0 10px;
+    text-align: center;
+}
+
+@include retina {
+    .header {
+        &__logo {
+            background-image: url(~img/global/charlie-logo-default-2x.png);
+            background-size: 275px 75px;
+        }
+    }
+}
+
+@include mobile-small {
+    .header {
+        &__logo {
+            background-image: url(~img/global/charlie-logo-mobile.png);
+            background-size: 160px 44px;
+            height: 44px;
+            width: 160px;
+
+            @include retina {
+                background-image: url(~img/global/charlie-logo-mobile-2x.png);
+            }
+        }
+    }
 }

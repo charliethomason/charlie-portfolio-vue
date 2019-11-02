@@ -4,19 +4,27 @@
   "experience": {
     "heading": "Experience",
     "main": {
-      "name": "Uptake",
-      "role": "Staff Software Engineer",
+      "name": "Centro",
+      "role": "Senior UI Software Engineer",
       "location": "Chicago, IL",
-      "start": "March 2017",
+      "start": "November 2019",
       "end": "present",
       "notes": [
-        "Build and test Vue.js and React components for Uptake’s Platform, ​Design System​, and ​Component Development Kit​ with Developer Services team.",
-        "Lead sprint planning and refinement meetings.",
-        "Specialize in web accessibility, component architecture, and CSS flexbox/grid.",
-        "Promoted from Senior Software Engineer in March 2019."
+        "Build interactive user interfaces for Centro's Basis software platform. Work with design teams to create reusable UI components at a framework level."
       ]
     },
     "more": [
+      {
+        "name": "Uptake",
+        "role": "Staff Software Engineer",
+        "location": "Chicago, IL",
+        "start": "March 2017",
+        "end": "November 2019",
+        "notes": [
+          "Built Vue.js and React components for Uptake’s Platform, ​Design System​, and ​Component Development Kit​ with the Developer Services team.",
+          "Promoted from Senior Software Engineer in March 2019."
+        ]
+      },
       {
         "name": "Razorfish",
         "role": "Presentation Layer Engineer",
@@ -24,9 +32,8 @@
         "start": "January 2013",
         "end": "March 2017",
         "notes": [
-          "Promoted from Associate Presentation Layer Engineer in June 2014.",
           "Front-end developer on 14 different clients across financial services, retail, and consumer electronics industries.",
-          "Specialized in web accessibility, browser compatibility and rapid prototyping."
+          "Promoted from Associate Presentation Layer Engineer in June 2014."
         ]
       }
     ]

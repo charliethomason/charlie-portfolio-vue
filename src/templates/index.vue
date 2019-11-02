@@ -3,18 +3,21 @@
         <main-header active="index" />
         <section class="content">
             <div class="homepage">
-                <img src="~img/home/charlie-circle.png" class="charlie-circle" alt="Photo of Charlie Thomason" />
-                <h1 class="h1">{{ homeData.heading }}
-                    <div class="subtitle">{{ homeData.subtitle }}</div>
-                </h1>
                 <div class="contact">
-                    <icon-link
-                        v-for="(icon, i) in homeData.contact"
-                        :key="i"
-                        :label="icon.label"
-                        :href="icon.href"
-                        :icon="icons[icon.icon]"
-                    />
+                    <img src="~img/home/charlie-circle.png" class="contact__photo" alt="Photo of Charlie Thomason" />
+                    <div class="contact__info">
+                        <h1 class="contact__name">
+                            {{ homeData.heading }}
+                            <div class="contact__subtitle">{{ homeData.subtitle }}</div>
+                        </h1>
+                        <icon-link
+                            v-for="(icon, i) in homeData.contact"
+                            :key="i"
+                            :label="icon.label"
+                            :href="icon.href"
+                            :icon="icons[icon.icon]"
+                        />
+                    </div>
                 </div>
                 <drawer v-bind="homeData.experience" />
                 <drawer v-bind="homeData.education" />
