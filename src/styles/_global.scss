@@ -10,7 +10,9 @@ body {
     border-bottom: 7px solid $teal-dark;
     display: flex;
     flex-direction: column;
-    padding: 10px 10px 15px;
+    height: 125px;
+    justify-content: center;
+    padding: 0 15px;
 
     &__logo {
         @include nounderline;
@@ -46,7 +48,6 @@ body {
 
 .content {
     color: $white;
-    padding: 0 20px;
 }
 
 .h1 {
@@ -73,6 +74,8 @@ body {
 
 @include mobile-small {
     .header {
+        height: 90px;
+
         &__logo {
             background-image: url(~img/global/charlie-logo-mobile.png);
             background-size: 160px 44px;

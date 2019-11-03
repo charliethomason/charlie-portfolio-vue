@@ -31,7 +31,7 @@
 import homeData from '../data/index.json';
 import icons from '../img/svg-icons/icons';
 
-import MainHeader from '../partials/header.vue';
+import MainHeader from '../partials/Header.vue';
 import Drawer from '../partials/drawer.vue';
 import IconLink from '../partials/icon-link.vue';
 
