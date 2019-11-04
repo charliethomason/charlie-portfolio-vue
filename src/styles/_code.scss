@@ -1,0 +1,17 @@
+.code {
+    &-wrapper {
+        margin: 0 auto;
+        max-width: 830px;
+        padding: 0 15px;
+    }
+
+    &-list {
+        &__item {
+            margin-top: 15px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+}

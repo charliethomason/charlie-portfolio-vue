@@ -8,7 +8,7 @@
                 <p class="code-preview__description" v-html="description" />
             </div>
             <div class="code-preview__btns">
-                <a href="#">View Demo</a>
+                <a :href="`/demos/${id}/`">View Demo</a>
                 <a :href="github">View Code</a>
             </div>
         </div>
