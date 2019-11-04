@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import MainHeader from '../partials/Header.vue';
+import MainHeader from '../partials/header.vue';
 import MainFooter from '../partials/footer.vue';
 
 export default {

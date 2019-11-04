@@ -11,7 +11,7 @@
 
 <script>
 import dataset from '../data/code.json';
-import MainHeader from '../partials/Header.vue';
+import MainHeader from '../partials/header.vue';
 import MainFooter from '../partials/footer.vue';
 
 export default {

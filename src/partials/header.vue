@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import MainNav from './Nav.vue';
+import MainNav from './nav.vue';
 export default {
     name: 'MainHeader',
     components: { MainNav },
