@@ -12,19 +12,5 @@
             "href": "other",
             "name": "Other"
         }
-    ],
-    "modes": [
-        {
-            "value": "grid",
-            "label": "Grid"
-        },
-        {
-            "value": "list",
-            "label": "List"
-        },
-        {
-            "value": "carousel",
-            "label": "Carousel"
-        }
     ]
 }

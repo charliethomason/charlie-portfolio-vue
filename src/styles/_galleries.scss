@@ -1,29 +1,50 @@
 .galleries {
+    $galleries: &;
+
     display: flex;
     justify-content: center;
-    padding: 0 10px;
+    margin: auto;
+    max-width: 1500px;
+    padding: 15px;
 
-    &-item {
-        padding: 10px;
+    &__item {
+        padding-left: 15px;
+
+        &:first-child {
+            padding-left: 0;
+        }
     }
 
-    &-link {
-        display: block;
-        position: relative;
-    }
-
-    &-img {
+    &__img {
         max-width: 100%;
     }
 
-    &-text {
-        color: $black;
+    &__text {
+        align-items: center;
+        background-color: $grey-transparent-light;
+        color: $white;
+        display: flex;
         font-size: 20px;
         font-weight: bold;
+        height: 100%;
+        justify-content: center;
+        left: 0;
         position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+        text-shadow: 2px 2px 0px $teal-dark;
+        top: 0;
+        width: 100%;
+        transition: background-color 0.3s;
+    }
+
+    &__link {
+        display: block;
+        position: relative;
+
+        &:hover, &:focus {
+            #{$galleries}__text {
+                background-color: $clear;
+            }
+        }
     }
 }
 
@@ -182,6 +203,20 @@
 
             &__img {
                 width: 100px;
+            }
+        }
+    }
+}
+
+@include mobile-med {
+    .galleries {
+        display: block;
+
+        &__item {
+            padding: 15px 0 0;
+
+            &:first-child {
+                padding-top: 0;
             }
         }
     }
