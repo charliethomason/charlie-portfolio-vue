@@ -2,25 +2,23 @@
     <main>
         <main-header active="code" />
         <section class="content">
-            <h1 class="h1">Code page</h1>
-            <h2>{{dataset.greeting}}</h2>
+            <code-content />
         </section>
         <main-footer />
     </main>
 </template>
 
 <script>
-import dataset from '../data/code.json';
 import MainHeader from '../partials/header.vue';
+import CodeContent from '../partials/code-content.vue';
 import MainFooter from '../partials/footer.vue';
 
 export default {
     name: 'CodeDemos',
-    components: { MainHeader, MainFooter },
-    data() {
-        return {
-            dataset
-        };
+    components: {
+        MainHeader,
+        CodeContent,
+        MainFooter
     }
 };
 </script>
