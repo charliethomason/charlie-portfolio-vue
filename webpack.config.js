@@ -73,6 +73,8 @@ module.exports = {
     .concat(htmlPlugins),
   devServer: {
     contentBase: __dirname + '/dist',
+    host: '0.0.0.0',
+    port: '9000',
     open: true
   },
   resolve: {
