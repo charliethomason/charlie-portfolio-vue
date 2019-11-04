@@ -4,14 +4,16 @@
         <section class="content">
             <router-view />
         </section>
+        <main-footer />
     </main>
 </template>
 
 <script>
 import MainHeader from '../partials/Header.vue';
+import MainFooter from '../partials/footer.vue';
 
 export default {
     name: 'Art',
-    components: { MainHeader }
+    components: { MainHeader, MainFooter }
 };
 </script>

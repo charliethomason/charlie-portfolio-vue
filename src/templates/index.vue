@@ -24,6 +24,7 @@
                 <drawer v-bind="homeData.education" />
             </div>
         </section>
+        <main-footer />
     </main>
 </template>
 
@@ -32,6 +33,7 @@ import homeData from '../data/index.json';
 import icons from '../img/svg-icons/icons';
 
 import MainHeader from '../partials/Header.vue';
+import MainFooter from '../partials/footer.vue';
 import Drawer from '../partials/drawer.vue';
 import IconLink from '../partials/icon-link.vue';
 
@@ -39,6 +41,7 @@ export default {
     name: 'Homepage',
     components: {
         MainHeader,
+        MainFooter,
         Drawer,
         IconLink
     },

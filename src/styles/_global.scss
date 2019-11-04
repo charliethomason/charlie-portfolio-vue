@@ -63,16 +63,27 @@ body {
     text-align: center;
 }
 
-@include retina {
-    .header {
-        &__logo {
-            background-image: url(~img/global/charlie-logo-default-2x.png);
-            background-size: 275px 75px;
+.footer {
+    align-items: center;
+    color: $grey-medium;
+    display: flex;
+    font-size: 11px;
+    height: 50px;
+    line-height: 14px;
+    margin: auto;
+    text-align: center;
+    width: 340px;
+
+    a {
+        color: $grey-medium;
+
+        &:hover, &:focus {
+            color: $teal;
         }
     }
 }
 
-@include mobile-med {
+@mixin mobile-header {
     .header {
         height: 90px;
 
@@ -87,4 +98,21 @@ body {
             }
         }
     }
+}
+
+@include retina {
+    .header {
+        &__logo {
+            background-image: url(~img/global/charlie-logo-default-2x.png);
+            background-size: 275px 75px;
+        }
+    }
+}
+
+@include mobile-max-landscape {
+    @include mobile-header;
+}
+
+@include mobile-med {
+    @include mobile-header;
 }

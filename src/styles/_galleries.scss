@@ -144,9 +144,10 @@
 
         &__img {
             display: block;
+            min-height: 250px;
             max-height: 100%;
             max-width: 100%;
-            margin: auto;
+            margin: 0 auto;
         }
 
         &__title {
@@ -205,6 +206,18 @@
                 width: 100px;
             }
         }
+        
+        &__viewer {
+            display: block;
+            height: auto;
+            overflow: auto;
+        }
+    }
+}
+
+@include mobile-max-landscape {
+    .gallery {
+        height: calc(100vh - 90px);
     }
 }
 
@@ -219,5 +232,9 @@
                 padding-top: 0;
             }
         }
+    }
+
+    .gallery {
+        height: calc(100vh - 90px);
     }
 }
