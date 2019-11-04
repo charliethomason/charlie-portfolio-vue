@@ -26,14 +26,26 @@
 	}
 }
 
-@mixin mobile-large {
-	@media screen and (max-width: 640px) {
+@mixin mobile-min {
+	@media screen and (max-width: $mobile-min) {
 		@content;
 	}
 }
 
-@mixin mobile-small {
-	@media screen and (max-width: 480px) {
+@mixin mobile-med {
+	@media screen and (max-width: $mobile-med) {
+		@content;
+	}
+}
+
+@mixin mobile-max {
+	@media screen and (max-width: $mobile-max) {
+		@content;
+	}
+}
+
+@mixin tablet-max {
+	@media screen and (max-width: $tablet-max) {
 		@content;
 	}
 }

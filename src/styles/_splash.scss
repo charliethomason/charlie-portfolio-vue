@@ -9,32 +9,32 @@
     }
 }
 
-@media screen and (min-width: 570px) and (max-width: 767px) {
+@media screen and (min-width: $mobile-med) and (max-width: $mobile-max) {
     .splash {
         background-image: url(~img/home/venice-01-767.jpg);
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tablet-min) {
     .splash {
         background-attachment: fixed;
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 960px) {
+@media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
     .splash {
         background-image: url(~img/home/venice-01-960.jpg);
     }
 }
 
-@media screen and (min-width: 961px) and (max-width: 1450px) {
+@media screen and (min-width: $desktop-min) and (max-width: $desktop-max) {
     .splash {
         background-image: url(~img/home/venice-01-1440.jpg);
         background-position: center -100px;
     }
 }
 
-@media screen and (min-width: 1451px) {
+@media screen and (min-width: $ext-monitor-min) {
     .splash {
         background-image: url(~img/home/venice-01-2400.jpg);
         background-position: center -390px;

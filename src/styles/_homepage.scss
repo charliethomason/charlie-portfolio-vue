@@ -96,14 +96,48 @@
     }
 }
 
-@include mobile-large {
+@include mobile-med {
     .contact {
         display: block;
-        margin: 0;
+        margin: 15px 0 0;
         text-align: center;
 
         &__info {
-            margin: 15px 0;
+            margin: 15px 0 0;
+        }
+    }
+}
+
+@include mobile-min {
+    .contact {
+        $contact: &;
+
+        &__photo {
+            width: 150px;
+        }
+
+        &__name {
+            font-size: 24px;
+        }
+
+        &__subtitle {
+            font-size: 16px;
+        }
+
+        &__link {
+            svg {
+                height: 35px;
+                width: 35px;
+            }
+
+            &:hover, &:focus {
+                #{$contact}__tooltip {
+                    bottom: auto;
+                    left: -9999px;
+                    top: -9999px;
+                    transform: none;
+                }
+            }
         }
     }
 }

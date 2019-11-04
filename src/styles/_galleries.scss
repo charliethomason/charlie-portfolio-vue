@@ -1,16 +1,3 @@
-@mixin tealButton {
-        background: $teal;
-        border: 2px solid $teal;
-        color: $white;
-        cursor: pointer;
-        display: inline-block;
-        padding: 5px;
-
-        &:hover {
-            background: $teal-dark;
-        }
-}
-
 .galleries {
     display: flex;
     justify-content: center;
@@ -40,23 +27,6 @@
     }
 }
 
-.gallery-header {
-    display: flex;
-    justify-content: space-between;
-}
-
-.gallery-nav {
-    align-items: flex-end;
-    display: flex;
-    flex-direction: column;
-}
-
-.back-to-art {
-    @include nounderline;
-    @include tealButton;
-    margin-bottom: 10px;
-}
-
 .gallery {
     $gallery: &;
 
@@ -66,52 +36,153 @@
     height: calc(100vh - 125px);
     overflow: hidden;
 
+    &__header,
+    &__back {
+        align-items: center;
+        color: $white;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__header {
+        background-color: $teal-dark;
+        height: 23px;
+        padding: 0 5px 7px;
+    }
+
+    &__back {
+        background-color: $teal;
+        border-bottom: 1px solid $teal-dark;
+        height: 30px;
+        padding: 0 5px;
+
+        &:hover, &:focus {
+            background-color: $black;
+            border-bottom-color: $black;
+            text-decoration: none;
+        }
+    }
+
     &__list {
+        align-content: start;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        height: 100%;
+        height: calc(100% - 53px);
         overflow: auto;
 
         &__img {
             display: block;
             width: 125px;
         }
+
         &__title {
             align-items: center;
             background-color: $grey-transparent;
+            border: 3px solid $clear;
             color: $white;
             display: none;
             font-weight: bold;
             height: 100%;
             justify-content: center;
             left: 0;
+            padding: 5px;
             position: absolute;
             top: 0;
             width: 100%;
         }
+
         &__btn {
             @include buttonReset;
             display: block;
             position: relative;
 
-            &:hover, &:focus {
+            &:hover,
+            &:focus,
+            &--active {
                 #{$gallery}__list__title {
                     display: flex;
+                }
+            }
+
+            &--active {
+                #{$gallery}__list__title {
+                    border-color: $teal;
                 }
             }
         }
     }
 
     &__viewer {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr min-content min-content;
+        height: 100%;
         justify-content: center;
-        padding: 0 15px;
+        padding: 15px;
+        text-align: center;
 
         &__img {
             display: block;
+            max-height: 100%;
             max-width: 100%;
+            margin: auto;
+        }
+
+        &__title {
+            font-weight: bold;
+            padding: 15px 0 5px;
+        }
+
+        .fade-enter-active,
+        .fade-leave-active {
+            transition: opacity .3s;
+        }
+
+        .fade-enter,
+        .fade-leave-to {
+            opacity: 0;
+        }
+    }
+}
+
+@include tablet-max {
+    .gallery {
+        $gallery: &;
+
+        grid-template-columns: 250px 1fr;
+
+        &__list {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@include mobile-max {
+    .gallery {
+        $gallery: &;
+
+        grid-template-columns: 100%;
+        grid-template-rows: 130px 1fr;
+
+        &__menu {
+            display: grid;
+            grid-template-rows: 30px 100px;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__header {
+            height: 30px;
+            padding: 0 5px;
+        }
+
+        &__list {
+            display: flex;
+            grid-column: 1 / 3;
+            height: 100%;
+
+            &__img {
+                width: 100px;
+            }
         }
     }
 }
