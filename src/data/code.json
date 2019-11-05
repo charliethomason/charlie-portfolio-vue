@@ -5,7 +5,7 @@
       "id": "cdkdemo",
       "year": "2019",
       "description": "Demo implementation of the Uptake <a href=\"http://cdk.platform.uptake.com\" target=\"_blank\">Component Development Kit</a> v3.21.0 and <a href=\"https://designsystem.platform.uptake.com\" target=\"_blank\">Design System</a> v3.17.1. The components used in this demo were all ones I helped create as part of Uptake's Developer Services team. This demo uses the <a href=\"https: //www.npmjs.com/~uptake\" target=\"_blank\">public NPM version</a> of these libraries, and is built with Vue.js and Webpack.",
-      "github": "https: //www.npmjs.com/~uptake",
+      "github": "https://www.npmjs.com/~uptake",
       "tags": [
         "a11y",
         "dataviz",

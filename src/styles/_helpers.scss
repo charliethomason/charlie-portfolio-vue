@@ -20,6 +20,28 @@
 	outline: 0;
 }
 
+@mixin cardStyle {
+	background-color: $grey-dark;
+	border-bottom: 2px solid $grey-medium-dark;
+	border-radius: 5px;
+	color: $white;
+
+	&__heading {
+		align-items: center;
+		background-color: $green;
+		border-radius: 5px 5px 0 0;
+		color: $white;
+		display: flex;
+		font-weight: bold;
+		height: 40px;
+		padding: 0 15px;
+	}
+
+    &__content {
+        line-height: 1.5;
+	}
+}
+
 @mixin retina {
 	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
 		@content;	

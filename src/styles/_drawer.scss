@@ -1,21 +1,10 @@
 .drawer {
     $drawer: &;
 
-    background-color: $grey-dark;
-    border-radius: 5px;
-    color: $white;
+    @include cardStyle;
     margin: 15px auto;
 
-    &__heading {
-        background-color: $green;
-        border-radius: 5px 5px 0 0;
-        color: $white;
-        font-weight: bold;
-        padding: 15px;
-    }
-
     &__content {
-        line-height: 1.5;
         padding: 15px;
 
         .content-item {
@@ -68,7 +57,6 @@
     &__expand {
         background: linear-gradient($clear, $black);
         border: medium none;
-        border-bottom: 2px solid $grey-dark;
         border-radius: 0 0 5px 5px;
         color: $white;
         display: block;
@@ -80,7 +68,6 @@
 
         &:hover, &:focus {
             background: linear-gradient($clear, $teal-dark);
-            border-bottom-color: $teal-dark;
             outline: 0;
         }
 
