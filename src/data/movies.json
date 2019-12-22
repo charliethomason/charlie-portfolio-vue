@@ -1,6 +1,36 @@
 {
     "movies": [
         {
+            "id": "theshape",
+            "title": "The Shape",
+            "year": "2019",
+            "medium": "Ink on paper"
+        },
+        {
+            "id": "thefog",
+            "title": "The Fog",
+            "year": "2019",
+            "medium": "Ink on paper"
+        },
+        {
+            "id": "thesnake",
+            "title": "The Snake",
+            "year": "2019",
+            "medium": "Ink on paper"
+        },
+        {
+            "id": "thedancingclown",
+            "title": "The Dancing Clown",
+            "year": "2019",
+            "medium": "Ink on paper"
+        },
+        {
+            "id": "thecrow",
+            "title": "The Crow",
+            "year": "2019",
+            "medium": "Ink on paper"
+        },
+        {
             "id": "swampthing",
             "title": "Swamp Thing",
             "year": "2014",
