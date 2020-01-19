@@ -4,89 +4,50 @@
       "title": "Uptake CDK and Design System Demo",
       "id": "cdkdemo",
       "year": "2019",
-      "description": "Demo implementation of the Uptake <a href=\"http://cdk.platform.uptake.com\" target=\"_blank\">Component Development Kit</a> v3.21.0 and <a href=\"https://designsystem.platform.uptake.com\" target=\"_blank\">Design System</a> v3.17.1. The components used in this demo were all ones I helped create as part of Uptake's Developer Services team. This demo uses the <a href=\"https: //www.npmjs.com/~uptake\" target=\"_blank\">public NPM version</a> of these libraries, and is built with Vue.js and Webpack.",
-      "github": "https://www.npmjs.com/~uptake",
-      "tags": [
-        "a11y",
-        "dataviz",
-        "uptake",
-        "vue",
-        "webpack"
-      ]
+      "description": "Demo implementation of the Uptake <a href=\"http://cdk.platform.uptake.com\" target=\"_blank\">Component Development Kit</a> v3.21.0 and <a href=\"https://designsystem.platform.uptake.com\" target=\"_blank\">Design System</a> v3.17.1. The components used in this demo I helped create as part of Uptake's Developer Services team. This demo uses the <a href=\"https://www.npmjs.com/~uptake\" target=\"_blank\">public NPM version</a> of these libraries, as well as Vue.js, Vuex, Vue Router, and the <a href=\"http: //www.omdbapi.com\" target=\"_blank\">OMDb API</a>.",
+      "github": "https://github.com/charliethomason/cdk-demo-app"
     },
     {
       "title": "Handlebars Personal Portfolio Site",
       "id": "oldcharlie",
       "year": "2015-2019",
       "description": "This is the old version of this website. It has been modified for preview purposes and does not include all the sub-pages it originally had. It was built with <a href=\"http: //handlebarsjs.com/\" target=\"_blank\">Handlebars</a>, <a href=\"https://github.com/assemble/assemble/\" target=\"_blank\">Assemble</a>, and <a href=\"http://gruntjs.com/\" target=\"_blank\">Grunt</a>. The JavaScript is all plain, vanilla JavaScript.",
-      "github": "http://github.com/charliethomason/charliefusion-dev",
-      "tags": [
-        "media",
-        "personal"
-      ]
+      "github": "http://github.com/charliethomason/charliefusion-dev"
     },
     {
       "title": "D3 Vue.js Donut Chart",
       "id": "d3vue",
       "year": "2018",
-      "description": "Interactive donut chart built with <a href=\"https://d3js.org/\" target=\"_blank\">D3.js</a> v4.13.0 and Vue.js v2.5.13. Displays 2017 NASCAR race wins data; originally built to show industrial asset availability status info.",
-      "github": "http://github.com/charliethomason/charliefusion-dev/tree/master/src/pages/code/work/d3vue/donut.vue",
-      "tags": [
-        "dataviz",
-        "uptake",
-        "vue"
-      ]
+      "description": "Interactive donut chart built with <a href=\"https://d3js.org/\" target=\"_blank\">D3.js</a> v4.13.0 and Vue.js v2.5.13. Displays 2017 NASCAR race wins data; originally built for the Uptake <a href=\"http://cdk.platform.uptake.com\" target=\"_blank\">Component Development Kit</a>.",
+      "github": "http://github.com/charliethomason/charliefusion-dev/tree/master/src/pages/code/work/d3vue/donut.vue"
     },
     {
       "title": "F1 Data Table App - Vue.js",
       "id": "f1vue",
       "year": "2017",
       "description": "Formula One driver, team, and race data application built with Vue.js v2.4, VueRouter v2.7, Webpack v2.2, Bootstrap v3.2, and APIs from <a href=\"http://ergast.com/mrd\" target=\"_blank\">Ergast.com</a>.",
-      "github": "https://github.com/charliethomason/f1-vuejs-webpack",
-      "tags": [
-        "api",
-        "dataviz",
-        "uptake",
-        "vue",
-        "webpack"
-      ]
+      "github": "https://github.com/charliethomason/f1-vuejs-webpack"
     },
     {
       "title": "Accessibility-Optimized Custom Select Input",
       "id": "a11yselect",
       "year": "2016",
       "description": "Fully-accessible, custom JavaScript select menu plugin. Demo page shows different features and uses. Originally built for a retail brand.",
-      "github": "https://github.com/charliethomason/customA11ySelect",
-      "tags": [
-        "a11y",
-        "jquery",
-        "razorfish"
-      ]
+      "github": "https://github.com/charliethomason/customA11ySelect"
     },
     {
       "title": "Parallax Promo Page with YouTube API Integration",
       "id": "parallaxpromo",
       "year": "2015",
       "description": "Single-page product promo with parallax scrolling and YouTube API integration. Originally built with Node.js, Harp, and Jade for an electronics brand's social media campaign.",
-      "github": "https://github.com/charliethomason/charliefusion-dev/tree/master/src/pages/code/work/parallaxpromo",
-      "tags": [
-        "apis",
-        "jquery",
-        "media",
-        "razorfish"
-      ]
+      "github": "https://github.com/charliethomason/charliefusion-dev/tree/master/src/pages/code/work/parallaxpromo"
     },
     {
       "title": "F1 Data Table App - Angular.js",
       "id": "f1angular",
       "year": "2014",
       "description": "Multi-page Angular.js app that retrives Formula 1 racing data from the <a href=\"http://ergast.com/mrd\" target=\"_blank\">Ergast API</a>. Early proof-of-concept app that is incomplete.",
-      "github": "https://github.com/charliethomason/f1-vuejs-webpack",
-      "tags": [
-        "api",
-        "dataviz",
-        "razorfish"
-      ]
+      "github": "https://github.com/charliethomason/f1-vuejs-webpack"
     }
   ]
 }

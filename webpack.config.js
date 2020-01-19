@@ -78,8 +78,9 @@ module.exports = {
   devServer: {
     contentBase: __dirname + '/dist',
     host: '0.0.0.0',
-    port: '9000',
-    open: true
+    port: '9100',
+    open: true,
+    https: true
   },
   resolve: {
     alias: {

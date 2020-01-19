@@ -25,16 +25,15 @@
         
         &__content {
             display: flex;
-            height: 200px;
         }
 
         &__img {
             border-radius: 0 0 0 5px;
-            flex: 0 0 auto;
-            max-width: 330px;
+            flex: 0 0 41.25%; /* 330 / 800 */
             overflow: hidden;
 
             img {
+                display: block;
                 max-width: 100%;
             }
         }
@@ -44,7 +43,12 @@
         }
 
         &__description {
+            font-size: 14px;
             padding: 15px;
+
+            a {
+                color: $teal;
+            }
         }
 
         &__btns {
@@ -54,7 +58,7 @@
 
         &__btn {
             color: #fff;
-            display: block;
+            display: inline-block;
             font-size: 14px;
             font-weight: bold;
             height: 25px;
@@ -63,6 +67,7 @@
             padding: 5px;
             position: relative;
             text-decoration: none;
+            white-space: nowrap;
 
             &::before {
                 @include triangleShape;
@@ -128,6 +133,73 @@
 
                 &::after {
                     border-top-color: $teal;
+                }
+            }
+        }
+    }
+}
+
+@include mobile-max {
+    .code {
+        &-preview {
+            &__content {
+                align-items: center;
+                flex-direction: column;
+            }
+
+            &__img {
+                flex: 0 1 auto;
+                max-width: 330px;
+                margin-top: 15px;
+            }
+        }        
+    }
+}
+
+@include mobile-med {
+    .code {
+        &-preview {
+            &__heading {
+                display: block;
+                padding: 10px 10px 10px 25px;
+
+                &__text {
+                    display: block;
+                    margin-left: -10px;
+                    padding: 0 0 5px;
+                }
+            }
+        }
+    }
+}
+
+@include mobile-min {
+    .code {
+        &-preview {
+            &__heading {
+                padding-left: 20px;
+
+                &__text {
+                    margin-left: -5px;
+                }
+            }
+
+            &__btn {
+                font-size: 12px;
+                margin: 0 5px;
+
+                &--primary {
+                    margin-left: 0;
+                }
+
+                &::before {
+                    border-left-width: 5px;
+                    left: -5px;
+                }
+
+                &::after {
+                    border-right-width: 5px;
+                    right: -5px;
                 }
             }
         }

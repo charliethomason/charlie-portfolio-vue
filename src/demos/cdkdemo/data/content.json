@@ -1,0 +1,57 @@
+{
+  "header": {
+    "productName": "CDK Demo App",
+    "appSwitcherHeader": "Documentation",
+    "appSwitcherItems": [
+      {
+        "buttonText": "Charlie Thomason Code Demos",
+        "active": true,
+        "linkURL": "http://charliethomason.github.io/code/",
+        "initials": "CT"
+      },
+      {
+        "buttonText": "Uptake Design System",
+        "linkURL": "https://designsystem.platform.uptake.com/",
+        "target": "_blank",
+        "initials": "DS"
+      },
+      {
+        "buttonText": "Uptake CDK",
+        "linkURL": "https://cdk.platform.uptake.com/",
+        "target": "_blank",
+        "initials": "UP"
+      }
+    ]
+  },
+  "sideNav": {
+    "initialItems": [
+      {
+        "name": "1980s Movies",
+        "iconPath": "icons/table.svg",
+        "children": [
+          {
+            "name": "Table View",
+            "url": "/"
+          },
+          {
+            "name": "Card View",
+            "url": "/cards"
+          }
+        ]
+      },
+      {
+        "name": "Back to Code Demos",
+        "iconPath": "icons/person.svg",
+        "url": "http://charliethomason.github.io/code/"
+      }
+    ]
+  },
+  "table": {
+    "fixedHeader": true,
+    "affix": 96,
+    "affixThreshold": 96,
+    "pinned": true,
+    "resizeable": true,
+    "multiSort": true
+  }
+}
