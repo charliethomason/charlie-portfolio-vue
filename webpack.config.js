@@ -70,7 +70,8 @@ module.exports = {
   plugins: [
     new VueLoaderPlugin(),
     new CopyPlugin([
-      { from: 'src/demos/', to: 'demos/' }
+      { from: 'src/demos/', to: 'demos/' },
+      { from: 'src/docs/', to: 'docs/' }
     ]),
     new CleanWebpackPlugin()
   ]

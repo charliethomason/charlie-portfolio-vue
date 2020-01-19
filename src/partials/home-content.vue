@@ -18,6 +18,15 @@
         </div>
         <drawer v-bind="homeData.experience" />
         <drawer v-bind="homeData.education" />
+        <div class="download-pdf">
+            <a
+                href="docs/CharlieThomason-Resume2020.pdf"
+                target="_blank"
+                class="download-pdf__btn"
+            >
+                Download Full Resume PDF
+            </a>
+        </div>
     </div>
 </template>
 

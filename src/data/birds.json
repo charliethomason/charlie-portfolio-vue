@@ -1,6 +1,18 @@
 {
     "birds": [
         {
+            "id": "magpieparkcity",
+            "title": "Park City Magpie",
+            "year": "2020",
+            "medium": "Oil on canvas"
+        },
+        {
+            "id": "kestrelgreenskies",
+            "title": "Kestrel Flies Over Green Skies",
+            "year": "2019",
+            "medium": "Oil on canvas"
+        },
+        {
             "id": "turquoiseperegrine",
             "title": "Turquoise Peregrine",
             "year": "2019",

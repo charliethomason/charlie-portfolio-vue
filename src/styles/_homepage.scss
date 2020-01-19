@@ -34,6 +34,7 @@
     &__subtitle {
         font-size: 20px;
         font-weight: bold;
+        line-height: 1.4;
         padding: 5px 0 0;
     }
 
@@ -95,6 +96,26 @@
         }
     }
 }
+.download-pdf {
+    margin: 15px auto 30px;
+    text-align: center;
+
+    &__btn {
+        background-color: $teal;
+        color: $white;
+        display: inline-block;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 15px 30px;
+        text-decoration: none;
+        transition: background-color 0.4s ease;
+
+        &:hover, &:focus {
+            background-color: $teal-dark;
+            text-decoration: none;
+        }
+    }
+}
 
 @include mobile-med {
     .contact {
@@ -138,6 +159,12 @@
                     transform: none;
                 }
             }
+        }
+    }
+    .download-pdf {
+        &__btn {
+            font-size: 16px;
+            padding: 15px;
         }
     }
 }
