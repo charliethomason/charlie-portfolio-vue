@@ -19,7 +19,7 @@
       "id": "d3vue",
       "year": "2018",
       "description": "Interactive donut chart built with <a href=\"https://d3js.org/\" target=\"_blank\">D3.js</a> v4.13.0 and Vue.js v2.5.13. Displays 2017 NASCAR race wins data; originally built for the Uptake <a href=\"http://cdk.platform.uptake.com\" target=\"_blank\">Component Development Kit</a>.",
-      "github": "http://github.com/charliethomason/charliefusion-dev/tree/master/src/pages/code/work/d3vue/donut.vue"
+      "github": "https://github.com/charliethomason/charlie-portfolio-vue/blob/master/src/demos/d3vue/donut.vue"
     },
     {
       "title": "F1 Data Table App - Vue.js",
@@ -40,7 +40,7 @@
       "id": "parallaxpromo",
       "year": "2015",
       "description": "Single-page product promo with parallax scrolling and YouTube API integration. Originally built with Node.js, Harp, and Jade for an electronics brand's social media campaign.",
-      "github": "https://github.com/charliethomason/charliefusion-dev/tree/master/src/pages/code/work/parallaxpromo"
+      "github": "https://github.com/charliethomason/charlie-portfolio-vue/tree/master/src/demos/parallaxpromo"
     },
     {
       "title": "F1 Data Table App - Angular.js",

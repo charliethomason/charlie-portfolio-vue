@@ -1,6 +1,15 @@
 <template>
     <div class="code-wrapper">
         <h1 class="h1">Code Demo Portfolio</h1>
+        <div class="big-btn-wrap">
+            <a
+                href="https://github.com/charliethomason/charlie-portfolio-vue"
+                target="_blank"
+                class="big-btn"
+            >
+                View Code For This Site
+            </a>
+        </div>
         <ul class="code-list">
             <li
                 v-for="(demo, i) in codeDemos"

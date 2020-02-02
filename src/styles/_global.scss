@@ -52,9 +52,9 @@ body {
 }
 
 .h1 {
-    font-size: 20px;
-    font-weight: bold;
-    padding: 20px 0 10px;
+    font-size: 32px;
+    font-weight: 300;
+    padding: 15px 0;
     text-align: center;
 }
 
@@ -62,6 +62,44 @@ body {
     font-size: 18px;
     padding: 0 0 10px;
     text-align: center;
+}
+
+.big-btn-wrap {
+    margin: 15px auto 30px;
+    text-align: center;
+}
+
+.big-btn {
+    background-color: $teal;
+    color: $white;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 30px;
+    text-decoration: none;
+    transition: background-color 0.4s ease;
+
+    &:hover, &:focus {
+        background-color: $teal-dark;
+        text-decoration: none;
+    }
+}
+
+.copyright-note {
+    color: $grey-medium;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 10px auto 30px;
+    max-width: 250px;
+    text-align: center;
+    
+    a {
+        color: $grey-medium;
+
+        &:hover, &:focus {
+            color: $teal;
+        }
+    }
 }
 
 @include retina {
@@ -96,4 +134,11 @@ body {
 
 @include mobile-med {
     @include mobile-header;
+}
+
+@include mobile-min {
+    .big-btn {
+        font-size: 16px;
+        padding: 15px;
+    }
 }

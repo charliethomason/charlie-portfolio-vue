@@ -3,7 +3,7 @@
         <div class="contact">
             <img src="~img/home/charlie-circle.png" class="contact__photo" alt="Photo of Charlie Thomason" />
             <div class="contact__info">
-                <h1 class="contact__name">
+                <h1 class="h1 contact__name">
                     {{ homeData.heading }}
                     <div class="contact__subtitle">{{ homeData.subtitle }}</div>
                 </h1>
@@ -18,11 +18,11 @@
         </div>
         <drawer v-bind="homeData.experience" />
         <drawer v-bind="homeData.education" />
-        <div class="download-pdf">
+        <div class="big-btn-wrap">
             <a
                 href="docs/CharlieThomason-Resume2020.pdf"
                 target="_blank"
-                class="download-pdf__btn"
+                class="big-btn"
             >
                 Download Full Resume PDF
             </a>
