@@ -1,6 +1,18 @@
 {
     "birds": [
         {
+            "id": "emeraldosprey",
+            "title": "Emerald Osprey",
+            "year": "2020",
+            "medium": "Oil on canvas"
+        },
+        {
+            "id": "blaumeise",
+            "title": "Blue Tit of Tyrol, Austria",
+            "year": "2020",
+            "medium": "Oil on canvas"
+        },
+        {
             "id": "magpieparkcity",
             "title": "Park City Magpie",
             "year": "2020",
