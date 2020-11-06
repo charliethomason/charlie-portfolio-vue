@@ -77,12 +77,12 @@
             width: 50px;
         }
 
-        path {
+        path, polygon {
             fill: $teal;
         }
 
         &:hover, &:focus {
-            path {
+            path, polygon {
                 fill: $grey-very-light;
             }
 
@@ -96,7 +96,7 @@
     }
 }
 
-@include mobile-med {
+@include mobile-max {
     .contact {
         display: block;
         margin: 15px 0 0;

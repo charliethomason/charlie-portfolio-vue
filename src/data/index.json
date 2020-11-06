@@ -1,6 +1,6 @@
 {
   "heading": "Charlie Thomason",
-  "subtitle": "Software Engineer. Artist. Movie lover. Bird watcher. Traveler. Chicago, IL",
+  "subtitle": "Software Engineer. Artist. Musician. Movie lover. Traveler. Chicago, IL",
   "experience": {
     "heading": "Experience",
     "main": {
@@ -90,7 +90,12 @@
 			"label": "Instagram",
 			"href": "http://instagram.com/charliethomason",
 			"icon": "InstagramIcon"
-		},
+    },
+    {
+      "label": "YouTube",
+      "href": "https://www.youtube.com/user/charliethomason",
+      "icon": "YouTubeIcon"
+    },
 		{
 			"label": "Github",
 			"href": "https://github.com/charliethomason",
