@@ -16,6 +16,9 @@
                 />
             </div>
         </div>
+        <drawer heading="About Charlie">
+            My name is Charlie, and I live at the intersection of creativity and engineering. By day, I am a Senior UI Software Engineer at <a href="https://www.centro.net/" target="_blank">Centro</a>, specializing in design systems and web accessibility. I have been writing code full-time for over 8 years, and got my Master's degree from DePaul. By night, I am an Artist, specializing in ink, watercolor, and oil painting. I earned by B.F.A. in Art Studio, and have self-published several books of my art, including <a href="https://www.blurb.com/b/7500748-birds-of-chicagoland" target="_blank"><em>Birds of Chicagoland</em></a>. In addition to being an engineer and artist, I am also a musician and guitarist for the Louisville, KY band <a href="https://www.facebook.com/echosaim" target="_blank">Echo's Aim</a>. I currently live in the Lincoln Park neighborhood of Chicago with my wife, Amanda, and cat, Baxter. This website is a portfolio of some of my best work.
+        </drawer>
         <div class="big-btn-wrap">
             <a
                 href="docs/CharlieThomason-Resume2020.pdf"
@@ -31,11 +34,13 @@
 <script>
 import homeData from '../data/index.json';
 import icons from '../img/svg-icons/icons';
+import Drawer from './drawer.vue';
 import IconLink from './icon-link.vue';
 
 export default {
     name: 'HomeContent',
     components: {
+        Drawer,
         IconLink
     },
     data() {
