@@ -16,15 +16,13 @@
                 />
             </div>
         </div>
-        <drawer v-bind="homeData.experience" />
-        <drawer v-bind="homeData.education" />
         <div class="big-btn-wrap">
             <a
                 href="docs/CharlieThomason-Resume2020.pdf"
                 target="_blank"
                 class="big-btn"
             >
-                Download Full Resume PDF
+                Download Resume PDF
             </a>
         </div>
     </div>
@@ -33,13 +31,11 @@
 <script>
 import homeData from '../data/index.json';
 import icons from '../img/svg-icons/icons';
-import Drawer from './drawer.vue';
 import IconLink from './icon-link.vue';
 
 export default {
     name: 'HomeContent',
     components: {
-        Drawer,
         IconLink
     },
     data() {
