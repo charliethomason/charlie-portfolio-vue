@@ -1,10 +1,16 @@
 {
     "other": [
         {
+            "id": "selfportrait2020",
+            "title": "Self-Portrait 2020",
+            "year": "2020",
+            "medium": "Oil on canvas"
+        },
+        {
             "id": "redrialto",
             "title": "Red Rialto",
             "year": "2019",
-            "medium": "Ink and atercolor on paper"
+            "medium": "Ink and watercolor on paper"
         },
         {
             "id": "riomendicanti",
@@ -77,6 +83,12 @@
             "title": "Mingo Jack",
             "year": "2010",
             "medium": "Oil on MDF board"
+        },
+        {
+            "id": "selfportrait2007",
+            "title": "Self-Portrait 2007",
+            "year": "2007",
+            "medium": "Pencil on paper"
         }
     ]
 }

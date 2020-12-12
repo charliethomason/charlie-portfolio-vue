@@ -1,6 +1,42 @@
 {
     "movies": [
         {
+            "id": "beetlejuice",
+            "title": "Beetlejuice",
+            "year": "2020",
+            "medium": "Ink on paper"
+        },
+        {
+            "id": "phibes",
+            "title": "The Abominable Dr. Phibes",
+            "year": "2020",
+            "medium": "Ink on paper"
+        },
+        {
+            "id": "shining",
+            "title": "The Shining",
+            "year": "2020",
+            "medium": "Ink on paper"
+        },
+        {
+            "id": "sleepyhollow",
+            "title": "Sleepy Hollow",
+            "year": "2020",
+            "medium": "Ink on paper"
+        },
+        {
+            "id": "nightmareb4xmas",
+            "title": "The Nightmare Before Christmas",
+            "year": "2020",
+            "medium": "Ink on paper"
+        },
+        {
+            "id": "shaunofthedead",
+            "title": "Shaun of the Dead",
+            "year": "2020",
+            "medium": "Ink on paper"
+        },
+        {
             "id": "theshape",
             "title": "The Shape",
             "year": "2019",

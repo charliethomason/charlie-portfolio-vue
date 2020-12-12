@@ -1,6 +1,12 @@
 {
     "birds": [
         {
+            "id": "blaumeisecolor",
+            "title": "Blue Tit of Tyrol, Austria (watercolor)",
+            "year": "2020",
+            "medium": "Watercolor on paper"
+        },
+        {
             "id": "emeraldosprey",
             "title": "Emerald Osprey",
             "year": "2020",
