@@ -1,0 +1,43 @@
+{
+  "books": [
+    {
+      "id": "charlieinktober",
+      "title": "#charlieinktober 2020",
+      "subtitle": "Silver Stills From Favorite Films",
+      "medium": "Ink Paintings",
+      "year": "2020",
+      "pages": "28",
+      "blurb": "#"
+    },
+    {
+      "id": "birdsofchicagoland",
+      "title": "Birds of Chicagoland",
+      "subtitle": "Paintings by Charlie Thomason",
+      "medium": "Watercolor and Ink Paintings",
+      "year": "2016",
+      "pages": "68",
+      "blurb": "https://www.blurb.com/b/7500748-birds-of-chicagoland"
+    },
+    {
+      "id": "openrange",
+      "title": "Open Range",
+      "subtitle": "From Monument Valley to the Mojave Desert",
+      "medium": "Film and Digital Photography",
+      "year": "2012",
+      "pages": "152",
+      "blurb": "https://www.blurb.com/b/2868673-open-range"
+    }
+  ],
+  "charlieinktober": {
+    "title": "#charlieinktober 2020",
+    "subtitle": "Silver Stills From Favorite Films"
+  },
+  "birdsofchicagoland": {
+    "title": "Birds of Chicagoland",
+    "subtitle": "Paintings by Charlie Thomason"
+  },
+  "openrange": {
+    "title": "Open Range",
+    "subtitle": "From Monument Valley to the Mojave Desert"
+  }
+}

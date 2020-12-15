@@ -69,20 +69,14 @@ body {
     text-align: center;
 }
 
-.big-btn {
-    background-color: $teal;
-    color: $white;
-    display: inline-block;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 15px 30px;
-    text-decoration: none;
-    transition: background-color 0.4s ease;
+.btn {
+    @include btn;
+}
 
-    &:hover, &:focus {
-        background-color: $teal-dark;
-        text-decoration: none;
-    }
+.big-btn {
+    @include btn;
+    font-size: 20px;
+    padding: 15px 30px;
 }
 
 .copyright-note {
