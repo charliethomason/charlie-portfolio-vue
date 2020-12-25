@@ -24,13 +24,16 @@
         <a :href="book.blurb" target="_blank" class="btn">Order book on Blurb.com</a>
       </router-link>
     </ul>
+    <footer-note />
   </div>
 </template>
 <script>
 import { books } from '../../data/books.json';
+import FooterNote from '../../partials/footer.vue';
 
 export default {
   name: 'Books',
+  components: { FooterNote },
   data() {
     return {
       books

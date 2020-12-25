@@ -19,17 +19,17 @@
                 </a>
             </router-link>
         </ul>
-        <div class="copyright-note">
-            All artwork on this website is property of <a href="https://charliethomason.github.io">Charlie Thomason</a>. Do not reuse or republish without permission.
-        </div>
+        <footer-note />
     </div>
 </template>
 
 <script>
 import { galleries } from '../../data/art.json';
+import FooterNote from '../../partials/footer.vue';
 
 export default {
     name: 'Galleries',
+    components: { FooterNote },
     data() {
         return {
             galleries

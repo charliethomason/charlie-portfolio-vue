@@ -25,6 +25,7 @@
     &__text {
         align-items: center;
         background-color: $grey-transparent-light;
+        border: 3px solid transparent;
         color: $white;
         display: flex;
         font-size: 20px;
@@ -36,7 +37,7 @@
         text-shadow: 2px 2px 0px $teal-dark;
         top: 0;
         width: 100%;
-        transition: background-color 0.3s;
+        transition: background-color 0.3s, border-color 0.3s;
     }
 
     &__link {
@@ -46,6 +47,7 @@
         &:hover, &:focus {
             #{$galleries}__text {
                 background-color: $clear;
+                border-color: $teal;
             }
         }
     }
@@ -173,6 +175,7 @@
 .books {
     margin: 0 auto;
     max-width: 1500px;
+    padding: 0 16px;
 
     .intro {
         line-height: 1.4;
@@ -191,11 +194,11 @@
     &__shop {
         display: flex;
         justify-content: space-between;
-        padding: 8px;
+        margin: 0 -16px;
 
         li {
             line-height: 1.2;
-            padding: 8px;
+            padding: 16px;
             text-align: center;
         }
 
@@ -324,5 +327,11 @@
 
     .gallery {
         height: calc(100vh - 90px);
+    }
+
+    .books {
+        &__shop {
+            display: block;
+        }
     }
 }
