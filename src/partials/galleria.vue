@@ -1,15 +1,17 @@
 <template>
   <div class="galleria">
-    <div v-for="(row, r) in photosInRows" :key="`row-${r}`" class="galleria-row">
+    <div v-for="(row, r) in photosInRows" :key="`row-${r}`" class="galleria-row" ref="row">
       <a
         v-for="(img, i) in row" :key="`row-${r}-img-${i}`"
         href="#"
         class="galleria-img"
         :style="getStyle(row, img)"
+        :data-large="`../img/art/books/${bookName}/${img.file}.jpg`"
       >
         <img
-          :src="require('../img/art/books/'+bookName+'/'+img.file+'.jpg')"
+          :src="require('../img/art/books/'+bookName+'/thumbs/'+img.file+'.jpg')"
           :alt="img.file"
+          class="galleria-small"
         />
       </a>
     </div>
@@ -59,27 +61,27 @@ export default {
   },
   methods: {
     loadImages() {
-      // const allRows = document.querySelectorAll(".galleria-row");
-      // allRows.forEach(row => {
-      //   const rowImgs = row.querySelectorAll(".galleria-img");
-      //   rowImgs.forEach(img => {
-      //     const small = img.querySelector(".galleria-small");
+      this.$refs.row.forEach(row => {
+        if (row.childNodes && row.childNodes.length) {
+          row.childNodes.forEach(img => {
+            const small = img.children[0];
 
-      //     let imgSmall = new Image();
-      //     imgSmall.src = small.src;
-      //     imgSmall.onload = () => {
-      //     small.classList.add("loaded");
-      //     };
+            let imgSmall = new Image();
+            imgSmall.src = small.src;
+            imgSmall.onload = () => {
+            small.classList.add("loaded");
+            };
 
-      //     let imgLarge = new Image();
-      //     imgLarge.src = img.dataset.large;
-      //     imgLarge.alt = small.alt;
-      //     imgLarge.onload = () => {
-      //       imgLarge.classList.add("loaded");
-      //     };
-      //     img.appendChild(imgLarge);
-      //   });
-      // });
+            let imgLarge = new Image();
+            imgLarge.src = img.dataset.large;
+            imgLarge.alt = small.alt;
+            imgLarge.onload = () => {
+              imgLarge.classList.add("loaded");
+            };
+            img.appendChild(imgLarge);
+          });
+        }
+      });
     },
     getTotalWidth(row) {
       return row.reduce((sum, r) => {
@@ -99,7 +101,7 @@ export default {
     }
   },
   mounted() {
-    // this.loadImages();
+    this.loadImages();
   }
 }
 </script>
