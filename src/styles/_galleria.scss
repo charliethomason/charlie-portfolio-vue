@@ -1,5 +1,5 @@
 .galleria {
-  max-width: 1000px;
+  max-width: $galleria-lg;
   margin: 0 auto;
 
   &-row {
@@ -27,5 +27,17 @@
   &-small {
     filter: blur(10px);
     transform: scale(1);
+  }
+}
+
+@media screen and (max-width: $galleria-lg) and (min-width: $galleria-med) {
+  .galleria {
+    max-width: $galleria-med;
+  }
+}
+
+@media screen and (max-width: $galleria-med) {
+  .galleria {
+    max-width: $galleria-sm;
   }
 }

@@ -33,7 +33,12 @@ export default {
     return {
       actualRowWidth: 1000,
       imgHeight: 600,
-      maxRowWidth: 2400
+      maxRowWidth: 2400,
+      breakpoints: {
+        large: 1000,
+        medium: 600,
+        small: 320
+      }
     };
   },
   computed: {
@@ -116,13 +121,29 @@ export default {
         width: imgWidth + 'px'
       };
     },
-    onResize(event) {
-
+    onResize() {
+      const { small, medium, large } = this.breakpoints;
+      const windowWidth = window.innerWidth;
+      if (windowWidth > medium && windowWidth < large) {
+        this.actualRowWidth = medium;
+      } else if (windowWidth > small && windowWidth < medium) {
+        this.actualRowWidth = small;
+      } else {
+        this.actualRowWidth = large;
+      }
     }
   },
   mounted() {
     this.loadImages();
-    window.addEventListener('resize', this.onResize);
+    let timeoutId;
+    window.addEventListener('resize', () => {
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(this.onResize, 500);
+    });
+    this.onResize();
+  },
+  beforeDestroy() {
+    window.removeEventListener('resize', this.onResize);
   }
 }
 </script>
