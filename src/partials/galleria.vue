@@ -29,26 +29,42 @@ export default {
       type: Array
     }
   },
+  data() {
+    return {
+      actualRowWidth: 1000,
+      imgHeight: 600,
+      maxRowWidth: 2400
+    };
+  },
   computed: {
     photosInRows() {
       if (!this.photos || !this.photos.length) {
         return null;
       }
-      return this.photos.reduce((rows, img) => { 
+      return this.photos.reduce((rows, img) => {
+        // if we have no rows created yet, create a row with this 1st image
         if (!rows.length) {
           rows.push([img]);
           return rows;
         } else {
+          // loop through all the rows we have created so far
           for (const [i, row] of rows.entries()) {
-            const currWidths = this.getTotalWidth(row);
+            const currentRowWidth = this.getTotalWidth(row);
             const isLastRow = i === rows.length-1;
-            if (currWidths >= 2400) {
+            // "If the currrent total width of the images in this row is
+            // greater than/equal to the max width allowed for a single row."
+            // If the image heights are 600px then the max possible row width is 2400px.
+            // 2400 / 600 = 4, thus a 4:1 min aspect ratio for each row.
+            if (currentRowWidth >= this.maxRowWidth) {
+              // if this is the last row and it's already full, create a new one with this image.
+              // otherwise continue on to check the next row.
               if (isLastRow) {
                 rows.push([img]);
                 break;
               } else {
                 continue;
               }
+            // if there is still space in this row, add this image.
             } else {
               row.push(img);
               break;
@@ -89,19 +105,24 @@ export default {
       }, 0);
     },
     getStyle(row, img) {
-      const imgHeight = 600;
-      const rowWidth = 1000;
       const totalWidth = this.getTotalWidth(row);
-      const rowHeight = rowWidth / (totalWidth / imgHeight);
-      const imgWidth = img.width / (imgHeight / rowHeight);
+      // actual displayed row width, divided by the aspect ratio of the row.
+      // e.g.: 1000 / (2400 / 600 = 4) = 250
+      const rowHeight = this.actualRowWidth / (totalWidth / this.imgHeight);
+      // reduce the image width by the same amount the image height was reduced
+      const imgWidth = img.width / (this.imgHeight / rowHeight);
       return {
         height: rowHeight + 'px',
         width: imgWidth + 'px'
       };
+    },
+    onResize(event) {
+
     }
   },
   mounted() {
     this.loadImages();
+    window.addEventListener('resize', this.onResize);
   }
 }
 </script>
