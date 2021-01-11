@@ -2,7 +2,7 @@
   <div>
     <h1 class="h1">{{ bookData.title }}</h1>
     <h2 class="h2">{{ bookData.subtitle}}</h2>
-    <galleria book-name="test" :photos="bookData.photos" />
+    <galleria :book-name="bookName" :photos="bookData.photos" />
     <footer-note />
   </div>
 </template>

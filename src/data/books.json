@@ -33,73 +33,193 @@
     "subtitle": "Silver Stills From Favorite Films",
     "photos": [
       {
-        "file": "austria",
-        "width": 899
+        "file": "beetlejuice",
+        "width": 964
       },
       {
-        "file": "blackwaterfalls",
-        "width": 800
+        "file": "halloween",
+        "width": 1087
       },
       {
-        "file": "bloomingdale",
-        "width": 801
+        "file": "lotr",
+        "width": 1040
       },
       {
-        "file": "camdenlighthouse",
-        "width": 906
+        "file": "phibes",
+        "width": 1004
       },
       {
-        "file": "ei-sunrise",
-        "width": 800
+        "file": "shining",
+        "width": 954
       },
       {
-        "file": "ei-sunset",
-        "width": 801
+        "file": "starwars",
+        "width": 1004
       },
       {
-        "file": "englishportfolio",
-        "width": 853
+        "file": "batman",
+        "width": 1002
       },
       {
-        "file": "frozenpromontory",
-        "width": 800
+        "file": "sleepyhollow",
+        "width": 1000
       },
       {
-        "file": "lugano",
-        "width": 800
+        "file": "donniedarko",
+        "width": 1009
       },
       {
-        "file": "nottevenezia",
-        "width": 800
+        "file": "terminator2",
+        "width": 1133
       },
       {
-        "file": "openrange",
-        "width": 821
+        "file": "nightmareb4xmas",
+        "width": 1006
       },
       {
-        "file": "rotr-pano",
-        "width": 1331
+        "file": "thefog",
+        "width": 1009
       },
       {
-        "file": "sandiego",
-        "width": 899
+        "file": "edwardscissorhands",
+        "width": 986
       },
       {
-        "file": "venezia",
-        "width": 801
+        "file": "alien",
+        "width": 983
       },
       {
-        "file": "wahkeena",
-        "width": 450
+        "file": "bladerunner",
+        "width": 1098
+      },
+      {
+        "file": "thecrow",
+        "width": 979
+      },
+      {
+        "file": "shaunofthedead",
+        "width": 1211
+      },
+      {
+        "file": "metropolis",
+        "width": 992
+      },
+      {
+        "file": "escapefromny",
+        "width": 1017
+      },
+      {
+        "file": "dracula",
+        "width": 996
       }
     ]
   },
   "birdsofchicagoland": {
     "title": "Birds of Chicagoland",
-    "subtitle": "Paintings by Charlie Thomason"
+    "subtitle": "Paintings by Charlie Thomason",
+    "photos": [
+      {
+        "file": "peregrine",
+        "width": 530
+      },
+      {
+        "file": "kestrel",
+        "width": 456
+      },
+      {
+        "file": "goshawk",
+        "width": 501
+      },
+      {
+        "file": "coopershawk",
+        "width": 462
+      },
+      {
+        "file": "greathornedowl",
+        "width": 526
+      },
+      {
+        "file": "greatblueheron",
+        "width": 511
+      },
+      {
+        "file": "woodduck",
+        "width": 471
+      },
+      {
+        "file": "nightheron",
+        "width": 759
+      },
+      {
+        "file": "cormorant",
+        "width": 393
+      },
+      {
+        "file": "loon",
+        "width": 541
+      },
+      {
+        "file": "grosbeaks",
+        "width": 456
+      },
+      {
+        "file": "meadowlark",
+        "width": 489
+      },
+      {
+        "file": "bluejay",
+        "width": 817
+      },
+      {
+        "file": "cardinals",
+        "width": 923
+      },
+      {
+        "file": "redwingedblackbird",
+        "width": 694
+      },
+      {
+        "file": "rockpigeon",
+        "width": 807
+      },
+      {
+        "file": "crow",
+        "width": 525
+      },
+      {
+        "file": "tern",
+        "width": 455
+      },
+      {
+        "file": "whitethroatedsparrow",
+        "width": 468
+      },
+      {
+        "file": "passengerpigeons",
+        "width": 453
+      },
+      {
+        "file": "flicker",
+        "width": 420
+      },
+      {
+        "file": "woodpecker",
+        "width": 435
+      },
+      {
+        "file": "turkey",
+        "width": 864
+      },
+      {
+        "file": "kingfisher",
+        "width": 471
+      }
+    ]
   },
   "openrange": {
     "title": "Open Range",
-    "subtitle": "From Monument Valley to the Mojave Desert"
+    "subtitle": "From Monument Valley to the Mojave Desert",
+    "photos": [
+    ]
   }
 }

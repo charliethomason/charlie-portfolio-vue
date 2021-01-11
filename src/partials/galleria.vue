@@ -110,12 +110,17 @@ export default {
       }, 0);
     },
     getStyle(row, img) {
+      const onlyOneInRow = row.length === 1;
       const totalWidth = this.getTotalWidth(row);
       // actual displayed row width, divided by the aspect ratio of the row.
       // e.g.: 1000 / (2400 / 600 = 4) = 250
-      const rowHeight = this.actualRowWidth / (totalWidth / this.imgHeight);
+      const rowHeight = onlyOneInRow && img.width <= this.actualRowWidth
+        ? this.imgHeight
+        : this.actualRowWidth / (totalWidth / this.imgHeight);
       // reduce the image width by the same amount the image height was reduced
-      const imgWidth = img.width / (this.imgHeight / rowHeight);
+      const imgWidth = onlyOneInRow && img.width <= this.actualRowWidth
+        ? img.width
+        : img.width / (this.imgHeight / rowHeight);
       return {
         height: rowHeight + 'px',
         width: imgWidth + 'px'
