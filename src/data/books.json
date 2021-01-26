@@ -7,7 +7,7 @@
       "medium": "Ink Paintings",
       "year": "2020",
       "pages": "28",
-      "blurb": "#"
+      "blurb": "https://www.blurb.com/b/10393438-charlieinktober-2020-silver-stills-from-favorite"
     },
     {
       "id": "birdsofchicagoland",
@@ -220,6 +220,198 @@
     "title": "Open Range",
     "subtitle": "From Monument Valley to the Mojave Desert",
     "photos": [
+      {
+        "file": "lakepowell01",
+        "width": 800
+      },
+      {
+        "file": "lakepowell02",
+        "width": 1978
+      },
+      {
+        "file": "lakepowell03",
+        "width": 908
+      },
+      {
+        "file": "lakepowell04",
+        "width": 919
+      },
+      {
+        "file": "lakepowell05",
+        "width": 907
+      },
+      {
+        "file": "leesferry01",
+        "width": 450
+      },
+      {
+        "file": "leesferry02",
+        "width": 800
+      },
+      {
+        "file": "monumentvalley01",
+        "width": 800
+      },
+      {
+        "file": "monumentvalley02",
+        "width": 800
+      },
+      {
+        "file": "monumentvalley03",
+        "width": 800
+      },
+      {
+        "file": "monumentvalley04",
+        "width": 800
+      },
+      {
+        "file": "monumentvalley05",
+        "width": 800
+      },
+      {
+        "file": "monumentvalley06",
+        "width": 820
+      },
+      {
+        "file": "monumentvalley07",
+        "width": 800
+      },
+      {
+        "file": "monumentvalley08",
+        "width": 799
+      },
+      {
+        "file": "monumentvalley09",
+        "width": 2502
+      },
+      {
+        "file": "monumentvalley10",
+        "width": 899
+      },
+      {
+        "file": "monumentvalley11",
+        "width": 901
+      },
+      {
+        "file": "monumentvalley12",
+        "width": 903
+      },
+      {
+        "file": "monumentvalley13",
+        "width": 907
+      },
+      {
+        "file": "monumentvalley14",
+        "width": 499
+      },
+      {
+        "file": "monumentvalley15",
+        "width": 508
+      },
+      {
+        "file": "monumentvalley16",
+        "width": 507
+      },
+      {
+        "file": "highways01",
+        "width": 800
+      },
+      {
+        "file": "highways02",
+        "width": 800
+      },
+      {
+        "file": "highways03",
+        "width": 800
+      },
+      {
+        "file": "highways04",
+        "width": 800
+      },
+      {
+        "file": "highways05",
+        "width": 898
+      },
+      {
+        "file": "highways06",
+        "width": 889
+      },
+      {
+        "file": "highways07",
+        "width": 927
+      },
+      {
+        "file": "highways08",
+        "width": 506
+      },
+      {
+        "file": "highways09",
+        "width": 510
+      },
+      {
+        "file": "navajomonument01",
+        "width": 799
+      },
+      {
+        "file": "navajomonument02",
+        "width": 799
+      },
+      {
+        "file": "navajomonument03",
+        "width": 800
+      },
+      {
+        "file": "navajomonument04",
+        "width": 899
+      },
+      {
+        "file": "navajomonument05",
+        "width": 396
+      },
+      {
+        "file": "grandcanyon01",
+        "width": 800
+      },
+      {
+        "file": "grandcanyon02",
+        "width": 457
+      },
+      {
+        "file": "grandcanyon03",
+        "width": 803
+      },
+      {
+        "file": "grandcanyon04",
+        "width": 449
+      },
+      {
+        "file": "grandcanyon05",
+        "width": 800
+      },
+      {
+        "file": "grandcanyon06",
+        "width": 804
+      },
+      {
+        "file": "grandcanyon07",
+        "width": 903
+      },
+      {
+        "file": "joshuatree01",
+        "width": 800
+      },
+      {
+        "file": "joshuatree02",
+        "width": 800
+      },
+      {
+        "file": "joshuatree03",
+        "width": 800
+      },
+      {
+        "file": "joshuatree04",
+        "width": 800
+      }
     ]
   }
 }

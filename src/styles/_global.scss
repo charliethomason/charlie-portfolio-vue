@@ -60,7 +60,7 @@ body {
 
 .h2 {
     font-size: 18px;
-    padding: 0 0 10px;
+    padding: 0 0 15px;
     text-align: center;
 }
 
@@ -77,6 +77,24 @@ body {
     @include btn;
     font-size: 20px;
     padding: 15px 30px;
+}
+
+.eyebrow {
+    padding-top: 15px;
+    text-align: center;
+
+    &__link {
+        color: $teal;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+
+        &:hover, &:focus {
+            color: $grey-very-light;
+        }
+    }
 }
 
 .copyright-note {

@@ -1,5 +1,8 @@
 <template>
   <div>
+    <div class="eyebrow">
+      <router-link to="/books" class="eyebrow__link">Books</router-link>
+    </div>
     <h1 class="h1">{{ bookData.title }}</h1>
     <h2 class="h2">{{ bookData.subtitle}}</h2>
     <galleria :book-name="bookName" :photos="bookData.photos" />

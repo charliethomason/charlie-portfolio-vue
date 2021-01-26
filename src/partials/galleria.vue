@@ -131,7 +131,7 @@ export default {
       const windowWidth = window.innerWidth;
       if (windowWidth > medium && windowWidth < large) {
         this.actualRowWidth = medium;
-      } else if (windowWidth > small && windowWidth < medium) {
+      } else if (windowWidth >= small && windowWidth < medium) {
         this.actualRowWidth = small;
       } else {
         this.actualRowWidth = large;
