@@ -4,6 +4,7 @@
 
   &-row {
     display: flex;
+    flex-wrap: wrap;
   }
 
   &-img {
@@ -27,6 +28,17 @@
   &-small {
     filter: blur(10px);
     transform: scale(1);
+  }
+
+  &__lightbox {
+    background: $black;
+    width: 100%;
+
+    &__img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+    }
   }
 }
 

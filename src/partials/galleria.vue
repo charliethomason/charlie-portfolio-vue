@@ -7,6 +7,7 @@
         class="galleria-img"
         :style="getStyle(row, img)"
         :data-large="`../img/art/books/${bookName}/${img.file}.jpg`"
+        @click.stop.prevent="onClick(img, r)"
       >
         <img
           :src="require('../img/art/books/'+bookName+'/thumbs/'+img.file+'.jpg')"
@@ -14,6 +15,14 @@
           class="galleria-small"
         />
       </a>
+      <div v-if="lightRowId === r" class="galleria__lightbox">
+        <img
+          v-if="lightRowId === r && !!lightImgId"
+          :src="require('../img/art/books/'+bookName+'/'+lightImgId+'.jpg')"
+          :alt="lightImgId"
+          class="galleria__lightbox__img"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -38,7 +47,9 @@ export default {
         large: 1000,
         medium: 600,
         small: 320
-      }
+      },
+      lightRowId: null,
+      lightImgId: null
     };
   },
   computed: {
@@ -84,23 +95,25 @@ export default {
     loadImages() {
       this.$refs.row.forEach(row => {
         if (row.childNodes && row.childNodes.length) {
-          row.childNodes.forEach(img => {
-            const small = img.children[0];
+          for (const img of row.childNodes) {
+            if (img.classList && img.classList.contains("galleria-img")) {
+              const small = img.children[0];
 
-            let imgSmall = new Image();
-            imgSmall.src = small.src;
-            imgSmall.onload = () => {
-            small.classList.add("loaded");
-            };
+              let imgSmall = new Image();
+              imgSmall.src = small.src;
+              imgSmall.onload = () => {
+              small.classList.add("loaded");
+              };
 
-            let imgLarge = new Image();
-            imgLarge.src = img.dataset.large;
-            imgLarge.alt = small.alt;
-            imgLarge.onload = () => {
-              imgLarge.classList.add("loaded");
-            };
-            img.appendChild(imgLarge);
-          });
+              let imgLarge = new Image();
+              imgLarge.src = img.dataset.large;
+              imgLarge.alt = small.alt;
+              imgLarge.onload = () => {
+                imgLarge.classList.add("loaded");
+              };
+              img.appendChild(imgLarge);
+            }
+          }
         }
       });
     },
@@ -136,6 +149,10 @@ export default {
       } else {
         this.actualRowWidth = large;
       }
+    },
+    onClick(img, rowIndex) {
+      this.lightRowId = rowIndex;
+      this.lightImgId = img.file;
     }
   },
   mounted() {
