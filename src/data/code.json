@@ -1,6 +1,14 @@
 {
   "codeDemos": [
     {
+      "title": "Galleria Photo Grid",
+      "id": "galleria",
+      "year": "2020",
+      "description": "A responsive Google Photos/Flickr-esque photo grid with progressive image loading and lightbox viewer. Dynamically organizes photos into equal-width rows, with a minimum aspect ratio for row height. Built with React v16.13. This is the same photo gallery used for the 'Books' section of this site.",
+      "github": "https://github.com/charliethomason/galleria",
+      "demo": "/art/#/books/openrange"
+    },
+    {
       "title": "Uptake CDK and Design System Demo",
       "id": "cdkdemo",
       "year": "2019",
