@@ -221,12 +221,12 @@
     "subtitle": "From Monument Valley to the Mojave Desert",
     "photos": [
       {
-        "file": "lakepowell01",
-        "width": 800
-      },
-      {
         "file": "lakepowell02",
         "width": 1978
+      },
+      {
+        "file": "lakepowell01",
+        "width": 800
       },
       {
         "file": "lakepowell03",
@@ -273,16 +273,16 @@
         "width": 820
       },
       {
+        "file": "monumentvalley09",
+        "width": 2502
+      },
+      {
         "file": "monumentvalley07",
         "width": 800
       },
       {
         "file": "monumentvalley08",
         "width": 799
-      },
-      {
-        "file": "monumentvalley09",
-        "width": 2502
       },
       {
         "file": "monumentvalley10",

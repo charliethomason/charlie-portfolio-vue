@@ -15,14 +15,20 @@
           class="galleria-small"
         />
       </a>
-      <div v-if="lightRowId === r" class="galleria__lightbox">
-        <img
-          v-if="lightRowId === r && !!lightImgId"
-          :src="require('../img/art/books/'+bookName+'/'+lightImgId+'.jpg')"
-          :alt="lightImgId"
-          class="galleria__lightbox__img"
-        />
-      </div>
+    </div>
+    <div v-if="!!lightImgId" class="galleria__lightbox" @click.stop.prevent="closeLightbox">
+      <img
+        :src="require('../img/art/books/'+bookName+'/'+lightImgId+'.jpg')"
+        :alt="lightImgId"
+        class="galleria__lightbox__img"
+      />
+      <button
+        type="button"
+        class="galleria__lightbox__close"
+        @click.stop.prevent="closeLightbox"
+      >
+        Close
+      </button>
     </div>
   </div>
 </template>
@@ -40,24 +46,28 @@ export default {
   },
   data() {
     return {
-      actualRowWidth: 1000,
+      photosInRows: [],
+      actualRowWidth: 0,
       imgHeight: 600,
-      maxRowWidth: 2400,
+      maxRowWidth: {
+        large: 2400,
+        small: 1800
+      },
       breakpoints: {
         large: 1000,
         medium: 600,
         small: 320
       },
-      lightRowId: null,
+      windowWidth: 0,
       lightImgId: null
     };
   },
-  computed: {
-    photosInRows() {
+  methods: {
+    putPhotosInRows() {
       if (!this.photos || !this.photos.length) {
         return null;
       }
-      return this.photos.reduce((rows, img) => {
+      this.photosInRows = this.photos.reduce((rows, img) => {
         // if we have no rows created yet, create a row with this 1st image
         if (!rows.length) {
           rows.push([img]);
@@ -66,12 +76,15 @@ export default {
           // loop through all the rows we have created so far
           for (const [i, row] of rows.entries()) {
             const currentRowWidth = this.getTotalWidth(row);
+            const maxRowWidth = this.windowWidth < this.breakpoints.medium
+              ? this.maxRowWidth.small
+              : this.maxRowWidth.large;
             const isLastRow = i === rows.length-1;
             // "If the currrent total width of the images in this row is
             // greater than/equal to the max width allowed for a single row."
             // If the image heights are 600px then the max possible row width is 2400px.
             // 2400 / 600 = 4, thus a 4:1 min aspect ratio for each row.
-            if (currentRowWidth >= this.maxRowWidth) {
+            if (currentRowWidth >= maxRowWidth) {
               // if this is the last row and it's already full, create a new one with this image.
               // otherwise continue on to check the next row.
               if (isLastRow) {
@@ -89,29 +102,35 @@ export default {
           return rows;
         }
       }, []);
-    }
-  },
-  methods: {
+    },
     loadImages() {
+      if (!this.$refs.row || !this.$refs.row.length){
+        return null;
+      }
       this.$refs.row.forEach(row => {
         if (row.childNodes && row.childNodes.length) {
           for (const img of row.childNodes) {
-            if (img.classList && img.classList.contains("galleria-img")) {
+            if (img.classList && img.classList.contains('galleria-img')) {
               const small = img.children[0];
+              const imgSrc = img.dataset.large;
 
               let imgSmall = new Image();
               imgSmall.src = small.src;
               imgSmall.onload = () => {
-              small.classList.add("loaded");
+                small.classList.add('loaded');
               };
 
-              let imgLarge = new Image();
-              imgLarge.src = img.dataset.large;
-              imgLarge.alt = small.alt;
-              imgLarge.onload = () => {
-                imgLarge.classList.add("loaded");
-              };
-              img.appendChild(imgLarge);
+              if (img.querySelector('.galleria-large')) {
+                img.querySelector('.galleria-large').src = imgSrc;
+              } else {
+                let imgLarge = new Image();
+                imgLarge.src = imgSrc;
+                imgLarge.alt = small.alt;
+                imgLarge.onload = () => {
+                  imgLarge.classList.add('galleria-large','loaded');
+                };
+                img.appendChild(imgLarge);
+              }
             }
           }
         }
@@ -139,25 +158,43 @@ export default {
         width: imgWidth + 'px'
       };
     },
-    onResize() {
+    setGalleriaWidth() {
       const { small, medium, large } = this.breakpoints;
-      const windowWidth = window.innerWidth;
-      if (windowWidth > medium && windowWidth < large) {
+      this.windowWidth = window.innerWidth;
+      if (this.windowWidth > medium && this.windowWidth < large) {
         this.actualRowWidth = medium;
-      } else if (windowWidth >= small && windowWidth < medium) {
+      } else if (this.windowWidth >= small && this.windowWidth < medium) {
         this.actualRowWidth = small;
       } else {
         this.actualRowWidth = large;
       }
     },
-    onClick(img, rowIndex) {
-      this.lightRowId = rowIndex;
-      this.lightImgId = img.file;
+    async onResize() {
+      const startRowWidth = this.actualRowWidth;
+      await this.setGalleriaWidth();
+      await this.putPhotosInRows();
+      if (startRowWidth !== this.actualRowWidth) {
+        this.loadImages();
+      }
+    },
+    closeLightbox() {
+      this.lightImgId = null;
+    },
+    onClick(img) {
+      if (this.lightImgId !== img.file) {
+        this.lightImgId = img.file;
+      } else {
+        this.closeLightbox();
+      }
     }
   },
-  mounted() {
-    this.loadImages();
+  async mounted() {
     let timeoutId;
+    window.addEventListener('keydown', e => {
+      if (e.key === "Escape") {
+        this.closeLightbox();
+      }
+    });
     window.addEventListener('resize', () => {
       clearTimeout(timeoutId);
       timeoutId = setTimeout(this.onResize, 500);
