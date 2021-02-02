@@ -7,7 +7,7 @@
         class="galleria-img"
         :style="getStyle(row, img)"
         :data-large="`../img/art/books/${bookName}/${img.file}.jpg`"
-        @click.stop.prevent="onClick(img, r)"
+        @click.stop.prevent="e => onClick(e, img)"
       >
         <img
           :src="require('../img/art/books/'+bookName+'/thumbs/'+img.file+'.jpg')"
@@ -127,6 +127,9 @@ export default {
                 imgLarge.src = imgSrc;
                 imgLarge.alt = small.alt;
                 imgLarge.onload = () => {
+                  // give the link a class of "ready"
+                  // to indicate lightbox clicks can now happen
+                  img.classList.add("ready");
                   imgLarge.classList.add('galleria-large','loaded');
                 };
                 img.appendChild(imgLarge);
@@ -180,11 +183,14 @@ export default {
     closeLightbox() {
       this.lightImgId = null;
     },
-    onClick(img) {
-      if (this.lightImgId !== img.file) {
-        this.lightImgId = img.file;
-      } else {
-        this.closeLightbox();
+    onClick(e, img) {
+      // don't let lightbox happen before images have loaded
+      if (e.target.classList.contains("ready")) {
+        if (this.lightImgId !== img.file) {
+          this.lightImgId = img.file;
+        } else {
+          this.closeLightbox();
+        }
       }
     }
   },

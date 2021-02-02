@@ -12,6 +12,18 @@
     position: relative;
     overflow: hidden;
 
+    &:after {
+      border: 3px solid $teal;
+      content: none;
+      height: 100%;
+      position: absolute;
+      width: 100%;
+    }
+
+    &:hover:after {
+      content: "";
+    }
+
     img {
       opacity: 0;
       position: absolute;
