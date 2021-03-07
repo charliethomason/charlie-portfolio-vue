@@ -5,23 +5,25 @@
         v-for="(img, i) in row" :key="`row-${r}-img-${i}`"
         href="#"
         class="galleria-img"
+        :title="img.title"
         :style="getStyle(row, img)"
         :data-large="`../img/art/books/${bookName}/${img.file}.jpg`"
         @click.stop.prevent="e => onClick(e, img)"
       >
         <img
           :src="require('../img/art/books/'+bookName+'/thumbs/'+img.file+'.jpg')"
-          :alt="img.file"
+          :alt="img.title || img.file"
           class="galleria-small"
         />
       </a>
     </div>
-    <div v-if="!!lightImgId" class="galleria__lightbox" @click.stop.prevent="closeLightbox">
+    <div v-if="lightImg && lightImg.file" class="galleria__lightbox" @click.stop.prevent="closeLightbox">
       <img
-        :src="require('../img/art/books/'+bookName+'/'+lightImgId+'.jpg')"
-        :alt="lightImgId"
+        :src="require('../img/art/books/'+bookName+'/'+lightImg.file+'.jpg')"
+        :alt="lightImg.file"
         class="galleria__lightbox__img"
       />
+      <div v-if="lightImg.title" class="galleria__lightbox__title">{{ lightImg.title }}</div>
       <button
         type="button"
         class="galleria__lightbox__close"
@@ -59,7 +61,7 @@ export default {
         small: 320
       },
       windowWidth: 0,
-      lightImgId: null
+      lightImg: null
     };
   },
   methods: {
@@ -181,13 +183,13 @@ export default {
       }
     },
     closeLightbox() {
-      this.lightImgId = null;
+      this.lightImg = null;
     },
     onClick(e, img) {
       // don't let lightbox happen before images have loaded
       if (e.target.classList.contains("ready")) {
-        if (this.lightImgId !== img.file) {
-          this.lightImgId = img.file;
+        if (!this.lightImg || this.lightImg.file !== img.file) {
+          this.lightImg = img;
         } else {
           this.closeLightbox();
         }

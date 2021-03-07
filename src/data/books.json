@@ -34,82 +34,102 @@
     "photos": [
       {
         "file": "beetlejuice",
+        "title": "1. Beetlejuice (1988)",
         "width": 964
       },
       {
         "file": "halloween",
+        "title": "2. Halloween (1978)",
         "width": 1087
       },
       {
         "file": "lotr",
+        "title": "3. The Lord of the Rings: The Fellowship of the Ring (2001)",
         "width": 1040
       },
       {
         "file": "phibes",
+        "title": "4. The Abominable Dr. Phibes (1971)",
         "width": 1004
       },
       {
         "file": "shining",
+        "title": "5. The Shining (1980)",
         "width": 954
       },
       {
         "file": "starwars",
+        "title": "6. Star Wars (1977)",
         "width": 1004
       },
       {
         "file": "batman",
+        "title": "7. Batman (1989)",
         "width": 1002
       },
       {
         "file": "sleepyhollow",
+        "title": "8. Sleepy Hollow (1999)",
         "width": 1000
       },
       {
         "file": "donniedarko",
+        "title": "9. Donnie Darko (2001)",
         "width": 1009
       },
       {
         "file": "terminator2",
+        "title": "10. Terminator 2: Judgement Day (1991)",
         "width": 1133
       },
       {
         "file": "nightmareb4xmas",
+        "title": "11. The Nightmare Before Christmas (1993)",
         "width": 1006
       },
       {
         "file": "thefog",
+        "title": "12. The Fog (1980)",
         "width": 1009
       },
       {
         "file": "edwardscissorhands",
+        "title": "13. Edward Scissorhands (1990)",
         "width": 986
       },
       {
         "file": "alien",
+        "title": "14. Alien (1979)",
         "width": 983
       },
       {
         "file": "bladerunner",
+        "title": "15. Blade Runner (1982)",
         "width": 1098
       },
       {
         "file": "thecrow",
+        "title": "16. The Crow (1994)",
         "width": 979
       },
       {
         "file": "shaunofthedead",
+        "title": "17. Shaun of the Dead (2004)",
         "width": 1211
       },
       {
         "file": "metropolis",
+        "title": "18. Metropolis (1927)",
         "width": 992
       },
       {
         "file": "escapefromny",
+        "title": "19. Escape From New York (1981)",
         "width": 1017
       },
       {
         "file": "dracula",
+        "title": "20. Dracula (1931)",
         "width": 996
       }
     ]

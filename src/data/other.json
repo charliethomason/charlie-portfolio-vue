@@ -1,6 +1,12 @@
 {
     "other": [
         {
+            "id": "probewinndixie",
+            "title": "Ford Probe at Winn-Dixie Parking Lot on Friday Night",
+            "year": "2021",
+            "medium": "Oil on wood panel"
+        },
+        {
             "id": "selfportrait2020",
             "title": "Self-Portrait 2020",
             "year": "2020",
@@ -82,7 +88,7 @@
             "id": "mingojack",
             "title": "Mingo Jack",
             "year": "2010",
-            "medium": "Oil on MDF board"
+            "medium": "Oil on wood panel"
         },
         {
             "id": "selfportrait2007",
