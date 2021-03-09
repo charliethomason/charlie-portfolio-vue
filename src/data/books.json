@@ -140,98 +140,122 @@
     "photos": [
       {
         "file": "peregrine",
+        "title": "Peregrine Falcon at Old St. Patrick's Church",
         "width": 530
       },
       {
         "file": "kestrel",
+        "title": "American Kestrel at Museum Campus with Skyline",
         "width": 456
       },
       {
         "file": "goshawk",
+        "title": "Northern Goshawk at Northerly Island, Winter",
         "width": 501
       },
       {
         "file": "coopershawk",
+        "title": "Cooper's Hawk at Wind Farm",
         "width": 462
       },
       {
         "file": "greathornedowl",
+        "title": "Great Horned Owl at Graceland Cemetery",
         "width": 526
       },
       {
         "file": "greatblueheron",
+        "title": "Great Blue Heron at Humboldt Park Lagoon",
         "width": 511
       },
       {
         "file": "woodduck",
+        "title": "Wood Duck at Lincoln Park South Pond",
         "width": 471
       },
       {
         "file": "nightheron",
+        "title": "Black-crowned Night Heron at Lincoln Park South Pond",
         "width": 759
       },
       {
         "file": "cormorant",
+        "title": "Double-crested Cormorant at Monroe Harbor Breakwater",
         "width": 393
       },
       {
         "file": "loon",
+        "title": "Common Loon at Jackson Park Lagoon",
         "width": 541
       },
       {
         "file": "grosbeaks",
+        "title": "Rose-breasted Grosbeaks at the Art Institute of Chicago",
         "width": 456
       },
       {
         "file": "meadowlark",
+        "title": "Eastern Meadowlark",
         "width": 489
       },
       {
         "file": "bluejay",
+        "title": "Blue Jay at Printer's Row",
         "width": 817
       },
       {
         "file": "cardinals",
+        "title": "Northern Cardinals with Gynandromorph",
         "width": 923
       },
       {
         "file": "redwingedblackbird",
+        "title": "Red-winged Blackbird at Glessner House Museum",
         "width": 694
       },
       {
         "file": "rockpigeon",
+        "title": "Rock Pigeon at Madison & Wabash CTA Station",
         "width": 807
       },
       {
         "file": "crow",
+        "title": "American Crow at University of Chicago",
         "width": 525
       },
       {
         "file": "tern",
+        "title": "Caspian Tern at Promontory Point",
         "width": 455
       },
       {
         "file": "whitethroatedsparrow",
+        "title": "White-throated Sparrow at Old Chicago Water Tower",
         "width": 468
       },
       {
         "file": "passengerpigeons",
+        "title": "Passenger Pigeons at Field Museum",
         "width": 453
       },
       {
         "file": "flicker",
+        "title": "Northern Flicker at Grant Park Rose Garden",
         "width": 420
       },
       {
         "file": "woodpecker",
+        "title": "Pileated Woodpecker at Starved Rock State Park, Summer",
         "width": 435
       },
       {
         "file": "turkey",
+        "title": "Wild Turkey at Starved Rock State Park, Autumn",
         "width": 864
       },
       {
         "file": "kingfisher",
+        "title": "Belted Kingfisher at Halsted St Bridge, River West",
         "width": 471
       }
     ]
@@ -242,194 +266,242 @@
     "photos": [
       {
         "file": "lakepowell02",
+        "title": "Lake Powell - iPhone panorama",
         "width": 1978
       },
       {
         "file": "lakepowell01",
+        "title": "Lake Powell - DSLR digital",
         "width": 800
       },
       {
         "file": "lakepowell03",
+        "title": "Lake Powell - 35mm film",
         "width": 908
       },
       {
         "file": "lakepowell04",
+        "title": "Lake Powell - 35mm film",
         "width": 919
       },
       {
         "file": "lakepowell05",
+        "title": "Lake Powell - 35mm film",
         "width": 907
       },
       {
         "file": "leesferry01",
+        "title": "Lee's Ferry - DSLR digital",
         "width": 450
       },
       {
         "file": "leesferry02",
+        "title": "Lee's Ferry - DSLR digital",
         "width": 800
       },
       {
         "file": "monumentvalley01",
+        "title": "Monument Valley - DSLR digital",
         "width": 800
       },
       {
         "file": "monumentvalley02",
+        "title": "Monument Valley - DSLR digital",
         "width": 800
       },
       {
         "file": "monumentvalley03",
+        "title": "Monument Valley - DSLR digital",
         "width": 800
       },
       {
         "file": "monumentvalley04",
+        "title": "Monument Valley - DSLR digital",
         "width": 800
       },
       {
         "file": "monumentvalley05",
+        "title": "Monument Valley - DSLR digital long-exposure",
         "width": 800
       },
       {
         "file": "monumentvalley06",
+        "title": "Monument Valley - DSLR digital long-exposure",
         "width": 820
       },
       {
         "file": "monumentvalley09",
+        "title": "Monument Valley - iPhone panorama",
         "width": 2502
       },
       {
         "file": "monumentvalley07",
+        "title": "Monument Valley - DSLR digital long-exposure",
         "width": 800
       },
       {
         "file": "monumentvalley08",
+        "title": "Monument Valley - DSLR digital HDR composite",
         "width": 799
       },
       {
         "file": "monumentvalley10",
+        "title": "Monument Valley - 35mm film",
         "width": 899
       },
       {
         "file": "monumentvalley11",
+        "title": "Monument Valley - 35mm film",
         "width": 901
       },
       {
         "file": "monumentvalley12",
+        "title": "Monument Valley - 35mm film",
         "width": 903
       },
       {
         "file": "monumentvalley13",
+        "title": "Monument Valley - 35mm film",
         "width": 907
       },
       {
         "file": "monumentvalley14",
+        "title": "Monument Valley - Polaroid instant film",
         "width": 499
       },
       {
         "file": "monumentvalley15",
+        "title": "Monument Valley - Polaroid instant film",
         "width": 508
       },
       {
         "file": "monumentvalley16",
+        "title": "Monument Valley - Polaroid instant film",
         "width": 507
       },
       {
         "file": "highways01",
+        "title": "On The Road - DSLR digital",
         "width": 800
       },
       {
         "file": "highways02",
+        "title": "On The Road - DSLR digital",
         "width": 800
       },
       {
         "file": "highways03",
+        "title": "On The Road - DSLR digital",
         "width": 800
       },
       {
         "file": "highways04",
+        "title": "On The Road - DSLR digital",
         "width": 800
       },
       {
         "file": "highways05",
+        "title": "On The Road - 35mm film",
         "width": 898
       },
       {
         "file": "highways06",
+        "title": "On The Road - 35mm film",
         "width": 889
       },
       {
         "file": "highways07",
+        "title": "On The Road - 35mm film",
         "width": 927
       },
       {
         "file": "highways08",
+        "title": "On The Road - Polaroid instant film",
         "width": 506
       },
       {
         "file": "highways09",
+        "title": "On The Road - Polaroid instant film",
         "width": 510
       },
       {
         "file": "navajomonument01",
+        "title": "Navajo National Monument - DSLR digital HDR composite",
         "width": 799
       },
       {
         "file": "navajomonument02",
+        "title": "Navajo National Monument - DSLR digital HDR composite",
         "width": 799
       },
       {
         "file": "navajomonument03",
+        "title": "Navajo National Monument - DSLR digital HDR composite",
         "width": 800
       },
       {
         "file": "navajomonument04",
+        "title": "Navajo National Monument - 35mm film",
         "width": 899
       },
       {
         "file": "navajomonument05",
+        "title": "Navajo National Monument - 35mm film",
         "width": 396
       },
       {
         "file": "grandcanyon01",
+        "title": "Grand Canyon National Park - DSLR digital",
         "width": 800
       },
       {
         "file": "grandcanyon02",
+        "title": "Grand Canyon National Park - DSLR digital",
         "width": 457
       },
       {
         "file": "grandcanyon03",
+        "title": "Grand Canyon National Park - iPhone",
         "width": 803
       },
       {
         "file": "grandcanyon04",
+        "title": "Grand Canyon National Park - DSLR digital HDR composite",
         "width": 449
       },
       {
         "file": "grandcanyon05",
+        "title": "Grand Canyon National Park - DSLR digital HDR composite",
         "width": 800
       },
       {
         "file": "grandcanyon06",
+        "title": "Grand Canyon National Park - DSLR digital HDR composite",
         "width": 804
       },
       {
         "file": "grandcanyon07",
+        "title": "Grand Canyon National Park - 35mm film",
         "width": 903
       },
       {
         "file": "joshuatree01",
+        "title": "Joshua Tree National Park - DSLR digital",
         "width": 800
       },
       {
         "file": "joshuatree02",
+        "title": "Joshua Tree National Park - DSLR digital",
         "width": 800
       },
       {
         "file": "joshuatree03",
+        "title": "Joshua Tree National Park - DSLR digital",
         "width": 800
       },
       {
         "file": "joshuatree04",
+        "title": "Joshua Tree National Park - DSLR digital",
         "width": 800
       }
     ]
