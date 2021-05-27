@@ -61,6 +61,22 @@
 	}
 }
 
+@mixin lightboxBtn {
+  background: $black;
+  border: 2px solid $white;
+  border-radius: 20px;
+  color: $white;
+  cursor: pointer;
+  font-weight: bold;
+  position: fixed;
+  z-index: 2;
+
+  &:hover {
+    background: $white;
+    color: $black;
+  }
+}
+
 @mixin retina {
 	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
 		@content;	

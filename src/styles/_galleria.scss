@@ -43,6 +43,8 @@
   }
 
   &__lightbox {
+    $lightbox: &;
+
     align-items: center;
     background: $grey-transparent;
     bottom: 0;
@@ -61,6 +63,7 @@
       margin: 0 auto;
       max-height: 90%;
       max-width: 100%;
+      padding: 0 50px;
     }
 
     &__title {
@@ -81,6 +84,45 @@
       top: 15px;
       z-index: 2;
     }
+
+    &__nav {
+      @include buttonReset;
+      line-height: 1;
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 2;
+
+      &[title="Previous"] {
+        left: 5px;
+      }
+      &[title="Next"] {
+        right: 5px;
+      }
+
+      &:hover #{$lightbox}__icon-shape {
+        fill: $teal;
+      }
+    }
+
+    &__icon {
+      height: 40px;
+      width: 40px;
+
+      &--prev {
+        transform: rotate(90deg);
+      }
+      &--next {
+        transform: rotate(-90deg);
+      }
+
+      &-shape {
+        fill: $white;
+      }
+      &-symbol {
+        fill: $black;
+      }
+    }
   }
 }
 
@@ -93,5 +135,17 @@
 @media screen and (max-width: $galleria-med) {
   .galleria {
     max-width: $galleria-sm;
+  }
+}
+
+@include mobile-min {
+  .galleria__lightbox {
+    &__img {
+      padding: 0 40px;
+    }
+    &__icon {
+      height: 30px;
+      width: 30px;
+    }
   }
 }

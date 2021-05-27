@@ -8,7 +8,7 @@
         :title="img.title"
         :style="getStyle(row, img)"
         :data-large="`../img/art/books/${bookName}/${img.file}.jpg`"
-        @click.stop.prevent="e => onClick(e, img)"
+        @click.stop.prevent="e => imgClick(e, img)"
       >
         <img
           :src="require('../img/art/books/'+bookName+'/thumbs/'+img.file+'.jpg')"
@@ -26,6 +26,24 @@
       <div v-if="lightImg.title" class="galleria__lightbox__title">{{ lightImg.title }}</div>
       <button
         type="button"
+        class="galleria__lightbox__nav"
+        title="Previous"
+        @click.stop.prevent="() => lightboxNav(-1)"
+      >
+        <span class="sr-text">Previous</span>
+        <ArrowIcon class="galleria__lightbox__icon--prev" />
+      </button>
+      <button
+        type="button"
+        class="galleria__lightbox__nav"
+        title="Next"
+        @click.stop.prevent="() => lightboxNav(1)"
+      >
+        <span class="sr-text">Next</span>
+        <ArrowIcon class="galleria__lightbox__icon--next" />
+      </button>
+      <button
+        type="button"
         class="galleria__lightbox__close"
         @click.stop.prevent="closeLightbox"
       >
@@ -36,8 +54,12 @@
 </template>
 
 <script>
+import ArrowIcon from '../img/svg-icons/arrow.vue';
 export default {
   name: 'Galleria',
+  components: {
+    ArrowIcon
+  },
   props: {
     bookName: {
       type: String
@@ -182,10 +204,23 @@ export default {
         this.loadImages();
       }
     },
+    lightboxNav(change) {
+      const currentIndex = this.photos.findIndex(img => img.file === this.lightImg.file);
+      const lastImgIndex = this.photos.length - 1;
+      // if it's the first photo and they clicked previous
+      if (currentIndex === 0 && change === -1) {
+        this.lightImg = this.photos[lastImgIndex];
+      // if it's the last photo and they clicked next
+      } else if (currentIndex === lastImgIndex && change === 1) {
+        this.lightImg = this.photos[0];
+      } else {
+        this.lightImg = this.photos[currentIndex + change];
+      }
+    },
     closeLightbox() {
       this.lightImg = null;
     },
-    onClick(e, img) {
+    imgClick(e, img) {
       // don't let lightbox happen before images have loaded
       if (e.target.classList.contains("ready")) {
         if (!this.lightImg || this.lightImg.file !== img.file) {
@@ -201,6 +236,10 @@ export default {
     window.addEventListener('keydown', e => {
       if (e.key === "Escape") {
         this.closeLightbox();
+      } else if (e.key === "ArrowLeft" && !!this.lightImg) {
+        this.lightboxNav(-1);
+      } else if (e.key === "ArrowRight" && !!this.lightImg) {
+        this.lightboxNav(1);
       }
     });
     window.addEventListener('resize', () => {
