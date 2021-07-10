@@ -10,7 +10,7 @@ body {
     border-bottom: 7px solid $teal-dark;
     display: flex;
     flex-direction: column;
-    height: 125px;
+    height: 130px;
     justify-content: center;
     padding: 0 15px;
 
@@ -26,23 +26,33 @@ body {
 .nav {
     display: flex;
     justify-content: center;
+    margin-top: 5px;
 
     &__link {
         @include nounderline;
+        border-radius: 3px;
         color: $white;
+        display: block;
         font-size: 16px;
         font-weight: bold;
         margin: 0 5px;
         outline: 0;
-        padding: 0 0 3px;
+        padding: 5px;
+        transition: all .2s ease-in-out;
 
         &:hover,
         &:focus {
-            border-bottom: 2px solid $teal-dark;
+            background-color: $teal-dark;
         }
 
         &--active {
-            border-bottom: 2px solid $white;
+            background-color: $white;
+            color: $teal-dark;
+
+            &:hover,
+            &:focus {
+                color: $white;
+            }
         }
     }
 }
@@ -125,7 +135,7 @@ body {
 
 @mixin mobile-header {
     .header {
-        height: 90px;
+        height: 95px;
 
         &__logo {
             background-image: url(~img/global/charlie-logo-mobile.png);

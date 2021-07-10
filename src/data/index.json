@@ -1,6 +1,6 @@
 {
   "heading": "Charlie Thomason",
-  "subtitle": "Software Engineer. Artist. Musician. Movie lover. Chicago, IL",
+  "subtitle": "Software Engineer. Artist. Musician. Catholic. Runner. Movie lover. Bird watcher. Auto racing fan. Chicago, IL",
 	"contact": [
 		{
 			"label": "Email thomason.charlie@gmail.com",
@@ -26,6 +26,16 @@
 			"label": "Github",
 			"href": "https://github.com/charliethomason",
 			"icon": "GithubIcon"
+		},
+		{
+			"label": "GoodReads",
+			"href": "https://www.goodreads.com/user/show/75584528-charlie-thomason",
+			"icon": "GoodreadsIcon"
+		},
+		{
+			"label": "Letterboxd",
+			"href": "https://letterboxd.com/charliefusion/",
+			"icon": "LetterboxdIcon"
 		}
 	]
 }

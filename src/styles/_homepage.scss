@@ -2,9 +2,16 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    max-width: 700px;
     margin: 0 auto;
     padding: 0 15px;
+
+    .contact {
+        max-width: 800px;
+    }
+
+    .drawer {
+        max-width: 600px;
+    }
 }
 
 .contact {
@@ -62,15 +69,23 @@
         }
     }
 
+    &__link-row {
+        display: flex;
+        justify-content: flex-start;
+
+        li {
+            margin-left: 10px;
+            
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+
     &__link {
         display: inline-block;
-        margin: 0 10px 0 0;
         outline: 0;
         position: relative;
-
-        &:last-child {
-            margin: 0;
-        }
 
         svg {
             height: 50px;
@@ -79,11 +94,20 @@
 
         path, polygon {
             fill: $teal;
+            transition: fill 0.2s ease-in-out;
+        }
+
+        .fill-dark {
+            fill: $black;
         }
 
         &:hover, &:focus {
             path, polygon {
                 fill: $grey-very-light;
+            }
+
+            .fill-dark {
+                fill: $black;
             }
 
             #{$contact}__tooltip {
@@ -110,6 +134,10 @@
         &__name {
             text-align: center;
         }
+
+        &__link-row {
+            justify-content: center;
+        }
     }
 }
 
@@ -127,6 +155,16 @@
 
         &__subtitle {
             font-size: 16px;
+        }
+
+        &__link-row {
+            flex-wrap: wrap;
+            max-width: 200px;
+            margin: -10px auto 0;
+
+            li {
+                margin-top: 10px;
+            }
         }
 
         &__link {
