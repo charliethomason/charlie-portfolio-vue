@@ -1,6 +1,13 @@
 {
   "codeDemos": [
     {
+      "title": "CSS Animation Timeline",
+      "id": "csstimeline",
+      "year": "2021",
+      "description": "Interactive timeline of events & photos from the past 12 years since I met my wife, Amanda. Uses several different CSS animations, and built with Next.js v11 and React v17.",
+      "github": "https://github.com/charliethomason/css-animation-timeline/tree/alt-version"
+    },
+    {
       "title": "Galleria Photo Grid",
       "id": "galleria",
       "year": "2020",
