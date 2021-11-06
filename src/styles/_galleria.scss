@@ -1,5 +1,5 @@
 .galleria {
-  max-width: $galleria-lg;
+  max-width: $galleria-full;
   margin: 0 auto;
 
   &-row {
@@ -8,6 +8,7 @@
   }
 
   &-img {
+    @include buttonReset;
     display: block;
     position: relative;
     overflow: hidden;
@@ -16,11 +17,14 @@
       border: 3px solid $teal;
       content: none;
       height: 100%;
+      left: 0;
       position: absolute;
+      top: 0;
       width: 100%;
     }
 
-    &:hover:after {
+    &:hover:after,
+    &:focus:after {
       content: "";
     }
 
@@ -78,11 +82,18 @@
       border-radius: 20px;
       color: $white;
       font-weight: bold;
+      outline: 0;
       padding: 5px 10px;
       position: fixed;
       right: 15px;
       top: 15px;
       z-index: 2;
+
+      &:hover,
+      &:focus {
+        background: $white;
+        color: $black;
+      }
     }
 
     &__nav {
@@ -126,12 +137,26 @@
   }
 }
 
+@media screen and (max-width: $galleria-full) and (min-width: $galleria-jumbo) {
+  .galleria {
+    max-width: $galleria-jumbo;
+  }
+}
+@media screen and (max-width: $galleria-jumbo) and (min-width: $galleria-xl) {
+  .galleria {
+    max-width: $galleria-xl;
+  }
+}
+@media screen and (max-width: $galleria-xl) and (min-width: $galleria-lg) {
+  .galleria {
+    max-width: $galleria-lg;
+  }
+}
 @media screen and (max-width: $galleria-lg) and (min-width: $galleria-med) {
   .galleria {
     max-width: $galleria-med;
   }
 }
-
 @media screen and (max-width: $galleria-med) {
   .galleria {
     max-width: $galleria-sm;

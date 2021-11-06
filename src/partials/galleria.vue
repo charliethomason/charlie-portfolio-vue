@@ -1,21 +1,23 @@
 <template>
   <div class="galleria">
     <div v-for="(row, r) in photosInRows" :key="`row-${r}`" class="galleria-row" ref="row">
-      <a
+      <button
+        type="button"
         v-for="(img, i) in row" :key="`row-${r}-img-${i}`"
-        href="#"
         class="galleria-img"
         :title="img.title"
         :style="getStyle(row, img)"
         :data-large="`../img/art/books/${bookName}/${img.file}.jpg`"
+        :ref="`galleriaImg-${img.file}`"
         @click.stop.prevent="e => imgClick(e, img)"
       >
         <img
           :src="require('../img/art/books/'+bookName+'/thumbs/'+img.file+'.jpg')"
-          :alt="img.title || img.file"
+          :alt="`${img.title || img.file} open image in lightbox`"
           class="galleria-small"
+          role="presentation"
         />
-      </a>
+      </button>
     </div>
     <div v-if="lightImg && lightImg.file" class="galleria__lightbox" @click.stop.prevent="closeLightbox">
       <img
@@ -45,9 +47,10 @@
       <button
         type="button"
         class="galleria__lightbox__close"
+        ref="closeBtn"
         @click.stop.prevent="closeLightbox"
       >
-        Close
+        Close <span class="sr-text">lightbox</span>
       </button>
     </div>
   </div>
@@ -78,6 +81,9 @@ export default {
         small: 1800
       },
       breakpoints: {
+        full: 2400,
+        jumbo: 2000,
+        xlarge: 1400,
         large: 1000,
         medium: 600,
         small: 320
@@ -100,7 +106,7 @@ export default {
           // loop through all the rows we have created so far
           for (const [i, row] of rows.entries()) {
             const currentRowWidth = this.getTotalWidth(row);
-            const maxRowWidth = this.windowWidth < this.breakpoints.medium
+            const maxRowWidth = this.windowWidth <= this.breakpoints.medium
               ? this.maxRowWidth.small
               : this.maxRowWidth.large;
             const isLastRow = i === rows.length-1;
@@ -186,14 +192,27 @@ export default {
       };
     },
     setGalleriaWidth() {
-      const { small, medium, large } = this.breakpoints;
+      const {
+        small,
+        medium,
+        large,
+        xlarge,
+        jumbo,
+        full
+      } = this.breakpoints;
       this.windowWidth = window.innerWidth;
-      if (this.windowWidth > medium && this.windowWidth < large) {
-        this.actualRowWidth = medium;
-      } else if (this.windowWidth >= small && this.windowWidth < medium) {
-        this.actualRowWidth = small;
-      } else {
+      if (this.windowWidth > full) {
+        this.actualRowWidth = full;
+      } else if (this.windowWidth > jumbo && this.windowWidth <= full) {
+        this.actualRowWidth = jumbo;
+      } else if (this.windowWidth > xlarge && this.windowWidth <= jumbo) {
+        this.actualRowWidth = xlarge;
+      } else if (this.windowWidth > large && this.windowWidth <= xlarge) {
         this.actualRowWidth = large;
+      } else if (this.windowWidth > medium && this.windowWidth <= large) {
+        this.actualRowWidth = medium;
+      } else {
+        this.actualRowWidth = small;
       }
     },
     async onResize() {
@@ -218,13 +237,20 @@ export default {
       }
     },
     closeLightbox() {
+      const currLightId = this.lightImg.file;
       this.lightImg = null;
+      this.$nextTick(function() {
+        this.$refs[`galleriaImg-${currLightId}`][0].focus();
+      });
     },
     imgClick(e, img) {
       // don't let lightbox happen before images have loaded
       if (e.target.classList.contains("ready")) {
         if (!this.lightImg || this.lightImg.file !== img.file) {
           this.lightImg = img;
+          this.$nextTick(function() {
+            this.$refs.closeBtn.focus();
+          });
         } else {
           this.closeLightbox();
         }
