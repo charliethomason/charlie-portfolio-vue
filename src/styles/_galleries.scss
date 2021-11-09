@@ -13,7 +13,7 @@
         padding: 8px;
 
         &--wide {
-            flex: 1 0 100%;
+            flex-basis: 50%;
         }
     }
 
@@ -311,6 +311,12 @@
             height: auto;
             overflow: auto;
         }
+    }
+}
+
+@include mobile-max {
+    .galleries__item--wide {
+        flex-basis: 100%;
     }
 }
 

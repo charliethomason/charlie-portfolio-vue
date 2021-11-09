@@ -6,6 +6,11 @@
             "wide": true
         },
         {
+            "href": "albums",
+            "name": "Albums",
+            "wide": true
+        },
+        {
             "href": "birds",
             "name": "Birds"
         },

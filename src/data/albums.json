@@ -1,0 +1,25 @@
+{
+  "albums": [
+    {
+      "id": "lightandink",
+      "title": "#charlieinktober 2021",
+      "subtitle": "Light & Ink",
+      "medium": "Ink Paintings",
+      "year": "2021"
+    },
+    {
+      "id": "wideworld",
+      "title": "The Wide World",
+      "subtitle": "Lumix GF1 7-14mm Wide Angle Photos",
+      "medium": "Wide-Angle Digital Photography",
+      "year": "2016-2020"
+    },
+    {
+      "id": "englishportfolio",
+      "title": "The English Portfolio",
+      "subtitle": "Film Photography Across England",
+      "medium": "35mm and Polaroid Film Photography",
+      "year": "2008"
+    }
+  ]
+}
