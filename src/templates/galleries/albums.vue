@@ -19,6 +19,7 @@
           <h3 class="subtitle">{{ album.subtitle }}</h3>
         </a>
         <div class="meta">{{ album.year }}</div>
+        <div class="meta">{{ album.medium }}</div>
       </router-link>
     </ul>
     <footer-note />

@@ -20,6 +20,7 @@
           <h3 class="subtitle">{{ book.subtitle }}</h3>
         </a>
         <div class="meta">{{ book.year }}</div>
+        <div class="meta">{{ book.medium }}</div>
         <div class="meta">{{ book.pages }} pages</div>
         <a :href="book.blurb" target="_blank" class="btn">Order book on Blurb.com</a>
       </router-link>
