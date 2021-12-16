@@ -1,14 +1,8 @@
 {
     "galleries": [
         {
-            "href": "books",
-            "name": "Books",
-            "wide": true
-        },
-        {
-            "href": "albums",
-            "name": "Albums",
-            "wide": true
+            "href": "collections",
+            "name": "Collections"
         },
         {
             "href": "birds",

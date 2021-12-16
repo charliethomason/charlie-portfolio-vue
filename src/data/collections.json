@@ -1,5 +1,13 @@
 {
-  "books": [
+  "intro": "Collections are complete albums of my art and photography, as well as the books I've self-published over the years. All books were written and designed by me, and are available as print-on-demand from Blurb.com (I do not control the pricing here).",
+  "collections": [
+    {
+      "id": "lightandink",
+      "title": "#charlieinktober 2021",
+      "subtitle": "Light & Ink",
+      "medium": "Ink Paintings",
+      "year": "2021"
+    },
     {
       "id": "charlieinktober",
       "title": "#charlieinktober 2020",
@@ -19,6 +27,13 @@
       "blurb": "https://www.blurb.com/b/7500748-birds-of-chicagoland"
     },
     {
+      "id": "wideworld",
+      "title": "The Wide World",
+      "subtitle": "Lumix GF1 7-14mm Wide Angle Photos",
+      "medium": "Wide-Angle Digital Photography",
+      "year": "2016-2020"
+    },
+    {
       "id": "openrange",
       "title": "Open Range",
       "subtitle": "From Monument Valley to the Mojave Desert",
@@ -26,12 +41,80 @@
       "year": "2012",
       "pages": "152",
       "blurb": "https://www.blurb.com/b/2868673-open-range"
+    },
+    {
+      "id": "englishportfolio",
+      "title": "The English Portfolio",
+      "subtitle": "Film Photography Across England",
+      "medium": "35mm and Polaroid Film Photography",
+      "year": "2008"
     }
   ],
+  "lightandink": {
+    "title": "#charlieinktober 2021",
+    "subtitle": "Light & Ink",
+    "images": [
+      {
+        "file": "coverpage",
+        "title": "Cover page",
+        "width": 811
+      },
+      {
+        "file": "halloween18",
+        "title": "Halloween (2018)",
+        "width": 1088
+      },
+      {
+        "file": "batmanreturns",
+        "title": "Batman Returns (1992)",
+        "width": 1071
+      },
+      {
+        "file": "doctorsleep",
+        "title": "Doctor Sleep (2019)",
+        "width": 1089
+      },
+      {
+        "file": "goldrush",
+        "title": "The Gold Rush (1925)",
+        "width": 1039
+      },
+      {
+        "file": "wizardofoz",
+        "title": "The Wizard of Oz (1939)",
+        "width": 1090
+      },
+      {
+        "file": "evildeadii",
+        "title": "Evil Dead II (1987)",
+        "width": 1094
+      },
+      {
+        "file": "empirestrikesback",
+        "title": "The Empire Strikes Back (1980)",
+        "width": 1089
+      },
+      {
+        "file": "thetwotowers",
+        "title": "The Lord of the Rings: The Two Towers (2002)",
+        "width": 1095
+      },
+      {
+        "file": "downbylaw",
+        "title": "Down By Law (1986)",
+        "width": 1095
+      },
+      {
+        "file": "lostboys",
+        "title": "The Lost Boys (1987)",
+        "width": 1098
+      }
+    ]
+  },
   "charlieinktober": {
     "title": "#charlieinktober 2020",
     "subtitle": "Silver Stills From Favorite Films",
-    "photos": [
+    "images": [
       {
         "file": "beetlejuice",
         "title": "1. Beetlejuice (1988)",
@@ -137,7 +220,7 @@
   "birdsofchicagoland": {
     "title": "Birds of Chicagoland",
     "subtitle": "Paintings by Charlie Thomason",
-    "photos": [
+    "images": [
       {
         "file": "peregrine",
         "title": "Peregrine Falcon at Old St. Patrick's Church",
@@ -263,7 +346,7 @@
   "openrange": {
     "title": "Open Range",
     "subtitle": "From Monument Valley to the Mojave Desert",
-    "photos": [
+    "images": [
       {
         "file": "lakepowell02",
         "title": "Lake Powell - iPhone panorama",

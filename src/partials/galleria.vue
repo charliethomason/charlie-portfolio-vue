@@ -1,18 +1,18 @@
 <template>
   <div class="galleria">
-    <div v-for="(row, r) in photosInRows" :key="`row-${r}`" class="galleria-row" ref="row">
+    <div v-for="(row, r) in imagesInRows" :key="`row-${r}`" class="galleria-row" ref="row">
       <button
         type="button"
         v-for="(img, i) in row" :key="`row-${r}-img-${i}`"
         class="galleria-img"
         :title="img.title"
         :style="getStyle(row, img)"
-        :data-large="`../img/art/books/${bookName}/${img.file}.jpg`"
+        :data-large="`../img/art/collections/${name}/${img.file}.jpg`"
         :ref="`galleriaImg-${img.file}`"
         @click.stop.prevent="e => imgClick(e, img)"
       >
         <img
-          :src="require('../img/art/books/'+bookName+'/thumbs/'+img.file+'.jpg')"
+          :src="require('../img/art/collections/'+name+'/thumbs/'+img.file+'.jpg')"
           :alt="`${img.title || img.file} open image in lightbox`"
           class="galleria-small"
           role="presentation"
@@ -21,7 +21,7 @@
     </div>
     <div v-if="lightImg && lightImg.file" class="galleria__lightbox" @click.stop.prevent="closeLightbox">
       <img
-        :src="require('../img/art/books/'+bookName+'/'+lightImg.file+'.jpg')"
+        :src="require('../img/art/collections/'+name+'/'+lightImg.file+'.jpg')"
         :alt="lightImg.file"
         class="galleria__lightbox__img"
       />
@@ -64,16 +64,16 @@ export default {
     ArrowIcon
   },
   props: {
-    bookName: {
+    name: {
       type: String
     },
-    photos: {
+    images: {
       type: Array
     }
   },
   data() {
     return {
-      photosInRows: [],
+      imagesInRows: [],
       actualRowWidth: 0,
       imgHeight: 600,
       maxRowWidth: {
@@ -94,10 +94,10 @@ export default {
   },
   methods: {
     putPhotosInRows() {
-      if (!this.photos || !this.photos.length) {
+      if (!this.images || !this.images.length) {
         return null;
       }
-      this.photosInRows = this.photos.reduce((rows, img) => {
+      this.imagesInRows = this.images.reduce((rows, img) => {
         // if we have no rows created yet, create a row with this 1st image
         if (!rows.length) {
           rows.push([img]);
@@ -224,16 +224,16 @@ export default {
       }
     },
     lightboxNav(change) {
-      const currentIndex = this.photos.findIndex(img => img.file === this.lightImg.file);
-      const lastImgIndex = this.photos.length - 1;
+      const currentIndex = this.images.findIndex(img => img.file === this.lightImg.file);
+      const lastImgIndex = this.images.length - 1;
       // if it's the first photo and they clicked previous
       if (currentIndex === 0 && change === -1) {
-        this.lightImg = this.photos[lastImgIndex];
+        this.lightImg = this.images[lastImgIndex];
       // if it's the last photo and they clicked next
       } else if (currentIndex === lastImgIndex && change === 1) {
-        this.lightImg = this.photos[0];
+        this.lightImg = this.images[0];
       } else {
-        this.lightImg = this.photos[currentIndex + change];
+        this.lightImg = this.images[currentIndex + change];
       }
     },
     closeLightbox() {

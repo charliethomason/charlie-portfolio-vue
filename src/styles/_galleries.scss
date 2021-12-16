@@ -1,20 +1,14 @@
 .galleries {
     $galleries: &;
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     margin: auto;
-    max-width: 1500px;
+    max-width: 1008px;
     padding: 8px;
 
     &__item {
-        flex: 0 1 33.3333%;
         padding: 8px;
-
-        &--wide {
-            flex-basis: 50%;
-        }
     }
 
     &__img {
@@ -172,7 +166,7 @@
     }
 }
 
-.books {
+.collections {
     margin: 0 auto;
     max-width: 1500px;
     padding: 0 16px;
@@ -192,8 +186,8 @@
     }
 
     &__shop {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         margin: 0 -16px;
 
         li {
@@ -315,12 +309,6 @@
     }
 }
 
-@include mobile-max {
-    .galleries__item--wide {
-        flex-basis: 100%;
-    }
-}
-
 @include mobile-max-landscape {
     .gallery {
         height: calc(100vh - 90px);
@@ -336,7 +324,7 @@
         height: calc(100vh - 90px);
     }
 
-    .books {
+    .collections {
         &__shop {
             display: block;
         }
