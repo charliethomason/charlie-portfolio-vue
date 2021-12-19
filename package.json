@@ -38,7 +38,7 @@
   "postcss": {
     "plugins": {
       "autoprefixer": {
-        "grid": "autoplace"
+        "grid": "no-autoplace"
       }
     }
   },

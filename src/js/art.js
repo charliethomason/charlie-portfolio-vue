@@ -6,7 +6,12 @@ import '../styles/main.scss';
 
 Vue.use(VueRouter);
 
-const router = new VueRouter({ routes });
+const router = new VueRouter({
+    scrollBehavior() {
+        return { x: 0, y: 0 }
+    },
+    routes
+});
 
 new Vue({
     el: '#app-container',

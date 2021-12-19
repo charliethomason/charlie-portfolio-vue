@@ -1,10 +1,11 @@
 <template>
   <div>
     <div class="eyebrow">
-      <router-link to="/collections" class="eyebrow__link">Collections</router-link>
+      <router-link to="/collections" class="btn">Collections</router-link>
     </div>
     <h1 class="h1">{{ cData.title }}</h1>
     <h2 class="h2">{{ cData.subtitle}}</h2>
+    <p class="collection__info">{{ cData.info }}</p>
     <galleria :name="cName" :images="cData.images" />
     <footer-note />
   </div>

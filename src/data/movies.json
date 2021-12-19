@@ -1,6 +1,24 @@
 {
     "movies": [
         {
+            "id": "rocky",
+            "title": "Rocky",
+            "year": "2021",
+            "medium": "Watercolor on paper"
+        },
+        {
+            "id": "downbylaw",
+            "title": "Down By Law",
+            "year": "2021",
+            "medium": "Ink on paper"
+        },
+        {
+            "id": "thetwotowers",
+            "title": "The Lord of the Rings: The Two Towers",
+            "year": "2021",
+            "medium": "Ink on paper"
+        },
+        {
             "id": "beetlejuice",
             "title": "Beetlejuice",
             "year": "2020",

@@ -1,6 +1,12 @@
 {
     "birds": [
         {
+            "id": "redjunglefowl",
+            "title": "Asian Red Junglefowl",
+            "year": "2021",
+            "medium": "Gouache on paper"
+        },
+        {
             "id": "blaumeisecolor",
             "title": "Blue Tit of Tyrol, Austria (watercolor)",
             "year": "2020",

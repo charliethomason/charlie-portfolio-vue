@@ -92,19 +92,6 @@ body {
 .eyebrow {
     padding-top: 15px;
     text-align: center;
-
-    &__link {
-        color: $teal;
-        display: inline-block;
-        font-size: 16px;
-        font-weight: bold;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-
-        &:hover, &:focus {
-            color: $grey-very-light;
-        }
-    }
 }
 
 .copyright-note {
