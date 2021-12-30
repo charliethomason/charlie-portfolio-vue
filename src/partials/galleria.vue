@@ -174,6 +174,11 @@ export default {
         return sum + r.width;
       }, 0);
     },
+    formatNumber(num) {
+      // firefox sometimes rounds numbers up which breaks the layout
+      const flooredNum = Math.floor(num * 10) / 10;
+      return `${flooredNum}px`;
+    },
     getStyle(row, img) {
       const onlyOneInRow = row.length === 1;
       const totalWidth = this.getTotalWidth(row);
@@ -187,8 +192,8 @@ export default {
         ? img.width
         : img.width / (this.imgHeight / rowHeight);
       return {
-        height: rowHeight + 'px',
-        width: imgWidth + 'px'
+        height: this.formatNumber(rowHeight),
+        width: this.formatNumber(imgWidth)
       };
     },
     setGalleriaWidth() {
