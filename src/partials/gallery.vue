@@ -3,22 +3,24 @@
         <div class="gallery__menu">
             <h1 class="gallery__header"><strong>Art</strong>&nbsp;&rarr; {{ title }}</h1>
             <router-link to="/" class="gallery__back">Back to Galleries</router-link>
-            <ul class="gallery__list">
-                <li
-                    v-for="work in works"
-                    :key="work.id"
-                    :class="`${baseClass}__list__item`"
-                >
-                    <button type="button" :class="getWorkClasses(work.id)" @click="setActive(work)">
-                        <img
-                            :src="require('../img/art/'+name+'/thumbs/'+work.id+'-250.jpg')"
-                            :alt="work.title"
-                            :class="`${baseClass}__list__img`"
-                        />
-                        <div :class="`${baseClass}__list__title`">{{ work.title }}</div>
-                    </button>
-                </li>
-            </ul>
+            <div class="gallery__list-container">
+                <ul class="gallery__list">
+                    <li
+                        v-for="work in works"
+                        :key="work.id"
+                        :class="`${baseClass}__list__item`"
+                    >
+                        <button type="button" :class="getWorkClasses(work.id)" @click="setActive(work)">
+                            <img
+                                :src="require('../img/art/'+name+'/thumbs/'+work.id+'-250.jpg')"
+                                :alt="work.title"
+                                :class="`${baseClass}__list__img`"
+                            />
+                            <div :class="`${baseClass}__list__title`">{{ work.title }}</div>
+                        </button>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div :class="`${baseClass}__viewer`" v-if="showViewer">
             <transition name="fade" mode="out-in">
