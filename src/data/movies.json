@@ -1,6 +1,12 @@
 {
     "movies": [
         {
+            "id": "taxidriver",
+            "title": "Taxi Driver",
+            "year": "2022",
+            "medium": "Watercolor on paper"
+        },
+        {
             "id": "rocky",
             "title": "Rocky",
             "year": "2021",
