@@ -19,21 +19,21 @@
       "title": "Uptake CDK and Design System Demo",
       "id": "cdkdemo",
       "year": "2019",
-      "description": "Demo implementation of the Uptake <a href=\"http://cdk.platform.uptake.com\" target=\"_blank\">Component Development Kit</a> v3.21.0 and <a href=\"https://designsystem.platform.uptake.com\" target=\"_blank\">Design System</a> v3.17.1. The components used in this demo I helped create as part of Uptake's Developer Services team. This demo uses the <a href=\"https://www.npmjs.com/~uptake\" target=\"_blank\">public NPM version</a> of these libraries, as well as Vue.js, Vuex, Vue Router, and the <a href=\"http: //www.omdbapi.com\" target=\"_blank\">OMDb API</a>.",
+      "description": "Demo implementation of the Uptake <a href=\"https://www.npmjs.com/package/@uptake/cdk-vue/v/3.21.0\" target=\"_blank\">Component Development Kit</a> v3.21.0 and <a href=\"https://www.npmjs.com/package/@uptake/design-system/v/3.17.1\" target=\"_blank\">Design System</a> v3.17.1. The components used in this demo I helped create as part of <a href=\"https://www.uptake.com\" target=\"_blank\">Uptake's Developer Services team</a>. This demo also uses Vue.js, Vuex, Vue Router, and the <a href=\"http://www.omdbapi.com\" target=\"_blank\">OMDb API</a> for 1980s movie data.",
       "github": "https://github.com/charliethomason/cdk-demo-app"
     },
     {
       "title": "Handlebars Personal Portfolio Site",
       "id": "oldcharlie",
       "year": "2015-2019",
-      "description": "This is the old version of this website. It has been modified for preview purposes and does not include all the sub-pages it originally had. It was built with <a href=\"http: //handlebarsjs.com/\" target=\"_blank\">Handlebars</a>, <a href=\"https://github.com/assemble/assemble/\" target=\"_blank\">Assemble</a>, and <a href=\"http://gruntjs.com/\" target=\"_blank\">Grunt</a>. The JavaScript is all plain, vanilla JavaScript.",
+      "description": "This is the old version of this website. It has been modified for preview purposes and does not include all the sub-pages it originally had. It was built with <a href=\"http://handlebarsjs.com/\" target=\"_blank\">Handlebars</a>, <a href=\"https://github.com/assemble/assemble/\" target=\"_blank\">Assemble</a>, and <a href=\"http://gruntjs.com/\" target=\"_blank\">Grunt</a>. The JavaScript is all plain, vanilla JavaScript.",
       "github": "http://github.com/charliethomason/charliefusion-dev"
     },
     {
       "title": "D3 Vue.js Donut Chart",
       "id": "d3vue",
       "year": "2018",
-      "description": "Interactive donut chart built with <a href=\"https://d3js.org/\" target=\"_blank\">D3.js</a> v4.13.0 and Vue.js v2.5.13. Displays 2017 NASCAR race wins data; originally built for the Uptake <a href=\"http://cdk.platform.uptake.com\" target=\"_blank\">Component Development Kit</a>.",
+      "description": "Interactive donut chart built with <a href=\"https://d3js.org/\" target=\"_blank\">D3.js</a> v4.13.0 and Vue.js v2.5.13. Displays 2017 NASCAR race wins data; originally built for the Uptake <a href=\"https://www.npmjs.com/package/@uptake/cdk-vue/v/3.21.0\" target=\"_blank\">Component Development Kit</a>.",
       "github": "https://github.com/charliethomason/charlie-portfolio-vue/blob/master/src/demos/d3vue/donut.vue"
     },
     {

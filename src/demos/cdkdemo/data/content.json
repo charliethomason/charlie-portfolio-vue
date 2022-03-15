@@ -11,13 +11,13 @@
       },
       {
         "buttonText": "Uptake Design System",
-        "linkURL": "https://designsystem.platform.uptake.com/",
+        "linkURL": "https://www.npmjs.com/package/@uptake/design-system/v/3.17.1/",
         "target": "_blank",
         "initials": "DS"
       },
       {
         "buttonText": "Uptake CDK",
-        "linkURL": "https://cdk.platform.uptake.com/",
+        "linkURL": "https://www.npmjs.com/package/@uptake/cdk-vue/v/3.21.0/",
         "target": "_blank",
         "initials": "UP"
       }
