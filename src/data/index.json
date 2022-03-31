@@ -3,11 +3,6 @@
   "subtitle": "Software Engineer. Artist. Musician. Runner. Traveler. Movie lover. Auto racing fan. Chicago, IL",
 	"contact": [
 		{
-			"label": "Email thomason.charlie@gmail.com",
-			"href": "mailto:thomason.charlie@gmail.com",
-			"icon": "ContactIcon"
-		},
-		{
 			"label": "LinkedIn",
 			"href": "https://linkedin.com/in/charliethomason",
 			"icon": "LinkedinIcon"
@@ -36,6 +31,13 @@
 			"label": "Letterboxd",
 			"href": "https://letterboxd.com/charliefusion/",
 			"icon": "LetterboxdIcon"
+		}
+	],
+	"unused": [
+		{
+			"label": "Email thomason.charlie@gmail.com",
+			"href": "mailto:thomason.charlie@gmail.com",
+			"icon": "ContactIcon"
 		}
 	]
 }
