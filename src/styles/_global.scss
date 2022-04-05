@@ -94,6 +94,10 @@ body {
     text-align: center;
 }
 
+.card {
+	@include cardStyle;
+}
+
 .copyright-note {
     color: $grey-medium;
     font-size: 12px;

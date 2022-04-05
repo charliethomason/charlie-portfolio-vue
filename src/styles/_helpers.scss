@@ -41,9 +41,18 @@
 		}
 	}
 
-    &__content {
-			line-height: 1.5;
+	&__content {
+		line-height: 1.5;
+		padding: 15px 30px;
+
+		a {
+			color: $teal;
+
+			&:hover, &:focus {
+				color: $teal-dark;
+			}
 		}
+	}
 }
 
 @mixin btn {
@@ -59,22 +68,6 @@
 			background-color: $teal-dark;
 			text-decoration: none;
 	}
-}
-
-@mixin lightboxBtn {
-  background: $black;
-  border: 2px solid $white;
-  border-radius: 20px;
-  color: $white;
-  cursor: pointer;
-  font-weight: bold;
-  position: fixed;
-  z-index: 2;
-
-  &:hover {
-    background: $white;
-    color: $black;
-  }
 }
 
 @mixin retina {
