@@ -1,12 +1,3 @@
-@mixin triangleShape {
-    content: '';
-    display: block;
-    height: 0;
-    position: absolute;
-    top: 0;
-    width: 0;
-}
-
 .code {
     &-wrapper {
         margin: 0 auto;
@@ -56,83 +47,17 @@
         }
 
         &__btn {
-            color: #fff;
-            display: inline-block;
-            font-size: 14px;
-            font-weight: bold;
-            height: 25px;
-            line-height: 14px;
-            margin: 0 10px;
-            padding: 5px;
-            position: relative;
-            text-decoration: none;
-            white-space: nowrap;
-
-            &::before {
-                @include triangleShape;
-                border-bottom-style: solid;
-                border-bottom-width: 25px;
-                border-left: 10px solid $clear;
-                left: -10px;
-            }
-
-            &::after {
-                @include triangleShape;
-                border-top-style: solid;
-                border-top-width: 25px;
-                border-right: 10px solid $clear;
-                right: -10px;
-            }
-
-            &:not([class$="--year"]):hover,
-            &:not([class$="--year"]):focus {
-                background-color: $black;
-                text-decoration: none;
-
-                &::before {
-                    border-bottom-color: $black;
-                }
-
-                &::after {
-                    border-top-color: $black;
-                }
-            }
-
             &--primary {
-                background-color: $grey-dark;
+                @include parallelogram($grey-dark);
                 margin-left: auto;
-
-                &::before {
-                    border-bottom-color: $grey-dark;
-                }
-
-                &::after {
-                    border-top-color: $grey-dark;
-                }
             }
 
             &--secondary {
-                background-color: $grey-medium-dark;
-
-                &::before {
-                    border-bottom-color: $grey-medium-dark;
-                }
-
-                &::after {
-                    border-top-color: $grey-medium-dark;
-                }
+                @include parallelogram($grey-medium-dark);
             }
 
             &--year {
-                background-color: $teal;
-
-                &::before {
-                    border-bottom-color: $teal;
-                }
-
-                &::after {
-                    border-top-color: $teal;
-                }
+                @include parallelogram($teal);
             }
         }
     }

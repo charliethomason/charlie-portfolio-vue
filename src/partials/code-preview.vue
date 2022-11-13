@@ -4,7 +4,7 @@
             <span class="code-preview__heading__text">{{ title }}</span>
             <a :href="demoUrl" class="code-preview__btn code-preview__btn--primary">View Demo</a>
             <a :href="github" class="code-preview__btn code-preview__btn--secondary" target="_blank">View Code</a>
-            <span class="code-preview__btn code-preview__btn--year">{{ year }}</span>
+            <span class="code-preview__btn code-preview__btn--year nohover">{{ year }}</span>
         </h2>
         <div class="code-preview__content">
             <a :href="demoUrl" class="code-preview__img">

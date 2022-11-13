@@ -5,9 +5,7 @@
                 v-for="(gallery, i) in galleries" :key="i"
                 tag="li"
                 :to="gallery.href"
-                :class="['galleries__item', { 'galleries__item--wide': gallery.wide }]"
-                exact-active-class="active"
-                active-class="active"
+                class="galleries__item"
             >
                 <a class="galleries__link">
                     <img
@@ -15,7 +13,11 @@
                         :alt="`${gallery.name} gallery icon`"
                         class="galleries__img"
                     />
-                    <span class="galleries__text">{{ gallery.name }}</span>
+                    <!-- <div class="galleries__img" /> -->
+                    <div class="galleries__text">
+                        <h2 class="galleries__title">{{ gallery.title }}</h2>
+                        <div v-if="gallery.subtitle" class="galleries__subtitle nohover">{{ gallery.subtitle }}</div>
+                    </div>
                 </a>
             </router-link>
         </ul>
