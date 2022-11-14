@@ -343,211 +343,78 @@
         "file": "redjunglefowl",
         "title": "Asian Red Junglefowl",
         "year": "2021",
-        "medium": "Gouache on paper"
+        "medium": "Gouache on paper",
+        "width": 430
       },
       {
         "file": "blaumeisecolor",
         "title": "Blue Tit of Tyrol, Austria (watercolor)",
         "year": "2020",
-        "medium": "Watercolor on paper"
+        "medium": "Watercolor on paper",
+        "width": 444
       },
       {
         "file": "emeraldosprey",
         "title": "Emerald Osprey",
         "year": "2020",
-        "medium": "Oil on canvas"
+        "medium": "Oil on canvas",
+        "width": 473
       },
       {
         "file": "blaumeise",
         "title": "Blue Tit of Tyrol, Austria",
         "year": "2020",
-        "medium": "Oil on canvas"
+        "medium": "Oil on canvas",
+        "width": 467
       },
       {
         "file": "magpieparkcity",
         "title": "Park City Magpie",
         "year": "2020",
-        "medium": "Oil on canvas"
+        "medium": "Oil on canvas",
+        "width": 771
       },
       {
         "file": "kestrelgreenskies",
         "title": "Kestrel Flies Over Green Skies",
         "year": "2019",
-        "medium": "Oil on canvas"
+        "medium": "Oil on canvas",
+        "width": 761
       },
       {
         "file": "turquoiseperegrine",
         "title": "Turquoise Peregrine",
         "year": "2019",
-        "medium": "Ink and watercolor on paper"
+        "medium": "Ink and watercolor on paper",
+        "width": 466
       },
       {
         "file": "pelicanvenice",
         "title": "Pelicanus Venezia",
         "year": "2016",
-        "medium": "Ink and watercolor on paper"
-      },
-      {
-        "file": "whitethroatedsparrow",
-        "title": "White Throated Sparrow",
-        "year": "2016",
-        "medium": "Ink and watercolor on paper"
-      },
-      {
-        "file": "tern",
-        "title": "Caspian Tern",
-        "year": "2016",
-        "medium": "Ink on paper"
-      },
-      {
-        "file": "coopershawk",
-        "title": "Cooper's Hawk",
-        "year": "2016",
-        "medium": "Ink on paper"
-      },
-      {
-        "file": "crow",
-        "title": "American Crow",
-        "year": "2016",
-        "medium": "Ink on paper"
-      },
-      {
-        "file": "grosbeaks",
-        "title": "Rose-Breasted Grosbeaks",
-        "year": "2016",
-        "medium": "Ink and watercolor on paper"
-      },
-      {
-        "file": "redwingedblackbird",
-        "title": "Red-Winged Blackbird",
-        "year": "2016",
-        "medium": "Ink and watercolor on paper"
-      },
-      {
-        "file": "rockpigeon",
-        "title": "Rock Pigeon",
-        "year": "2016",
-        "medium": "Ink on paper"
-      },
-      {
-        "file": "kingfisher",
-        "title": "Belted Kingfisher",
-        "year": "2016",
-        "medium": "Ink and watercolor on paper"
+        "medium": "Ink and watercolor on paper",
+        "width": 716
       },
       {
         "file": "ospreykingfisher",
         "title": "Osprey and Kingfisher",
         "year": "2015",
-        "medium": "Ink and watercolor on paper"
-      },
-      {
-        "file": "turkey",
-        "title": "Wild Turkey",
-        "year": "2015",
-        "medium": "Ink and watercolor on paper"
-      },
-      {
-        "file": "greathornedowl",
-        "title": "Great Horned Owl",
-        "year": "2015",
-        "medium": "Ink and watercolor on paper"
-      },
-      {
-        "file": "pileatedwoodpecker",
-        "title": "Pileated Woodpecker",
-        "year": "2015",
-        "medium": "Ink and watercolor on paper"
-      },
-      {
-        "file": "goshawk",
-        "title": "Northern Goshawk",
-        "year": "2015",
-        "medium": "Ink on paper"
-      },
-      {
-        "file": "loon",
-        "title": "Common Loon",
-        "year": "2015",
-        "medium": "Ink on paper"
-      },
-      {
-        "file": "kestrel",
-        "title": "American Kestrel",
-        "year": "2015",
-        "medium": "Ink and watercolor on paper"
-      },
-      {
-        "file": "flicker",
-        "title": "Northern Flicker",
-        "year": "2015",
-        "medium": "Ink and watercolor on paper"
-      },
-      {
-        "file": "cormorant",
-        "title": "Double-Crested Cormorant",
-        "year": "2015",
-        "medium": "Ink and watercolor on paper"
-      },
-      {
-        "file": "cardinals",
-        "title": "Northern Cardinals",
-        "year": "2015",
-        "medium": "Ink and watercolor on paper"
-      },
-      {
-        "file": "nightheron",
-        "title": "Black-Crowned Night Heron",
-        "year": "2015",
-        "medium": "Ink and watercolor on paper"
-      },
-      {
-        "file": "peregrine",
-        "title": "Peregrine Falcon",
-        "year": "2015",
-        "medium": "Ink and watercolor on paper"
-      },
-      {
-        "file": "woodduck",
-        "title": "Wood Duck",
-        "year": "2015",
-        "medium": "Ink and watercolor on paper"
-      },
-      {
-        "file": "bluejay",
-        "title": "Blue Jay",
-        "year": "2015",
-        "medium": "Ink and watercolor on paper"
-      },
-      {
-        "file": "greatblueheron",
-        "title": "Great Blue Heron",
-        "year": "2015",
-        "medium": "Ink and watercolor on paper"
-      },
-      {
-        "file": "meadowlark",
-        "title": "Eastern Meadowlark",
-        "year": "2014",
-        "medium": "Ink and watercolor on paper"
-      },
-      {
-        "file": "passengerpigeons",
-        "title": "Passenger Pigeons",
-        "year": "2014",
-        "medium": "Ink and watercolor on paper"
+        "medium": "Ink and watercolor on paper",
+        "width": 503
       },
       {
         "file": "screechowl",
         "title": "Screech Owl",
         "year": "2014",
-        "medium": "Ink on paper"
+        "medium": "Ink on paper",
+        "width": 492
       },
       {
         "file": "bluejaydesert",
         "title": "Blue Jay in the Desert",
         "year": "2012",
-        "medium": "Ink and watercolor on paper"
+        "medium": "Ink and watercolor on paper",
+        "width": 909
       }
     ]
   },
