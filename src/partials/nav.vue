@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import { pages } from '../data/pages.json';
+import data from '../data/pages.json';
 export default {
 	name: 'Nav',
 	props: {
@@ -20,7 +20,7 @@ export default {
 	},
 	data() {
 		return {
-			pages
+			pages: data.pages
 		};
 	},
 	methods: {

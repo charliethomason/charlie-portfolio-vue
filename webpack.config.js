@@ -44,40 +44,41 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        loaders: [
+        use: [
           { loader: 'style-loader' },
           { loader: 'css-loader' },
           { loader: 'postcss-loader' },
           {
             loader: 'sass-loader',
             options: {
-              outputStyle: 'compressed'
+              sassOptions: {
+                outputStyle: 'compressed'
+              }
             }
           }
         ]
       },
       {
         test: /\.(jpg|png|gif)$/,
-        loader: 'file-loader',
-        options: {
-          name: '[path][name].[ext]',
-          context: 'src/',
-          useRelativePath: true
-        }
+        type: 'asset/resource'
       }
     ]
 	},
   plugins: [
     new VueLoaderPlugin(),
-    new CopyPlugin([
-      { from: 'src/demos/', to: 'demos/' },
-      { from: 'src/docs/', to: 'docs/' }
-    ]),
+    new CopyPlugin({
+      patterns: [
+        { from: 'src/demos/', to: 'demos/' },
+        { from: 'src/docs/', to: 'docs/' }
+      ]
+    }),
     new CleanWebpackPlugin()
   ]
     .concat(htmlPlugins),
   devServer: {
-    contentBase: __dirname + '/dist',
+    static: {
+      directory:__dirname + '/public',
+    },
     host: '0.0.0.0',
     port: '9100',
     open: true,

@@ -7,7 +7,7 @@
         class="galleria-img"
         :title="img.title"
         :style="getStyle(row, img)"
-        :data-large="`../img/art/collections/${name}/${img.file}.jpg`"
+        :data-large="require('../img/art/collections/'+name+'/'+img.file+'.jpg')"
         :ref="`galleriaImg-${img.file}`"
         @click.stop.prevent="e => imgClick(e, img)"
       >

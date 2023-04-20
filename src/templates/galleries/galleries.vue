@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import { galleries } from '../../data/art.json';
+import data from '../../data/art.json';
 import FooterNote from '../../partials/footer.vue';
 
 export default {
@@ -34,7 +34,7 @@ export default {
     components: { FooterNote },
     data() {
         return {
-            galleries
+            galleries: data.galleries
         };
     }
 };

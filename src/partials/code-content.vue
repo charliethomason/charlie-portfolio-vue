@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import { codeDemos } from '../data/code.json';
+import data from '../data/code.json';
 import CodePreview from './code-preview.vue';
 export default {
     name: 'CodeContent',
@@ -32,7 +32,7 @@ export default {
     },
     data() {
         return {
-            codeDemos
+            codeDemos: data.codeDemos
         };
     }
 };
