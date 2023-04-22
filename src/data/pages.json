@@ -13,13 +13,6 @@
 			"path": "/art/",
 			"name": "Art",
 			"title": "Art - Charlie Thomason"
-		},
-		{
-			"id": "code",
-			"filename": "code/index.html",
-			"path": "/code/",
-			"name": "Code",
-			"title": "Code - Charlie Thomason"
 		}
-  	]
+	]
 }

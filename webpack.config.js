@@ -1,6 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
-const CopyPlugin = require('copy-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const path = require('path');
 const { pages } = require('./src/data/pages.json');
@@ -66,11 +65,6 @@ module.exports = {
 	},
   plugins: [
     new VueLoaderPlugin(),
-    new CopyPlugin({
-      patterns: [
-        { from: 'src/demos/', to: 'demos/' }
-      ]
-    }),
     new CleanWebpackPlugin()
   ]
     .concat(htmlPlugins),
