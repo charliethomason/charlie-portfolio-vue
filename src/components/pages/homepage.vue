@@ -29,10 +29,10 @@
 </template>
 
 <script>
-import homeData from '../data/index.json';
-import icons from '../img/svg-icons/icons';
-import IconLink from './icon-link.vue';
-import FooterNote from './footer.vue';
+import homeData from '../../data/index.json';
+import icons from '../../img/svg-icons/icons';
+import IconLink from '../elements/icon-link.vue';
+import FooterNote from '../elements/footer.vue';
 
 export default {
     name: 'HomeContent',

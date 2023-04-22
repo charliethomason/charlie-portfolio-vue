@@ -27,7 +27,7 @@
 
 <script>
 import data from '../../data/art.json';
-import FooterNote from '../../partials/footer.vue';
+import FooterNote from '../elements/footer.vue';
 
 export default {
     name: 'Galleries',

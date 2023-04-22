@@ -1,6 +1,6 @@
-import Homepage from '../partials/home-content.vue';
-import Galleries from '../templates/galleries/galleries.vue';
-import Collection from '../templates/galleries/collection.vue';
+import Homepage from '../components/pages/homepage.vue';
+import Galleries from '../components/pages/galleries.vue';
+import Collection from '../components/pages/collection.vue';
 
 const routes = [
 	{ path: '/', component: Homepage },

@@ -13,8 +13,8 @@
 
 <script>
 import data from '../../data/art.json';
-import Galleria from '../../partials/galleria.vue';
-import FooterNote from '../../partials/footer.vue';
+import Galleria from '../elements/galleria.vue';
+import FooterNote from '../elements/footer.vue';
 
 export default {
   name: 'Collection',

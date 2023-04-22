@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import data from '../data/pages.json';
+import data from '../../data/pages.json';
 export default {
 	name: 'Nav',
 	props: {

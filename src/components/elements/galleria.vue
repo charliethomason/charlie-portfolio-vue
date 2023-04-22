@@ -7,12 +7,12 @@
         class="galleria-img"
         :title="img.title"
         :style="getStyle(row, img)"
-        :data-large="require('../img/art/collections/'+name+'/'+img.file+'.jpg')"
+        :data-large="require('../../img/art/collections/'+name+'/'+img.file+'.jpg')"
         :ref="`galleriaImg-${img.file}`"
         @click.stop.prevent="e => imgClick(e, img)"
       >
         <img
-          :src="require('../img/art/collections/'+name+'/thumbs/'+img.file+'.jpg')"
+          :src="require('../../img/art/collections/'+name+'/thumbs/'+img.file+'.jpg')"
           :alt="`${img.title || img.file} open image in lightbox`"
           class="galleria-small"
           role="presentation"
@@ -21,7 +21,7 @@
     </div>
     <div v-if="lightImg && lightImg.file" class="galleria__lightbox" @click.stop.prevent="closeLightbox">
       <img
-        :src="require('../img/art/collections/'+name+'/'+lightImg.file+'.jpg')"
+        :src="require('../../img/art/collections/'+name+'/'+lightImg.file+'.jpg')"
         :alt="lightImg.file"
         class="galleria__lightbox__img"
       />
@@ -57,7 +57,7 @@
 </template>
 
 <script>
-import ArrowIcon from '../img/svg-icons/arrow.vue';
+import ArrowIcon from '../../img/svg-icons/arrow.vue';
 export default {
   name: 'Galleria',
   components: {

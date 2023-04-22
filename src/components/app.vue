@@ -8,10 +8,10 @@
 </template>
 
 <script>
-import MainHeader from '../partials/header.vue';
+import MainHeader from './elements/header.vue';
 
 export default {
-  name: 'Art',
+  name: 'App',
   components: { MainHeader },
   computed: {
     active() {
