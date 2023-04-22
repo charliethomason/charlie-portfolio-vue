@@ -68,8 +68,7 @@ module.exports = {
     new VueLoaderPlugin(),
     new CopyPlugin({
       patterns: [
-        { from: 'src/demos/', to: 'demos/' },
-        { from: 'src/docs/', to: 'docs/' }
+        { from: 'src/demos/', to: 'demos/' }
       ]
     }),
     new CleanWebpackPlugin()
