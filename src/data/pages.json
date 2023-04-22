@@ -2,17 +2,13 @@
 	"pages": [
 		{
 			"id": "index",
-			"filename": "index.html",
 			"path": "/",
-			"name": "Home",
-			"title": "Charlie Thomason - Artist & Software Engineer from Chicago"
+			"name": "Home"
 		},
 		{
 			"id": "art",
-			"filename": "art/index.html",
 			"path": "/art/",
-			"name": "Art",
-			"title": "Art - Charlie Thomason"
+			"name": "Art"
 		}
 	]
 }

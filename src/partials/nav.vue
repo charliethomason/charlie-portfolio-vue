@@ -2,7 +2,7 @@
 	<nav>
 		<ul class="nav">
 			<li v-for="(page, i) in pages" :key="i">
-				<a :href="page.path" :class="linkClasses(page)">{{ page.name }}</a>
+				<router-link :to="page.path" :class="linkClasses(page)">{{ page.name }}</router-link>
 			</li>
 		</ul>
 	</nav>

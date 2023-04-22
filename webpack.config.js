@@ -2,29 +2,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const path = require('path');
-const { pages } = require('./src/data/pages.json');
-
-const meta = {
-  charset: 'utf-8',
-  viewport: 'width=device-width, initial-scale=1.0'
-};
-const htmlPlugins = pages.map(page => {
-  return new HtmlWebpackPlugin({
-    filename: page.filename,
-    template: './src/layouts/main.html',
-    title: page.title,
-    chunks: [page.id],
-    meta
-  });
-});
-const entry = pages.reduce((entries, page) => {
-  entries[page.id] = `./src/js/${page.id}.js`;
-  return entries;
-}, {});
 
 module.exports = {
   mode: 'development',
-  entry,
+  entry: './src/js/index.js',
   output: {
     path: __dirname + '/dist',
     filename: '[name].js',
@@ -65,9 +46,16 @@ module.exports = {
 	},
   plugins: [
     new VueLoaderPlugin(),
-    new CleanWebpackPlugin()
-  ]
-    .concat(htmlPlugins),
+    new CleanWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      template: './src/layouts/main.html',
+      title: 'Charlie Thomason',
+      meta: {
+        charset: 'utf-8',
+        viewport: 'width=device-width, initial-scale=1.0'
+      }
+    })
+  ],
   devServer: {
     static: {
       directory:__dirname + '/public',

@@ -4,7 +4,7 @@
             <router-link
                 v-for="(gallery, i) in galleries" :key="i"
                 tag="li"
-                :to="gallery.href"
+                :to="`/art/${gallery.href}`"
                 class="galleries__item"
             >
                 <a class="galleries__link">

@@ -51,7 +51,8 @@ body {
 
             &:hover,
             &:focus {
-                color: $white;
+                background-color: $white;
+                color: $teal-dark;
             }
         }
     }

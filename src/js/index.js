@@ -1,8 +1,20 @@
 import Vue from 'vue';
-import Homepage from '../templates/index.vue';
+import VueRouter from 'vue-router';
+import Art from '../templates/art.vue';
+import routes from './galleries.js';
 import '../styles/main.scss';
+
+Vue.use(VueRouter);
+
+const router = new VueRouter({
+    scrollBehavior() {
+        return { x: 0, y: 0 }
+    },
+    routes
+});
 
 new Vue({
     el: '#app-container',
-    render: c => c(Homepage)
+    render: c => c(Art),
+    router
 });
