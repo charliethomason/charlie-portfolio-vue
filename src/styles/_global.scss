@@ -1,158 +1,160 @@
 .sr-text {
-    @include safeHide;
+  @include safeHide;
 }
 body {
-    background-color: $grey-very-dark;
+  background-color: $grey-very-dark;
 }
 .header {
-    align-items: center;
-    background-color: $teal;
-    border-bottom: 7px solid $teal-dark;
-    display: flex;
-    flex-direction: column;
-    height: 130px;
-    justify-content: center;
-    padding: 0 15px;
+  align-items: center;
+  background-color: $teal;
+  border-bottom: 7px solid $teal-dark;
+  display: flex;
+  flex-direction: column;
+  height: 130px;
+  justify-content: center;
+  padding: 0 15px;
 
-    &__logo {
-        @include nounderline;
-        background: url(~img/global/charlie-logo-default.png) no-repeat scroll 0 0 transparent;
-        display: block;
-        height:75px;
-        width: 275px;
-    }
+  &__logo {
+    @include nounderline;
+    background: url(~img/global/charlie-logo-default.png) no-repeat scroll 0 0
+      transparent;
+    display: block;
+    height: 75px;
+    width: 275px;
+  }
 }
 
 .nav {
-    display: flex;
-    justify-content: center;
-    margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
 
-    &__link {
-        @include nounderline;
-        border-radius: 3px;
-        color: $white;
-        display: block;
-        font-size: 16px;
-        font-weight: bold;
-        margin: 0 5px;
-        outline: 0;
-        padding: 5px;
-        transition: all .2s ease-in-out;
+  &__link {
+    @include nounderline;
+    border-radius: 3px;
+    color: $white;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 5px;
+    outline: 0;
+    padding: 5px;
+    transition: all 0.2s ease-in-out;
 
-        &:hover,
-        &:focus {
-            background-color: $teal-dark;
-        }
-
-        &--active {
-            background-color: $white;
-            color: $teal-dark;
-
-            &:hover,
-            &:focus {
-                background-color: $white;
-                color: $teal-dark;
-            }
-        }
+    &:hover,
+    &:focus {
+      background-color: $teal-dark;
     }
+
+    &--active {
+      background-color: $white;
+      color: $teal-dark;
+
+      &:hover,
+      &:focus {
+        background-color: $white;
+        color: $teal-dark;
+      }
+    }
+  }
 }
 
 .content {
-    color: $white;
+  color: $white;
 }
 
 .h1 {
-    font-size: 32px;
-    font-weight: 300;
-    padding: 15px 0;
-    text-align: center;
+  font-size: 32px;
+  font-weight: 300;
+  padding: 15px 0;
+  text-align: center;
 }
 
 .h2 {
-    font-size: 18px;
-    padding: 0 0 15px;
-    text-align: center;
+  font-size: 18px;
+  padding: 0 0 15px;
+  text-align: center;
 }
 
 .big-btn-wrap {
-    margin: 15px auto 30px;
-    text-align: center;
+  margin: 15px auto 30px;
+  text-align: center;
 }
 
 .btn {
-    @include btn;
+  @include btn;
 }
 
 .big-btn {
-    @include btn;
-    font-size: 20px;
-    padding: 15px 30px;
+  @include btn;
+  font-size: 20px;
+  padding: 15px 30px;
 }
 
 .eyebrow {
-    padding-top: 15px;
-    text-align: center;
+  padding-top: 15px;
+  text-align: center;
 }
 
 .card {
-	@include cardStyle;
+  @include cardStyle;
 }
 
 .copyright-note {
-    color: $grey-medium;
-    font-size: 12px;
-    line-height: 16px;
-    margin: 10px auto 30px;
-    max-width: 250px;
-    text-align: center;
-    
-    a {
-        color: $grey-medium;
+  color: $grey-medium;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 10px auto 30px;
+  max-width: 250px;
+  text-align: center;
 
-        &:hover, &:focus {
-            color: $teal;
-        }
+  a {
+    color: $grey-medium;
+
+    &:hover,
+    &:focus {
+      color: $teal;
     }
+  }
 }
 
 @include retina {
-    .header {
-        &__logo {
-            background-image: url(~img/global/charlie-logo-default-2x.png);
-            background-size: 275px 75px;
-        }
+  .header {
+    &__logo {
+      background-image: url(~img/global/charlie-logo-default-2x.png);
+      background-size: 275px 75px;
     }
+  }
 }
 
 @mixin mobile-header {
-    .header {
-        height: 95px;
+  .header {
+    height: 95px;
 
-        &__logo {
-            background-image: url(~img/global/charlie-logo-mobile.png);
-            background-size: 160px 44px;
-            height: 44px;
-            width: 160px;
+    &__logo {
+      background-image: url(~img/global/charlie-logo-mobile.png);
+      background-size: 160px 44px;
+      height: 44px;
+      width: 160px;
 
-            @include retina {
-                background-image: url(~img/global/charlie-logo-mobile-2x.png);
-            }
-        }
+      @include retina {
+        background-image: url(~img/global/charlie-logo-mobile-2x.png);
+      }
     }
+  }
 }
 
 @include mobile-max-landscape {
-    @include mobile-header;
+  @include mobile-header;
 }
 
 @include mobile-med {
-    @include mobile-header;
+  @include mobile-header;
 }
 
 @include mobile-min {
-    .big-btn {
-        font-size: 16px;
-        padding: 15px;
-    }
+  .big-btn {
+    font-size: 16px;
+    padding: 15px;
+  }
 }

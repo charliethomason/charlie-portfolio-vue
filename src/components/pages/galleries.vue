@@ -11,7 +11,7 @@
       >
         <a class="galleries__link">
           <img
-            :src="require('../../img/' + meta.id + '/galleries/galleries-placeholder.jpg')"
+            :src="require('../../img/' + meta.id + '/galleries/galleries-' + gallery.href + '.jpg')"
             :alt="`${gallery.name} gallery icon`"
             class="galleries__img"
           />

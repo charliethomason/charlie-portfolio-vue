@@ -1,187 +1,191 @@
 .homepage {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    padding: 0 15px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 15px;
 
-    .contact {
-        max-width: 800px;
-    }
+  .contact {
+    max-width: 800px;
+  }
 
-    .card {
-        font-size: 16px;
-        max-width: 600px;
-    }
+  .card {
+    font-size: 16px;
+    max-width: 600px;
+  }
 }
 
 .contact {
-    $contact: &;
+  $contact: &;
 
-    align-items: center;
+  align-items: center;
+  display: flex;
+  margin: 30px auto 15px;
+
+  &__photo {
+    display: inline-block;
+    width: 230px;
+  }
+
+  &__info {
+    background-color: $grey-transparent;
+    margin-left: 30px;
+    padding: 15px;
+  }
+
+  &__name {
+    padding-top: 0;
+    text-align: left;
+  }
+
+  &__subtitle {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.4;
+    padding: 5px 0 0;
+  }
+
+  &__tooltip {
+    background-color: $grey-very-light;
+    border-radius: 7px;
+    color: $black;
+    display: inline-block;
+    font-size: 14px;
+    left: -9999px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    position: absolute;
+    text-align: center;
+    top: -9999px;
+
+    &:after {
+      border-left: 10px solid $clear;
+      border-right: 10px solid $clear;
+      border-top: 10px solid $grey-very-light;
+      content: "";
+      left: 50%;
+      position: absolute;
+      top: 100%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__link-row {
     display: flex;
-    margin: 30px auto 15px;
+    justify-content: flex-start;
 
-    &__photo {
-        display: inline-block;
-        width: 230px;
+    li {
+      margin-left: 10px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    outline: 0;
+    position: relative;
+
+    svg {
+      height: 50px;
+      width: 50px;
     }
 
-    &__info {
-        background-color: $grey-transparent;
-        margin-left: 30px;
-        padding: 15px;
+    path,
+    polygon {
+      fill: $teal;
+      transition: fill 0.2s ease-in-out;
     }
 
-    &__name {
-        padding-top: 0;
-        text-align: left;
-    }
-    
-    &__subtitle {
-        font-size: 20px;
-        font-weight: bold;
-        line-height: 1.4;
-        padding: 5px 0 0;
+    .fill-dark {
+      fill: $black;
     }
 
-    &__tooltip {
-        background-color: $grey-very-light;
-        border-radius: 7px;
-        color: $black;
-        display: inline-block;
-        font-size: 14px;
-        left: -9999px;
-        margin-bottom: 10px;
-        padding: 5px 10px;
-        position: absolute;
-        text-align: center;
-        top: -9999px;
+    &:hover,
+    &:focus {
+      path,
+      polygon {
+        fill: $grey-very-light;
+      }
 
-        &:after {
-            border-left: 10px solid $clear;
-            border-right: 10px solid $clear;
-            border-top: 10px solid $grey-very-light;
-            content: '';
-            left: 50%;
-            position: absolute;
-            top: 100%;
-            transform: translateX(-50%);
-        }
+      .fill-dark {
+        fill: $black;
+      }
+
+      #{$contact}__tooltip {
+        bottom: 100%;
+        left: 50%;
+        top: auto;
+        transform: translateX(-50%);
+      }
     }
-
-    &__link-row {
-        display: flex;
-        justify-content: flex-start;
-
-        li {
-            margin-left: 10px;
-            
-            &:first-child {
-                margin-left: 0;
-            }
-        }
-    }
-
-    &__link {
-        display: inline-block;
-        outline: 0;
-        position: relative;
-
-        svg {
-            height: 50px;
-            width: 50px;
-        }
-
-        path, polygon {
-            fill: $teal;
-            transition: fill 0.2s ease-in-out;
-        }
-
-        .fill-dark {
-            fill: $black;
-        }
-
-        &:hover, &:focus {
-            path, polygon {
-                fill: $grey-very-light;
-            }
-
-            .fill-dark {
-                fill: $black;
-            }
-
-            #{$contact}__tooltip {
-                bottom: 100%;
-                left: 50%;
-                top: auto;
-                transform: translateX(-50%);
-            }
-        }
-    }
+  }
 }
 
 @include mobile-max {
-    .contact {
-        display: block;
-        margin: 15px 0 0;
-        text-align: center;
+  .contact {
+    display: block;
+    margin: 15px 0 0;
+    text-align: center;
 
-        &__info {
-            margin: 15px 0 0;
-            text-align: center;
-        }
-
-        &__name {
-            text-align: center;
-        }
-
-        &__link-row {
-            justify-content: center;
-        }
+    &__info {
+      margin: 15px 0 0;
+      text-align: center;
     }
+
+    &__name {
+      text-align: center;
+    }
+
+    &__link-row {
+      justify-content: center;
+    }
+  }
 }
 
 @include mobile-min {
-    .contact {
-        $contact: &;
+  .contact {
+    $contact: &;
 
-        &__photo {
-            width: 150px;
-        }
-
-        &__name {
-            font-size: 24px;
-        }
-
-        &__subtitle {
-            font-size: 16px;
-        }
-
-        &__link-row {
-            flex-wrap: wrap;
-            max-width: 200px;
-            margin: -10px auto 0;
-
-            li {
-                margin-top: 10px;
-            }
-        }
-
-        &__link {
-            svg {
-                height: 35px;
-                width: 35px;
-            }
-
-            &:hover, &:focus {
-                #{$contact}__tooltip {
-                    bottom: auto;
-                    left: -9999px;
-                    top: -9999px;
-                    transform: none;
-                }
-            }
-        }
+    &__photo {
+      width: 150px;
     }
+
+    &__name {
+      font-size: 24px;
+    }
+
+    &__subtitle {
+      font-size: 16px;
+    }
+
+    &__link-row {
+      flex-wrap: wrap;
+      max-width: 200px;
+      margin: -10px auto 0;
+
+      li {
+        margin-top: 10px;
+      }
+    }
+
+    &__link {
+      svg {
+        height: 35px;
+        width: 35px;
+      }
+
+      &:hover,
+      &:focus {
+        #{$contact}__tooltip {
+          bottom: auto;
+          left: -9999px;
+          top: -9999px;
+          transform: none;
+        }
+      }
+    }
+  }
 }
