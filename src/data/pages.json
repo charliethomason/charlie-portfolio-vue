@@ -9,6 +9,11 @@
 			"id": "art",
 			"path": "/art/",
 			"name": "Art"
+		},
+		{
+			"id": "photo",
+			"path": "/photo/",
+			"name": "Photo"
 		}
 	]
 }

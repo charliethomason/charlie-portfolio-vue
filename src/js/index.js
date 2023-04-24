@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import App from '../components/app.vue';
-import routes from './galleries.js';
+import routes from './routes.js';
 import '../styles/main.scss';
 
 Vue.use(VueRouter);
