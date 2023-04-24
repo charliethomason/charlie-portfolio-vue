@@ -33,11 +33,6 @@ import FooterNote from '../elements/footer.vue';
 export default {
   name: 'Galleries',
   components: { FooterNote },
-  data() {
-    return {
-      galleries: data[this.meta.id].galleries
-    };
-  },
   computed: {
     meta() {
       return this.$route.meta;

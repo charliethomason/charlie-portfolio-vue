@@ -1,0 +1,23 @@
+.collection {
+  &__title {
+    font: bold 30px/45px $cormorant;
+    letter-spacing: 0.07em;
+    margin-top: 5px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    font-weight: bold;
+    padding: 0;
+  }
+  &__btn {
+    @include parallelogram($teal);
+  }
+  &__info {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 15px auto 30px;
+    max-width: 600px;
+    text-align: center;
+  }
+}
