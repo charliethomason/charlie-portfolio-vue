@@ -7,12 +7,12 @@
         class="galleria-img"
         :title="img.title"
         :style="getStyle(row, img)"
-        :data-large="require('../../img/art/collection/'+name+'/'+img.file+'.jpg')"
+        :data-large="require('../../img/'+meta.id+'/collection/'+name+'/'+img.file+'.jpg')"
         :ref="`galleriaImg-${img.file}`"
         @click.stop.prevent="e => imgClick(e, img)"
       >
         <img
-          :src="require('../../img/art/collection/'+name+'/thumbs/'+img.file+'.jpg')"
+          :src="require('../../img/'+meta.id+'/collection/'+name+'/thumbs/'+img.file+'.jpg')"
           :alt="`${img.title || img.file} open image in lightbox`"
           class="galleria-small"
           role="presentation"
@@ -21,7 +21,7 @@
     </div>
     <div v-if="lightImg && lightImg.file" class="galleria__lightbox" @click.stop.prevent="closeLightbox">
       <img
-        :src="require('../../img/art/collection/'+name+'/'+lightImg.file+'.jpg')"
+        :src="require('../../img/'+meta.id+'/collection/'+name+'/'+lightImg.file+'.jpg')"
         :alt="lightImg.file"
         class="galleria__lightbox__img"
       />
@@ -86,18 +86,23 @@ export default {
         xlarge: 1400,
         large: 1000,
         medium: 600,
-        small: 320
+        small: 450
       },
       windowWidth: 0,
       lightImg: null
     };
+  },
+  computed: {
+    meta() {
+      return this.$route.meta;
+    }
   },
   methods: {
     putPhotosInRows() {
       if (!this.images || !this.images.length) {
         return null;
       }
-      this.imagesInRows = this.images.reduce((rows, img) => {
+      this.imagesInRows = this.windowWidth <= this.breakpoints.small ? [this.images] : this.images.reduce((rows, img) => {
         // if we have no rows created yet, create a row with this 1st image
         if (!rows.length) {
           rows.push([img]);
@@ -132,6 +137,7 @@ export default {
           return rows;
         }
       }, []);
+      console.log(this.imagesInRows);
     },
     loadImages() {
       if (!this.$refs.row || !this.$refs.row.length){
@@ -180,6 +186,12 @@ export default {
       return `${flooredNum}px`;
     },
     getStyle(row, img) {
+      if (this.windowWidth <= this.breakpoints.small) {
+        return {
+          height: "auto",
+          width: "auto"
+        };
+      }
       const onlyOneInRow = row.length === 1;
       const totalWidth = this.getTotalWidth(row);
       // actual displayed row width, divided by the aspect ratio of the row.
@@ -198,6 +210,7 @@ export default {
     },
     setGalleriaWidth() {
       const {
+        min,
         small,
         medium,
         large,
@@ -205,7 +218,7 @@ export default {
         jumbo,
         full
       } = this.breakpoints;
-      this.windowWidth = window.innerWidth;
+      this.windowWidth = window.innerWidth - 30;
       if (this.windowWidth > full) {
         this.actualRowWidth = full;
       } else if (this.windowWidth > jumbo && this.windowWidth <= full) {
@@ -216,7 +229,7 @@ export default {
         this.actualRowWidth = large;
       } else if (this.windowWidth > medium && this.windowWidth <= large) {
         this.actualRowWidth = medium;
-      } else {
+      } else if (this.windowWidth <= medium) {
         this.actualRowWidth = small;
       }
     },

@@ -37,7 +37,63 @@
     "title": "Inktober 2022",
     "subtitle": "100 Years of Cinema Stills",
     "info": "Ink brush paintings completed Sept-Oct 2022 for the annual #inktober challenge. Continues the theme from Inktober 2020 and 2021 of depicting scenes from my favorite films",
-    "images": []
+    "images": [
+      {
+        "file": "nosferatu",
+        "title": "Nosferatu: A Symphony of Horror (1922)",
+        "width": 1098
+      },
+      {
+        "file": "stagecoach",
+        "title": "Stagecoach (1939)",
+        "width": 1074
+      },
+      {
+        "file": "howgreenwasmyvalley",
+        "title": "How Green Was My Valley (1941)",
+        "width": 972
+      },
+      {
+        "file": "sevensamurai",
+        "title": "Seven Samurai (1954)",
+        "width": 1055
+      },
+      {
+        "file": "nightofthelivingdead",
+        "title": "Night of the Living Dead (1968)",
+        "width": 1036
+      },
+      {
+        "file": "dontlooknow",
+        "title": "Don't Look Now (1973)",
+        "width": 1018
+      },
+      {
+        "file": "returnofthejedi",
+        "title": "Return of the Jedi (1983)",
+        "width": 992
+      },
+      {
+        "file": "marsattacks",
+        "title": "Mars Attacks! (1996)",
+        "width": 1076
+      },
+      {
+        "file": "returnoftheking",
+        "title": "The Lord of the Rings: The Return of the King (2003)",
+        "width": 999
+      },
+      {
+        "file": "it",
+        "title": "It (2017)",
+        "width": 1063
+      },
+      {
+        "file": "reminiscence",
+        "title": "Reminiscence (2021)",
+        "width": 1068
+      }
+    ]
   },
   "inktober2021": {
     "title": "Inktober 2021",
