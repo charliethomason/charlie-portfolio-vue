@@ -8,29 +8,17 @@
   }
 
   &-img {
+    $img: &;
+
     @include buttonReset;
     display: block;
     position: relative;
     overflow: hidden;
 
-    &:after {
-      border: 3px solid $teal;
-      content: none;
-      height: 100%;
-      left: 0;
-      position: absolute;
-      top: 0;
-      width: 100%;
-    }
-
-    &:hover:after,
-    &:focus:after {
-      content: "";
-    }
-
     img {
       opacity: 0;
       position: absolute;
+      pointer-events: none;
       left: 0;
       top: 0;
       width: 100%;
@@ -38,6 +26,34 @@
   
     img.loaded {
       opacity: 1;
+    }
+
+    &-text {
+      align-items: center;
+      background-color: $grey-transparent;
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      position: absolute;
+      pointer-events: none;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+      z-index: 1;
+    }
+
+    &-title {
+      color: $white;
+      font: bold 18px/24px $cormorant;
+      letter-spacing: 0.07em;
+      text-shadow: 1px 1px 1px $black;
+    }
+
+    &:hover, &:focus {
+      #{$img}-text {
+        display: flex;
+      }
     }
   }
 
@@ -67,7 +83,7 @@
       margin: 0 auto;
       max-height: 90%;
       max-width: 100%;
-      padding: 0 50px;
+      padding: 0 10px;
     }
 
     &__title {
@@ -96,12 +112,17 @@
       }
     }
 
+    &__caption {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      width: 100%;
+    }
+
     &__nav {
       @include buttonReset;
       line-height: 1;
-      position: fixed;
-      top: 50%;
-      transform: translateY(-50%);
       z-index: 2;
 
       &[title="Previous"] {
@@ -117,8 +138,8 @@
     }
 
     &__icon {
-      height: 40px;
-      width: 40px;
+      height: 30px;
+      width: 30px;
 
       &--prev {
         transform: rotate(90deg);
@@ -137,32 +158,32 @@
   }
 }
 
-@media screen and (max-width: ($galleria-full + 30)) and (min-width: ($galleria-jumbo + 30)) {
+@media screen and (max-width: $galleria-full) and (min-width: $galleria-jumbo) {
   .galleria {
     max-width: $galleria-jumbo;
   }
 }
-@media screen and (max-width: ($galleria-jumbo + 30)) and (min-width: ($galleria-xl + 30)) {
+@media screen and (max-width: $galleria-jumbo) and (min-width: $galleria-xl) {
   .galleria {
     max-width: $galleria-xl;
   }
 }
-@media screen and (max-width: ($galleria-xl + 30)) and (min-width: ($galleria-lg + 30)) {
+@media screen and (max-width: $galleria-xl) and (min-width: $galleria-lg) {
   .galleria {
     max-width: $galleria-lg;
   }
 }
-@media screen and (max-width: ($galleria-lg + 30)) and (min-width: ($galleria-med + 30)) {
+@media screen and (max-width: $galleria-lg) and (min-width: $galleria-med) {
   .galleria {
     max-width: $galleria-med;
   }
 }
-@media screen and (max-width: ($galleria-med + 30)) and (min-width: ($galleria-sm + 30)) {
+@media screen and (max-width: $galleria-med) and (min-width: $galleria-sm) {
   .galleria {
     max-width: $galleria-sm;
   }
 }
-@media screen and (max-width: ($galleria-sm + 30)) {
+@media screen and (max-width: $galleria-sm) {
   .galleria {
     max-width: $galleria-sm;
 
@@ -183,18 +204,6 @@
           margin-top: -3px;
         }
       }
-    }
-  }
-}
-
-@include mobile-min {
-  .galleria__lightbox {
-    &__img {
-      padding: 0 40px;
-    }
-    &__icon {
-      height: 30px;
-      width: 30px;
     }
   }
 }

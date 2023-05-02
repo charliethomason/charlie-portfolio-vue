@@ -12,10 +12,10 @@
         <a class="galleries__link">
           <img
             :src="require('../../img/' + meta.id + '/galleries/galleries-' + gallery.href + '.jpg')"
-            :alt="`${gallery.name} gallery icon`"
+            :alt="`${gallery.title} gallery`"
             class="galleries__img"
           />
-          <div class="galleries__text">
+          <div class="galleries__text" aria-hidden="true">
             <h2 class="galleries__title">{{ gallery.title }}</h2>
             <div v-if="gallery.subtitle" class="galleries__subtitle nohover">{{ gallery.subtitle }}</div>
           </div>

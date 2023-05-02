@@ -5,12 +5,14 @@
         type="button"
         v-for="(img, i) in row" :key="`row-${r}-img-${i}`"
         class="galleria-img"
-        :title="img.title"
         :style="getStyle(row, img)"
         :data-large="require('../../img/'+meta.id+'/collection/'+name+'/'+img.file+'.jpg')"
         :ref="`galleriaImg-${img.file}`"
         @click.stop.prevent="e => imgClick(e, img)"
       >
+        <div class="galleria-img-text" aria-hidden="true">
+          <div class="galleria-img-title">{{ img.title }}</div>
+        </div>
         <img
           :src="require('../../img/'+meta.id+'/collection/'+name+'/thumbs/'+img.file+'.jpg')"
           :alt="`${img.title || img.file} open image in lightbox`"
@@ -25,25 +27,27 @@
         :alt="lightImg.file"
         class="galleria__lightbox__img"
       />
-      <div v-if="lightImg.title" class="galleria__lightbox__title">{{ lightImg.title }}</div>
-      <button
-        type="button"
-        class="galleria__lightbox__nav"
-        title="Previous"
-        @click.stop.prevent="() => lightboxNav(-1)"
-      >
-        <span class="sr-text">Previous</span>
-        <ArrowIcon class="galleria__lightbox__icon--prev" />
-      </button>
-      <button
-        type="button"
-        class="galleria__lightbox__nav"
-        title="Next"
-        @click.stop.prevent="() => lightboxNav(1)"
-      >
-        <span class="sr-text">Next</span>
-        <ArrowIcon class="galleria__lightbox__icon--next" />
-      </button>
+      <div class="galleria__lightbox__caption">
+        <button
+          type="button"
+          class="galleria__lightbox__nav"
+          title="Previous"
+          @click.stop.prevent="() => lightboxNav(-1)"
+        >
+          <span class="sr-text">Previous</span>
+          <ArrowIcon class="galleria__lightbox__icon--prev" />
+        </button>
+        <div v-if="lightImg.title" class="galleria__lightbox__title">{{ lightImg.title }}</div>
+        <button
+          type="button"
+          class="galleria__lightbox__nav"
+          title="Next"
+          @click.stop.prevent="() => lightboxNav(1)"
+        >
+          <span class="sr-text">Next</span>
+          <ArrowIcon class="galleria__lightbox__icon--next" />
+        </button>
+      </div>
       <button
         type="button"
         class="galleria__lightbox__close"
@@ -99,45 +103,47 @@ export default {
   },
   methods: {
     putPhotosInRows() {
+      const { small, medium } = this.breakpoints;
       if (!this.images || !this.images.length) {
         return null;
       }
-      this.imagesInRows = this.windowWidth <= this.breakpoints.small ? [this.images] : this.images.reduce((rows, img) => {
-        // if we have no rows created yet, create a row with this 1st image
-        if (!rows.length) {
-          rows.push([img]);
-          return rows;
-        } else {
-          // loop through all the rows we have created so far
-          for (const [i, row] of rows.entries()) {
-            const currentRowWidth = this.getTotalWidth(row);
-            const maxRowWidth = this.windowWidth <= this.breakpoints.medium
-              ? this.maxRowWidth.small
-              : this.maxRowWidth.large;
-            const isLastRow = i === rows.length-1;
-            // "If the currrent total width of the images in this row is
-            // greater than/equal to the max width allowed for a single row."
-            // If the image heights are 600px then the max possible row width is 2400px.
-            // 2400 / 600 = 4, thus a 4:1 min aspect ratio for each row.
-            if (currentRowWidth >= maxRowWidth) {
-              // if this is the last row and it's already full, create a new one with this image.
-              // otherwise continue on to check the next row.
-              if (isLastRow) {
-                rows.push([img]);
-                break;
+      this.imagesInRows = this.windowWidth <= small
+        ? [this.images]
+        : this.images.reduce((rows, img) => {
+          // if we have no rows created yet, create a row with this 1st image
+          if (!rows.length) {
+            rows.push([img]);
+            return rows;
+          } else {
+            // loop through all the rows we have created so far
+            for (const [i, row] of rows.entries()) {
+              const currentRowWidth = this.getTotalWidth(row);
+              const maxRowWidth = this.windowWidth <= medium
+                ? this.maxRowWidth.small
+                : this.maxRowWidth.large;
+              const isLastRow = i === rows.length-1;
+              // "If the currrent total width of the images in this row is
+              // greater than/equal to the max width allowed for a single row."
+              // If the image heights are 600px then the max possible row width is 2400px.
+              // 2400 / 600 = 4, thus a 4:1 min aspect ratio for each row.
+              if (currentRowWidth >= maxRowWidth) {
+                // if this is the last row and it's already full, create a new one with this image.
+                // otherwise continue on to check the next row.
+                if (isLastRow) {
+                  rows.push([img]);
+                  break;
+                } else {
+                  continue;
+                }
+              // if there is still space in this row, add this image.
               } else {
-                continue;
+                row.push(img);
+                break;
               }
-            // if there is still space in this row, add this image.
-            } else {
-              row.push(img);
-              break;
             }
+            return rows;
           }
-          return rows;
-        }
-      }, []);
-      console.log(this.imagesInRows);
+        }, []);
     },
     loadImages() {
       if (!this.$refs.row || !this.$refs.row.length){
@@ -147,7 +153,7 @@ export default {
         if (row.childNodes && row.childNodes.length) {
           for (const img of row.childNodes) {
             if (img.classList && img.classList.contains('galleria-img')) {
-              const small = img.children[0];
+              const small = img.children[1];
               const imgSrc = img.dataset.large;
 
               let imgSmall = new Image();
@@ -210,7 +216,6 @@ export default {
     },
     setGalleriaWidth() {
       const {
-        min,
         small,
         medium,
         large,
@@ -218,7 +223,7 @@ export default {
         jumbo,
         full
       } = this.breakpoints;
-      this.windowWidth = window.innerWidth - 30;
+      this.windowWidth = window.innerWidth;
       if (this.windowWidth > full) {
         this.actualRowWidth = full;
       } else if (this.windowWidth > jumbo && this.windowWidth <= full) {
@@ -229,8 +234,10 @@ export default {
         this.actualRowWidth = large;
       } else if (this.windowWidth > medium && this.windowWidth <= large) {
         this.actualRowWidth = medium;
-      } else if (this.windowWidth <= medium) {
+      } else if (this.windowWidth > small && this.windowWidth <= medium) {
         this.actualRowWidth = small;
+      } else if (this.windowWidth <= small) {
+        this.actualRowWidth = null;
       }
     },
     async onResize() {
