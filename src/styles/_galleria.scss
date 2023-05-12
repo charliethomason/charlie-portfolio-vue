@@ -203,6 +203,17 @@
         &.galleria-small {
           margin-top: -3px;
         }
+
+        &.large-loaded {
+          display: none;
+        }
+      }
+
+      &-text {
+        background: none;
+        display: block;
+        padding: 5px;
+        position: static;
       }
     }
   }

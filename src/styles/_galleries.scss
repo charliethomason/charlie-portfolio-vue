@@ -11,6 +11,8 @@
 
     &:hover,
     &:focus {
+      text-decoration: none;
+
       #{$root}__text {
         display: flex;
       }
@@ -43,13 +45,86 @@
     text-shadow: 1px 1px 1px $black;
   }
 
-  &__subtitle {
-    @include parallelogram($teal);
+  &__size {
+    color: $white;
+    display: none;
+  }
+
+  &--list {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+
+    #{$root}__link {
+      align-items: center;
+      background-color: $grey-dark;
+      border-radius: 5px;
+      display: flex;
+      margin-bottom: 10px;
+      overflow: hidden;
+      
+      &:hover, &:focus {
+        background-color: $green;
+
+        .parallelogram {
+          @include parallelogramHover;
+        }
+      }
+    }
+    #{$root}__img {
+      max-width: 300px;
+    }
+    #{$root}__text {
+      background: none;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      padding: 15px;
+      position: static;
+    }
+    #{$root}__size {
+      display: block;
+      padding-right: 15px;
+    }
   }
 }
 
-@include mobile-med {
+@media screen and (max-width: $tablet-max) and (min-width: $mobile-min) {
   .galleries {
     grid-template-columns: repeat(2, 1fr);
+
+    .parallelogram {
+      font-size: 12px;
+    }
+  }
+}
+@media screen and (max-width: $mobile-med) {
+  .galleries {
+    $root: &;
+
+    display: flex;
+    flex-direction: column;
+
+    &__text {
+      display: flex;
+      position: static;
+      margin-bottom: 10px;
+      padding: 0 5px;
+    }
+
+    .parallelogram {
+      margin-bottom: 8px;
+    }
+
+    &__link {
+      &:hover, &:focus {
+        #{$root}__text {
+          background-color: $green;
+        }
+        .parallelogram {
+          @include parallelogramHover;
+        }
+      }
+    }
   }
 }

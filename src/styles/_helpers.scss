@@ -20,56 +20,6 @@
 	outline: 0;
 }
 
-@mixin cardStyle {
-	background-color: $grey-dark;
-	border-bottom: 2px solid $grey-medium-dark;
-	border-radius: 5px;
-	color: $white;
-
-	&__heading {
-		align-items: center;
-		background-color: $green;
-		border-radius: 5px 5px 0 0;
-		color: $white;
-		display: flex;
-		font-weight: bold;
-		min-height: 40px;
-		padding: 0 15px;
-
-		&__text {
-			padding-right: 15px;
-		}
-	}
-
-	&__content {
-		line-height: 1.5;
-		padding: 15px 30px;
-
-		a {
-			color: $teal;
-
-			&:hover, &:focus {
-				color: $teal-dark;
-			}
-		}
-	}
-}
-
-@mixin btn {
-	background-color: $teal;
-	color: $white;
-	display: inline-block;
-	font-weight: bold;
-	padding: 8px 16px;
-	text-decoration: none;
-	transition: background-color 0.4s ease;
-
-	&:hover, &:focus {
-			background-color: $teal-dark;
-			text-decoration: none;
-	}
-}
-
 @mixin triangleShape {
 	content: '';
 	display: block;
@@ -77,53 +27,6 @@
 	position: absolute;
 	top: 0;
 	width: 0;
-}
-
-@mixin parallelogram($color) {
-	background-color: $color;
-	color: #fff;
-	display: inline-block;
-	font-size: 14px;
-	font-weight: bold;
-	height: 25px;
-	line-height: 14px;
-	margin: 0 10px;
-	padding: 5px;
-	position: relative;
-	text-decoration: none;
-	white-space: nowrap;
-
-	&::before {
-		@include triangleShape;
-		border-bottom-color: $color;
-		border-bottom-style: solid;
-		border-bottom-width: 25px;
-		border-left: 10px solid $clear;
-		left: -10px;
-	}
-
-	&::after {
-		@include triangleShape;
-		border-top-color: $color;
-		border-top-style: solid;
-		border-top-width: 25px;
-		border-right: 10px solid $clear;
-		right: -10px;
-	}
-
-	&:not(.nohover):hover,
-	&:not(.nohover):focus {
-		background-color: $black;
-		text-decoration: none;
-
-		&::before {
-			border-bottom-color: $black;
-		}
-
-		&::after {
-			border-top-color: $black;
-		}
-	}
 }
 
 @mixin retina {

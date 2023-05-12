@@ -173,6 +173,7 @@ export default {
                   // to indicate lightbox clicks can now happen
                   img.classList.add("ready");
                   imgLarge.classList.add('galleria-large','loaded');
+                  small.classList.add('large-loaded');
                 };
                 img.appendChild(imgLarge);
               }

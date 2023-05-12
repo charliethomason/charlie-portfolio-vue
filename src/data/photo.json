@@ -1,521 +1,516 @@
 {
-  "galleries": [
+  "controls": [
     {
-      "href": "wideworld",
-      "title": "The Wide World",
-      "subtitle": "Lumix GF1 7-14mm Wide Angle Photos",
-      "medium": "Wide-Angle Digital Photography",
-      "year": "2020"
-    },
-    {
-      "href": "openrange",
-      "title": "Open Range",
-      "subtitle": "From Monument Valley to the Mojave Desert",
-      "medium": "Film and Digital Photography",
-      "year": "2012"
-    },
-    {
-      "href": "englishportfolio",
-      "title": "The English Portfolio",
-      "subtitle": "Film Photography Across England",
-      "medium": "35mm and Polaroid Film Photography",
-      "year": "2008"
+      "legend": "View",
+      "name": "view",
+      "options": [
+        {
+          "label": "Grid",
+          "value": "grid"
+        },
+        {
+          "label": "List",
+          "value": "list"
+        }
+      ]
     }
   ],
-  "wideworld": {
-    "title": "The Wide World",
-    "subtitle": "Lumix GF1 7-14mm Wide Angle Photos",
-    "info": "Photos taken around the United States and Europe, all taken with the same Panasonic Lumix G Vario 7-14mm f/4 wide angle lens, attached to Panasonic Lumix DMC-GF1 camera.",
-    "images": [
-      {
-        "file": "austria-1",
-        "title": "Innsbruck, Austria",
-        "width": 898
-      },
-      {
-        "file": "austria-2",
-        "title": "Seefeld, Austria",
-        "width": 898
-      },
-      {
-        "file": "austria-3",
-        "title": "Seefeld, Austria",
-        "width": 898
-      },
-      {
-        "file": "austria-4",
-        "title": "Innsbruck, Austria",
-        "width": 898
-      },
-      {
-        "file": "austria-5",
-        "title": "Salzburg, Austria",
-        "width": 898
-      },
-      {
-        "file": "venezia-1",
-        "title": "Venice, Italy",
-        "width": 898
-      },
-      {
-        "file": "venezia-2",
-        "title": "Venice, Italy",
-        "width": 898
-      },
-      {
-        "file": "venezia-3",
-        "title": "Venice, Italy",
-        "width": 898
-      },
-      {
-        "file": "sandiego-1",
-        "title": "La Jolla, California",
-        "width": 898
-      },
-      {
-        "file": "sandiego-2",
-        "title": "La Jolla, California",
-        "width": 899
-      },
-      {
-        "file": "joshuatree-1",
-        "title": "Joshua Tree National Park, California",
-        "width": 898
-      },
-      {
-        "file": "joshuatree-2",
-        "title": "Joshua Tree National Park, California",
-        "width": 898
-      },
-      {
-        "file": "joshuatree-3",
-        "title": "Joshua Tree National Park, California",
-        "width": 899
-      },
-      {
-        "file": "england-1",
-        "title": "London, England, UK",
-        "width": 899
-      },
-      {
-        "file": "england-2",
-        "title": "London, England, UK",
-        "width": 898
-      },
-      {
-        "file": "england-3",
-        "title": "London, England, UK",
-        "width": 898
-      },
-      {
-        "file": "england-4",
-        "title": "London, England, UK",
-        "width": 899
-      },
-      {
-        "file": "england-5",
-        "title": "London, England, UK",
-        "width": 899
-      },
-      {
-        "file": "england-6",
-        "title": "Stonehenge, England, UK",
-        "width": 899
-      },
-      {
-        "file": "england-7",
-        "title": "London, England, UK",
-        "width": 1005
-      },
-      {
-        "file": "paris-1",
-        "title": "Paris, France",
-        "width": 480
-      },
-      {
-        "file": "paris-2",
-        "title": "Paris, France",
-        "width": 899
-      },
-      {
-        "file": "paris-3",
-        "title": "Paris, France",
-        "width": 898
-      },
-      {
-        "file": "emeraldisle-1",
-        "title": "Emerald Isle, North Carolina",
-        "width": 898
-      },
-      {
-        "file": "emeraldisle-2",
-        "title": "Emerald Isle, North Carolina",
-        "width": 898
-      },
-      {
-        "file": "emeraldisle-3",
-        "title": "Emerald Isle, North Carolina",
-        "width": 898
-      },
-      {
-        "file": "maine-1",
-        "title": "Marshall Point Rd, Port Clyde, Maine",
-        "width": 898
-      },
-      {
-        "file": "maine-2",
-        "title": "Acadia National Park, Maine",
-        "width": 898
-      },
-      {
-        "file": "maine-3",
-        "title": "Acadia National Park, Maine",
-        "width": 898
-      },
-      {
-        "file": "maine-4",
-        "title": "Acadia National Park, Maine",
-        "width": 898
-      }
-    ]
-  },
-  "openrange": {
-    "title": "Open Range",
-    "subtitle": "From Monument Valley to the Mojave Desert",
-    "info": "Deserts, National Parks, and Native American monuments, photographed with 35mm film, Polaroid instant, dSLR, and iPhone cameras. Shot in June 2011 and self-published Jan 2012.",
-    "images": [
-      {
-        "file": "lakepowell02",
-        "title": "Lake Powell - iPhone panorama",
-        "width": 1978
-      },
-      {
-        "file": "lakepowell01",
-        "title": "Lake Powell - DSLR digital",
-        "width": 800
-      },
-      {
-        "file": "lakepowell03",
-        "title": "Lake Powell - 35mm film",
-        "width": 908
-      },
-      {
-        "file": "lakepowell04",
-        "title": "Lake Powell - 35mm film",
-        "width": 919
-      },
-      {
-        "file": "lakepowell05",
-        "title": "Lake Powell - 35mm film",
-        "width": 907
-      },
-      {
-        "file": "leesferry01",
-        "title": "Lee's Ferry - DSLR digital",
-        "width": 450
-      },
-      {
-        "file": "leesferry02",
-        "title": "Lee's Ferry - DSLR digital",
-        "width": 800
-      },
-      {
-        "file": "monumentvalley01",
-        "title": "Monument Valley - DSLR digital",
-        "width": 800
-      },
-      {
-        "file": "monumentvalley02",
-        "title": "Monument Valley - DSLR digital",
-        "width": 800
-      },
-      {
-        "file": "monumentvalley03",
-        "title": "Monument Valley - DSLR digital",
-        "width": 800
-      },
-      {
-        "file": "monumentvalley04",
-        "title": "Monument Valley - DSLR digital",
-        "width": 800
-      },
-      {
-        "file": "monumentvalley05",
-        "title": "Monument Valley - DSLR digital long-exposure",
-        "width": 800
-      },
-      {
-        "file": "monumentvalley06",
-        "title": "Monument Valley - DSLR digital long-exposure",
-        "width": 820
-      },
-      {
-        "file": "monumentvalley09",
-        "title": "Monument Valley - iPhone panorama",
-        "width": 2502
-      },
-      {
-        "file": "monumentvalley07",
-        "title": "Monument Valley - DSLR digital long-exposure",
-        "width": 800
-      },
-      {
-        "file": "monumentvalley08",
-        "title": "Monument Valley - DSLR digital HDR composite",
-        "width": 799
-      },
-      {
-        "file": "monumentvalley10",
-        "title": "Monument Valley - 35mm film",
-        "width": 899
-      },
-      {
-        "file": "monumentvalley11",
-        "title": "Monument Valley - 35mm film",
-        "width": 901
-      },
-      {
-        "file": "monumentvalley12",
-        "title": "Monument Valley - 35mm film",
-        "width": 903
-      },
-      {
-        "file": "monumentvalley13",
-        "title": "Monument Valley - 35mm film",
-        "width": 907
-      },
-      {
-        "file": "monumentvalley14",
-        "title": "Monument Valley - Polaroid instant film",
-        "width": 499
-      },
-      {
-        "file": "monumentvalley15",
-        "title": "Monument Valley - Polaroid instant film",
-        "width": 508
-      },
-      {
-        "file": "monumentvalley16",
-        "title": "Monument Valley - Polaroid instant film",
-        "width": 507
-      },
-      {
-        "file": "highways01",
-        "title": "On The Road - DSLR digital",
-        "width": 800
-      },
-      {
-        "file": "highways02",
-        "title": "On The Road - DSLR digital",
-        "width": 800
-      },
-      {
-        "file": "highways03",
-        "title": "On The Road - DSLR digital",
-        "width": 800
-      },
-      {
-        "file": "highways04",
-        "title": "On The Road - DSLR digital",
-        "width": 800
-      },
-      {
-        "file": "highways05",
-        "title": "On The Road - 35mm film",
-        "width": 898
-      },
-      {
-        "file": "highways06",
-        "title": "On The Road - 35mm film",
-        "width": 889
-      },
-      {
-        "file": "highways07",
-        "title": "On The Road - 35mm film",
-        "width": 927
-      },
-      {
-        "file": "highways08",
-        "title": "On The Road - Polaroid instant film",
-        "width": 506
-      },
-      {
-        "file": "highways09",
-        "title": "On The Road - Polaroid instant film",
-        "width": 510
-      },
-      {
-        "file": "navajomonument01",
-        "title": "Navajo National Monument - DSLR digital HDR composite",
-        "width": 799
-      },
-      {
-        "file": "navajomonument02",
-        "title": "Navajo National Monument - DSLR digital HDR composite",
-        "width": 799
-      },
-      {
-        "file": "navajomonument03",
-        "title": "Navajo National Monument - DSLR digital HDR composite",
-        "width": 800
-      },
-      {
-        "file": "navajomonument04",
-        "title": "Navajo National Monument - 35mm film",
-        "width": 899
-      },
-      {
-        "file": "navajomonument05",
-        "title": "Navajo National Monument - 35mm film",
-        "width": 396
-      },
-      {
-        "file": "grandcanyon01",
-        "title": "Grand Canyon National Park - DSLR digital",
-        "width": 800
-      },
-      {
-        "file": "grandcanyon02",
-        "title": "Grand Canyon National Park - DSLR digital",
-        "width": 457
-      },
-      {
-        "file": "grandcanyon03",
-        "title": "Grand Canyon National Park - iPhone",
-        "width": 803
-      },
-      {
-        "file": "grandcanyon04",
-        "title": "Grand Canyon National Park - DSLR digital HDR composite",
-        "width": 449
-      },
-      {
-        "file": "grandcanyon05",
-        "title": "Grand Canyon National Park - DSLR digital HDR composite",
-        "width": 800
-      },
-      {
-        "file": "grandcanyon06",
-        "title": "Grand Canyon National Park - DSLR digital HDR composite",
-        "width": 804
-      },
-      {
-        "file": "grandcanyon07",
-        "title": "Grand Canyon National Park - 35mm film",
-        "width": 903
-      },
-      {
-        "file": "joshuatree01",
-        "title": "Joshua Tree National Park - DSLR digital",
-        "width": 800
-      },
-      {
-        "file": "joshuatree02",
-        "title": "Joshua Tree National Park - DSLR digital",
-        "width": 800
-      },
-      {
-        "file": "joshuatree03",
-        "title": "Joshua Tree National Park - DSLR digital",
-        "width": 800
-      },
-      {
-        "file": "joshuatree04",
-        "title": "Joshua Tree National Park - DSLR digital",
-        "width": 800
-      }
-    ]
-  },
-  "englishportfolio": {
-    "title": "The English Portfolio",
-    "subtitle": "Film Photography Across England",
-    "info": "35mm and Polaroid instant film photography across England, emphasizing more rural and historical locations. Shot in Feb 2008 and displayed in a solo exhibition in Lexington, KY in May 2008.",
-    "images": [
-      {
-        "file": "bradfield-1",
-        "title": "High Bradfield - 35mm film",
-        "width": 407
-      },
-      {
-        "file": "bradfield-3",
-        "title": "High Bradfield - 35mm film",
-        "width": 898
-      },
-      {
-        "file": "bradfield-4",
-        "title": "High Bradfield - 35mm film",
-        "width": 906
-      },
-      {
-        "file": "bradfield-6",
-        "title": "High Bradfield - Polaroid instant film",
-        "width": 498
-      },
-      {
-        "file": "bradfield-5",
-        "title": "High Bradfield - 35mm film",
-        "width": 898
-      },
-      {
-        "file": "bradfield-2",
-        "title": "High Bradfield - 35mm film",
-        "width": 399
-      },
-      {
-        "file": "liverpool-5",
-        "title": "Liverpool - Polaroid instant film",
-        "width": 497
-      },
-      {
-        "file": "liverpool-1",
-        "title": "Liverpool - 35mm film",
-        "width": 852
-      },
-      {
-        "file": "liverpool-2",
-        "title": "Liverpool - 35mm film",
-        "width": 403
-      },
-      {
-        "file": "liverpool-3",
-        "title": "Liverpool - 35mm film",
-        "width": 893
-      },
-      {
-        "file": "liverpool-4",
-        "title": "Liverpool - 35mm film",
-        "width": 398
-      },
-      {
-        "file": "birmingham-1",
-        "title": "Birmingham - 35mm film",
-        "width": 892
-      },
-      {
-        "file": "birmingham-2",
-        "title": "Birmingham - 35mm film",
-        "width": 436
-      },
-      {
-        "file": "birmingham-4",
-        "title": "Birmingham - Polaroid instant film",
-        "width": 500
-      },
-      {
-        "file": "birmingham-3",
-        "title": "Birmingham - 35mm film",
-        "width": 396
-      },
-      {
-        "file": "kenilworth-1",
-        "title": "Kenilworth - Polaroid instant film",
-        "width": 498
-      },
-      {
-        "file": "sheffield-1",
-        "title": "Sheffield - 35mm film",
-        "width": 413
-      }
-    ]
+  "galleries": {
+    "wideworld": {
+      "title": "The Wide World",
+      "subtitle": "Lumix GF1 7-14mm Wide Angle Photos",
+      "info": "Photos taken around the United States and Europe, all taken with the same Panasonic Lumix G Vario 7-14mm f/4 wide angle lens, attached to Panasonic Lumix DMC-GF1 camera.",
+      "images": [
+        {
+          "file": "austria-1",
+          "title": "Innsbruck, Austria",
+          "width": 898
+        },
+        {
+          "file": "austria-2",
+          "title": "Seefeld, Austria",
+          "width": 898
+        },
+        {
+          "file": "austria-3",
+          "title": "Seefeld, Austria",
+          "width": 898
+        },
+        {
+          "file": "austria-4",
+          "title": "Innsbruck, Austria",
+          "width": 898
+        },
+        {
+          "file": "austria-5",
+          "title": "Salzburg, Austria",
+          "width": 898
+        },
+        {
+          "file": "venezia-1",
+          "title": "Venice, Italy",
+          "width": 898
+        },
+        {
+          "file": "venezia-2",
+          "title": "Venice, Italy",
+          "width": 898
+        },
+        {
+          "file": "venezia-3",
+          "title": "Venice, Italy",
+          "width": 898
+        },
+        {
+          "file": "sandiego-1",
+          "title": "La Jolla, California",
+          "width": 898
+        },
+        {
+          "file": "sandiego-2",
+          "title": "La Jolla, California",
+          "width": 899
+        },
+        {
+          "file": "joshuatree-1",
+          "title": "Joshua Tree National Park, California",
+          "width": 898
+        },
+        {
+          "file": "joshuatree-2",
+          "title": "Joshua Tree National Park, California",
+          "width": 898
+        },
+        {
+          "file": "joshuatree-3",
+          "title": "Joshua Tree National Park, California",
+          "width": 899
+        },
+        {
+          "file": "england-1",
+          "title": "London, England, UK",
+          "width": 899
+        },
+        {
+          "file": "england-2",
+          "title": "London, England, UK",
+          "width": 898
+        },
+        {
+          "file": "england-3",
+          "title": "London, England, UK",
+          "width": 898
+        },
+        {
+          "file": "england-4",
+          "title": "London, England, UK",
+          "width": 899
+        },
+        {
+          "file": "england-5",
+          "title": "London, England, UK",
+          "width": 899
+        },
+        {
+          "file": "england-6",
+          "title": "Stonehenge, England, UK",
+          "width": 899
+        },
+        {
+          "file": "england-7",
+          "title": "London, England, UK",
+          "width": 1005
+        },
+        {
+          "file": "paris-1",
+          "title": "Paris, France",
+          "width": 480
+        },
+        {
+          "file": "paris-2",
+          "title": "Paris, France",
+          "width": 899
+        },
+        {
+          "file": "paris-3",
+          "title": "Paris, France",
+          "width": 898
+        },
+        {
+          "file": "emeraldisle-1",
+          "title": "Emerald Isle, North Carolina",
+          "width": 898
+        },
+        {
+          "file": "emeraldisle-2",
+          "title": "Emerald Isle, North Carolina",
+          "width": 898
+        },
+        {
+          "file": "emeraldisle-3",
+          "title": "Emerald Isle, North Carolina",
+          "width": 898
+        },
+        {
+          "file": "maine-1",
+          "title": "Marshall Point Rd, Port Clyde, Maine",
+          "width": 898
+        },
+        {
+          "file": "maine-2",
+          "title": "Acadia National Park, Maine",
+          "width": 898
+        },
+        {
+          "file": "maine-3",
+          "title": "Acadia National Park, Maine",
+          "width": 898
+        },
+        {
+          "file": "maine-4",
+          "title": "Acadia National Park, Maine",
+          "width": 898
+        }
+      ]
+    },
+    "openrange": {
+      "title": "Open Range",
+      "subtitle": "From Monument Valley to the Mojave Desert",
+      "info": "Deserts, National Parks, and Native American monuments, photographed with 35mm film, Polaroid instant, dSLR, and iPhone cameras. Shot in June 2011 and self-published Jan 2012.",
+      "images": [
+        {
+          "file": "lakepowell02",
+          "title": "Lake Powell - iPhone panorama",
+          "width": 1978
+        },
+        {
+          "file": "lakepowell01",
+          "title": "Lake Powell - DSLR digital",
+          "width": 800
+        },
+        {
+          "file": "lakepowell03",
+          "title": "Lake Powell - 35mm film",
+          "width": 908
+        },
+        {
+          "file": "lakepowell04",
+          "title": "Lake Powell - 35mm film",
+          "width": 919
+        },
+        {
+          "file": "lakepowell05",
+          "title": "Lake Powell - 35mm film",
+          "width": 907
+        },
+        {
+          "file": "leesferry01",
+          "title": "Lee's Ferry - DSLR digital",
+          "width": 450
+        },
+        {
+          "file": "leesferry02",
+          "title": "Lee's Ferry - DSLR digital",
+          "width": 800
+        },
+        {
+          "file": "monumentvalley01",
+          "title": "Monument Valley - DSLR digital",
+          "width": 800
+        },
+        {
+          "file": "monumentvalley02",
+          "title": "Monument Valley - DSLR digital",
+          "width": 800
+        },
+        {
+          "file": "monumentvalley03",
+          "title": "Monument Valley - DSLR digital",
+          "width": 800
+        },
+        {
+          "file": "monumentvalley04",
+          "title": "Monument Valley - DSLR digital",
+          "width": 800
+        },
+        {
+          "file": "monumentvalley05",
+          "title": "Monument Valley - DSLR digital long-exposure",
+          "width": 800
+        },
+        {
+          "file": "monumentvalley06",
+          "title": "Monument Valley - DSLR digital long-exposure",
+          "width": 820
+        },
+        {
+          "file": "monumentvalley09",
+          "title": "Monument Valley - iPhone panorama",
+          "width": 2502
+        },
+        {
+          "file": "monumentvalley07",
+          "title": "Monument Valley - DSLR digital long-exposure",
+          "width": 800
+        },
+        {
+          "file": "monumentvalley08",
+          "title": "Monument Valley - DSLR digital HDR composite",
+          "width": 799
+        },
+        {
+          "file": "monumentvalley10",
+          "title": "Monument Valley - 35mm film",
+          "width": 899
+        },
+        {
+          "file": "monumentvalley11",
+          "title": "Monument Valley - 35mm film",
+          "width": 901
+        },
+        {
+          "file": "monumentvalley12",
+          "title": "Monument Valley - 35mm film",
+          "width": 903
+        },
+        {
+          "file": "monumentvalley13",
+          "title": "Monument Valley - 35mm film",
+          "width": 907
+        },
+        {
+          "file": "monumentvalley14",
+          "title": "Monument Valley - Polaroid instant film",
+          "width": 499
+        },
+        {
+          "file": "monumentvalley15",
+          "title": "Monument Valley - Polaroid instant film",
+          "width": 508
+        },
+        {
+          "file": "monumentvalley16",
+          "title": "Monument Valley - Polaroid instant film",
+          "width": 507
+        },
+        {
+          "file": "highways01",
+          "title": "On The Road - DSLR digital",
+          "width": 800
+        },
+        {
+          "file": "highways02",
+          "title": "On The Road - DSLR digital",
+          "width": 800
+        },
+        {
+          "file": "highways03",
+          "title": "On The Road - DSLR digital",
+          "width": 800
+        },
+        {
+          "file": "highways04",
+          "title": "On The Road - DSLR digital",
+          "width": 800
+        },
+        {
+          "file": "highways05",
+          "title": "On The Road - 35mm film",
+          "width": 898
+        },
+        {
+          "file": "highways06",
+          "title": "On The Road - 35mm film",
+          "width": 889
+        },
+        {
+          "file": "highways07",
+          "title": "On The Road - 35mm film",
+          "width": 927
+        },
+        {
+          "file": "highways08",
+          "title": "On The Road - Polaroid instant film",
+          "width": 506
+        },
+        {
+          "file": "highways09",
+          "title": "On The Road - Polaroid instant film",
+          "width": 510
+        },
+        {
+          "file": "navajomonument01",
+          "title": "Navajo National Monument - DSLR digital HDR composite",
+          "width": 799
+        },
+        {
+          "file": "navajomonument02",
+          "title": "Navajo National Monument - DSLR digital HDR composite",
+          "width": 799
+        },
+        {
+          "file": "navajomonument03",
+          "title": "Navajo National Monument - DSLR digital HDR composite",
+          "width": 800
+        },
+        {
+          "file": "navajomonument04",
+          "title": "Navajo National Monument - 35mm film",
+          "width": 899
+        },
+        {
+          "file": "navajomonument05",
+          "title": "Navajo National Monument - 35mm film",
+          "width": 396
+        },
+        {
+          "file": "grandcanyon01",
+          "title": "Grand Canyon National Park - DSLR digital",
+          "width": 800
+        },
+        {
+          "file": "grandcanyon02",
+          "title": "Grand Canyon National Park - DSLR digital",
+          "width": 457
+        },
+        {
+          "file": "grandcanyon03",
+          "title": "Grand Canyon National Park - iPhone",
+          "width": 803
+        },
+        {
+          "file": "grandcanyon04",
+          "title": "Grand Canyon National Park - DSLR digital HDR composite",
+          "width": 449
+        },
+        {
+          "file": "grandcanyon05",
+          "title": "Grand Canyon National Park - DSLR digital HDR composite",
+          "width": 800
+        },
+        {
+          "file": "grandcanyon06",
+          "title": "Grand Canyon National Park - DSLR digital HDR composite",
+          "width": 804
+        },
+        {
+          "file": "grandcanyon07",
+          "title": "Grand Canyon National Park - 35mm film",
+          "width": 903
+        },
+        {
+          "file": "joshuatree01",
+          "title": "Joshua Tree National Park - DSLR digital",
+          "width": 800
+        },
+        {
+          "file": "joshuatree02",
+          "title": "Joshua Tree National Park - DSLR digital",
+          "width": 800
+        },
+        {
+          "file": "joshuatree03",
+          "title": "Joshua Tree National Park - DSLR digital",
+          "width": 800
+        },
+        {
+          "file": "joshuatree04",
+          "title": "Joshua Tree National Park - DSLR digital",
+          "width": 800
+        }
+      ]
+    },
+    "englishportfolio": {
+      "title": "The English Portfolio",
+      "subtitle": "Film Photography Across England",
+      "info": "35mm and Polaroid instant film photography across England, emphasizing more rural and historical locations. Shot in Feb 2008 and displayed in a solo exhibition in Lexington, KY in May 2008.",
+      "images": [
+        {
+          "file": "bradfield-1",
+          "title": "High Bradfield - 35mm film",
+          "width": 407
+        },
+        {
+          "file": "bradfield-3",
+          "title": "High Bradfield - 35mm film",
+          "width": 898
+        },
+        {
+          "file": "bradfield-4",
+          "title": "High Bradfield - 35mm film",
+          "width": 906
+        },
+        {
+          "file": "bradfield-6",
+          "title": "High Bradfield - Polaroid instant film",
+          "width": 498
+        },
+        {
+          "file": "bradfield-5",
+          "title": "High Bradfield - 35mm film",
+          "width": 898
+        },
+        {
+          "file": "bradfield-2",
+          "title": "High Bradfield - 35mm film",
+          "width": 399
+        },
+        {
+          "file": "liverpool-5",
+          "title": "Liverpool - Polaroid instant film",
+          "width": 497
+        },
+        {
+          "file": "liverpool-1",
+          "title": "Liverpool - 35mm film",
+          "width": 852
+        },
+        {
+          "file": "liverpool-2",
+          "title": "Liverpool - 35mm film",
+          "width": 403
+        },
+        {
+          "file": "liverpool-3",
+          "title": "Liverpool - 35mm film",
+          "width": 893
+        },
+        {
+          "file": "liverpool-4",
+          "title": "Liverpool - 35mm film",
+          "width": 398
+        },
+        {
+          "file": "birmingham-1",
+          "title": "Birmingham - 35mm film",
+          "width": 892
+        },
+        {
+          "file": "birmingham-2",
+          "title": "Birmingham - 35mm film",
+          "width": 436
+        },
+        {
+          "file": "birmingham-4",
+          "title": "Birmingham - Polaroid instant film",
+          "width": 500
+        },
+        {
+          "file": "birmingham-3",
+          "title": "Birmingham - 35mm film",
+          "width": 396
+        },
+        {
+          "file": "kenilworth-1",
+          "title": "Kenilworth - Polaroid instant film",
+          "width": 498
+        },
+        {
+          "file": "sheffield-1",
+          "title": "Sheffield - 35mm film",
+          "width": 413
+        }
+      ]
+    }
   }
 }

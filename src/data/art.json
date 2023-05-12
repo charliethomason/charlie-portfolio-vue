@@ -1,729 +1,713 @@
 {
-  "galleries": [
+  "controls": [
     {
-      "href": "inktober2022",
-      "title": "Inktober 2022",
-      "subtitle": "project"
-    },
-    {
-      "href": "inktober2021",
-      "title": "Inktober 2021",
-      "subtitle": "project"
-    },
-    {
-      "href": "inktober2020",
-      "title": "Inktober 2020",
-      "subtitle": "book"
-    },
-    {
-      "href": "birdsofchicagoland",
-      "title": "Birds of Chicagoland",
-      "subtitle": "book"
-    },
-    {
-      "href": "birds",
-      "title": "Birds"
-    },
-    {
-      "href": "movies",
-      "title": "Movies"
-    },
-    {
-      "href": "other",
-      "title": "Other"
+      "legend": "View",
+      "name": "view",
+      "options": [
+        {
+          "label": "Grid",
+          "value": "grid"
+        },
+        {
+          "label": "List",
+          "value": "list"
+        }
+      ]
     }
   ],
-  "inktober2022": {
-    "title": "Inktober 2022",
-    "subtitle": "100 Years of Cinema Stills",
-    "info": "Ink brush paintings completed Sept-Oct 2022 for the annual #inktober challenge. Continues the theme from Inktober 2020 and 2021 of depicting scenes from my favorite films",
-    "images": [
-      {
-        "file": "nosferatu",
-        "title": "Nosferatu: A Symphony of Horror (1922)",
-        "width": 1098
-      },
-      {
-        "file": "stagecoach",
-        "title": "Stagecoach (1939)",
-        "width": 1074
-      },
-      {
-        "file": "howgreenwasmyvalley",
-        "title": "How Green Was My Valley (1941)",
-        "width": 972
-      },
-      {
-        "file": "sevensamurai",
-        "title": "Seven Samurai (1954)",
-        "width": 1055
-      },
-      {
-        "file": "nightofthelivingdead",
-        "title": "Night of the Living Dead (1968)",
-        "width": 1036
-      },
-      {
-        "file": "dontlooknow",
-        "title": "Don't Look Now (1973)",
-        "width": 1018
-      },
-      {
-        "file": "returnofthejedi",
-        "title": "Return of the Jedi (1983)",
-        "width": 992
-      },
-      {
-        "file": "marsattacks",
-        "title": "Mars Attacks! (1996)",
-        "width": 1076
-      },
-      {
-        "file": "returnoftheking",
-        "title": "The Lord of the Rings: The Return of the King (2003)",
-        "width": 999
-      },
-      {
-        "file": "it",
-        "title": "It (2017)",
-        "width": 1063
-      },
-      {
-        "file": "reminiscence",
-        "title": "Reminiscence (2021)",
-        "width": 1068
-      }
-    ]
-  },
-  "inktober2021": {
-    "title": "Inktober 2021",
-    "subtitle": "Light & Ink",
-    "info": "Ink brush paintings completed Sept-Oct 2021 for the annual #inktober challenge. Continues the theme from #charlieinktober 2020 of depicting scenes from my favorite films",
-    "images": [
-      {
-        "file": "coverpage",
-        "title": "Cover page",
-        "width": 811
-      },
-      {
-        "file": "halloween18",
-        "title": "Halloween (2018)",
-        "width": 1088
-      },
-      {
-        "file": "batmanreturns",
-        "title": "Batman Returns (1992)",
-        "width": 1071
-      },
-      {
-        "file": "doctorsleep",
-        "title": "Doctor Sleep (2019)",
-        "width": 1089
-      },
-      {
-        "file": "goldrush",
-        "title": "The Gold Rush (1925)",
-        "width": 1039
-      },
-      {
-        "file": "wizardofoz",
-        "title": "The Wizard of Oz (1939)",
-        "width": 1090
-      },
-      {
-        "file": "evildeadii",
-        "title": "Evil Dead II (1987)",
-        "width": 1094
-      },
-      {
-        "file": "empirestrikesback",
-        "title": "The Empire Strikes Back (1980)",
-        "width": 1089
-      },
-      {
-        "file": "thetwotowers",
-        "title": "The Lord of the Rings: The Two Towers (2002)",
-        "width": 1095
-      },
-      {
-        "file": "downbylaw",
-        "title": "Down By Law (1986)",
-        "width": 1095
-      },
-      {
-        "file": "lostboys",
-        "title": "The Lost Boys (1987)",
-        "width": 1098
-      }
-    ]
-  },
-  "inktober2020": {
-    "title": "Inktober 2020",
-    "subtitle": "Silver Stills From Favorite Films",
-    "info": "Ink brush paintings completed Sept-Nov 2020 for the annual #inktober challenge. Depicts scenes from my top 20 favorite films of all-time, in order. Self-published Dec 2020.",
-    "images": [
-      {
-        "file": "beetlejuice",
-        "title": "1. Beetlejuice (1988)",
-        "width": 964
-      },
-      {
-        "file": "halloween",
-        "title": "2. Halloween (1978)",
-        "width": 1087
-      },
-      {
-        "file": "lotr",
-        "title": "3. The Lord of the Rings: The Fellowship of the Ring (2001)",
-        "width": 1040
-      },
-      {
-        "file": "phibes",
-        "title": "4. The Abominable Dr. Phibes (1971)",
-        "width": 1004
-      },
-      {
-        "file": "shining",
-        "title": "5. The Shining (1980)",
-        "width": 954
-      },
-      {
-        "file": "starwars",
-        "title": "6. Star Wars (1977)",
-        "width": 1004
-      },
-      {
-        "file": "batman",
-        "title": "7. Batman (1989)",
-        "width": 1002
-      },
-      {
-        "file": "sleepyhollow",
-        "title": "8. Sleepy Hollow (1999)",
-        "width": 1000
-      },
-      {
-        "file": "donniedarko",
-        "title": "9. Donnie Darko (2001)",
-        "width": 1009
-      },
-      {
-        "file": "terminator2",
-        "title": "10. Terminator 2: Judgement Day (1991)",
-        "width": 1133
-      },
-      {
-        "file": "nightmareb4xmas",
-        "title": "11. The Nightmare Before Christmas (1993)",
-        "width": 1006
-      },
-      {
-        "file": "thefog",
-        "title": "12. The Fog (1980)",
-        "width": 1009
-      },
-      {
-        "file": "edwardscissorhands",
-        "title": "13. Edward Scissorhands (1990)",
-        "width": 986
-      },
-      {
-        "file": "alien",
-        "title": "14. Alien (1979)",
-        "width": 983
-      },
-      {
-        "file": "bladerunner",
-        "title": "15. Blade Runner (1982)",
-        "width": 1098
-      },
-      {
-        "file": "thecrow",
-        "title": "16. The Crow (1994)",
-        "width": 979
-      },
-      {
-        "file": "shaunofthedead",
-        "title": "17. Shaun of the Dead (2004)",
-        "width": 1211
-      },
-      {
-        "file": "metropolis",
-        "title": "18. Metropolis (1927)",
-        "width": 992
-      },
-      {
-        "file": "escapefromny",
-        "title": "19. Escape From New York (1981)",
-        "width": 1017
-      },
-      {
-        "file": "dracula",
-        "title": "20. Dracula (1931)",
-        "width": 996
-      }
-    ]
-  },
-  "birdsofchicagoland": {
-    "title": "Birds of Chicagoland",
-    "subtitle": "Paintings by Charlie Thomason",
-    "info": "A book of paintings of birds native to the Chicagoland area, depicted against notable Chicago locations. All paintings completed with watercolor and ink on paper. Painted between Oct 2014 and Oct 2016, and self-published Dec 2016.",
-    "images": [
-      {
-        "file": "peregrine",
-        "title": "Peregrine Falcon at Old St. Patrick's Church",
-        "width": 530
-      },
-      {
-        "file": "kestrel",
-        "title": "American Kestrel at Museum Campus with Skyline",
-        "width": 456
-      },
-      {
-        "file": "goshawk",
-        "title": "Northern Goshawk at Northerly Island, Winter",
-        "width": 501
-      },
-      {
-        "file": "coopershawk",
-        "title": "Cooper's Hawk at Wind Farm",
-        "width": 462
-      },
-      {
-        "file": "greathornedowl",
-        "title": "Great Horned Owl at Graceland Cemetery",
-        "width": 526
-      },
-      {
-        "file": "greatblueheron",
-        "title": "Great Blue Heron at Humboldt Park Lagoon",
-        "width": 511
-      },
-      {
-        "file": "woodduck",
-        "title": "Wood Duck at Lincoln Park South Pond",
-        "width": 471
-      },
-      {
-        "file": "nightheron",
-        "title": "Black-crowned Night Heron at Lincoln Park South Pond",
-        "width": 759
-      },
-      {
-        "file": "cormorant",
-        "title": "Double-crested Cormorant at Monroe Harbor Breakwater",
-        "width": 393
-      },
-      {
-        "file": "loon",
-        "title": "Common Loon at Jackson Park Lagoon",
-        "width": 541
-      },
-      {
-        "file": "grosbeaks",
-        "title": "Rose-breasted Grosbeaks at the Art Institute of Chicago",
-        "width": 456
-      },
-      {
-        "file": "meadowlark",
-        "title": "Eastern Meadowlark",
-        "width": 489
-      },
-      {
-        "file": "bluejay",
-        "title": "Blue Jay at Printer's Row",
-        "width": 817
-      },
-      {
-        "file": "cardinals",
-        "title": "Northern Cardinals with Gynandromorph",
-        "width": 923
-      },
-      {
-        "file": "redwingedblackbird",
-        "title": "Red-winged Blackbird at Glessner House Museum",
-        "width": 694
-      },
-      {
-        "file": "rockpigeon",
-        "title": "Rock Pigeon at Madison & Wabash CTA Station",
-        "width": 807
-      },
-      {
-        "file": "crow",
-        "title": "American Crow at University of Chicago",
-        "width": 525
-      },
-      {
-        "file": "tern",
-        "title": "Caspian Tern at Promontory Point",
-        "width": 455
-      },
-      {
-        "file": "whitethroatedsparrow",
-        "title": "White-throated Sparrow at Old Chicago Water Tower",
-        "width": 468
-      },
-      {
-        "file": "passengerpigeons",
-        "title": "Passenger Pigeons at Field Museum",
-        "width": 453
-      },
-      {
-        "file": "flicker",
-        "title": "Northern Flicker at Grant Park Rose Garden",
-        "width": 420
-      },
-      {
-        "file": "woodpecker",
-        "title": "Pileated Woodpecker at Starved Rock State Park, Summer",
-        "width": 435
-      },
-      {
-        "file": "turkey",
-        "title": "Wild Turkey at Starved Rock State Park, Autumn",
-        "width": 864
-      },
-      {
-        "file": "kingfisher",
-        "title": "Belted Kingfisher at Halsted St Bridge, River West",
-        "width": 471
-      }
-    ]
-  },
-  "birds": {
-    "title": "Birds",
-    "info": "Watercolor and oil paintings of birds. Includes only those not found in 'Birds of Chicagoland.'",
-    "images": [
-      {
-        "file": "redjunglefowl",
-        "title": "Asian Red Junglefowl",
-        "year": "2021",
-        "medium": "Gouache on paper",
-        "width": 430
-      },
-      {
-        "file": "blaumeisecolor",
-        "title": "Blue Tit of Tyrol, Austria (watercolor)",
-        "year": "2020",
-        "medium": "Watercolor on paper",
-        "width": 444
-      },
-      {
-        "file": "emeraldosprey",
-        "title": "Emerald Osprey",
-        "year": "2020",
-        "medium": "Oil on canvas",
-        "width": 473
-      },
-      {
-        "file": "blaumeise",
-        "title": "Blue Tit of Tyrol, Austria",
-        "year": "2020",
-        "medium": "Oil on canvas",
-        "width": 467
-      },
-      {
-        "file": "magpieparkcity",
-        "title": "Park City Magpie",
-        "year": "2020",
-        "medium": "Oil on canvas",
-        "width": 771
-      },
-      {
-        "file": "kestrelgreenskies",
-        "title": "Kestrel Flies Over Green Skies",
-        "year": "2019",
-        "medium": "Oil on canvas",
-        "width": 761
-      },
-      {
-        "file": "turquoiseperegrine",
-        "title": "Turquoise Peregrine",
-        "year": "2019",
-        "medium": "Ink and watercolor on paper",
-        "width": 466
-      },
-      {
-        "file": "pelicanvenice",
-        "title": "Pelicanus Venezia",
-        "year": "2016",
-        "medium": "Ink and watercolor on paper",
-        "width": 716
-      },
-      {
-        "file": "ospreykingfisher",
-        "title": "Osprey and Kingfisher",
-        "year": "2015",
-        "medium": "Ink and watercolor on paper",
-        "width": 503
-      },
-      {
-        "file": "screechowl",
-        "title": "Screech Owl",
-        "year": "2014",
-        "medium": "Ink on paper",
-        "width": 492
-      },
-      {
-        "file": "bluejaydesert",
-        "title": "Blue Jay in the Desert",
-        "year": "2012",
-        "medium": "Ink and watercolor on paper",
-        "width": 909
-      }
-    ]
-  },
-  "movies": {
-    "title": "Movies",
-    "info": "Watercolor and oil paintings from my favorite movies. Includes only those not found in the 'Inktober' projects.",
-    "images": [
-      {
-        "file": "taxidriver",
-        "title": "Taxi Driver",
-        "year": "2022",
-        "medium": "Watercolor on paper"
-      },
-      {
-        "file": "rocky",
-        "title": "Rocky",
-        "year": "2021",
-        "medium": "Watercolor on paper"
-      },
-      {
-        "file": "downbylaw",
-        "title": "Down By Law",
-        "year": "2021",
-        "medium": "Ink on paper"
-      },
-      {
-        "file": "thetwotowers",
-        "title": "The Lord of the Rings: The Two Towers",
-        "year": "2021",
-        "medium": "Ink on paper"
-      },
-      {
-        "file": "beetlejuice",
-        "title": "Beetlejuice",
-        "year": "2020",
-        "medium": "Ink on paper"
-      },
-      {
-        "file": "phibes",
-        "title": "The Abominable Dr. Phibes",
-        "year": "2020",
-        "medium": "Ink on paper"
-      },
-      {
-        "file": "shining",
-        "title": "The Shining",
-        "year": "2020",
-        "medium": "Ink on paper"
-      },
-      {
-        "file": "sleepyhollow",
-        "title": "Sleepy Hollow",
-        "year": "2020",
-        "medium": "Ink on paper"
-      },
-      {
-        "file": "nightmareb4xmas",
-        "title": "The Nightmare Before Christmas",
-        "year": "2020",
-        "medium": "Ink on paper"
-      },
-      {
-        "file": "shaunofthedead",
-        "title": "Shaun of the Dead",
-        "year": "2020",
-        "medium": "Ink on paper"
-      },
-      {
-        "file": "theshape",
-        "title": "The Shape",
-        "year": "2019",
-        "medium": "Ink on paper"
-      },
-      {
-        "file": "thefog",
-        "title": "The Fog",
-        "year": "2019",
-        "medium": "Ink on paper"
-      },
-      {
-        "file": "thesnake",
-        "title": "The Snake",
-        "year": "2019",
-        "medium": "Ink on paper"
-      },
-      {
-        "file": "thedancingclown",
-        "title": "The Dancing Clown",
-        "year": "2019",
-        "medium": "Ink on paper"
-      },
-      {
-        "file": "thecrow",
-        "title": "The Crow",
-        "year": "2019",
-        "medium": "Ink on paper"
-      },
-      {
-        "file": "swampthing",
-        "title": "Swamp Thing",
-        "year": "2014",
-        "medium": "Ink and watercolor on paper"
-      },
-      {
-        "file": "edwardscissorhands",
-        "title": "Edward Scissorhands",
-        "year": "2014",
-        "medium": "Ink and watercolor on paper"
-      },
-      {
-        "file": "eternalsunshine",
-        "title": "Eternal Sunshine",
-        "year": "2012",
-        "medium": "Ink and watercolor on paper"
-      },
-      {
-        "file": "frankcellardoor",
-        "title": "Frank and the Cellar Door",
-        "year": "2012",
-        "medium": "Ink and watercolor on paper"
-      },
-      {
-        "file": "earthvsflyingsaucers",
-        "title": "Earth vs the Flying Saucers",
-        "year": "2012",
-        "medium": "Ink and watercolor on paper"
-      },
-      {
-        "file": "cormanandpoe",
-        "title": "Corman and Poe",
-        "year": "2007",
-        "medium": "Oil on canvas"
-      },
-      {
-        "file": "vincentprice",
-        "title": "Vincent Price",
-        "year": "2006",
-        "medium": "Ink on paper"
-      }
-    ]
-  },
-  "other": {
-    "title": "Other",
-    "info": "All other work",
-    "images": [
-      {
-        "file": "baxvox",
-        "title": "Bax Vox",
-        "year": "2021",
-        "medium": "Gouache on paper"
-      },
-      {
-        "file": "woodspoint",
-        "title": "Woodspoint",
-        "year": "2021",
-        "medium": "Oil on wood panel"
-      },
-      {
-        "file": "probewinndixie",
-        "title": "Ford Probe at Winn-Dixie Parking Lot on Friday Night",
-        "year": "2021",
-        "medium": "Oil on wood panel"
-      },
-      {
-        "file": "selfportrait2020",
-        "title": "Self-Portrait 2020",
-        "year": "2020",
-        "medium": "Oil on canvas"
-      },
-      {
-        "file": "redrialto",
-        "title": "Red Rialto",
-        "year": "2019",
-        "medium": "Ink and watercolor on paper"
-      },
-      {
-        "file": "riomendicanti",
-        "title": "Rio dei Mendicanti",
-        "year": "2018",
-        "medium": "Watercolor on paper"
-      },
-      {
-        "file": "sotoportego",
-        "title": "Sotoportego",
-        "year": "2018",
-        "medium": "Watercolor on paper"
-      },
-      {
-        "file": "allanon",
-        "title": "Allanon",
-        "year": "2018",
-        "medium": "Ink on paper"
-      },
-      {
-        "file": "mexicanvaquero",
-        "title": "A Mexican Vaquero",
-        "year": "2017",
-        "medium": "Oil on canvas"
-      },
-      {
-        "file": "schumi-monaco",
-        "title": "Schumacher at Monaco",
-        "year": "2017",
-        "medium": "Watercolor on paper"
-      },
-      {
-        "file": "andrettilongbeach",
-        "title": "Andretti vs Andretti at Long Beach",
-        "year": "2017",
-        "medium": "Watercolor on paper"
-      },
-      {
-        "file": "jimclark",
-        "title": "Jim Clark in the Lotus 49",
-        "year": "2014",
-        "medium": "Ink and watercolor on paper"
-      },
-      {
-        "file": "quanahparker",
-        "title": "Quanah Parker",
-        "year": "2012",
-        "medium": "Ink on paper"
-      },
-      {
-        "file": "chopin",
-        "title": "Frederic Chopin",
-        "year": "2012",
-        "medium": "Ink and watercolor on paper"
-      },
-      {
-        "file": "fqmg",
-        "title": "French Quarter Motorcycle Guitarist",
-        "year": "2011",
-        "medium": "Oil on canvas paper"
-      },
-      {
-        "file": "meltingdoge",
-        "title": "The Melting Doge",
-        "year": "2011",
-        "medium": "Oil on canvas paper"
-      },
-      {
-        "file": "mingojack",
-        "title": "Mingo Jack",
-        "year": "2010",
-        "medium": "Oil on wood panel"
-      },
-      {
-        "file": "selfportrait2007",
-        "title": "Self-Portrait 2007",
-        "year": "2007",
-        "medium": "Pencil on paper"
-      }
-    ]
+  "galleries": {
+    "inktober2022": {
+      "title": "Inktober 2022",
+      "subtitle": "100 Years of Cinema Stills",
+      "info": "Ink brush paintings completed Sept-Oct 2022 for the annual #inktober challenge. Continues the theme from Inktober 2020 and 2021 of depicting scenes from my favorite films",
+      "images": [
+        {
+          "file": "nosferatu",
+          "title": "Nosferatu: A Symphony of Horror (1922)",
+          "width": 1098
+        },
+        {
+          "file": "stagecoach",
+          "title": "Stagecoach (1939)",
+          "width": 1074
+        },
+        {
+          "file": "howgreenwasmyvalley",
+          "title": "How Green Was My Valley (1941)",
+          "width": 972
+        },
+        {
+          "file": "sevensamurai",
+          "title": "Seven Samurai (1954)",
+          "width": 1055
+        },
+        {
+          "file": "nightofthelivingdead",
+          "title": "Night of the Living Dead (1968)",
+          "width": 1036
+        },
+        {
+          "file": "dontlooknow",
+          "title": "Don't Look Now (1973)",
+          "width": 1018
+        },
+        {
+          "file": "returnofthejedi",
+          "title": "Return of the Jedi (1983)",
+          "width": 992
+        },
+        {
+          "file": "marsattacks",
+          "title": "Mars Attacks! (1996)",
+          "width": 1076
+        },
+        {
+          "file": "returnoftheking",
+          "title": "The Lord of the Rings: The Return of the King (2003)",
+          "width": 999
+        },
+        {
+          "file": "it",
+          "title": "It (2017)",
+          "width": 1063
+        },
+        {
+          "file": "reminiscence",
+          "title": "Reminiscence (2021)",
+          "width": 1068
+        }
+      ]
+    },
+    "inktober2021": {
+      "title": "Inktober 2021",
+      "subtitle": "Light & Ink",
+      "info": "Ink brush paintings completed Sept-Oct 2021 for the annual #inktober challenge. Continues the theme from #charlieinktober 2020 of depicting scenes from my favorite films",
+      "images": [
+        {
+          "file": "coverpage",
+          "title": "Cover page",
+          "width": 811
+        },
+        {
+          "file": "halloween18",
+          "title": "Halloween (2018)",
+          "width": 1088
+        },
+        {
+          "file": "batmanreturns",
+          "title": "Batman Returns (1992)",
+          "width": 1071
+        },
+        {
+          "file": "doctorsleep",
+          "title": "Doctor Sleep (2019)",
+          "width": 1089
+        },
+        {
+          "file": "goldrush",
+          "title": "The Gold Rush (1925)",
+          "width": 1039
+        },
+        {
+          "file": "wizardofoz",
+          "title": "The Wizard of Oz (1939)",
+          "width": 1090
+        },
+        {
+          "file": "evildeadii",
+          "title": "Evil Dead II (1987)",
+          "width": 1094
+        },
+        {
+          "file": "empirestrikesback",
+          "title": "The Empire Strikes Back (1980)",
+          "width": 1089
+        },
+        {
+          "file": "thetwotowers",
+          "title": "The Lord of the Rings: The Two Towers (2002)",
+          "width": 1095
+        },
+        {
+          "file": "downbylaw",
+          "title": "Down By Law (1986)",
+          "width": 1095
+        },
+        {
+          "file": "lostboys",
+          "title": "The Lost Boys (1987)",
+          "width": 1098
+        }
+      ]
+    },
+    "inktober2020": {
+      "title": "Inktober 2020",
+      "subtitle": "Silver Stills From Favorite Films",
+      "info": "Ink brush paintings completed Sept-Nov 2020 for the annual #inktober challenge. Depicts scenes from my top 20 favorite films of all-time, in order. Self-published Dec 2020.",
+      "images": [
+        {
+          "file": "beetlejuice",
+          "title": "1. Beetlejuice (1988)",
+          "width": 964
+        },
+        {
+          "file": "halloween",
+          "title": "2. Halloween (1978)",
+          "width": 1087
+        },
+        {
+          "file": "lotr",
+          "title": "3. The Lord of the Rings: The Fellowship of the Ring (2001)",
+          "width": 1040
+        },
+        {
+          "file": "phibes",
+          "title": "4. The Abominable Dr. Phibes (1971)",
+          "width": 1004
+        },
+        {
+          "file": "shining",
+          "title": "5. The Shining (1980)",
+          "width": 954
+        },
+        {
+          "file": "starwars",
+          "title": "6. Star Wars (1977)",
+          "width": 1004
+        },
+        {
+          "file": "batman",
+          "title": "7. Batman (1989)",
+          "width": 1002
+        },
+        {
+          "file": "sleepyhollow",
+          "title": "8. Sleepy Hollow (1999)",
+          "width": 1000
+        },
+        {
+          "file": "donniedarko",
+          "title": "9. Donnie Darko (2001)",
+          "width": 1009
+        },
+        {
+          "file": "terminator2",
+          "title": "10. Terminator 2: Judgement Day (1991)",
+          "width": 1133
+        },
+        {
+          "file": "nightmareb4xmas",
+          "title": "11. The Nightmare Before Christmas (1993)",
+          "width": 1006
+        },
+        {
+          "file": "thefog",
+          "title": "12. The Fog (1980)",
+          "width": 1009
+        },
+        {
+          "file": "edwardscissorhands",
+          "title": "13. Edward Scissorhands (1990)",
+          "width": 986
+        },
+        {
+          "file": "alien",
+          "title": "14. Alien (1979)",
+          "width": 983
+        },
+        {
+          "file": "bladerunner",
+          "title": "15. Blade Runner (1982)",
+          "width": 1098
+        },
+        {
+          "file": "thecrow",
+          "title": "16. The Crow (1994)",
+          "width": 979
+        },
+        {
+          "file": "shaunofthedead",
+          "title": "17. Shaun of the Dead (2004)",
+          "width": 1211
+        },
+        {
+          "file": "metropolis",
+          "title": "18. Metropolis (1927)",
+          "width": 992
+        },
+        {
+          "file": "escapefromny",
+          "title": "19. Escape From New York (1981)",
+          "width": 1017
+        },
+        {
+          "file": "dracula",
+          "title": "20. Dracula (1931)",
+          "width": 996
+        }
+      ]
+    },
+    "birdsofchicagoland": {
+      "title": "Birds of Chicagoland",
+      "subtitle": "Paintings by Charlie Thomason",
+      "info": "A book of paintings of birds native to the Chicagoland area, depicted against notable Chicago locations. All paintings completed with watercolor and ink on paper. Painted between Oct 2014 and Oct 2016, and self-published Dec 2016.",
+      "images": [
+        {
+          "file": "peregrine",
+          "title": "Peregrine Falcon at Old St. Patrick's Church",
+          "width": 530
+        },
+        {
+          "file": "kestrel",
+          "title": "American Kestrel at Museum Campus with Skyline",
+          "width": 456
+        },
+        {
+          "file": "goshawk",
+          "title": "Northern Goshawk at Northerly Island, Winter",
+          "width": 501
+        },
+        {
+          "file": "coopershawk",
+          "title": "Cooper's Hawk at Wind Farm",
+          "width": 462
+        },
+        {
+          "file": "greathornedowl",
+          "title": "Great Horned Owl at Graceland Cemetery",
+          "width": 526
+        },
+        {
+          "file": "greatblueheron",
+          "title": "Great Blue Heron at Humboldt Park Lagoon",
+          "width": 511
+        },
+        {
+          "file": "woodduck",
+          "title": "Wood Duck at Lincoln Park South Pond",
+          "width": 471
+        },
+        {
+          "file": "nightheron",
+          "title": "Black-crowned Night Heron at Lincoln Park South Pond",
+          "width": 759
+        },
+        {
+          "file": "cormorant",
+          "title": "Double-crested Cormorant at Monroe Harbor Breakwater",
+          "width": 393
+        },
+        {
+          "file": "loon",
+          "title": "Common Loon at Jackson Park Lagoon",
+          "width": 541
+        },
+        {
+          "file": "grosbeaks",
+          "title": "Rose-breasted Grosbeaks at the Art Institute of Chicago",
+          "width": 456
+        },
+        {
+          "file": "meadowlark",
+          "title": "Eastern Meadowlark",
+          "width": 489
+        },
+        {
+          "file": "bluejay",
+          "title": "Blue Jay at Printer's Row",
+          "width": 817
+        },
+        {
+          "file": "cardinals",
+          "title": "Northern Cardinals with Gynandromorph",
+          "width": 923
+        },
+        {
+          "file": "redwingedblackbird",
+          "title": "Red-winged Blackbird at Glessner House Museum",
+          "width": 694
+        },
+        {
+          "file": "rockpigeon",
+          "title": "Rock Pigeon at Madison & Wabash CTA Station",
+          "width": 807
+        },
+        {
+          "file": "crow",
+          "title": "American Crow at University of Chicago",
+          "width": 525
+        },
+        {
+          "file": "tern",
+          "title": "Caspian Tern at Promontory Point",
+          "width": 455
+        },
+        {
+          "file": "whitethroatedsparrow",
+          "title": "White-throated Sparrow at Old Chicago Water Tower",
+          "width": 468
+        },
+        {
+          "file": "passengerpigeons",
+          "title": "Passenger Pigeons at Field Museum",
+          "width": 453
+        },
+        {
+          "file": "flicker",
+          "title": "Northern Flicker at Grant Park Rose Garden",
+          "width": 420
+        },
+        {
+          "file": "woodpecker",
+          "title": "Pileated Woodpecker at Starved Rock State Park, Summer",
+          "width": 435
+        },
+        {
+          "file": "turkey",
+          "title": "Wild Turkey at Starved Rock State Park, Autumn",
+          "width": 864
+        },
+        {
+          "file": "kingfisher",
+          "title": "Belted Kingfisher at Halsted St Bridge, River West",
+          "width": 471
+        }
+      ]
+    },
+    "birds": {
+      "title": "Birds",
+      "info": "Watercolor, ink, and oil paintings of birds. Includes only those not found in 'Birds of Chicagoland.'",
+      "images": [
+        {
+          "file": "redjunglefowl",
+          "title": "Asian Red Junglefowl",
+          "year": "2021",
+          "medium": "Gouache on paper",
+          "width": 430
+        },
+        {
+          "file": "blaumeisecolor",
+          "title": "Blue Tit of Tyrol, Austria (watercolor)",
+          "year": "2020",
+          "medium": "Watercolor on paper",
+          "width": 444
+        },
+        {
+          "file": "emeraldosprey",
+          "title": "Emerald Osprey",
+          "year": "2020",
+          "medium": "Oil on canvas",
+          "width": 473
+        },
+        {
+          "file": "blaumeise",
+          "title": "Blue Tit of Tyrol, Austria",
+          "year": "2020",
+          "medium": "Oil on canvas",
+          "width": 467
+        },
+        {
+          "file": "magpieparkcity",
+          "title": "Park City Magpie",
+          "year": "2020",
+          "medium": "Oil on canvas",
+          "width": 771
+        },
+        {
+          "file": "kestrelgreenskies",
+          "title": "Kestrel Flies Over Green Skies",
+          "year": "2019",
+          "medium": "Oil on canvas",
+          "width": 761
+        },
+        {
+          "file": "turquoiseperegrine",
+          "title": "Turquoise Peregrine",
+          "year": "2019",
+          "medium": "Ink and watercolor on paper",
+          "width": 466
+        },
+        {
+          "file": "pelicanvenice",
+          "title": "Pelicanus Venezia",
+          "year": "2016",
+          "medium": "Ink and watercolor on paper",
+          "width": 716
+        },
+        {
+          "file": "ospreykingfisher",
+          "title": "Osprey and Kingfisher",
+          "year": "2015",
+          "medium": "Ink and watercolor on paper",
+          "width": 503
+        },
+        {
+          "file": "screechowl",
+          "title": "Screech Owl",
+          "year": "2014",
+          "medium": "Ink on paper",
+          "width": 492
+        },
+        {
+          "file": "bluejaydesert",
+          "title": "Blue Jay in the Desert",
+          "year": "2012",
+          "medium": "Ink and watercolor on paper",
+          "width": 909
+        }
+      ]
+    },
+    "movies": {
+      "title": "Movies",
+      "info": "Watercolor and oil paintings from my favorite movies. Includes only those not found in the 'Inktober' projects.",
+      "images": [
+        {
+          "file": "taxidriver",
+          "title": "Taxi Driver",
+          "year": "2022",
+          "medium": "Watercolor on paper"
+        },
+        {
+          "file": "rocky",
+          "title": "Rocky",
+          "year": "2021",
+          "medium": "Watercolor on paper"
+        },
+        {
+          "file": "downbylaw",
+          "title": "Down By Law",
+          "year": "2021",
+          "medium": "Ink on paper"
+        },
+        {
+          "file": "thetwotowers",
+          "title": "The Lord of the Rings: The Two Towers",
+          "year": "2021",
+          "medium": "Ink on paper"
+        },
+        {
+          "file": "beetlejuice",
+          "title": "Beetlejuice",
+          "year": "2020",
+          "medium": "Ink on paper"
+        },
+        {
+          "file": "phibes",
+          "title": "The Abominable Dr. Phibes",
+          "year": "2020",
+          "medium": "Ink on paper"
+        },
+        {
+          "file": "shining",
+          "title": "The Shining",
+          "year": "2020",
+          "medium": "Ink on paper"
+        },
+        {
+          "file": "sleepyhollow",
+          "title": "Sleepy Hollow",
+          "year": "2020",
+          "medium": "Ink on paper"
+        },
+        {
+          "file": "nightmareb4xmas",
+          "title": "The Nightmare Before Christmas",
+          "year": "2020",
+          "medium": "Ink on paper"
+        },
+        {
+          "file": "shaunofthedead",
+          "title": "Shaun of the Dead",
+          "year": "2020",
+          "medium": "Ink on paper"
+        },
+        {
+          "file": "theshape",
+          "title": "The Shape",
+          "year": "2019",
+          "medium": "Ink on paper"
+        },
+        {
+          "file": "thefog",
+          "title": "The Fog",
+          "year": "2019",
+          "medium": "Ink on paper"
+        },
+        {
+          "file": "thesnake",
+          "title": "The Snake",
+          "year": "2019",
+          "medium": "Ink on paper"
+        },
+        {
+          "file": "thedancingclown",
+          "title": "The Dancing Clown",
+          "year": "2019",
+          "medium": "Ink on paper"
+        },
+        {
+          "file": "thecrow",
+          "title": "The Crow",
+          "year": "2019",
+          "medium": "Ink on paper"
+        },
+        {
+          "file": "swampthing",
+          "title": "Swamp Thing",
+          "year": "2014",
+          "medium": "Ink and watercolor on paper"
+        },
+        {
+          "file": "edwardscissorhands",
+          "title": "Edward Scissorhands",
+          "year": "2014",
+          "medium": "Ink and watercolor on paper"
+        },
+        {
+          "file": "eternalsunshine",
+          "title": "Eternal Sunshine",
+          "year": "2012",
+          "medium": "Ink and watercolor on paper"
+        },
+        {
+          "file": "frankcellardoor",
+          "title": "Frank and the Cellar Door",
+          "year": "2012",
+          "medium": "Ink and watercolor on paper"
+        },
+        {
+          "file": "earthvsflyingsaucers",
+          "title": "Earth vs the Flying Saucers",
+          "year": "2012",
+          "medium": "Ink and watercolor on paper"
+        },
+        {
+          "file": "cormanandpoe",
+          "title": "Corman and Poe",
+          "year": "2007",
+          "medium": "Oil on canvas"
+        },
+        {
+          "file": "vincentprice",
+          "title": "Vincent Price",
+          "year": "2006",
+          "medium": "Ink on paper"
+        }
+      ]
+    },
+    "other": {
+      "title": "Other",
+      "info": "All other work",
+      "images": [
+        {
+          "file": "baxvox",
+          "title": "Bax Vox",
+          "year": "2021",
+          "medium": "Gouache on paper"
+        },
+        {
+          "file": "woodspoint",
+          "title": "Woodspoint",
+          "year": "2021",
+          "medium": "Oil on wood panel"
+        },
+        {
+          "file": "probewinndixie",
+          "title": "Ford Probe at Winn-Dixie Parking Lot on Friday Night",
+          "year": "2021",
+          "medium": "Oil on wood panel"
+        },
+        {
+          "file": "selfportrait2020",
+          "title": "Self-Portrait 2020",
+          "year": "2020",
+          "medium": "Oil on canvas"
+        },
+        {
+          "file": "redrialto",
+          "title": "Red Rialto",
+          "year": "2019",
+          "medium": "Ink and watercolor on paper"
+        },
+        {
+          "file": "riomendicanti",
+          "title": "Rio dei Mendicanti",
+          "year": "2018",
+          "medium": "Watercolor on paper"
+        },
+        {
+          "file": "sotoportego",
+          "title": "Sotoportego",
+          "year": "2018",
+          "medium": "Watercolor on paper"
+        },
+        {
+          "file": "allanon",
+          "title": "Allanon",
+          "year": "2018",
+          "medium": "Ink on paper"
+        },
+        {
+          "file": "mexicanvaquero",
+          "title": "A Mexican Vaquero",
+          "year": "2017",
+          "medium": "Oil on canvas"
+        },
+        {
+          "file": "schumi-monaco",
+          "title": "Schumacher at Monaco",
+          "year": "2017",
+          "medium": "Watercolor on paper"
+        },
+        {
+          "file": "andrettilongbeach",
+          "title": "Andretti vs Andretti at Long Beach",
+          "year": "2017",
+          "medium": "Watercolor on paper"
+        },
+        {
+          "file": "jimclark",
+          "title": "Jim Clark in the Lotus 49",
+          "year": "2014",
+          "medium": "Ink and watercolor on paper"
+        },
+        {
+          "file": "quanahparker",
+          "title": "Quanah Parker",
+          "year": "2012",
+          "medium": "Ink on paper"
+        },
+        {
+          "file": "chopin",
+          "title": "Frederic Chopin",
+          "year": "2012",
+          "medium": "Ink and watercolor on paper"
+        },
+        {
+          "file": "fqmg",
+          "title": "French Quarter Motorcycle Guitarist",
+          "year": "2011",
+          "medium": "Oil on canvas paper"
+        },
+        {
+          "file": "meltingdoge",
+          "title": "The Melting Doge",
+          "year": "2011",
+          "medium": "Oil on canvas paper"
+        },
+        {
+          "file": "mingojack",
+          "title": "Mingo Jack",
+          "year": "2010",
+          "medium": "Oil on wood panel"
+        },
+        {
+          "file": "selfportrait2007",
+          "title": "Self-Portrait 2007",
+          "year": "2007",
+          "medium": "Pencil on paper"
+        }
+      ]
+    }
   }
 }

@@ -1,12 +1,12 @@
 <template>
   <div>
-    <div class="eyebrow">
-      <router-link :to="`/${meta.id}`" class="collection__btn">{{ meta.title }}</router-link>
+    <div class="collection__eyebrow">
+      <router-link :to="`/${meta.id}`" class="parallelogram">{{ meta.title }}</router-link>
     </div>
-    <h1 class="collection__title">{{ cData.title }}</h1>
-    <h2 v-if="cData.subtitle" class="h2 collection__subtitle">{{ cData.subtitle}}</h2>
-    <p class="collection__info">{{ cData.info }}</p>
-    <galleria :name="cName" :images="cData.images" />
+    <h1 class="collection__title">{{ collection.title }}</h1>
+    <h2 v-if="collection.subtitle" class="h2 collection__subtitle">{{ collection.subtitle}}</h2>
+    <p class="collection__info">{{ collection.info }}</p>
+    <galleria :name="cName" :images="collection.images" />
     <footer-note />
   </div>
 </template>
@@ -23,12 +23,14 @@ export default {
     meta() {
       return this.$route.meta;
     },
+    type() {
+      return data[this.meta.id];
+    },
     cName() {
       return this.$route.params.name;
     },
-    cData() {
-      const dataType = data[this.meta.id];
-      return dataType[this.cName];
+    collection() {
+      return this.type.galleries[this.cName];
     }
   }
 }
