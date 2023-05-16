@@ -44,7 +44,7 @@ export default {
   },
   methods: {
     onChange(option) {
-      this.$emit('change', option);
+      this.$emit('change', option.value);
     }
   }
 };

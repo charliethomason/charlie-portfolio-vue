@@ -86,6 +86,11 @@
 .toggle {
   display: flex;
 
+  &__legend {
+    display: block;
+    font-weight: bold;
+  }
+
   &__group {
     display: flex;
   }
@@ -93,5 +98,17 @@
 
 /* Control Bar */
 .control-bar {
+  align-items: center;
   display: flex;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  
+  &-label {
+    display: block;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
 }

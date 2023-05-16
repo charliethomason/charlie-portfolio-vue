@@ -18,8 +18,13 @@
   "galleries": {
     "wideworld": {
       "title": "The Wide World",
-      "subtitle": "Lumix GF1 7-14mm Wide Angle Photos",
-      "info": "Photos taken around the United States and Europe, all taken with the same Panasonic Lumix G Vario 7-14mm f/4 wide angle lens, attached to Panasonic Lumix DMC-GF1 camera.",
+      "subtitle": "Wide Angle Around The World",
+      "info": "Photos from around the U.S. and Europe, all taken with the same Panasonic Lumix G Vario 7-14mm wide angle lens, and a Panasonic Lumix DMC-GF1 camera body.",
+      "meta": {
+        "locations": ["United States", "Europe", "United Kingdom"],
+        "mediums": ["Wide angle", "Micro four thirds", "dSLR"],
+        "years": ["2016", "2017", "2019", "2020"]
+      },
       "images": [
         {
           "file": "austria-1",
@@ -175,8 +180,13 @@
     },
     "openrange": {
       "title": "Open Range",
-      "subtitle": "From Monument Valley to the Mojave Desert",
-      "info": "Deserts, National Parks, and Native American monuments, photographed with 35mm film, Polaroid instant, dSLR, and iPhone cameras. Shot in June 2011 and self-published Jan 2012.",
+      "subtitle": "Desert photography",
+      "info": "Deserts, National Parks, and Native American monuments, photographed with 35mm film, Polaroid instant, dSLR, and iPhone cameras. Self-published in 2012 as a hardcover book, 'Open Range: 'From Monument Valley to the Mojave Desert.'",
+      "meta": {
+        "locations": ["United States", "National Parks", "Deserts"],
+        "mediums": ["35mm film", "Polaroid film", "dSLR", "Smartphone camera", "long-exposure", "HDR"],
+        "years": ["2011"]
+      },
       "images": [
         {
           "file": "lakepowell02",
@@ -424,6 +434,11 @@
       "title": "The English Portfolio",
       "subtitle": "Film Photography Across England",
       "info": "35mm and Polaroid instant film photography across England, emphasizing more rural and historical locations. Shot in Feb 2008 and displayed in a solo exhibition in Lexington, KY in May 2008.",
+      "meta": {
+        "locations": ["United Kingdom"],
+        "mediums": ["35mm film", "Polaroid film"],
+        "years": ["2008"]
+      },
       "images": [
         {
           "file": "bradfield-1",

@@ -11,6 +11,7 @@
         :value="filters[control.name]"
         @change="handleChange($event, control.name)"
       />
+      <filters :data="metaFilters" @change="handleChange" />
     </div>
     <ul :class="galleriesClasses">
       <router-link
@@ -42,10 +43,11 @@
 import data from '../../js/data';
 import FooterNote from '../elements/footer.vue';
 import Toggle from '../elements/toggle.vue';
+import Filters from '../elements/filters.vue';
 
 export default {
   name: 'Galleries',
-  components: { FooterNote, Toggle },
+  components: { FooterNote, Toggle, Filters },
   data() {
     return {
       filters: {
@@ -77,16 +79,29 @@ export default {
         'galleries--grid': view === 'grid',
         'galleries--list': view === 'list'
       };
+    },
+    metaFilters() {
+      return this.galleries.reduce((options, gallery) => {
+        Object.keys(gallery.meta).forEach(filter => {
+          if (!options[filter]) {
+            const optionSet = new Set();
+            options[filter] = optionSet;
+          }
+          gallery.meta[filter].forEach(opt => options[filter].add(opt));
+        });
+        return options;
+      }, {});
     }
   },
   methods: {
     handleChange(opt, controlName) {
-      this.filters[controlName] = opt.value;
-      const updatedFilters = {
-        ...this.filters,
-        [controlName]: opt.value
-      };
-      localStorage.setItem("filters", JSON.stringify(updatedFilters));
+      console.log(opt, controlName);
+      // this.filters[controlName] = opt.value;
+      // const updatedFilters = {
+      //   ...this.filters,
+      //   [controlName]: opt.value
+      // };
+      // localStorage.setItem("filters", JSON.stringify(updatedFilters));
     }
   },
   mounted() {
