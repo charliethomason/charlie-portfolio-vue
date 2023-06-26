@@ -1,18 +1,20 @@
 <template>
   <div class="filters">
-    <fieldset v-for="filter in filters" :key="filter.id">
+    <fieldset v-for="filter in filters" class="filters-field" :key="filter.id">
       <label :for="`filters-${filter.id}`" class="filters-label">{{ filter.id }}</label>
-      <select :id="`filters-${filter.id}`" @change="onChange($event, filter.id)">
-        <option value="All">All</option>
-        <option
-          v-for="option in filter.options"
-          :key="`filters-${filter.id}-${option}`"
-          :value="option"
-          :selected="selected[filter.id] && selected[filter.id] === option"
-        >
-          {{ option }}
-        </option>
-      </select>
+      <div class="filters-select-wrap">
+        <select :id="`filters-${filter.id}`" class="filters-select" @change="onChange($event, filter.id)">
+          <option value="All">All</option>
+          <option
+            v-for="option in filter.options"
+            :key="`filters-${filter.id}-${option}`"
+            :value="option"
+            :selected="selected[filter.id] && selected[filter.id] === option"
+          >
+            {{ option }}
+          </option>
+        </select>
+      </div>
     </fieldset>
   </div>
 </template>

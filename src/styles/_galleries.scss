@@ -14,7 +14,7 @@
       text-decoration: none;
 
       #{$root}__text {
-        display: flex;
+        min-height: 100%;
       }
     }
   }
@@ -27,14 +27,16 @@
   &__text {
     align-items: center;
     background-color: $grey-transparent;
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 10px 0 20px;
     position: absolute;
-    bottom: 0;
     left: 0;
-    right: 0;
-    top: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 0%;
+    transition: min-height 300ms ease-out;
   }
 
   &__title {
@@ -48,44 +50,6 @@
   &__size {
     color: $white;
     display: none;
-  }
-
-  &--list {
-    display: flex;
-    flex-direction: column;
-    padding: 0 15px;
-
-    #{$root}__link {
-      align-items: center;
-      background-color: $grey-dark;
-      border-radius: 5px;
-      display: flex;
-      margin-bottom: 10px;
-      overflow: hidden;
-      
-      &:hover, &:focus {
-        background-color: $green;
-
-        .parallelogram {
-          @include parallelogramHover;
-        }
-      }
-    }
-    #{$root}__img {
-      max-width: 300px;
-    }
-    #{$root}__text {
-      background: none;
-      display: flex;
-      flex-direction: column;
-      flex-grow: 1;
-      padding: 15px;
-      position: static;
-    }
-    #{$root}__size {
-      display: block;
-      padding-right: 15px;
-    }
   }
 }
 

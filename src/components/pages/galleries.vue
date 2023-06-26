@@ -2,20 +2,13 @@
   <div>
     <h1 class="collection__title">{{ meta.title }}</h1>
     <div class="control-bar">
-      <toggle
-        legend="View"
-        name="view"
-        :options="viewOptions"
-        :value="view"
-        @change="updateView"
-      />
       <filters
         :data="metaFilters"
         :selected="filtersForId"
         @change="handleChange"
       />
     </div>
-    <ul :class="galleriesClasses">
+    <ul class="galleries">
       <router-link
         v-for="(gallery, i) in filteredGalleres"
         :key="i"
@@ -44,19 +37,15 @@
 <script>
 import data from '../../js/data';
 import FooterNote from '../elements/footer.vue';
-import Toggle from '../elements/toggle.vue';
 import Filters from '../elements/filters.vue';
 
 const ALL_OPTIONS = "All";
-const VIEW_OPTIONS = ["grid", "list"];
 
 export default {
   name: 'Galleries',
-  components: { FooterNote, Toggle, Filters },
+  components: { FooterNote, Filters },
   data() {
     return {
-      view: "grid",
-      viewOptions: VIEW_OPTIONS,
       filters: {
         art: {
           mediums: ALL_OPTIONS,
@@ -97,13 +86,6 @@ export default {
         return filteredByMedium && filteredByYear;
       });
     },
-    galleriesClasses() {
-      return {
-        galleries: true,
-        'galleries--grid': this.view === 'grid',
-        'galleries--list': this.view === 'list'
-      };
-    },
     metaFilters() {
       return this.galleries.reduce((options, gallery) => {
         Object.keys(gallery.meta).forEach(filter => {
@@ -122,10 +104,6 @@ export default {
       const filters = this.filters[this.meta.id];
       return filters[type] === ALL_OPTIONS || meta[type].includes(filters[type]);
     },
-    updateView(opt) {
-      this.view = opt;
-      localStorage.setItem("view", opt);
-    },
     handleChange(opt, controlName) {
       const currentFilters = localStorage.getItem("filters")
         ? JSON.parse(localStorage.getItem("filters"))
@@ -140,9 +118,6 @@ export default {
     if (localStorage.getItem("filters")) {
       const parsedFilters = JSON.parse(localStorage.getItem("filters"));
       this.filters[this.meta.id] = parsedFilters[this.meta.id];
-    }
-    if (localStorage.getItem("view")) {
-      this.view = localStorage.getItem("view");
     }
   }
 };

@@ -82,20 +82,6 @@
   }
 }
 
-/* Toggle */
-.toggle {
-  display: flex;
-
-  &__legend {
-    display: block;
-    font-weight: bold;
-  }
-
-  &__group {
-    display: flex;
-  }
-}
-
 /* Control Bar */
 .control-bar {
   align-items: center;
@@ -104,11 +90,64 @@
 
 /* Filters */
 .filters {
+  $root: &;
+
   display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  width: 100%;
+
+  &-field {
+    + #{$root}-field {
+      margin-left: 10px;
+    }
+  }
   
   &-label {
     display: block;
     font-weight: bold;
+    margin-bottom: 5px;
     text-transform: capitalize;
+  }
+
+  &-select {
+    appearance: none;
+    background: transparent;
+    border: none;
+    color: $white;
+    font-size: 16px;
+    outline: none;
+    padding: 5px 20px 5px 5px;
+    width: 100%;
+
+    &-wrap {
+      border: 2px solid $green;
+      border-radius: 5px;
+      position: relative;
+
+      &:hover, &:focus-within {
+        background-color: $green;
+        color: $black;
+
+        &:after {
+          color: $black;
+        }
+
+        #{$root}-select {
+          color: $black;
+        }
+      }
+
+      &:after {
+        content: '\25BC';
+        color: $green;
+        pointer-events: none;
+        position: absolute;
+        right: 2px;
+        top: 7px;
+        transform: scaleX(1.2);
+        z-index: 1;
+      }
+    }
   }
 }
