@@ -3,10 +3,12 @@
     <fieldset v-for="filter in filters" :key="filter.id">
       <label :for="`filters-${filter.id}`" class="filters-label">{{ filter.id }}</label>
       <select :id="`filters-${filter.id}`" @change="onChange($event, filter.id)">
+        <option value="All">All</option>
         <option
           v-for="option in filter.options"
-          :key="`filters-${filter-id}-${option}`"
+          :key="`filters-${filter.id}-${option}`"
           :value="option"
+          :selected="selected[filter.id] && selected[filter.id] === option"
         >
           {{ option }}
         </option>
@@ -20,14 +22,18 @@ export default {
   props: {
     data: {
       type: Object
+    },
+    selected: {
+      type: Object
     }
   },
   computed: {
     filters() {
-      return Object.keys(this.data).map(id => ({
+      const theFilters = Object.keys(this.data).map(id => ({
         id,
-        options: this.data[id]
+        options: Array.from(this.data[id]).sort()
       }));
+      return theFilters;
     }
   },
   methods: {

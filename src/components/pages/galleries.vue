@@ -3,19 +3,21 @@
     <h1 class="collection__title">{{ meta.title }}</h1>
     <div class="control-bar">
       <toggle
-        v-for="control in controls"
-        :key="`control-${control.name}`"
-        :legend="control.legend"
-        :name="control.name"
-        :options="control.options"
-        :value="filters[control.name]"
-        @change="handleChange($event, control.name)"
+        legend="View"
+        name="view"
+        :options="viewOptions"
+        :value="view"
+        @change="updateView"
       />
-      <filters :data="metaFilters" @change="handleChange" />
+      <filters
+        :data="metaFilters"
+        :selected="filtersForId"
+        @change="handleChange"
+      />
     </div>
     <ul :class="galleriesClasses">
       <router-link
-        v-for="(gallery, i) in galleries"
+        v-for="(gallery, i) in filteredGalleres"
         :key="i"
         tag="li"
         :to="`/${meta.id}/${gallery.id}`"
@@ -45,13 +47,25 @@ import FooterNote from '../elements/footer.vue';
 import Toggle from '../elements/toggle.vue';
 import Filters from '../elements/filters.vue';
 
+const ALL_OPTIONS = "All";
+const VIEW_OPTIONS = ["grid", "list"];
+
 export default {
   name: 'Galleries',
   components: { FooterNote, Toggle, Filters },
   data() {
     return {
+      view: "grid",
+      viewOptions: VIEW_OPTIONS,
       filters: {
-        view: 'grid'
+        art: {
+          mediums: ALL_OPTIONS,
+          years: ALL_OPTIONS
+        },
+        photo: {
+          mediums: ALL_OPTIONS,
+          years: ALL_OPTIONS
+        }
       }
     };
   },
@@ -65,19 +79,29 @@ export default {
     controls() {
       return this.type.controls;
     },
+    filtersForId() {
+      return this.filters[this.meta.id];
+    },
     galleries() {
       const { galleries } = this.type;
-      return Object.keys(galleries).map(key => ({
-        ...galleries[key],
-        id: key
-      }));
+      return Object.keys(galleries)
+        .map(key => ({
+          ...galleries[key],
+          id: key
+        }));
+    },
+    filteredGalleres() {
+      return this.galleries.filter(gal => {
+        const filteredByMedium = this.isIncludedByFilter("mediums", gal.meta);
+        const filteredByYear = this.isIncludedByFilter("years", gal.meta);
+        return filteredByMedium && filteredByYear;
+      });
     },
     galleriesClasses() {
-      const { view } = this.filters;
       return {
         galleries: true,
-        'galleries--grid': view === 'grid',
-        'galleries--list': view === 'list'
+        'galleries--grid': this.view === 'grid',
+        'galleries--list': this.view === 'list'
       };
     },
     metaFilters() {
@@ -94,19 +118,31 @@ export default {
     }
   },
   methods: {
+    isIncludedByFilter(type, meta) {
+      const filters = this.filters[this.meta.id];
+      return filters[type] === ALL_OPTIONS || meta[type].includes(filters[type]);
+    },
+    updateView(opt) {
+      this.view = opt;
+      localStorage.setItem("view", opt);
+    },
     handleChange(opt, controlName) {
-      console.log(opt, controlName);
-      // this.filters[controlName] = opt.value;
-      // const updatedFilters = {
-      //   ...this.filters,
-      //   [controlName]: opt.value
-      // };
-      // localStorage.setItem("filters", JSON.stringify(updatedFilters));
+      const currentFilters = localStorage.getItem("filters")
+        ? JSON.parse(localStorage.getItem("filters"))
+        : this.filters;
+      const updatedFilters = { ...currentFilters };
+      updatedFilters[this.meta.id][controlName] = opt;
+      this.filters = updatedFilters;
+      localStorage.setItem("filters", JSON.stringify(updatedFilters));
     }
   },
   mounted() {
     if (localStorage.getItem("filters")) {
-      this.filters = JSON.parse(localStorage.getItem("filters"));
+      const parsedFilters = JSON.parse(localStorage.getItem("filters"));
+      this.filters[this.meta.id] = parsedFilters[this.meta.id];
+    }
+    if (localStorage.getItem("view")) {
+      this.view = localStorage.getItem("view");
     }
   }
 };

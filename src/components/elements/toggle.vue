@@ -4,18 +4,18 @@
     <div class="toggle__group" role="radiogroup">
       <div
         v-for="option in options"
-        :key="`toggle__option--${option.value}`"
+        :key="`toggle__option--${option}`"
         class="toggle__option"
       >
         <input
           type="radio"
-          :id="`${name}-${option.value}`"
+          :id="`${name}-${option}`"
           :name="name"
-          :value="option.value"
-          :checked="value === option.value"
+          :value="option"
+          :checked="value === option"
           @change="onChange(option)"
         />
-        <label :for="`${name}-${option.value}`">{{ option.label }}</label>
+        <label :for="`${name}-${option.value}`">{{ option }}</label>
       </div>
     </div>
   </fieldset>
@@ -44,7 +44,7 @@ export default {
   },
   methods: {
     onChange(option) {
-      this.$emit('change', option.value);
+      this.$emit('change', option);
     }
   }
 };
