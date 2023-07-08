@@ -1,7 +1,7 @@
 /* Card */
 .card {
   background-color: $grey-dark;
-  border-bottom: 2px solid $grey-medium-dark;
+  border-bottom: 2px solid $grey-medium;
   border-radius: 5px;
   color: $white;
   font-size: 16px;
@@ -14,19 +14,19 @@
     display: flex;
     font-weight: bold;
     min-height: 40px;
-    padding: 0 15px;
+    padding: 0 20px;
   }
 
   &__content {
     line-height: 1.5;
-    padding: 15px 30px;
+    padding: 15px 20px;
 
     a {
-      color: $teal;
+      color: $green-light;
 
       &:hover,
       &:focus {
-        color: $teal-dark;
+        color: $teal;
       }
     }
   }
@@ -34,14 +34,14 @@
 
 /* Parallelogram */
 @mixin parallelogramHover {
-  background-color: $black;
+  background-color: $green-dark;
   text-decoration: none;
 
   &::before {
-    border-bottom-color: $black;
+    border-bottom-color: $green-dark;
   }
   &::after {
-    border-top-color: $black;
+    border-top-color: $green-dark;
   }
 }
 .parallelogram {
@@ -115,12 +115,14 @@
     background: transparent;
     border: none;
     color: $white;
+    cursor: pointer;
     font-size: 16px;
     outline: none;
     padding: 5px 20px 5px 5px;
     width: 100%;
 
     &-wrap {
+      background: $black;
       border: 2px solid $green;
       border-radius: 5px;
       position: relative;

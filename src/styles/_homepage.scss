@@ -45,7 +45,7 @@
   }
 
   &__tooltip {
-    background-color: $grey-very-light;
+    background-color: $white;
     border-radius: 7px;
     color: $black;
     display: inline-block;
@@ -60,7 +60,7 @@
     &:after {
       border-left: 10px solid $clear;
       border-right: 10px solid $clear;
-      border-top: 10px solid $grey-very-light;
+      border-top: 10px solid $white;
       content: "";
       left: 50%;
       position: absolute;
@@ -106,7 +106,7 @@
     &:focus {
       path,
       polygon {
-        fill: $grey-very-light;
+        fill: $white;
       }
 
       .fill-dark {

@@ -2,12 +2,12 @@
   @include safeHide;
 }
 body {
-  background-color: $grey-very-dark;
+  background-color: $grey-bg;
 }
 .header {
   align-items: center;
-  background-color: $teal;
-  border-bottom: 7px solid $teal-dark;
+  background-color: $green;
+  border-bottom: 7px solid $green-dark;
   display: flex;
   flex-direction: column;
   height: 130px;
@@ -43,18 +43,14 @@ body {
 
     &:hover,
     &:focus {
-      background-color: $teal-dark;
+      background-color: $green-dark;
+      box-shadow: inset 0 0 5px $grey-dark;
+      color: $white;
     }
 
     &--active {
       background-color: $white;
-      color: $teal-dark;
-
-      &:hover,
-      &:focus {
-        background-color: $white;
-        color: $teal-dark;
-      }
+      color: $green;
     }
   }
 }
@@ -89,7 +85,7 @@ body {
 
     &:hover,
     &:focus {
-      color: $teal;
+      color: $green-light;
     }
   }
 }

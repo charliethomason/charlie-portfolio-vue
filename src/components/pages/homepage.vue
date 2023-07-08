@@ -14,12 +14,9 @@
         </ul>
       </div>
     </div>
-    <section class="card">
-      <h2 class="card__heading">About Charlie</h2>
-      <div class="card__content">
-        My name is Charlie, and I love writing code and creating art. By day, I am a Staff UI Software Engineer at <a href="https://www.basis.net/" target="_blank">Basis Technologies</a>, specializing in front-end, design systems, and web accessibility. I have been a full-time web developer for over 9 years, and received my Master's degree from DePaul. By night, I am an Artist, specializing in ink, watercolor, and oil painting. I earned my BFA in Art Studio, and have self-published several books of my art, including <a href="https://www.blurb.com/b/7500748-birds-of-chicagoland" target="_blank"><em>Birds of Chicagoland</em></a>. In addition to being an engineer and artist, I am a guitarist for the Louisville, KY band <a href="https://www.youtube.com/channel/UC-SQ6raHnpW0yvpNibW6aRA" target="_blank">Echo's Aim</a>. In my free time, I enjoy <a href="https://letterboxd.com/charliefusion/" target="_blank">watching movies</a> and auto racing, <a href="https://www.goodreads.com/user/show/75584528-charlie-thomason" target="_blank">reading books</a>, running, and traveling. I live in the western Chicago suburbs with my wife, Amanda, and cat, Baxter. This website is a portfolio of some of my best work.
-      </div>
-    </section>
+    <card heading="Portfolio">
+      My name is Charlie, and this portfolio contains some of my best paintings, drawings, photography, and other creations. My favorite art mediums are ink brush, watercolor, and Polaroid and 35mm film. I earned my BFA in Art Studio and have self-published a few books of my art, including <a href="https://www.blurb.com/b/7500748-birds-of-chicagoland" target="_blank"><em>Birds of Chicagoland</em></a>. Thematically, I enjoy birds, movies, landscapes, cityscapes, and the intersection of old and new. By day, I am a front-end software engineer at <a href="https://www.basis.net/" target="_blank">Basis</a>, leading their design systems. I also enjoy <a href="https://letterboxd.com/charliefusion/" target="_blank">watching movies</a>, <a href="https://www.goodreads.com/user/show/75584528-charlie-thomason" target="_blank">reading books</a>, running, traveling, and volunteering at my church. I live in the western Chicago suburbs with my wife, Amanda, and cat, Baxter.
+    </card>
     <footer-note />
   </div>
 </template>
@@ -29,12 +26,14 @@ import homeData from '../../data/index.json';
 import icons from '../../img/svg-icons/icons';
 import IconLink from '../elements/icon-link.vue';
 import FooterNote from '../elements/footer.vue';
+import Card from '../elements/card.vue';
 
 export default {
   name: 'HomeContent',
   components: {
     IconLink,
-    FooterNote
+    FooterNote,
+    Card
   },
   data() {
     return {
