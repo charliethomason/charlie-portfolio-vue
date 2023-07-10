@@ -1,0 +1,30 @@
+{
+  "videos": [
+    {
+      "id": "wjdKLdfowUA",
+      "title": "Fade to Black (Metallica cover)"
+    },
+    {
+      "id": "zW-3Ei0rLb8",
+      "title": "Undici Ani"
+    },
+    {
+      "id": "KDTEvLL3hP8",
+      "title": "10 Minuti a Venezia"
+    }
+  ],
+  "albums": [
+    {
+      "id": "3932039500",
+      "title": "Basement Covers"
+    },
+    {
+      "id": "2154804424",
+      "title": "Colorless"
+    },
+    {
+      "id": "1174490211",
+      "title": "The Coronavirus Tapes Part II"
+    }
+  ]
+}

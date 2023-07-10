@@ -39,7 +39,7 @@ body {
     margin: 0 5px;
     outline: 0;
     padding: 5px;
-    transition: all 0.2s ease-in-out;
+    transition: all 300ms ease-in-out;
 
     &:hover,
     &:focus {
@@ -51,6 +51,12 @@ body {
     &--active {
       background-color: $white;
       color: $green;
+
+      &:focus {
+        background-color: $white;
+        box-shadow: none;
+        color: $green;
+      }
     }
   }
 }
@@ -60,14 +66,17 @@ body {
 }
 
 .h1 {
-  font-size: 32px;
-  font-weight: 300;
-  padding: 15px 0;
+  font: bold 30px/45px $cormorant;
+  letter-spacing: 0.07em;
+  margin-top: 5px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .h2 {
   font-size: 18px;
+  font-weight: bold;
+  padding: 0;
   padding: 0 0 15px;
   text-align: center;
 }

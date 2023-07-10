@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="collection__title">{{ meta.title }}</h1>
+    <h1 class="h1">{{ meta.title }}</h1>
     <div class="control-bar">
       <filters
         :data="metaFilters"

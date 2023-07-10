@@ -123,26 +123,22 @@
 
     &-wrap {
       background: $black;
-      border: 2px solid $green;
+      border: 2px solid $green-light;
       border-radius: 5px;
       position: relative;
 
       &:hover, &:focus-within {
         background-color: $green;
-        color: $black;
+        border-color: $green;
 
         &:after {
-          color: $black;
-        }
-
-        #{$root}-select {
-          color: $black;
+          color: $white;
         }
       }
 
       &:after {
         content: '\25BC';
-        color: $green;
+        color: $green-light;
         pointer-events: none;
         position: absolute;
         right: 2px;

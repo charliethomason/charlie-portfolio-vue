@@ -5,8 +5,8 @@
       <div class="contact__info">
         <h1 class="h1 contact__name">
           {{ homeData.heading }}
-          <div class="contact__subtitle">{{ homeData.subtitle }}</div>
         </h1>
+        <div class="contact__subtitle">{{ homeData.subtitle }}</div>
         <ul class="contact__link-row">
           <li v-for="(icon, i) in homeData.contact" :key="i">
             <icon-link :label="icon.label" :href="icon.href" :icon="icons[icon.icon]" />
