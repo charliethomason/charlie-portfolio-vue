@@ -61,9 +61,9 @@
 </template>
 
 <script>
-import ArrowIcon from '../../img/svg-icons/arrow.vue';
+import ArrowIcon from "../../img/svg-icons/arrow.vue";
 export default {
-  name: 'Galleria',
+  name: "Galleria",
   components: {
     ArrowIcon
   },
@@ -152,18 +152,18 @@ export default {
       this.$refs.row.forEach(row => {
         if (row.childNodes && row.childNodes.length) {
           for (const img of row.childNodes) {
-            if (img.classList && img.classList.contains('galleria-img')) {
+            if (img.classList && img.classList.contains("galleria-img")) {
               const small = img.children[1];
               const imgSrc = img.dataset.large;
 
               let imgSmall = new Image();
               imgSmall.src = small.src;
               imgSmall.onload = () => {
-                small.classList.add('loaded');
+                small.classList.add("loaded");
               };
 
-              if (img.querySelector('.galleria-large')) {
-                img.querySelector('.galleria-large').src = imgSrc;
+              if (img.querySelector(".galleria-large")) {
+                img.querySelector(".galleria-large").src = imgSrc;
               } else {
                 let imgLarge = new Image();
                 imgLarge.src = imgSrc;
@@ -172,8 +172,8 @@ export default {
                   // give the link a class of "ready"
                   // to indicate lightbox clicks can now happen
                   img.classList.add("ready");
-                  imgLarge.classList.add('galleria-large','loaded');
-                  small.classList.add('large-loaded');
+                  imgLarge.classList.add("galleria-large","loaded");
+                  small.classList.add("large-loaded");
                 };
                 img.appendChild(imgLarge);
               }
@@ -285,7 +285,7 @@ export default {
   },
   async mounted() {
     let timeoutId;
-    window.addEventListener('keydown', e => {
+    window.addEventListener("keydown", e => {
       if (e.key === "Escape") {
         this.closeLightbox();
       } else if (e.key === "ArrowLeft" && !!this.lightImg) {
@@ -294,14 +294,14 @@ export default {
         this.lightboxNav(1);
       }
     });
-    window.addEventListener('resize', () => {
+    window.addEventListener("resize", () => {
       clearTimeout(timeoutId);
       timeoutId = setTimeout(this.onResize, 500);
     });
     this.onResize();
   },
   beforeDestroy() {
-    window.removeEventListener('resize', this.onResize);
+    window.removeEventListener("resize", this.onResize);
   }
 }
 </script>

@@ -8,10 +8,10 @@
 </template>
 
 <script>
-import MainHeader from './elements/header.vue';
+import MainHeader from "./elements/header.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: { MainHeader },
   computed: {
     meta() {
@@ -19,7 +19,7 @@ export default {
     },
     active() {
       const rootPath = this.$route.path.split("/")[1];
-      return !!rootPath ? rootPath : 'index';
+      return !!rootPath ? rootPath : "index";
     }
   }
 };

@@ -9,13 +9,13 @@
 </template>
 
 <script>
-import data from '../../data/pages.json';
+import data from "../../data/pages.json";
 export default {
-	name: 'Nav',
+	name: "Nav",
 	props: {
 		active: {
 			type: String,
-			default: 'index'
+			default: "index"
 		}
 	},
 	data() {
@@ -26,8 +26,8 @@ export default {
 	methods: {
 		linkClasses(page) {
 			return {
-				'nav__link': true,
-				'nav__link--active': page.id === this.active
+				"nav__link": true,
+				"nav__link--active": page.id === this.active
 			};
 		}
 	}

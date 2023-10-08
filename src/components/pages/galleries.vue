@@ -33,14 +33,14 @@
 </template>
 
 <script>
-import data from '../../js/data';
-import FooterNote from '../elements/footer.vue';
-import Filters from '../elements/filters.vue';
+import data from "../../js/data";
+import FooterNote from "../elements/footer.vue";
+import Filters from "../elements/filters.vue";
 
 const ALL_OPTIONS = "All";
 
 export default {
-  name: 'Galleries',
+  name: "Galleries",
   components: { FooterNote, Filters },
   data() {
     return {
@@ -75,7 +75,7 @@ export default {
     updateFilters(filter) {
       this.selectedFilter = filter;
       const params = filter ? { query: { filter } } : {};
-      this.$router.replace({ path: '/art', ...params })
+      this.$router.replace({ path: "/art", ...params })
     }
   },
   mounted() {

@@ -22,14 +22,14 @@
 </template>
 
 <script>
-import homeData from '../../data/index.json';
-import icons from '../../img/svg-icons/icons';
-import IconLink from '../elements/icon-link.vue';
-import FooterNote from '../elements/footer.vue';
-import Card from '../elements/card.vue';
+import homeData from "../../data/index.json";
+import icons from "../../img/svg-icons/icons";
+import IconLink from "../elements/icon-link.vue";
+import FooterNote from "../elements/footer.vue";
+import Card from "../elements/card.vue";
 
 export default {
-  name: 'HomeContent',
+  name: "HomeContent",
   components: {
     IconLink,
     FooterNote,

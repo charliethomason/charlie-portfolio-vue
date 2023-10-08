@@ -9,12 +9,12 @@
 </template>
 
 <script>
-import data from '../../js/data';
-import Galleria from '../elements/galleria.vue';
-import FooterNote from '../elements/footer.vue';
+import data from "../../js/data";
+import Galleria from "../elements/galleria.vue";
+import FooterNote from "../elements/footer.vue";
 
 export default {
-  name: 'Collection',
+  name: "Collection",
   components: { Galleria, FooterNote },
   computed: {
     meta() {

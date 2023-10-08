@@ -6,6 +6,6 @@
 
 <script>
 export default {
-  name: 'FooterNote'
+  name: "FooterNote"
 }
 </script>
