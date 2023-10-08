@@ -14,11 +14,6 @@
 			"id": "photo",
 			"path": "/photo/",
 			"name": "Photo"
-		},
-		{
-			"id": "multimedia",
-			"path": "/multimedia/",
-			"name": "Multimedia"
 		}
 	]
 }
