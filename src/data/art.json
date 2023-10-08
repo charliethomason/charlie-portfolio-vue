@@ -1,12 +1,29 @@
 {
+  "filters": [
+    {
+      "id": "birds",
+      "label": "Birds"
+    },
+    {
+      "id": "inktober",
+      "label": "Inktober"
+    },
+    {
+      "id": "movies",
+      "label": "Movies"
+    },
+    {
+      "id": "undergrad",
+      "label": "Undergrad Work"
+    }
+  ],
   "galleries": {
     "inktober2022": {
       "title": "Inktober 2022",
       "subtitle": "100 Years of Cinema Stills",
       "info": "Ink brush paintings completed Sept-Oct 2022 for the annual #inktober challenge. Continues the theme from Inktober 2020 and 2021 of depicting scenes from my favorite films.",
       "meta": {
-        "mediums": ["ink brush"],
-        "years": ["2022"]
+        "filters": ["inktober", "movies"]
       },
       "images": [
         {
@@ -71,8 +88,7 @@
       "subtitle": "Watercolors of 1970s films",
       "info": "Watercolor paintings on paper of 7 of my favorite films from the 1970s.",
       "meta": {
-        "mediums": ["watercolor"],
-        "years": ["2021", "2022"]
+        "filters": ["movies"]
       },
       "images": [
         {
@@ -94,8 +110,7 @@
       "subtitle": "Light & Ink",
       "info": "Ink brush paintings completed Sept-Oct 2021 for the annual #inktober challenge. Continues the theme from #charlieinktober 2020 of depicting scenes from my favorite films",
       "meta": {
-        "mediums": ["ink brush"],
-        "years": ["2021"]
+        "filters": ["inktober", "movies"]
       },
       "images": [
         {
@@ -160,8 +175,7 @@
       "subtitle": "Silver Stills From Favorite Films",
       "info": "Ink brush paintings completed Sept-Nov 2020 for the annual #inktober challenge. Depicts scenes from my top 20 favorite films of all-time, in order. Self-published Dec 2020.",
       "meta": {
-        "mediums": ["ink brush"],
-        "years": ["2020"]
+        "filters": ["inktober", "movies"]
       },
       "images": [
         {
@@ -271,8 +285,7 @@
       "subtitle": "Watercolors of Chicago birds",
       "info": "A book of paintings of birds native to the Chicagoland area, depicted against notable Chicago locations. All paintings completed with watercolor and ink on paper. Painted between Oct 2014 and Oct 2016, and self-published Dec 2016.",
       "meta": {
-        "mediums": ["ink brush", "watercolor"],
-        "years": ["2014", "2015", "2016"]
+        "filters": ["birds"]
       },
       "images": [
         {
@@ -401,8 +414,7 @@
       "title": "Birds",
       "info": "Watercolor, ink, and oil paintings of birds. Includes only those not found in 'Birds of Chicagoland.'",
       "meta": {
-        "mediums": ["ink brush", "watercolor", "oil paint", "gouache"],
-        "years": ["2012", "2014", "2015", "2016", "2019", "2020", "2021"]
+        "filters": ["birds"]
       },
       "images": [
         {
@@ -488,8 +500,7 @@
       "title": "Misc Movies",
       "info": "Watercolor, ink, and oil paintings from my favorite movies. Includes only those not found in the 'Inktober' and '7 Stills of 70s Cinema' projects.",
       "meta": {
-        "mediums": ["ink brush", "watercolor", "oil paint"],
-        "years": ["2006", "2007", "2012", "2014", "2019", "2020", "2021", "2022"]
+        "filters": ["movies"]
       },
       "images": [
         {
@@ -570,8 +581,7 @@
       "title": "Other",
       "info": "All other work",
       "meta": {
-        "mediums": ["ink brush", "watercolor", "oil paint", "gouache", "pencil"],
-        "years": ["2022"]
+        "filters": []
       },
       "images": [
         {

@@ -36,18 +36,20 @@
 
 /* Parallelogram */
 @mixin parallelogramHover {
-  background-color: $green-dark;
+  background-color: $white;
+  color: $violet;
   text-decoration: none;
 
   &::before {
-    border-bottom-color: $green-dark;
+    border-bottom-color: $white;
   }
   &::after {
-    border-top-color: $green-dark;
+    border-top-color: $white;
   }
 }
 .parallelogram {
   background-color: $green;
+  border: none;
   color: #fff;
   display: inline-block;
   font-size: 14px;
@@ -78,76 +80,28 @@
     right: -10px;
   }
 
-  &:not(.nohover):hover,
-  &:not(.nohover):focus {
+  &:not(.nohover):hover {
     @include parallelogramHover;
   }
-}
 
-/* Control Bar */
-.control-bar {
-  align-items: center;
-  display: flex;
+  &.active {
+    background-color: $violet;
+    color: $white;
+
+    &::before {
+      border-bottom-color: $violet;
+    }
+    &::after {
+      border-top-color: $violet;
+    }
+  }
 }
 
 /* Filters */
 .filters {
-  $root: &;
-
+  align-items: center;
   display: flex;
+  gap: 5px;
   justify-content: center;
-  padding: 10px 0;
-  width: 100%;
-
-  &-field {
-    + #{$root}-field {
-      margin-left: 10px;
-    }
-  }
-  
-  &-label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-    text-transform: capitalize;
-  }
-
-  &-select {
-    appearance: none;
-    background: transparent;
-    border: none;
-    color: $white;
-    cursor: pointer;
-    font-size: 16px;
-    outline: none;
-    padding: 5px 20px 5px 5px;
-    width: 100%;
-
-    &-wrap {
-      background: $black;
-      border: 2px solid $green-light;
-      border-radius: 5px;
-      position: relative;
-
-      &:hover, &:focus-within {
-        background-color: $green;
-        border-color: $green;
-
-        &:after {
-          color: $white;
-        }
-      }
-
-      &:after {
-        content: '\25BC';
-        color: $green-light;
-        pointer-events: none;
-        position: absolute;
-        right: 2px;
-        top: 7px;
-        transform: scaleX(1.2);
-        z-index: 1;
-      }
-    }
-  }
+  margin-bottom: 20px;
 }

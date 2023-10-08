@@ -1,13 +1,11 @@
 <template>
   <div>
     <h1 class="h1">{{ meta.title }}</h1>
-    <div class="control-bar">
-      <filters
-        :data="metaFilters"
-        :selected="filtersForId"
-        @change="handleChange"
-      />
-    </div>
+    <filters
+      :filters="filters"
+      :selected="selectedFilter"
+      @change="updateFilters"
+    />
     <ul class="galleries">
       <router-link
         v-for="(gallery, i) in filteredGalleres"
@@ -46,16 +44,7 @@ export default {
   components: { FooterNote, Filters },
   data() {
     return {
-      filters: {
-        art: {
-          mediums: ALL_OPTIONS,
-          years: ALL_OPTIONS
-        },
-        photo: {
-          mediums: ALL_OPTIONS,
-          years: ALL_OPTIONS
-        }
-      }
+      selectedFilter: null
     };
   },
   computed: {
@@ -65,11 +54,8 @@ export default {
     type() {
       return data[this.meta.id];
     },
-    controls() {
-      return this.type.controls;
-    },
-    filtersForId() {
-      return this.filters[this.meta.id];
+    filters() {
+      return this.type.filters;
     },
     galleries() {
       const { galleries } = this.type;
@@ -81,43 +67,20 @@ export default {
     },
     filteredGalleres() {
       return this.galleries.filter(gal => {
-        const filteredByMedium = this.isIncludedByFilter("mediums", gal.meta);
-        const filteredByYear = this.isIncludedByFilter("years", gal.meta);
-        return filteredByMedium && filteredByYear;
+        return this.selectedFilter ? gal.meta.filters.includes(this.selectedFilter) : true;
       });
-    },
-    metaFilters() {
-      return this.galleries.reduce((options, gallery) => {
-        Object.keys(gallery.meta).forEach(filter => {
-          if (!options[filter]) {
-            const optionSet = new Set();
-            options[filter] = optionSet;
-          }
-          gallery.meta[filter].forEach(opt => options[filter].add(opt));
-        });
-        return options;
-      }, {});
     }
   },
   methods: {
-    isIncludedByFilter(type, meta) {
-      const filters = this.filters[this.meta.id];
-      return filters[type] === ALL_OPTIONS || meta[type].includes(filters[type]);
-    },
-    handleChange(opt, controlName) {
-      const currentFilters = localStorage.getItem("filters")
-        ? JSON.parse(localStorage.getItem("filters"))
-        : this.filters;
-      const updatedFilters = { ...currentFilters };
-      updatedFilters[this.meta.id][controlName] = opt;
-      this.filters = updatedFilters;
-      localStorage.setItem("filters", JSON.stringify(updatedFilters));
+    updateFilters(filter) {
+      this.selectedFilter = filter;
+      const params = filter ? { query: { filter } } : {};
+      this.$router.replace({ path: '/art', ...params })
     }
   },
   mounted() {
-    if (localStorage.getItem("filters")) {
-      const parsedFilters = JSON.parse(localStorage.getItem("filters"));
-      this.filters[this.meta.id] = parsedFilters[this.meta.id];
+    if (this.$route.query.filter) {
+      this.selectedFilter = this.$route.query.filter;
     }
   }
 };
