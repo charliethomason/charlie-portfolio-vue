@@ -7,18 +7,14 @@
         class="galleria-img"
         :style="getStyle(row, img)"
         :data-large="require('../../img/'+meta.id+'/collection/'+name+'/'+img.file+'.jpg')"
+        :data-alt="img.title"
         :ref="`galleriaImg-${img.file}`"
         @click.stop.prevent="e => imgClick(e, img)"
       >
         <div class="galleria-img-text" aria-hidden="true">
           <div class="galleria-img-title">{{ img.title }}</div>
         </div>
-        <img
-          :src="require('../../img/'+meta.id+'/collection/'+name+'/thumbs/'+img.file+'.jpg')"
-          :alt="`${img.title || img.file} open image in lightbox`"
-          class="galleria-small"
-          role="presentation"
-        />
+        <div class="galleria-loader" />
       </button>
     </div>
     <div v-if="lightImg && lightImg.file" class="galleria__lightbox" @click.stop.prevent="closeLightbox">
@@ -151,31 +147,25 @@ export default {
       }
       this.$refs.row.forEach(row => {
         if (row.childNodes && row.childNodes.length) {
-          for (const img of row.childNodes) {
-            if (img.classList && img.classList.contains("galleria-img")) {
-              const small = img.children[1];
-              const imgSrc = img.dataset.large;
+          for (const btn of row.childNodes) {
+            if (btn.classList && btn.classList.contains("galleria-img")) {
+              const loader = btn.children[1];
+              const imgSrc = btn.dataset.large;
 
-              let imgSmall = new Image();
-              imgSmall.src = small.src;
-              imgSmall.onload = () => {
-                small.classList.add("loaded");
-              };
-
-              if (img.querySelector(".galleria-large")) {
-                img.querySelector(".galleria-large").src = imgSrc;
+              if (btn.querySelector(".galleria-large")) {
+                btn.querySelector(".galleria-large").src = imgSrc;
               } else {
                 let imgLarge = new Image();
                 imgLarge.src = imgSrc;
-                imgLarge.alt = small.alt;
+                imgLarge.alt = btn.dataset.alt;
                 imgLarge.onload = () => {
                   // give the link a class of "ready"
                   // to indicate lightbox clicks can now happen
-                  img.classList.add("ready");
+                  btn.classList.add("ready");
                   imgLarge.classList.add("galleria-large","loaded");
-                  small.classList.add("large-loaded");
+                  loader.classList.add("large-loaded");
                 };
-                img.appendChild(imgLarge);
+                btn.appendChild(imgLarge);
               }
             }
           }
