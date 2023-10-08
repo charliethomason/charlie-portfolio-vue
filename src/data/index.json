@@ -1,6 +1,6 @@
 {
   "heading": "Charlie Thomason",
-  "subtitle": "Artist. Photographer. Software engineer. Traveler. Runner. Bird watcher. Movie lover. Musician. Catholic. Chicagoland, IL.",
+  "subtitle": "Artist. Photographer. Software engineer. Traveler. Runner. Bird watcher. Movie lover. Catholic. Chicagoland, IL.",
 	"contact": [
 		{
 			"label": "LinkedIn",
@@ -21,16 +21,6 @@
 			"label": "Github",
 			"href": "https://github.com/charliethomason",
 			"icon": "GithubIcon"
-		},
-		{
-			"label": "GoodReads",
-			"href": "https://www.goodreads.com/user/show/75584528-charlie-thomason",
-			"icon": "GoodreadsIcon"
-		},
-		{
-			"label": "Letterboxd",
-			"href": "https://letterboxd.com/charliefusion/",
-			"icon": "LetterboxdIcon"
 		}
 	],
 	"unused": [

@@ -12,7 +12,9 @@
     border-radius: 5px 5px 0 0;
     color: $white;
     display: flex;
-    font-weight: bold;
+    font: bold 24px/32px $cormorant;
+    font-variant: small-caps;
+    letter-spacing: 0.07em;
     min-height: 40px;
     padding: 0 20px;
   }
