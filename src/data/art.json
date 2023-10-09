@@ -13,11 +13,112 @@
       "label": "Movies"
     },
     {
-      "id": "undergrad",
-      "label": "Undergrad Work"
+      "id": "portraits",
+      "label": "Portraits"
     }
   ],
   "galleries": {
+    "oilpaintings": {
+      "title": "Oil Paintings",
+      "subtitle": "Portraits & more",
+      "info": "Water-soluable oil paints on either canvas or wood panel. Birds, portraits, and other subject matter.",
+      "meta": {
+        "filters": ["birds", "portraits"]
+      },
+      "images": [
+        {
+          "file": "kestrelprairie",
+          "title": "Kestrel on the Prairie",
+          "year": "2023",
+          "medium": "Oil on wood panel",
+          "width": 763
+        },
+        {
+          "file": "woodspoint",
+          "title": "Woodspoint",
+          "year": "2021",
+          "medium": "Oil on wood panel",
+          "width": 783
+        },
+        {
+          "file": "probewinndixie",
+          "title": "Ford Probe at Winn-Dixie Parking Lot on Friday Night",
+          "year": "2021",
+          "medium": "Oil on wood panel",
+          "width": 791
+        },
+        {
+          "file": "selfportrait2020",
+          "title": "Self-Portrait 2020",
+          "year": "2020",
+          "medium": "Oil on canvas",
+          "width": 480
+        },
+        {
+          "file": "emeraldosprey",
+          "title": "Emerald Osprey",
+          "year": "2020",
+          "medium": "Oil on canvas",
+          "width": 473
+        },
+        {
+          "file": "blaumeise",
+          "title": "Blue Tit of Tyrol, Austria",
+          "year": "2020",
+          "medium": "Oil on canvas",
+          "width": 467
+        },
+        {
+          "file": "magpieparkcity",
+          "title": "Park City Magpie",
+          "year": "2020",
+          "medium": "Oil on canvas",
+          "width": 771
+        },
+        {
+          "file": "kestrelgreenskies",
+          "title": "Kestrel Flies Over Green Skies",
+          "year": "2019",
+          "medium": "Oil on canvas",
+          "width": 761
+        },
+        {
+          "file": "mexicanvaquero",
+          "title": "A Mexican Vaquero",
+          "year": "2017",
+          "medium": "Oil on canvas",
+          "width": 460
+        },
+        {
+          "file": "fqmg",
+          "title": "French Quarter Motorcycle Guitarist",
+          "year": "2011",
+          "medium": "Oil on canvas paper",
+          "width": 797
+        },
+        {
+          "file": "meltingdoge",
+          "title": "The Melting Doge",
+          "year": "2011",
+          "medium": "Oil on canvas paper",
+          "width": 439
+        },
+        {
+          "file": "mingojack",
+          "title": "Mingo Jack",
+          "year": "2010",
+          "medium": "Oil on wood panel",
+          "width": 459
+        },
+        {
+          "file": "cormanandpoe",
+          "title": "Corman and Poe",
+          "year": "2007",
+          "medium": "Oil on canvas",
+          "width": 1097
+        }
+      ]
+    },
     "inktober2022": {
       "title": "Inktober 2022",
       "subtitle": "100 Years of Cinema Stills",
@@ -88,20 +189,57 @@
       "subtitle": "Watercolors of 1970s films",
       "info": "Watercolor paintings on paper of 7 of my favorite films from the 1970s.",
       "meta": {
-        "filters": ["movies"]
+        "filters": ["movies", "portraits"]
       },
       "images": [
         {
-          "file": "taxidriver",
-          "title": "Taxi Driver",
-          "year": "2022",
-          "medium": "Watercolor on paper"
+          "file": "rocky",
+          "title": "Rocky (1976)",
+          "year": "2021",
+          "medium": "Watercolor on paper",
+          "width": 1062
         },
         {
-          "file": "rocky",
-          "title": "Rocky",
-          "year": "2021",
-          "medium": "Watercolor on paper"
+          "file": "godfather",
+          "title": "The Godfather (1972)",
+          "year": "2022",
+          "medium": "Watercolor on paper",
+          "width": 1100
+        },
+        {
+          "file": "taxidriver",
+          "title": "Taxi Driver (1976)",
+          "year": "2022",
+          "medium": "Watercolor on paper",
+          "width": 1049
+        },
+        {
+          "file": "rocknrollhighschool",
+          "title": "Rock 'n' Roll High School (1979)",
+          "year": "2022",
+          "medium": "Watercolor on paper",
+          "width": 1061
+        },
+        {
+          "file": "superman",
+          "title": "Superman (1978)",
+          "year": "2022",
+          "medium": "Watercolor on paper",
+          "width": 1072
+        },
+        {
+          "file": "jesusofnazareth",
+          "title": "Jesus of Nazareth (1977)",
+          "year": "2022",
+          "medium": "Watercolor on paper",
+          "width": 1010
+        },
+        {
+          "file": "aclockworkorange",
+          "title": "A Clockwork Orange (1971)",
+          "year": "2022",
+          "medium": "Watercolor on paper",
+          "width": 1056
         }
       ]
     },
@@ -110,7 +248,7 @@
       "subtitle": "Light & Ink",
       "info": "Ink brush paintings completed Sept-Oct 2021 for the annual #inktober challenge. Continues the theme from #charlieinktober 2020 of depicting scenes from my favorite films",
       "meta": {
-        "filters": ["inktober", "movies"]
+        "filters": ["inktober", "movies", "portraits"]
       },
       "images": [
         {
@@ -175,7 +313,7 @@
       "subtitle": "Silver Stills From Favorite Films",
       "info": "Ink brush paintings completed Sept-Nov 2020 for the annual #inktober challenge. Depicts scenes from my top 20 favorite films of all-time, in order. Self-published Dec 2020.",
       "meta": {
-        "filters": ["inktober", "movies"]
+        "filters": ["inktober", "movies", "portraits"]
       },
       "images": [
         {
@@ -277,6 +415,44 @@
           "file": "dracula",
           "title": "20. Dracula (1931)",
           "width": 996
+        }
+      ]
+    },
+    "venice": {
+      "title": "Venetian Watercolors",
+      "subtitle": "Paintings of Venice",
+      "info": "Water-soluable oil paints on either canvas or wood panel. Birds, portraits, and other subject matter.",
+      "meta": {
+        "filters": []
+      },
+      "images": [
+        {
+          "file": "redrialto",
+          "title": "Red Rialto",
+          "year": "2019",
+          "medium": "Ink and watercolor on paper",
+          "width": 783
+        },
+        {
+          "file": "riomendicanti",
+          "title": "Rio dei Mendicanti",
+          "year": "2018",
+          "medium": "Watercolor on paper",
+          "width": 443
+        },
+        {
+          "file": "sotoportego",
+          "title": "Sotoportego",
+          "year": "2018",
+          "medium": "Watercolor on paper",
+          "width": 436
+        },
+        {
+          "file": "pelicanvenice",
+          "title": "Pelicanus Venezia",
+          "year": "2016",
+          "medium": "Ink and watercolor on paper",
+          "width": 716
         }
       ]
     },
@@ -410,13 +586,21 @@
         }
       ]
     },
-    "birds": {
-      "title": "Birds",
-      "info": "Watercolor, ink, and oil paintings of birds. Includes only those not found in 'Birds of Chicagoland.'",
+    "birdswater": {
+      "title": "Birds: Ink, Watercolor & Gouache",
+      "subtitle": "More birds!",
+      "info": "Watercolor, ink, and gouache paintings of birds. Includes only those not found in 'Birds of Chicagoland.'",
       "meta": {
         "filters": ["birds"]
       },
       "images": [
+        {
+          "file": "bluejaychristmas",
+          "title": "Blue Jay Christmas",
+          "year": "2021",
+          "medium": "Gouache on paper",
+          "width": 932
+        },
         {
           "file": "redjunglefowl",
           "title": "Asian Red Junglefowl",
@@ -432,34 +616,6 @@
           "width": 444
         },
         {
-          "file": "emeraldosprey",
-          "title": "Emerald Osprey",
-          "year": "2020",
-          "medium": "Oil on canvas",
-          "width": 473
-        },
-        {
-          "file": "blaumeise",
-          "title": "Blue Tit of Tyrol, Austria",
-          "year": "2020",
-          "medium": "Oil on canvas",
-          "width": 467
-        },
-        {
-          "file": "magpieparkcity",
-          "title": "Park City Magpie",
-          "year": "2020",
-          "medium": "Oil on canvas",
-          "width": 771
-        },
-        {
-          "file": "kestrelgreenskies",
-          "title": "Kestrel Flies Over Green Skies",
-          "year": "2019",
-          "medium": "Oil on canvas",
-          "width": 761
-        },
-        {
           "file": "turquoiseperegrine",
           "title": "Turquoise Peregrine",
           "year": "2019",
@@ -467,18 +623,18 @@
           "width": 466
         },
         {
-          "file": "pelicanvenice",
-          "title": "Pelicanus Venezia",
-          "year": "2016",
-          "medium": "Ink and watercolor on paper",
-          "width": 716
-        },
-        {
           "file": "ospreykingfisher",
           "title": "Osprey and Kingfisher",
           "year": "2015",
           "medium": "Ink and watercolor on paper",
           "width": 503
+        },
+        {
+          "file": "cedarwaxwing",
+          "title": "Cedar Waxwing",
+          "year": "2015",
+          "medium": "Ink and watercolor on paper",
+          "width": 589
         },
         {
           "file": "screechowl",
@@ -496,201 +652,201 @@
         }
       ]
     },
-    "movies": {
-      "title": "Misc Movies",
-      "info": "Watercolor, ink, and oil paintings from my favorite movies. Includes only those not found in the 'Inktober' and '7 Stills of 70s Cinema' projects.",
+    "movieswater": {
+      "title": "Movies: Ink & Watercolor",
+      "subtitle": "Water-based movie paintings",
+      "info": "Ink and watercolor paintings inspired by some of my favorite movies.",
       "meta": {
         "filters": ["movies"]
       },
       "images": [
         {
+          "file": "greenknight",
+          "title": "The Green Knight",
+          "year": "2021",
+          "medium": "Gouache on paper",
+          "width": 461
+        },
+        {
           "file": "theshape",
           "title": "The Shape",
           "year": "2019",
-          "medium": "Ink on paper"
+          "medium": "Ink on paper",
+          "width": 467
         },
         {
           "file": "thefog",
           "title": "The Fog",
           "year": "2019",
-          "medium": "Ink on paper"
+          "medium": "Ink on paper",
+          "width": 446
         },
         {
           "file": "thesnake",
           "title": "The Snake",
           "year": "2019",
-          "medium": "Ink on paper"
+          "medium": "Ink on paper",
+          "width": 451
         },
         {
           "file": "thedancingclown",
           "title": "The Dancing Clown",
           "year": "2019",
-          "medium": "Ink on paper"
+          "medium": "Ink on paper",
+          "width": 425
         },
         {
           "file": "thecrow",
           "title": "The Crow",
           "year": "2019",
-          "medium": "Ink on paper"
+          "medium": "Ink on paper",
+          "width": 465
         },
         {
           "file": "swampthing",
           "title": "Swamp Thing",
           "year": "2014",
-          "medium": "Ink and watercolor on paper"
+          "medium": "Ink and watercolor on paper",
+          "width": 484
         },
         {
           "file": "edwardscissorhands",
           "title": "Edward Scissorhands",
           "year": "2014",
-          "medium": "Ink and watercolor on paper"
+          "medium": "Ink and watercolor on paper",
+          "width": 825
         },
         {
           "file": "eternalsunshine",
           "title": "Eternal Sunshine",
           "year": "2012",
-          "medium": "Ink and watercolor on paper"
+          "medium": "Ink and watercolor on paper",
+          "width": 397
         },
         {
           "file": "frankcellardoor",
           "title": "Frank and the Cellar Door",
           "year": "2012",
-          "medium": "Ink and watercolor on paper"
+          "medium": "Ink and watercolor on paper",
+          "width": 399
         },
         {
           "file": "earthvsflyingsaucers",
           "title": "Earth vs the Flying Saucers",
           "year": "2012",
-          "medium": "Ink and watercolor on paper"
-        },
-        {
-          "file": "cormanandpoe",
-          "title": "Corman and Poe",
-          "year": "2007",
-          "medium": "Oil on canvas"
+          "medium": "Ink and watercolor on paper",
+          "width": 406
         },
         {
           "file": "vincentprice",
           "title": "Vincent Price",
           "year": "2006",
-          "medium": "Ink on paper"
+          "medium": "Ink on paper",
+          "width": 458
         }
       ]
     },
-    "other": {
-      "title": "Other",
-      "info": "All other work",
+    "pencildrawings": {
+      "title": "Pencil Drawings",
+      "subtitle": "Graphite on paper",
+      "info": "Graphite pencil drawings on colored paper. Some more recent, some from college.",
       "meta": {
-        "filters": []
+        "filters": ["portraits"]
       },
       "images": [
         {
-          "file": "baxvox",
-          "title": "Bax Vox",
-          "year": "2021",
-          "medium": "Gouache on paper"
+          "file": "greenrachel",
+          "title": "Green Rachel",
+          "year": "2007",
+          "medium": "Pencil on paper",
+          "width": 489
         },
         {
-          "file": "woodspoint",
-          "title": "Woodspoint",
-          "year": "2021",
-          "medium": "Oil on wood panel"
-        },
-        {
-          "file": "probewinndixie",
-          "title": "Ford Probe at Winn-Dixie Parking Lot on Friday Night",
-          "year": "2021",
-          "medium": "Oil on wood panel"
-        },
-        {
-          "file": "selfportrait2020",
-          "title": "Self-Portrait 2020",
-          "year": "2020",
-          "medium": "Oil on canvas"
-        },
-        {
-          "file": "redrialto",
-          "title": "Red Rialto",
-          "year": "2019",
-          "medium": "Ink and watercolor on paper"
-        },
-        {
-          "file": "riomendicanti",
-          "title": "Rio dei Mendicanti",
-          "year": "2018",
-          "medium": "Watercolor on paper"
-        },
-        {
-          "file": "sotoportego",
-          "title": "Sotoportego",
-          "year": "2018",
-          "medium": "Watercolor on paper"
-        },
-        {
-          "file": "allanon",
-          "title": "Allanon",
-          "year": "2018",
-          "medium": "Ink on paper"
-        },
-        {
-          "file": "mexicanvaquero",
-          "title": "A Mexican Vaquero",
-          "year": "2017",
-          "medium": "Oil on canvas"
-        },
-        {
-          "file": "schumi-monaco",
-          "title": "Schumacher at Monaco",
-          "year": "2017",
-          "medium": "Watercolor on paper"
-        },
-        {
-          "file": "andrettilongbeach",
-          "title": "Andretti vs Andretti at Long Beach",
-          "year": "2017",
-          "medium": "Watercolor on paper"
-        },
-        {
-          "file": "jimclark",
-          "title": "Jim Clark in the Lotus 49",
-          "year": "2014",
-          "medium": "Ink and watercolor on paper"
-        },
-        {
-          "file": "quanahparker",
-          "title": "Quanah Parker",
-          "year": "2012",
-          "medium": "Ink on paper"
-        },
-        {
-          "file": "chopin",
-          "title": "Frederic Chopin",
-          "year": "2012",
-          "medium": "Ink and watercolor on paper"
-        },
-        {
-          "file": "fqmg",
-          "title": "French Quarter Motorcycle Guitarist",
-          "year": "2011",
-          "medium": "Oil on canvas paper"
-        },
-        {
-          "file": "meltingdoge",
-          "title": "The Melting Doge",
-          "year": "2011",
-          "medium": "Oil on canvas paper"
-        },
-        {
-          "file": "mingojack",
-          "title": "Mingo Jack",
-          "year": "2010",
-          "medium": "Oil on wood panel"
+          "file": "greenerin",
+          "title": "Green Erin",
+          "year": "2007",
+          "medium": "Pencil on paper",
+          "width": 489
         },
         {
           "file": "selfportrait2007",
           "title": "Self-Portrait 2007",
           "year": "2007",
-          "medium": "Pencil on paper"
+          "medium": "Pencil on paper",
+          "width": 477
+        }
+      ]
+    },
+    "other": {
+      "title": "Other",
+      "subtitle": "Random",
+      "info": "All other work",
+      "meta": {
+        "filters": ["portraits"]
+      },
+      "images": [
+        {
+          "file": "purduebelltower",
+          "title": "Purdue University Bell Tower",
+          "year": "2021",
+          "medium": "Ink and watercolor on paper",
+          "width": 450
+        },
+        {
+          "file": "baxvox",
+          "title": "Bax Vox",
+          "year": "2021",
+          "medium": "Gouache on paper",
+          "width": 396
+        },
+        {
+          "file": "pagenaud",
+          "title": "Simon Pagenaud No. 22",
+          "year": "2021",
+          "medium": "Gouache on paper",
+          "width": 1007
+        },
+        {
+          "file": "allanon",
+          "title": "Allanon",
+          "year": "2018",
+          "medium": "Ink on paper",
+          "width": 409
+        },
+        {
+          "file": "schumi-monaco",
+          "title": "Schumacher at Monaco",
+          "year": "2017",
+          "medium": "Watercolor on paper",
+          "width": 810
+        },
+        {
+          "file": "andrettilongbeach",
+          "title": "Andretti vs Andretti at Long Beach",
+          "year": "2017",
+          "medium": "Watercolor on paper",
+          "width": 730
+        },
+        {
+          "file": "jimclark",
+          "title": "Jim Clark in the Lotus 49",
+          "year": "2014",
+          "medium": "Ink and watercolor on paper",
+          "width": 974
+        },
+        {
+          "file": "quanahparker",
+          "title": "Quanah Parker",
+          "year": "2012",
+          "medium": "Ink on paper",
+          "width": 466
+        },
+        {
+          "file": "chopin",
+          "title": "Frederic Chopin",
+          "year": "2012",
+          "medium": "Ink and watercolor on paper",
+          "width": 401
         }
       ]
     }

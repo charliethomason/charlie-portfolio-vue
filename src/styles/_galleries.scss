@@ -2,6 +2,7 @@
   $root: &;
 
   display: grid;
+  gap: 5px;
   grid-template-columns: repeat(3, 1fr);
   margin: 0 auto;
   max-width: 1800px;
