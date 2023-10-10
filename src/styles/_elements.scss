@@ -60,6 +60,7 @@
   padding: 5px;
   position: relative;
   text-decoration: none;
+  transition: all 300ms ease-out;
   white-space: nowrap;
 
   &::before {
@@ -69,6 +70,7 @@
     border-bottom-width: 25px;
     border-left: 10px solid $clear;
     left: -10px;
+    transition: all 300ms ease-out;
   }
 
   &::after {
@@ -78,6 +80,7 @@
     border-top-width: 25px;
     border-right: 10px solid $clear;
     right: -10px;
+    transition: all 300ms ease-out;
   }
 
   &:not(.nohover):hover {

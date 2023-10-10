@@ -3,9 +3,9 @@
 
   display: grid;
   gap: 5px;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   margin: 0 auto;
-  max-width: 1800px;
+  max-width: 1810px;
 
   &__link {
     position: relative;
@@ -16,6 +16,9 @@
 
       #{$root}__text {
         min-height: 100%;
+      }
+      .parallelogram {
+        @include parallelogramHover;
       }
     }
   }
@@ -54,16 +57,22 @@
   }
 }
 
-@media screen and (max-width: $tablet-max) and (min-width: $mobile-min) {
+@include desktop {
   .galleries {
-    grid-template-columns: repeat(2, 1fr);
-
-    .parallelogram {
-      font-size: 12px;
-    }
+    grid-template-columns: repeat(3, 1fr);
   }
 }
-@media screen and (max-width: $mobile-med) {
+@include tablet {
+  .galleries {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@include mobile-lg {
+  .galleries {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@include mobile-sm {
   .galleries {
     $root: &;
 
@@ -85,9 +94,6 @@
       &:hover, &:focus {
         #{$root}__text {
           background-color: $green;
-        }
-        .parallelogram {
-          @include parallelogramHover;
         }
       }
     }

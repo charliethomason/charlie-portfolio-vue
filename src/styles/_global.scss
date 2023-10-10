@@ -122,6 +122,6 @@ body {
   @include mobile-header;
 }
 
-@include mobile-med {
+@include mobile-sm {
   @include mobile-header;
 }
