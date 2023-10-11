@@ -20,6 +20,9 @@
       .parallelogram {
         @include parallelogramHover;
       }
+      #{$root}__meta {
+        display: block;
+      }
     }
   }
 
@@ -51,9 +54,11 @@
     text-shadow: 1px 1px 1px $black;
   }
 
-  &__size {
+  &__meta {
     color: $white;
     display: none;
+    font: 14px/20px $roboto;
+    margin-top: 5px;
   }
 }
 
@@ -83,11 +88,11 @@
       display: flex;
       position: static;
       margin-bottom: 10px;
-      padding: 0 5px;
+      padding: 5px;
     }
-
-    .parallelogram {
-      margin-bottom: 8px;
+    
+    &__meta {
+      display: block;
     }
 
     &__link {

@@ -23,8 +23,9 @@
           <div class="galleries__text" aria-hidden="true">
             <h2 class="galleries__title">{{ gallery.title }}</h2>
             <div v-if="gallery.subtitle" class="parallelogram nohover">{{ gallery.subtitle }}</div>
+            <div class="galleries__meta">{{ gallery.dates }}</div>
+            <div class="galleries__meta">{{ gallery.images.length }} images</div>
           </div>
-          <div class="galleries__size">{{ gallery.images.length }} images</div>
         </a>
       </router-link>
     </ul>

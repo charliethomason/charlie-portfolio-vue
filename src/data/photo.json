@@ -17,6 +17,7 @@
     "wideworld": {
       "title": "The Wide World",
       "subtitle": "Wide Angle Around The World",
+      "dates": "2016-2020",
       "info": "Photos from around the U.S. and Europe, all taken with the same Panasonic Lumix G Vario 7-14mm wide angle lens, and a Panasonic Lumix DMC-GF1 camera body.",
       "meta": {
         "filters": ["digital"]
@@ -177,6 +178,7 @@
     "openrange": {
       "title": "Open Range",
       "subtitle": "Desert photography",
+      "dates": "June 2011",
       "info": "Deserts, National Parks, and Native American monuments, photographed with 35mm film, Polaroid instant, dSLR, and iPhone cameras. Self-published in 2012 as a hardcover book, 'Open Range: 'From Monument Valley to the Mojave Desert.'",
       "meta": {
         "filters": ["35mm", "polaroid", "digital"]
@@ -427,7 +429,8 @@
     "englishportfolio": {
       "title": "The English Portfolio",
       "subtitle": "Film Photography Across England",
-      "info": "35mm and Polaroid instant film photography across England, emphasizing more rural and historical locations. Shot in Feb 2008 and displayed in a solo exhibition in Lexington, KY in May 2008.",
+      "dates": "Feb 2008",
+      "info": "35mm and Polaroid instant film photography across England, emphasizing more rural and historical locations. Shot on Ilford Delta 100, Kodak T-Max 100, and Polaroid 600 film and developed (by myself) at the University of Kentucky photo lab. Displayed in a solo exhibition at the Kentucky Theatre in Lexington, KY in May 2008.",
       "meta": {
         "filters": ["35mm", "polaroid"]
       },
@@ -516,6 +519,273 @@
           "file": "sheffield-1",
           "title": "Sheffield - 35mm film",
           "width": 413
+        }
+      ]
+    },
+    "emeraldisle07": {
+      "title": "Emerald Isle 2007",
+      "subtitle": "NC beaches in B&W 35mm",
+      "dates": "July 2007",
+      "info": "Black and white photographs from the area around Emerald Isle, North Carolina. Shot on Ilford Delta 100 35mm film, using a Canon EOS Rebel X, and developed (by myself) at the University of Kentucky photo lab. Taken during a summer family vacation.",
+      "meta": {
+        "filters": ["35mm"]
+      },
+      "images": [
+        {
+          "file": "beaufort-01",
+          "title": "Lanterns in Beaufort",
+          "year": "2007",
+          "medium": "35mm film negative scan",
+          "width": 378
+        },
+        {
+          "file": "beaufort-02",
+          "title": "Shrimp Boat in Beaufort",
+          "year": "2007",
+          "medium": "35mm film negative scan",
+          "width": 904
+        },
+        {
+          "file": "beaufort-03",
+          "title": "Beaufort Boardwalk",
+          "year": "2007",
+          "medium": "35mm film negative scan",
+          "width": 899
+        },
+        {
+          "file": "beaufort-04",
+          "title": "Dock House Restaurant in Beaufort",
+          "year": "2007",
+          "medium": "35mm film negative scan",
+          "width": 401
+        },
+        {
+          "file": "beaufort-05",
+          "title": "Van in Beaufort",
+          "year": "2007",
+          "medium": "35mm film negative scan",
+          "width": 407
+        },
+        {
+          "file": "bogueinletpier-02",
+          "title": "Bogue Inlet Pier 2",
+          "year": "2007",
+          "medium": "35mm film negative scan",
+          "width": 901
+        },
+        {
+          "file": "bogueinletpier-03",
+          "title": "Bogue Inlet Pier 3",
+          "year": "2007",
+          "medium": "35mm film negative scan",
+          "width": 901
+        },
+        {
+          "file": "bogueinletpier-04",
+          "title": "Man Fishing on Bogue Inlet Pier",
+          "year": "2007",
+          "medium": "35mm film negative scan",
+          "width": 901
+        },
+        {
+          "file": "bogueinletpier-05",
+          "title": "Couple on Bogue Inlet Pier",
+          "year": "2007",
+          "medium": "35mm film negative scan",
+          "width": 901
+        },
+        {
+          "file": "bogueinletpier-06",
+          "title": "Woman Fishing on Bogue Inlet Pier 1",
+          "year": "2007",
+          "medium": "35mm film negative scan",
+          "width": 898
+        },
+        {
+          "file": "bogueinletpier-07",
+          "title": "Woman Fishing on Bogue Inlet Pier 2",
+          "year": "2007",
+          "medium": "35mm film negative scan",
+          "width": 402
+        },
+        {
+          "file": "bogueinletpier-08",
+          "title": "Bogue Inlet Pier 8",
+          "year": "2007",
+          "medium": "35mm film print",
+          "width": 404
+        },
+        {
+          "file": "bogueinletpier-09",
+          "title": "Men Fishing on Bogue Inlet Pier",
+          "year": "2007",
+          "medium": "35mm film print",
+          "width": 920
+        },
+        {
+          "file": "bogueinletpier-10",
+          "title": "King Fishermen on Bogue Inlet Pier",
+          "year": "2007",
+          "medium": "35mm film print",
+          "width": 395
+        },
+        {
+          "file": "bogueinletpier-11",
+          "title": "Jimmy on Bogue Inlet Pier",
+          "year": "2007",
+          "medium": "35mm film print",
+          "width": 894
+        },
+        {
+          "file": "cedarpoint-02",
+          "title": "Egret Cedar Point",
+          "year": "2007",
+          "medium": "35mm film negative scan",
+          "width": 897
+        },
+        {
+          "file": "cedarpoint-03",
+          "title": "Cedar Point 3",
+          "year": "2007",
+          "medium": "35mm film negative scan",
+          "width": 889
+        },
+        {
+          "file": "cedarpoint-04",
+          "title": "Cedar Point 4",
+          "year": "2007",
+          "medium": "35mm film negative scan",
+          "width": 904
+        },
+        {
+          "file": "cedarpoint-05",
+          "title": "Dead Trees Can Be Fatal",
+          "year": "2007",
+          "medium": "35mm film negative scan",
+          "width": 904
+        },
+        {
+          "file": "cedarpoint-06",
+          "title": "Osprey Nest at Cedar Poin",
+          "year": "2007",
+          "medium": "35mm film negative scan",
+          "width": 900
+        },
+        {
+          "file": "cedarpoint-08",
+          "title": "Cedar Point 8",
+          "year": "2007",
+          "medium": "35mm film negative scan",
+          "width": 897
+        },
+        {
+          "file": "cedarpoint-10",
+          "title": "Cedar Point 10",
+          "year": "2007",
+          "medium": "35mm film negative scan",
+          "width": 896
+        },
+        {
+          "file": "emeraldisle-01",
+          "title": "Uncle Frank Surfing",
+          "year": "2007",
+          "medium": "35mm film negative scan",
+          "width": 903
+        },
+        {
+          "file": "emeraldisle-02",
+          "title": "Beach View from the Pier 1",
+          "year": "2007",
+          "medium": "35mm film negative scan",
+          "width": 404
+        },
+        {
+          "file": "emeraldisle-03",
+          "title": "Beach View from the Pier 2",
+          "year": "2007",
+          "medium": "35mm film negative scan",
+          "width": 397
+        }
+      ]
+    },
+    "kylandscape07": {
+      "title": "Kentucky Landscapes",
+      "subtitle": "The Bluegrass in B&W 35mm",
+      "dates": "2007",
+      "info": "Black and white landscapes photographs from the area around Lexington, Kentucky. Shot on Ilford Delta 100 35mm film, using a Canon EOS Rebel X, and developed (by myself) at the University of Kentucky photo lab. The goal was to capture the beauty and ruggedness of Kentucky's landscapes—which I mostly ignored during my years living there—prior to my moving to Chicago.",
+      "meta": {
+        "filters": ["35mm"]
+      },
+      "images": [
+        {
+          "file": "kylandscape-01",
+          "title": "Running Cows in Bardstown",
+          "year": "2007",
+          "medium": "35mm film print",
+          "width": 890
+        },
+        {
+          "file": "kylandscape-02",
+          "title": "Black and White Horses",
+          "year": "2007",
+          "medium": "35mm film print",
+          "width": 883
+        },
+        {
+          "file": "kylandscape-03",
+          "title": "KY Landscape 3",
+          "year": "2007",
+          "medium": "35mm film print",
+          "width": 888
+        },
+        {
+          "file": "kylandscape-04",
+          "title": "KY Landscape 4",
+          "year": "2007",
+          "medium": "35mm film print",
+          "width": 882
+        },
+        {
+          "file": "kylandscape-05",
+          "title": "Tree Leaning Over a Creek",
+          "year": "2007",
+          "medium": "35mm film print",
+          "width": 883
+        },
+        {
+          "file": "kylandscape-06",
+          "title": "Country Roads and Fences",
+          "year": "2007",
+          "medium": "35mm film print",
+          "width": 879
+        },
+        {
+          "file": "kylandscape-07",
+          "title": "KY Landscape 7",
+          "year": "2007",
+          "medium": "35mm film print",
+          "width": 828
+        },
+        {
+          "file": "kylandscape-08",
+          "title": "After the Harvest",
+          "year": "2007",
+          "medium": "35mm film print",
+          "width": 825
+        },
+        {
+          "file": "kylandscape-09",
+          "title": "Kentucky Horse Park, Lexington",
+          "year": "2007",
+          "medium": "35mm film print",
+          "width": 879
+        },
+        {
+          "file": "kylandscape-10",
+          "title": "Cows and Sheep in the Evening",
+          "year": "2007",
+          "medium": "35mm film print",
+          "width": 824
         }
       ]
     }
