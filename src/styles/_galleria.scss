@@ -225,13 +225,12 @@
       flex-direction: column;
     }
     &-img {
-      display: grid;
-      grid-template-columns: 1fr;
+      align-items: center;
+      display: flex;
+      flex-direction: column-reverse;
       margin-bottom: 5px;
 
       img {
-        grid-row-start: 1;
-        grid-column-start: 1;
         position: relative;
       }
 
@@ -240,6 +239,10 @@
         display: block;
         padding: 5px;
         position: static;
+      }
+
+      &:hover, &:focus {
+        background-color: $green;
       }
     }
   }

@@ -14,6 +14,80 @@
     }
   ],
   "galleries": {
+    "emeraldisle23": {
+      "title": "Emerald Isle 2023",
+      "subtitle": "Crystal Coast on Polaroid",
+      "dates": "June 2023",
+      "info": "Polaroid photos taken in North Carolina at the beach in Emerald Isle and at Tryon Palace in New Bern. Shot on Polaroid 600 film using a Polaroid Sun 600 camera.",
+      "meta": {
+        "filters": ["polaroid"]
+      },
+      "images": [
+        {
+          "file": "emeraldisle23-01",
+          "title": "Emerald Isle, NC 2023 1",
+          "year": "2023",
+          "medium": "Polaroid 600 print",
+          "width": 496
+        },
+        {
+          "file": "emeraldisle23-02",
+          "title": "Emerald Isle, NC 2023 2",
+          "year": "2023",
+          "medium": "Polaroid 600 print",
+          "width": 493
+        },
+        {
+          "file": "emeraldisle23-03",
+          "title": "Emerald Isle, NC 2023 3",
+          "year": "2023",
+          "medium": "Polaroid 600 print",
+          "width": 498
+        },
+        {
+          "file": "emeraldisle23-04",
+          "title": "Emerald Isle, NC 2023 4",
+          "year": "2023",
+          "medium": "Polaroid 600 print",
+          "width": 494
+        },
+        {
+          "file": "emeraldisle23-05",
+          "title": "Emerald Isle, NC 2023 5",
+          "year": "2023",
+          "medium": "Polaroid 600 print",
+          "width": 496
+        },
+        {
+          "file": "tryonpalace23-01",
+          "title": "Tryon Palace in New Bern, NC 1",
+          "year": "2023",
+          "medium": "Polaroid 600 print",
+          "width": 500
+        },
+        {
+          "file": "tryonpalace23-02",
+          "title": "Tryon Palace in New Bern, NC 2",
+          "year": "2023",
+          "medium": "Polaroid 600 print",
+          "width": 499
+        },
+        {
+          "file": "tryonpalace23-03",
+          "title": "Tryon Palace in New Bern, NC 3",
+          "year": "2023",
+          "medium": "Polaroid 600 print",
+          "width": 502
+        },
+        {
+          "file": "tryonpalace23-04",
+          "title": "Tryon Palace in New Bern, NC 4",
+          "year": "2023",
+          "medium": "Polaroid 600 print",
+          "width": 500
+        }
+      ]
+    },
     "wideworld": {
       "title": "The Wide World",
       "subtitle": "Wide Angle Around The World",
@@ -423,6 +497,80 @@
           "file": "joshuatree04",
           "title": "Joshua Tree National Park - DSLR digital",
           "width": 800
+        }
+      ]
+    },
+    "cabochristmas": {
+      "title": "Cabo Christmas",
+      "subtitle": "35mm in Mexico",
+      "dates": "Dec 2008",
+      "info": "In December 2008, my family spent the week before Christmas in Cabo San Lucas, Mexico. While there I shot a roll of Kodak color 35mm film with a Canon EOS Rebel X.",
+      "meta": {
+        "filters": ["35mm"]
+      },
+      "images": [
+        {
+          "file": "cabo-01",
+          "title": "Cabo San Lucas 1",
+          "year": "2008",
+          "medium": "35mm film print",
+          "width": 882
+        },
+        {
+          "file": "cabo-02",
+          "title": "Cabo San Lucas 2",
+          "year": "2008",
+          "medium": "35mm film print",
+          "width": 894
+        },
+        {
+          "file": "cabo-03",
+          "title": "Cabo San Lucas 3",
+          "year": "2008",
+          "medium": "35mm film print",
+          "width": 891
+        },
+        {
+          "file": "cabo-04",
+          "title": "Cabo San Lucas 4",
+          "year": "2008",
+          "medium": "35mm film print",
+          "width": 406
+        },
+        {
+          "file": "cabo-05",
+          "title": "Cabo San Lucas 5",
+          "year": "2008",
+          "medium": "35mm film print",
+          "width": 894
+        },
+        {
+          "file": "cabo-06",
+          "title": "Cabo San Lucas 6",
+          "year": "2008",
+          "medium": "35mm film print",
+          "width": 900
+        },
+        {
+          "file": "cabo-07",
+          "title": "Cabo San Lucas 7",
+          "year": "2008",
+          "medium": "35mm film print",
+          "width": 405
+        },
+        {
+          "file": "cabo-08",
+          "title": "Cabo San Lucas 8",
+          "year": "2008",
+          "medium": "35mm film print",
+          "width": 405
+        },
+        {
+          "file": "cabo-09",
+          "title": "Cabo San Lucas 9",
+          "year": "2008",
+          "medium": "35mm film print",
+          "width": 402
         }
       ]
     },

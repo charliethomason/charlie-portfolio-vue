@@ -193,9 +193,12 @@ export default {
       const totalWidth = this.getTotalWidth(row);
       // actual displayed row width, divided by the aspect ratio of the row.
       // e.g.: 1000 / (2400 / 600 = 4) = 250
+      const calculatedRowHeight = this.actualRowWidth / (totalWidth / this.imgHeight);
       const rowHeight = onlyOneInRow && img.width <= this.actualRowWidth
         ? this.imgHeight
-        : this.actualRowWidth / (totalWidth / this.imgHeight);
+        : calculatedRowHeight < this.imgHeight
+          ? calculatedRowHeight
+          : this.imgHeight; // img height should never be greater than imgHeight
       // reduce the image width by the same amount the image height was reduced
       const imgWidth = onlyOneInRow && img.width <= this.actualRowWidth
         ? img.width
