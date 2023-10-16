@@ -22,7 +22,9 @@
           />
           <div class="galleries__text" aria-hidden="true">
             <h2 class="galleries__title">{{ gallery.title }}</h2>
-            <div v-if="gallery.subtitle" class="parallelogram nohover">{{ gallery.subtitle }}</div>
+            <div v-if="gallery.subtitle" class="parallelogram">
+              <span>{{ gallery.subtitle }}</span>
+            </div>
             <div class="galleries__meta">{{ gallery.dates }}</div>
             <div class="galleries__meta">{{ gallery.images.length }} images</div>
           </div>

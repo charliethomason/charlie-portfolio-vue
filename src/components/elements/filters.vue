@@ -8,7 +8,7 @@
         :class="{ parallelogram: true, active: filter.id === selected }"
         @click="() => onClick(filter.id)"
       >
-        {{ filter.label }}
+        <span>{{ filter.label }}</span>
       </button>
     </li>
   </ul>

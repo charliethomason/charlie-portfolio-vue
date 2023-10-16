@@ -39,13 +39,6 @@
   background-color: $white;
   color: $violet;
   text-decoration: none;
-
-  &::before {
-    border-bottom-color: $white;
-  }
-  &::after {
-    border-top-color: $white;
-  }
 }
 .parallelogram {
   background-color: $green;
@@ -56,47 +49,25 @@
   font-weight: bold;
   height: 25px;
   line-height: 14px;
-  margin: 0 10px;
-  padding: 5px;
-  position: relative;
+  margin: 0 5px;
+  padding: 5px 8px;
   text-decoration: none;
   transition: all 300ms ease-out;
+  transform: skew(-25deg);
   white-space: nowrap;
 
-  &::before {
-    @include triangleShape;
-    border-bottom-color: $green;
-    border-bottom-style: solid;
-    border-bottom-width: 25px;
-    border-left: 10px solid $clear;
-    left: -10px;
-    transition: all 300ms ease-out;
+  span {
+    display: inline-block;
+    transform: skew(25deg);
   }
 
-  &::after {
-    @include triangleShape;
-    border-top-color: $green;
-    border-top-style: solid;
-    border-top-width: 25px;
-    border-right: 10px solid $clear;
-    right: -10px;
-    transition: all 300ms ease-out;
-  }
-
-  &:not(.nohover):hover {
+  &:hover, &:focus {
     @include parallelogramHover;
   }
 
   &.active {
     background-color: $violet;
     color: $white;
-
-    &::before {
-      border-bottom-color: $violet;
-    }
-    &::after {
-      border-top-color: $violet;
-    }
   }
 }
 
@@ -105,7 +76,6 @@
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
   justify-content: center;
   margin-bottom: 20px;
 }
