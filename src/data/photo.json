@@ -361,11 +361,208 @@
         }
       ]
     },
+    "springbrook23": {
+      "title": "Springbrook Summer 2023",
+      "subtitle": "Prairie on Film",
+      "dates": "June-August 2023",
+      "info": "35mm and Polaroid film photos taken in Springbrook Prairie Forest Preserve in Naperville, IL. One of my favorite places in Chicagoland (or anywhere, really), the landscape is constantly changing with the seasons—arguably reaching its peak beauty in late summer. Black and white 35mm photos are Ilford Delta 100, color 35mm photos are Kodak Portra 800, and Polaroids are 600 film. Cameras were Pentax K1000 and Polaroid Sun 600 LMS.",
+      "meta": {
+        "filters": ["35mm", "polaroid"]
+      },
+      "images": [
+        {
+          "file": "springbrookbnw-01",
+          "title": "Springbrook - B&W 1",
+          "year": "2023",
+          "medium": "35mm film negative scan",
+          "width": 905
+        },
+        {
+          "file": "springbrookbnw-02",
+          "title": "Springbrook - B&W 2",
+          "year": "2023",
+          "medium": "35mm film negative scan",
+          "width": 905
+        },
+        {
+          "file": "springbrookbnw-03",
+          "title": "Springbrook - B&W 3",
+          "year": "2023",
+          "medium": "35mm film negative scan",
+          "width": 905
+        },
+        {
+          "file": "springbrookbnw-04",
+          "title": "Springbrook - B&W 4",
+          "year": "2023",
+          "medium": "35mm film negative scan",
+          "width": 905
+        },
+        {
+          "file": "springbrookbnw-05",
+          "title": "Springbrook - B&W 5",
+          "year": "2023",
+          "medium": "35mm film negative scan",
+          "width": 905
+        },
+        {
+          "file": "springbrookbnw-06",
+          "title": "Springbrook - B&W 6",
+          "year": "2023",
+          "medium": "35mm film negative scan",
+          "width": 905
+        },
+        {
+          "file": "springbrookpolaroid-01",
+          "title": "Springbrook - Polaroid 600 1",
+          "year": "2023",
+          "medium": "Polaroid 600 print",
+          "width": 502
+        },
+        {
+          "file": "springbrookpolaroid-02",
+          "title": "Springbrook - Polaroid 600 2",
+          "year": "2023",
+          "medium": "Polaroid 600 print",
+          "width": 503
+        },
+        {
+          "file": "springbrookpolaroid-03",
+          "title": "Springbrook - Polaroid 600 3",
+          "year": "2023",
+          "medium": "Polaroid 600 print",
+          "width": 503
+        },
+        {
+          "file": "springbrookpolaroid-04",
+          "title": "Springbrook - Polaroid 600 4",
+          "year": "2023",
+          "medium": "Polaroid 600 print",
+          "width": 501
+        },
+        {
+          "file": "springbrookcolor-01",
+          "title": "Springbrook - Sunset 1",
+          "year": "2023",
+          "medium": "35mm film negative scan",
+          "width": 904
+        },
+        {
+          "file": "springbrookcolor-02",
+          "title": "Springbrook - Sunset 2",
+          "year": "2023",
+          "medium": "35mm film negative scan",
+          "width": 904
+        },
+        {
+          "file": "springbrookcolor-03",
+          "title": "Springbrook - Sunset 3",
+          "year": "2023",
+          "medium": "35mm film negative scan",
+          "width": 904
+        },
+        {
+          "file": "springbrookcolor-04",
+          "title": "Springbrook - Sunset 4",
+          "year": "2023",
+          "medium": "35mm film negative scan",
+          "width": 904
+        }
+      ]
+    },
+    "desmoines23": {
+      "title": "Des Moines 2023",
+      "subtitle": "35mm Diners & Art",
+      "dates": "July 2023",
+      "info": "35mm film photos from around Des Moines, Iowa. Drake Diner, St. Ambrose Cathedral, Iowa Women of Achievement Bridge, and art seen downtown. Kodak Portra 800 shot with on a Pentax K1000.",
+      "meta": {
+        "filters": ["35mm"]
+      },
+      "images": [
+        {
+          "file": "drakediner-01",
+          "title": "Drake Diner, Des Moines 1",
+          "year": "2023",
+          "medium": "35mm film negative scan",
+          "width": 849
+        },
+        {
+          "file": "drakediner-02",
+          "title": "Drake Diner, Des Moines 2",
+          "year": "2023",
+          "medium": "35mm film negative scan",
+          "width": 849
+        },
+        {
+          "file": "drakediner-03",
+          "title": "Drake Diner, Des Moines 3",
+          "year": "2023",
+          "medium": "35mm film negative scan",
+          "width": 849
+        },
+        {
+          "file": "drakediner-04",
+          "title": "Drake Diner, Des Moines 4",
+          "year": "2023",
+          "medium": "35mm film negative scan",
+          "width": 849
+        },
+        {
+          "file": "drakediner-05",
+          "title": "Drake Diner, Des Moines 5",
+          "year": "2023",
+          "medium": "35mm film negative scan",
+          "width": 849
+        },
+        {
+          "file": "drakediner-06",
+          "title": "Drake Diner, Des Moines 6",
+          "year": "2023",
+          "medium": "35mm film negative scan",
+          "width": 849
+        },
+        {
+          "file": "desmoines-01",
+          "title": "Downtown Des Moines Art 1",
+          "year": "2023",
+          "medium": "35mm film negative scan",
+          "width": 849
+        },
+        {
+          "file": "desmoines-02",
+          "title": "Iowa Women of Achievement Bridge",
+          "year": "2023",
+          "medium": "35mm film negative scan",
+          "width": 849
+        },
+        {
+          "file": "desmoines-03",
+          "title": "Downtown Des Moines Art 2",
+          "year": "2023",
+          "medium": "35mm film negative scan",
+          "width": 849
+        },
+        {
+          "file": "stambrose-01",
+          "title": "St Ambrose Cathedral 1",
+          "year": "2023",
+          "medium": "35mm film negative scan",
+          "width": 849
+        },
+        {
+          "file": "stambrose-02",
+          "title": "St Ambrose Cathedral 2",
+          "year": "2023",
+          "medium": "35mm film negative scan",
+          "width": 849
+        }
+      ]
+    },
     "emeraldisle23": {
       "title": "Emerald Isle 2023",
       "subtitle": "Crystal Coast on Polaroid",
       "dates": "June 2023",
-      "info": "Polaroid photos taken in North Carolina at the beach in Emerald Isle and at Tryon Palace in New Bern. Shot on Polaroid 600 film using a Polaroid Sun 600 camera.",
+      "info": "Polaroid photos taken in North Carolina at the beach in Emerald Isle and at Tryon Palace in New Bern. Shot on Polaroid 600 film using a Polaroid Sun 600 LMS camera.",
       "meta": {
         "filters": ["polaroid"]
       },
@@ -432,6 +629,115 @@
           "year": "2023",
           "medium": "Polaroid 600 print",
           "width": 500
+        }
+      ]
+    },
+    "birds": {
+      "title": "Best Birds",
+      "subtitle": "Feathers via Digital Zoom",
+      "dates": "2018-2023",
+      "info": "A collection of some of my best bird photography. All photos were taken with a Panasonic Lumix DC-ZS70 point-and-shoot digital camera.",
+      "meta": {
+        "filters": ["digital"]
+      },
+      "images": [
+        {
+          "file": "cormorant-03",
+          "title": "Double-crested Cormorant, La Jolla, CA",
+          "year": "2018",
+          "medium": "Digital photo",
+          "width": 800
+        },
+        {
+          "file": "hummingbird-01",
+          "title": "Anna's Hummingbird, La Jolla, CA",
+          "year": "2018",
+          "medium": "Digital photo",
+          "width": 800
+        },
+        {
+          "file": "pelicans-01",
+          "title": "Brown Pelicans, La Jolla, CA",
+          "year": "2018",
+          "medium": "Digital photo",
+          "width": 800
+        },
+        {
+          "file": "cormorant-02",
+          "title": "Brandt's Cormorant, La Jolla, CA",
+          "year": "2018",
+          "medium": "Digital photo",
+          "width": 800
+        },
+        {
+          "file": "magpie-01",
+          "title": "Black-billed Magpie, Park City, UT",
+          "year": "2019",
+          "medium": "Digital photo",
+          "width": 800
+        },
+        {
+          "file": "towhee-01",
+          "title": "Eastern Townhee, Waterfall Glen, Lemont, IL",
+          "year": "2019",
+          "medium": "Digital photo",
+          "width": 800
+        },
+        {
+          "file": "heron-02",
+          "title": "Great Blue Heron, Bogue Sound, NC",
+          "year": "2020",
+          "medium": "Digital photo",
+          "width": 800
+        },
+        {
+          "file": "oystercatcher-01",
+          "title": "Oystercatcher, Bogue Sound, NC",
+          "year": "2020",
+          "medium": "Digital photo",
+          "width": 800
+        },
+        {
+          "file": "cormorant-01",
+          "title": "Double-crested Cormorant, Rockland, ME",
+          "year": "2020",
+          "medium": "Digital photo",
+          "width": 800
+        },
+        {
+          "file": "heron-01",
+          "title": "Great Blue Heron, Morton Arboretum, IL",
+          "year": "2021",
+          "medium": "Digital photo",
+          "width": 800
+        },
+        {
+          "file": "plover-01",
+          "title": "Piping Plover, Montrose Beach, Chicago, IL",
+          "year": "2021",
+          "medium": "Digital photo",
+          "width": 800
+        },
+        {
+          "file": "woodpecker-01",
+          "title": "Acorn Woodpecker, Catalina Island, CA",
+          "year": "2021",
+          "medium": "Digital photo",
+          "width": 800
+        },
+        {
+          "file": "egret-01",
+          "title": "Snowy Egret, Vilano Beach, FL",
+          "year": "2023",
+          "medium": "Digital photo",
+          "width": 800
+        },
+        {
+          "file": "phoebe-01",
+          "title": "Eastern Phoebe, Starved Rock State Park, IL",
+          "year": "2023",
+          "medium": "Digital photo",
+          "width": 800
         }
       ]
     },
