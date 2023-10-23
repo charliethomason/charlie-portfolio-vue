@@ -78,6 +78,7 @@
     }
   }
 
+  /* LIGHTBOX */
   &__lightbox {
     $lightbox: &;
 
@@ -97,15 +98,38 @@
     &__img {
       display: block;
       margin: 0 auto;
-      max-height: 90%;
+      max-height: 100%;
       max-width: 100%;
       padding: 0 10px;
+
+      &:hover + #{$lightbox}__caption {
+        opacity: 0;
+      }
+    }
+
+    &__caption {
+      align-items: center;
+      background-color: $grey-transparent;
+      bottom: 0;
+      display: flex;
+      justify-content: space-between;
+      opacity: 1;
+      padding: 10px;
+      position: absolute;
+      transition: opacity $ease-out;
+      width: 100%;
     }
 
     &__title {
+      font-size: 16px;
       font-weight: bold;
-      padding: 15px 0 0;
+      line-height: 20px;
       text-align: center;
+    }
+
+    &__info {
+      font-size: 14px;
+      font-weight: normal;
     }
 
     &__close {
@@ -132,25 +156,8 @@
       }
     }
 
-    &__caption {
-      align-items: center;
-      display: flex;
-      justify-content: space-between;
-      padding: 10px;
-      width: 100%;
-    }
-
     &__nav {
       @include buttonReset;
-      line-height: 1;
-      z-index: 2;
-
-      &[title="Previous"] {
-        left: 5px;
-      }
-      &[title="Next"] {
-        right: 5px;
-      }
 
       &:hover #{$lightbox}__icon-shape {
         fill: $green-light;
@@ -243,6 +250,37 @@
 
       &:hover, &:focus {
         background-color: $green;
+      }
+    }
+  }
+}
+@include tablet-max-landscape {
+  .galleria {
+    &__lightbox {
+      flex-direction: row;
+      justify-content: space-between;
+
+      &__img {
+        flex-shrink: 1;
+        max-width: 80%;
+      }
+
+      &__caption {
+        height: 100%;
+        position: relative;
+        width: 20%;
+      }
+
+      &__nav {
+        bottom: 10px;
+        position: absolute;
+
+        &--prev {
+          left: 10px;
+        }
+        &--next {
+          right: 10px;
+        }
       }
     }
   }

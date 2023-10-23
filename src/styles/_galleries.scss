@@ -43,7 +43,7 @@
     bottom: 0;
     width: 100%;
     min-height: 0%;
-    transition: min-height 300ms ease-out;
+    transition: min-height $ease-out;
   }
 
   &__title {

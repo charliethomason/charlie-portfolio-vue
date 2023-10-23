@@ -44,6 +44,11 @@ $galleria-full: 2400px;
     @content;	
   }
 }
+@mixin tablet-max-landscape {
+  @media screen and (max-width: $tablet-max) and (orientation: landscape) {
+    @content;
+  }
+}
 @mixin mobile-max-landscape {
   @media screen and (max-width: $mobile-max) and (orientation: landscape) {
     @content;

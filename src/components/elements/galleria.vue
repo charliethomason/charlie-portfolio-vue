@@ -26,17 +26,20 @@
       <div class="galleria__lightbox__caption">
         <button
           type="button"
-          class="galleria__lightbox__nav"
+          class="galleria__lightbox__nav galleria__lightbox__nav--prev"
           title="Previous"
           @click.stop.prevent="() => lightboxNav(-1)"
         >
           <span class="sr-text">Previous</span>
           <ArrowIcon class="galleria__lightbox__icon--prev" />
         </button>
-        <div v-if="lightImg.title" class="galleria__lightbox__title">{{ lightImg.title }}</div>
+        <div v-if="lightImg.title" class="galleria__lightbox__title">
+          {{ lightImg.title }}
+          <div class="galleria__lightbox__info">{{ lightImg.medium }} - {{ lightImg.year }}</div>
+        </div>
         <button
           type="button"
-          class="galleria__lightbox__nav"
+          class="galleria__lightbox__nav galleria__lightbox__nav--next"
           title="Next"
           @click.stop.prevent="() => lightboxNav(1)"
         >

@@ -1,7 +1,10 @@
 <template>
   <div>
     <h1 class="h1">{{ collection.title }}</h1>
-    <h2 v-if="collection.subtitle" class="h2">{{ collection.subtitle}}</h2>
+    <h2 v-if="collection.subtitle" class="h2">
+      {{ collection.subtitle}}
+      <div>{{ collection.dates }}</div>
+    </h2>
     <p class="collection__info">{{ collection.info }}</p>
     <galleria :name="cName" :images="collection.images" />
     <footer-note />
