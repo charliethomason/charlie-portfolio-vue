@@ -88,29 +88,43 @@
     position: relative;
 
     svg {
-      height: 50px;
-      width: 50px;
-    }
-
-    path,
-    polygon {
+      border-radius: 10px;
       fill: $teal;
+      height: 50px;
       transition: fill $ease-out;
+      width: 50px;
     }
 
     .fill-dark {
       fill: $black;
     }
 
+    .rounded-square {
+      background-color: $teal;
+
+      path {
+        fill: $black;
+      }
+    }
+
     &:hover,
     &:focus {
-      path,
-      polygon {
+
+      svg {
+        background-color: $violet;
         fill: $white;
       }
 
       .fill-dark {
         fill: $black;
+      }
+
+      .rounded-square {
+        background-color: $white;
+
+        path {
+          fill: $violet;
+        }
       }
 
       #{$contact}__tooltip {

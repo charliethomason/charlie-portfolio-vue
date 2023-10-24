@@ -1,20 +1,20 @@
 <template>
   <div class="galleria">
-    <div v-for="(row, r) in imagesInRows" :key="`row-${r}`" class="galleria-row" ref="row">
+    <div v-for="(row, r) in imagesInRows" :key="`row-${r}`" class="galleria__row" ref="row">
       <button
         type="button"
         v-for="(img, i) in row" :key="`row-${r}-img-${i}`"
-        class="galleria-img"
+        class="galleria__img"
         :style="getStyle(row, img)"
         :data-large="require('../../img/'+meta.id+'/collection/'+name+'/'+img.file+'.jpg')"
         :data-alt="img.title"
         :ref="`galleriaImg-${img.file}`"
         @click.stop.prevent="e => imgClick(e, img)"
       >
-        <div class="galleria-img-text" aria-hidden="true">
-          <div class="galleria-img-title">{{ img.title }}</div>
+        <div class="galleria__img__text" aria-hidden="true">
+          <div class="galleria__img__title">{{ img.title }}</div>
         </div>
-        <div class="galleria-loader" />
+        <div class="galleria__loader" />
       </button>
     </div>
     <div v-if="lightImg && lightImg.file" class="galleria__lightbox" @click.stop.prevent="closeLightbox">
@@ -151,12 +151,12 @@ export default {
       this.$refs.row.forEach(row => {
         if (row.childNodes && row.childNodes.length) {
           for (const btn of row.childNodes) {
-            if (btn.classList && btn.classList.contains("galleria-img")) {
+            if (btn.classList && btn.classList.contains("galleria__img")) {
               const loader = btn.children[1];
               const imgSrc = btn.dataset.large;
 
-              if (btn.querySelector(".galleria-large")) {
-                btn.querySelector(".galleria-large").src = imgSrc;
+              if (btn.querySelector(".galleria__large")) {
+                btn.querySelector(".galleria__large").src = imgSrc;
               } else {
                 let imgLarge = new Image();
                 imgLarge.src = imgSrc;
@@ -165,7 +165,7 @@ export default {
                   // give the link a class of "ready"
                   // to indicate lightbox clicks can now happen
                   btn.classList.add("ready");
-                  imgLarge.classList.add("galleria-large","loaded");
+                  imgLarge.classList.add("galleria__large","loaded");
                   loader.classList.add("large-loaded");
                 };
                 btn.appendChild(imgLarge);

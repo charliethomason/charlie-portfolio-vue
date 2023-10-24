@@ -2,12 +2,12 @@
   max-width: $galleria-full;
   margin: 0 auto;
 
-  &-row {
+  &__row {
     display: flex;
     flex-wrap: wrap;
   }
 
-  &-img {
+  &__img {
     $img: &;
 
     @include buttonReset;
@@ -28,7 +28,7 @@
       opacity: 1;
     }
 
-    &-text {
+    &__text {
       align-items: center;
       background-color: $grey-transparent;
       display: none;
@@ -43,7 +43,7 @@
       z-index: 1;
     }
 
-    &-title {
+    &__title {
       color: $white;
       font: bold 18px/24px $cormorant;
       letter-spacing: 0.07em;
@@ -51,13 +51,13 @@
     }
 
     &:hover, &:focus {
-      #{$img}-text {
+      #{$img}__text {
         display: flex;
       }
     }
   }
 
-  &-loader {
+  &__loader {
     background: linear-gradient(
       to right,
       rgba(255, 255, 255, 0),
@@ -228,10 +228,10 @@
   .galleria {
     max-width: $galleria-sm;
 
-    &-row {
+    &__row {
       flex-direction: column;
     }
-    &-img {
+    &__img {
       align-items: center;
       display: flex;
       flex-direction: column-reverse;
@@ -241,7 +241,7 @@
         position: relative;
       }
 
-      &-text {
+      &__text {
         background: none;
         display: block;
         padding: 5px;

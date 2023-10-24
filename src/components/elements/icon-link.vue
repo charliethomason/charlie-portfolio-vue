@@ -11,15 +11,15 @@ export default {
   props: {
     label: {
       type: String,
-      default: "",
+      default: ""
     },
     href: {
       type: String,
-      default: "#",
+      default: "#"
     },
     icon: {
-      type: Object,
-    },
-  },
+      type: Object
+    }
+  }
 };
 </script>

@@ -21,13 +21,16 @@
 			"label": "Github",
 			"href": "https://github.com/charliethomason",
 			"icon": "GithubIcon"
-		}
-	],
-	"unused": [
+		},
 		{
-			"label": "Email thomason.charlie@gmail.com",
-			"href": "mailto:thomason.charlie@gmail.com",
-			"icon": "ContactIcon"
+			"label": "GoodReads",
+			"href": "https://www.goodreads.com/user/show/75584528-charlie-thomason",
+			"icon": "GoodreadsIcon"
+		},
+		{
+			"label": "Letterboxd",
+			"href": "#",
+			"icon": "LetterboxdIcon"
 		}
 	]
 }
