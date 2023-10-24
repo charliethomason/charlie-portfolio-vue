@@ -259,9 +259,9 @@ export default {
       }
     },
     closeLightbox() {
-      const currLightId = this.lightImg.file;
-      this.lightImg = null;
       this.$nextTick(function() {
+        const currLightId = this.lightImg.file;
+        this.lightImg = null;
         this.$refs[`galleriaImg-${currLightId}`][0].focus();
       });
     },

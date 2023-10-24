@@ -132,56 +132,78 @@
         {
           "file": "nosferatu",
           "title": "Nosferatu: A Symphony of Horror (1922)",
+          "year": "2022",
+          "medium": "Ink on paper",
           "width": 1098
         },
         {
           "file": "stagecoach",
           "title": "Stagecoach (1939)",
+          "year": "2022",
+          "medium": "Ink on paper",
           "width": 1074
         },
         {
           "file": "howgreenwasmyvalley",
           "title": "How Green Was My Valley (1941)",
+          "year": "2022",
+          "medium": "Ink on paper",
           "width": 972
         },
         {
           "file": "sevensamurai",
           "title": "Seven Samurai (1954)",
+          "year": "2022",
+          "medium": "Ink on paper",
           "width": 1055
         },
         {
           "file": "nightofthelivingdead",
           "title": "Night of the Living Dead (1968)",
+          "year": "2022",
+          "medium": "Ink on paper",
           "width": 1036
         },
         {
           "file": "dontlooknow",
           "title": "Don't Look Now (1973)",
+          "year": "2022",
+          "medium": "Ink on paper",
           "width": 1018
         },
         {
           "file": "returnofthejedi",
           "title": "Return of the Jedi (1983)",
+          "year": "2022",
+          "medium": "Ink on paper",
           "width": 992
         },
         {
           "file": "marsattacks",
           "title": "Mars Attacks! (1996)",
+          "year": "2022",
+          "medium": "Ink on paper",
           "width": 1076
         },
         {
           "file": "returnoftheking",
           "title": "The Lord of the Rings: The Return of the King (2003)",
+          "year": "2022",
+          "medium": "Ink on paper",
           "width": 999
         },
         {
           "file": "it",
           "title": "It (2017)",
+          "year": "2022",
+          "medium": "Ink on paper",
           "width": 1063
         },
         {
           "file": "reminiscence",
           "title": "Reminiscence (2021)",
+          "year": "2022",
+          "medium": "Ink on paper",
           "width": 1068
         }
       ]
@@ -258,56 +280,78 @@
         {
           "file": "coverpage",
           "title": "Cover page",
+          "year": "2021",
+          "medium": "Ink on paper",
           "width": 811
         },
         {
           "file": "halloween18",
           "title": "Halloween (2018)",
+          "year": "2021",
+          "medium": "Ink on paper",
           "width": 1088
         },
         {
           "file": "batmanreturns",
           "title": "Batman Returns (1992)",
+          "year": "2021",
+          "medium": "Ink on paper",
           "width": 1071
         },
         {
           "file": "doctorsleep",
           "title": "Doctor Sleep (2019)",
+          "year": "2021",
+          "medium": "Ink on paper",
           "width": 1089
         },
         {
           "file": "goldrush",
           "title": "The Gold Rush (1925)",
+          "year": "2021",
+          "medium": "Ink on paper",
           "width": 1039
         },
         {
           "file": "wizardofoz",
           "title": "The Wizard of Oz (1939)",
+          "year": "2021",
+          "medium": "Ink on paper",
           "width": 1090
         },
         {
           "file": "evildeadii",
           "title": "Evil Dead II (1987)",
+          "year": "2021",
+          "medium": "Ink on paper",
           "width": 1094
         },
         {
           "file": "empirestrikesback",
           "title": "The Empire Strikes Back (1980)",
+          "year": "2021",
+          "medium": "Ink on paper",
           "width": 1089
         },
         {
           "file": "thetwotowers",
           "title": "The Lord of the Rings: The Two Towers (2002)",
+          "year": "2021",
+          "medium": "Ink on paper",
           "width": 1095
         },
         {
           "file": "downbylaw",
           "title": "Down By Law (1986)",
+          "year": "2021",
+          "medium": "Ink on paper",
           "width": 1095
         },
         {
           "file": "lostboys",
           "title": "The Lost Boys (1987)",
+          "year": "2021",
+          "medium": "Ink on paper",
           "width": 1098
         }
       ]
@@ -324,101 +368,141 @@
         {
           "file": "beetlejuice",
           "title": "1. Beetlejuice (1988)",
+          "year": "2020",
+          "medium": "Ink on paper",
           "width": 964
         },
         {
           "file": "halloween",
           "title": "2. Halloween (1978)",
+          "year": "2020",
+          "medium": "Ink on paper",
           "width": 1087
         },
         {
           "file": "lotr",
           "title": "3. The Lord of the Rings: The Fellowship of the Ring (2001)",
+          "year": "2020",
+          "medium": "Ink on paper",
           "width": 1040
         },
         {
           "file": "phibes",
           "title": "4. The Abominable Dr. Phibes (1971)",
+          "year": "2020",
+          "medium": "Ink on paper",
           "width": 1004
         },
         {
           "file": "shining",
           "title": "5. The Shining (1980)",
+          "year": "2020",
+          "medium": "Ink on paper",
           "width": 954
         },
         {
           "file": "starwars",
           "title": "6. Star Wars (1977)",
+          "year": "2020",
+          "medium": "Ink on paper",
           "width": 1004
         },
         {
           "file": "batman",
           "title": "7. Batman (1989)",
+          "year": "2020",
+          "medium": "Ink on paper",
           "width": 1002
         },
         {
           "file": "sleepyhollow",
           "title": "8. Sleepy Hollow (1999)",
+          "year": "2020",
+          "medium": "Ink on paper",
           "width": 1000
         },
         {
           "file": "donniedarko",
           "title": "9. Donnie Darko (2001)",
+          "year": "2020",
+          "medium": "Ink on paper",
           "width": 1009
         },
         {
           "file": "terminator2",
           "title": "10. Terminator 2: Judgement Day (1991)",
+          "year": "2020",
+          "medium": "Ink on paper",
           "width": 1133
         },
         {
           "file": "nightmareb4xmas",
           "title": "11. The Nightmare Before Christmas (1993)",
+          "year": "2020",
+          "medium": "Ink on paper",
           "width": 1006
         },
         {
           "file": "thefog",
           "title": "12. The Fog (1980)",
+          "year": "2020",
+          "medium": "Ink on paper",
           "width": 1009
         },
         {
           "file": "edwardscissorhands",
           "title": "13. Edward Scissorhands (1990)",
+          "year": "2020",
+          "medium": "Ink on paper",
           "width": 986
         },
         {
           "file": "alien",
           "title": "14. Alien (1979)",
+          "year": "2020",
+          "medium": "Ink on paper",
           "width": 983
         },
         {
           "file": "bladerunner",
           "title": "15. Blade Runner (1982)",
+          "year": "2020",
+          "medium": "Ink on paper",
           "width": 1098
         },
         {
           "file": "thecrow",
           "title": "16. The Crow (1994)",
+          "year": "2020",
+          "medium": "Ink on paper",
           "width": 979
         },
         {
           "file": "shaunofthedead",
           "title": "17. Shaun of the Dead (2004)",
+          "year": "2020",
+          "medium": "Ink on paper",
           "width": 1211
         },
         {
           "file": "metropolis",
           "title": "18. Metropolis (1927)",
+          "year": "2020",
+          "medium": "Ink on paper",
           "width": 992
         },
         {
           "file": "escapefromny",
           "title": "19. Escape From New York (1981)",
+          "year": "2020",
+          "medium": "Ink on paper",
           "width": 1017
         },
         {
           "file": "dracula",
           "title": "20. Dracula (1931)",
+          "year": "2020",
+          "medium": "Ink on paper",
           "width": 996
         }
       ]
@@ -474,121 +558,169 @@
         {
           "file": "peregrine",
           "title": "Peregrine Falcon at Old St. Patrick's Church",
+          "year": "2015",
+          "medium": "Watercolor and ink on paper",
           "width": 530
         },
         {
           "file": "kestrel",
           "title": "American Kestrel at Museum Campus with Skyline",
+          "year": "2015",
+          "medium": "Watercolor and ink pen on paper",
           "width": 456
         },
         {
           "file": "goshawk",
           "title": "Northern Goshawk at Northerly Island, Winter",
+          "year": "2015",
+          "medium": "Ink on paper",
           "width": 501
         },
         {
           "file": "coopershawk",
           "title": "Cooper's Hawk at Wind Farm",
+          "year": "2016",
+          "medium": "Ink on paper",
           "width": 462
         },
         {
           "file": "greathornedowl",
           "title": "Great Horned Owl at Graceland Cemetery",
+          "year": "2015",
+          "medium": "Watercolor and ink on paper",
           "width": 526
         },
         {
           "file": "greatblueheron",
           "title": "Great Blue Heron at Humboldt Park Lagoon",
+          "year": "2015",
+          "medium": "Watercolor and ink on paper",
           "width": 511
         },
         {
           "file": "woodduck",
           "title": "Wood Duck at Lincoln Park South Pond",
+          "year": "2015",
+          "medium": "Watercolor and ink on paper",
           "width": 471
         },
         {
           "file": "nightheron",
           "title": "Black-crowned Night Heron at Lincoln Park South Pond",
+          "year": "2015",
+          "medium": "Watercolor and ink on paper",
           "width": 759
         },
         {
           "file": "cormorant",
           "title": "Double-crested Cormorant at Monroe Harbor Breakwater",
+          "year": "2015",
+          "medium": "Watercolor and ink on paper",
           "width": 393
         },
         {
           "file": "loon",
           "title": "Common Loon at Jackson Park Lagoon",
+          "year": "2015",
+          "medium": "Ink on paper",
           "width": 541
         },
         {
           "file": "grosbeaks",
           "title": "Rose-breasted Grosbeaks at the Art Institute of Chicago",
+          "year": "2016",
+          "medium": "Watercolor and ink on paper",
           "width": 456
         },
         {
           "file": "meadowlark",
           "title": "Eastern Meadowlark",
+          "year": "2014",
+          "medium": "Watercolor and ink on paper",
           "width": 489
         },
         {
           "file": "bluejay",
           "title": "Blue Jay at Printer's Row",
+          "year": "2015",
+          "medium": "Watercolor and ink on paper",
           "width": 817
         },
         {
           "file": "cardinals",
           "title": "Northern Cardinals with Gynandromorph",
+          "year": "2015",
+          "medium": "Watercolor and ink on paper",
           "width": 923
         },
         {
           "file": "redwingedblackbird",
           "title": "Red-winged Blackbird at Glessner House Museum",
+          "year": "2016",
+          "medium": "Watercolor and ink on paper",
           "width": 694
         },
         {
           "file": "rockpigeon",
           "title": "Rock Pigeon at Madison & Wabash CTA Station",
+          "year": "2016",
+          "medium": "Ink on paper",
           "width": 807
         },
         {
           "file": "crow",
           "title": "American Crow at University of Chicago",
+          "year": "2016",
+          "medium": "Ink on paper",
           "width": 525
         },
         {
           "file": "tern",
           "title": "Caspian Tern at Promontory Point",
+          "year": "2016",
+          "medium": "Ink on paper",
           "width": 455
         },
         {
           "file": "whitethroatedsparrow",
           "title": "White-throated Sparrow at Old Chicago Water Tower",
+          "year": "2016",
+          "medium": "Watercolor and ink on paper",
           "width": 468
         },
         {
           "file": "passengerpigeons",
           "title": "Passenger Pigeons at Field Museum",
+          "year": "2014",
+          "medium": "Watercolor and ink on paper",
           "width": 453
         },
         {
           "file": "flicker",
           "title": "Northern Flicker at Grant Park Rose Garden",
+          "year": "2015",
+          "medium": "Watercolor and ink on paper",
           "width": 420
         },
         {
           "file": "woodpecker",
           "title": "Pileated Woodpecker at Starved Rock State Park, Summer",
+          "year": "2015",
+          "medium": "Watercolor and ink on paper",
           "width": 435
         },
         {
           "file": "turkey",
           "title": "Wild Turkey at Starved Rock State Park, Autumn",
+          "year": "2015",
+          "medium": "Watercolor and ink on paper",
           "width": 864
         },
         {
           "file": "kingfisher",
           "title": "Belted Kingfisher at Halsted St Bridge, River West",
+          "year": "2016",
+          "medium": "Watercolor and ink on paper",
           "width": 471
         }
       ]

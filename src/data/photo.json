@@ -2,7 +2,7 @@
   "filters": [
     {
       "id": "35mm",
-      "label": "35mm film"
+      "label": "35mm film negative scan"
     },
     {
       "id": "polaroid",
@@ -753,151 +753,211 @@
         {
           "file": "austria-1",
           "title": "Innsbruck, Austria",
+          "year": "2016",
+          "medium": "Digital photo",
           "width": 898
         },
         {
           "file": "austria-2",
           "title": "Seefeld, Austria",
+          "year": "2016",
+          "medium": "Digital photo",
           "width": 898
         },
         {
           "file": "austria-3",
           "title": "Seefeld, Austria",
+          "year": "2016",
+          "medium": "Digital photo",
           "width": 898
         },
         {
           "file": "austria-4",
           "title": "Innsbruck, Austria",
+          "year": "2016",
+          "medium": "Digital photo",
           "width": 898
         },
         {
           "file": "austria-5",
           "title": "Salzburg, Austria",
+          "year": "2016",
+          "medium": "Digital photo",
           "width": 898
         },
         {
           "file": "venezia-1",
           "title": "Venice, Italy",
+          "year": "2016",
+          "medium": "Digital photo",
           "width": 898
         },
         {
           "file": "venezia-2",
           "title": "Venice, Italy",
+          "year": "2016",
+          "medium": "Digital photo",
           "width": 898
         },
         {
           "file": "venezia-3",
           "title": "Venice, Italy",
+          "year": "2016",
+          "medium": "Digital photo",
           "width": 898
         },
         {
           "file": "sandiego-1",
           "title": "La Jolla, California",
+          "year": "2017",
+          "medium": "Digital photo",
           "width": 898
         },
         {
           "file": "sandiego-2",
           "title": "La Jolla, California",
+          "year": "2017",
+          "medium": "Digital photo",
           "width": 899
         },
         {
           "file": "joshuatree-1",
           "title": "Joshua Tree National Park, California",
+          "year": "2017",
+          "medium": "Digital photo",
           "width": 898
         },
         {
           "file": "joshuatree-2",
           "title": "Joshua Tree National Park, California",
+          "year": "2017",
+          "medium": "Digital photo",
           "width": 898
         },
         {
           "file": "joshuatree-3",
           "title": "Joshua Tree National Park, California",
+          "year": "2017",
+          "medium": "Digital photo",
           "width": 899
         },
         {
           "file": "england-1",
           "title": "London, England, UK",
+          "year": "2017",
+          "medium": "Digital photo",
           "width": 899
         },
         {
           "file": "england-2",
           "title": "London, England, UK",
+          "year": "2017",
+          "medium": "Digital photo",
           "width": 898
         },
         {
           "file": "england-3",
           "title": "London, England, UK",
+          "year": "2017",
+          "medium": "Digital photo",
           "width": 898
         },
         {
           "file": "england-4",
           "title": "London, England, UK",
+          "year": "2017",
+          "medium": "Digital photo",
           "width": 899
         },
         {
           "file": "england-5",
           "title": "London, England, UK",
+          "year": "2017",
+          "medium": "Digital photo",
           "width": 899
         },
         {
           "file": "england-6",
           "title": "Stonehenge, England, UK",
+          "year": "2017",
+          "medium": "Digital photo",
           "width": 899
         },
         {
           "file": "england-7",
           "title": "London, England, UK",
+          "year": "2017",
+          "medium": "Digital photo",
           "width": 1005
         },
         {
           "file": "paris-1",
           "title": "Paris, France",
+          "year": "2017",
+          "medium": "Digital photo",
           "width": 480
         },
         {
           "file": "paris-2",
           "title": "Paris, France",
+          "year": "2017",
+          "medium": "Digital photo",
           "width": 899
         },
         {
           "file": "paris-3",
           "title": "Paris, France",
+          "year": "2017",
+          "medium": "Digital photo",
           "width": 898
         },
         {
           "file": "emeraldisle-1",
           "title": "Emerald Isle, North Carolina",
+          "year": "2020",
+          "medium": "Digital photo",
           "width": 898
         },
         {
           "file": "emeraldisle-2",
           "title": "Emerald Isle, North Carolina",
+          "year": "2020",
+          "medium": "Digital photo",
           "width": 898
         },
         {
           "file": "emeraldisle-3",
           "title": "Emerald Isle, North Carolina",
+          "year": "2020",
+          "medium": "Digital photo",
           "width": 898
         },
         {
           "file": "maine-1",
           "title": "Marshall Point Rd, Port Clyde, Maine",
+          "year": "2020",
+          "medium": "Digital photo",
           "width": 898
         },
         {
           "file": "maine-2",
           "title": "Acadia National Park, Maine",
+          "year": "2020",
+          "medium": "Digital photo",
           "width": 898
         },
         {
           "file": "maine-3",
           "title": "Acadia National Park, Maine",
+          "year": "2020",
+          "medium": "Digital photo",
           "width": 898
         },
         {
           "file": "maine-4",
           "title": "Acadia National Park, Maine",
+          "year": "2020",
+          "medium": "Digital photo",
           "width": 898
         }
       ]
@@ -906,249 +966,345 @@
       "title": "Open Range",
       "subtitle": "Desert photography",
       "dates": "June 2011",
-      "info": "Deserts, National Parks, and Native American monuments, photographed with 35mm film, Polaroid instant, dSLR, and iPhone cameras. Self-published in 2012 as a hardcover book, 'Open Range: 'From Monument Valley to the Mojave Desert.'",
+      "info": "Deserts, National Parks, and Native American monuments, photographed with 35mm film, Polaroid instant, dSLR, and iPhone cameras. Self-published in 2012 as a hardcover book, 'Open Range: 'From Monument Valley to the Mojave Desert.' 35mm photos used Ilford Delta 100 film with a Canon EOS Rebel X. Polaroid photos used 600 film with a Polaroid Sun 600 LMS. Digital photos used a Panasonic Lumix G1 and Apple iPhone 4.",
       "meta": {
         "filters": ["35mm", "polaroid", "digital"]
       },
       "images": [
         {
           "file": "lakepowell02",
-          "title": "Lake Powell - iPhone panorama",
+          "title": "Lake Powell 1",
+          "year": "2011",
+          "medium": "iPhone panorama",
           "width": 1978
         },
         {
           "file": "lakepowell01",
-          "title": "Lake Powell - DSLR digital",
+          "title": "Lake Powell 2",
+          "year": "2011",
+          "medium": "Digital photo",
           "width": 800
         },
         {
           "file": "lakepowell03",
-          "title": "Lake Powell - 35mm film",
+          "title": "Lake Powell 3",
+          "year": "2011",
+          "medium": "35mm film negative scan",
           "width": 908
         },
         {
           "file": "lakepowell04",
-          "title": "Lake Powell - 35mm film",
+          "title": "Lake Powell 4",
+          "year": "2011",
+          "medium": "35mm film negative scan",
           "width": 919
         },
         {
           "file": "lakepowell05",
-          "title": "Lake Powell - 35mm film",
+          "title": "Lake Powell 5",
+          "year": "2011",
+          "medium": "35mm film negative scan",
           "width": 907
         },
         {
           "file": "leesferry01",
-          "title": "Lee's Ferry - DSLR digital",
+          "title": "Lee's Ferry 1",
+          "year": "2011",
+          "medium": "Digital photo",
           "width": 450
         },
         {
           "file": "leesferry02",
-          "title": "Lee's Ferry - DSLR digital",
+          "title": "Lee's Ferry 2",
+          "year": "2011",
+          "medium": "Digital photo",
           "width": 800
         },
         {
           "file": "monumentvalley01",
-          "title": "Monument Valley - DSLR digital",
+          "title": "Monument Valley 1",
+          "year": "2011",
+          "medium": "Digital photo",
           "width": 800
         },
         {
           "file": "monumentvalley02",
-          "title": "Monument Valley - DSLR digital",
+          "title": "Monument Valley 2",
+          "year": "2011",
+          "medium": "Digital photo",
           "width": 800
         },
         {
           "file": "monumentvalley03",
-          "title": "Monument Valley - DSLR digital",
+          "title": "Monument Valley 3",
+          "year": "2011",
+          "medium": "Digital photo",
           "width": 800
         },
         {
           "file": "monumentvalley04",
-          "title": "Monument Valley - DSLR digital",
+          "title": "Monument Valley 4",
+          "year": "2011",
+          "medium": "Digital photo",
           "width": 800
         },
         {
           "file": "monumentvalley05",
-          "title": "Monument Valley - DSLR digital long-exposure",
+          "title": "Monument Valley 5",
+          "year": "2011",
+          "medium": "Long-exposure digital photo",
           "width": 800
         },
         {
           "file": "monumentvalley06",
-          "title": "Monument Valley - DSLR digital long-exposure",
+          "title": "Monument Valley 6",
+          "year": "2011",
+          "medium": "Long-exposure digital photo",
           "width": 820
         },
         {
           "file": "monumentvalley09",
-          "title": "Monument Valley - iPhone panorama",
+          "title": "Monument Valley 7",
+          "year": "2011",
+          "medium": "iPhone panorama",
           "width": 2502
         },
         {
           "file": "monumentvalley07",
-          "title": "Monument Valley - DSLR digital long-exposure",
+          "title": "Monument Valley 8",
+          "year": "2011",
+          "medium": "Long-exposure digital photo",
           "width": 800
         },
         {
           "file": "monumentvalley08",
-          "title": "Monument Valley - DSLR digital HDR composite",
+          "title": "Monument Valley 9",
+          "year": "2011",
+          "medium": "HDR composite digital photo",
           "width": 799
         },
         {
           "file": "monumentvalley10",
-          "title": "Monument Valley - 35mm film",
+          "title": "Monument Valley 10",
+          "year": "2011",
+          "medium": "35mm film negative scan",
           "width": 899
         },
         {
           "file": "monumentvalley11",
-          "title": "Monument Valley - 35mm film",
+          "title": "Monument Valley 11",
+          "year": "2011",
+          "medium": "35mm film negative scan",
           "width": 901
         },
         {
           "file": "monumentvalley12",
-          "title": "Monument Valley - 35mm film",
+          "title": "Monument Valley 12",
+          "year": "2011",
+          "medium": "35mm film negative scan",
           "width": 903
         },
         {
           "file": "monumentvalley13",
-          "title": "Monument Valley - 35mm film",
+          "title": "Monument Valley 13",
+          "year": "2011",
+          "medium": "35mm film negative scan",
           "width": 907
         },
         {
           "file": "monumentvalley14",
-          "title": "Monument Valley - Polaroid instant film",
+          "title": "Monument Valley 14",
+          "year": "2011",
+          "medium": "Polaroid print scan",
           "width": 499
         },
         {
           "file": "monumentvalley15",
-          "title": "Monument Valley - Polaroid instant film",
+          "title": "Monument Valley 15",
+          "year": "2011",
+          "medium": "Polaroid print scan",
           "width": 508
         },
         {
           "file": "monumentvalley16",
-          "title": "Monument Valley - Polaroid instant film",
+          "title": "Monument Valley 16",
+          "year": "2011",
+          "medium": "Polaroid print scan",
           "width": 507
         },
         {
           "file": "highways01",
-          "title": "On The Road - DSLR digital",
+          "title": "On The Road 1",
+          "year": "2011",
+          "medium": "Digital photo",
           "width": 800
         },
         {
           "file": "highways02",
-          "title": "On The Road - DSLR digital",
+          "title": "On The Road 2",
+          "year": "2011",
+          "medium": "Digital photo",
           "width": 800
         },
         {
           "file": "highways03",
-          "title": "On The Road - DSLR digital",
+          "title": "On The Road 3",
+          "year": "2011",
+          "medium": "Digital photo",
           "width": 800
         },
         {
           "file": "highways04",
-          "title": "On The Road - DSLR digital",
+          "title": "On The Road 4",
+          "year": "2011",
+          "medium": "Digital photo",
           "width": 800
         },
         {
           "file": "highways05",
-          "title": "On The Road - 35mm film",
+          "title": "On The Road 5",
+          "year": "2011",
+          "medium": "35mm film negative scan",
           "width": 898
         },
         {
           "file": "highways06",
-          "title": "On The Road - 35mm film",
+          "title": "On The Road 6",
+          "year": "2011",
+          "medium": "35mm film negative scan",
           "width": 889
         },
         {
           "file": "highways07",
-          "title": "On The Road - 35mm film",
+          "title": "On The Road 7",
+          "year": "2011",
+          "medium": "35mm film negative scan",
           "width": 927
         },
         {
           "file": "highways08",
-          "title": "On The Road - Polaroid instant film",
+          "title": "On The Road 8",
+          "year": "2011",
+          "medium": "Polaroid print scan",
           "width": 506
         },
         {
           "file": "highways09",
-          "title": "On The Road - Polaroid instant film",
+          "title": "On The Road 9",
+          "year": "2011",
+          "medium": "Polaroid print scan",
           "width": 510
         },
         {
           "file": "navajomonument01",
-          "title": "Navajo National Monument - DSLR digital HDR composite",
+          "title": "Navajo National Monument 1",
+          "year": "2011",
+          "medium": "HDR composite digital photo",
           "width": 799
         },
         {
           "file": "navajomonument02",
-          "title": "Navajo National Monument - DSLR digital HDR composite",
+          "title": "Navajo National Monument 2",
+          "year": "2011",
+          "medium": "HDR composite digital photo",
           "width": 799
         },
         {
           "file": "navajomonument03",
-          "title": "Navajo National Monument - DSLR digital HDR composite",
+          "title": "Navajo National Monument 3",
+          "year": "2011",
+          "medium": "HDR composite digital photo",
           "width": 800
         },
         {
           "file": "navajomonument04",
-          "title": "Navajo National Monument - 35mm film",
+          "title": "Navajo National Monument 4",
+          "year": "2011",
+          "medium": "35mm film negative scan",
           "width": 899
         },
         {
           "file": "navajomonument05",
-          "title": "Navajo National Monument - 35mm film",
+          "title": "Navajo National Monument 5",
+          "year": "2011",
+          "medium": "35mm film negative scan",
           "width": 396
         },
         {
           "file": "grandcanyon01",
-          "title": "Grand Canyon National Park - DSLR digital",
+          "title": "Grand Canyon National Park 1",
+          "year": "2011",
+          "medium": "Digital photo",
           "width": 800
         },
         {
           "file": "grandcanyon02",
-          "title": "Grand Canyon National Park - DSLR digital",
+          "title": "Grand Canyon National Park 2",
+          "year": "2011",
+          "medium": "Digital photo",
           "width": 457
         },
         {
           "file": "grandcanyon03",
-          "title": "Grand Canyon National Park - iPhone",
+          "title": "Grand Canyon National Park 3",
+          "year": "2011",
+          "medium": "iPhone photo",
           "width": 803
         },
         {
           "file": "grandcanyon04",
-          "title": "Grand Canyon National Park - DSLR digital HDR composite",
+          "title": "Grand Canyon National Park 4",
+          "year": "2011",
+          "medium": "HDR composite digital photo",
           "width": 449
         },
         {
           "file": "grandcanyon05",
-          "title": "Grand Canyon National Park - DSLR digital HDR composite",
+          "title": "Grand Canyon National Park 5",
+          "year": "2011",
+          "medium": "HDR composite digital photo",
           "width": 800
         },
         {
           "file": "grandcanyon06",
-          "title": "Grand Canyon National Park - DSLR digital HDR composite",
+          "title": "Grand Canyon National Park 6",
+          "year": "2011",
+          "medium": "HDR composite digital photo",
           "width": 804
         },
         {
           "file": "grandcanyon07",
-          "title": "Grand Canyon National Park - 35mm film",
+          "title": "Grand Canyon National Park 7",
+          "year": "2011",
+          "medium": "35mm film negative scan",
           "width": 903
         },
         {
           "file": "joshuatree01",
-          "title": "Joshua Tree National Park - DSLR digital",
+          "title": "Joshua Tree National Park 1",
+          "year": "2011",
+          "medium": "Digital photo",
           "width": 800
         },
         {
           "file": "joshuatree02",
-          "title": "Joshua Tree National Park - DSLR digital",
+          "title": "Joshua Tree National Park 2",
+          "year": "2011",
+          "medium": "Digital photo",
           "width": 800
         },
         {
           "file": "joshuatree03",
-          "title": "Joshua Tree National Park - DSLR digital",
+          "title": "Joshua Tree National Park 3",
+          "year": "2011",
+          "medium": "Digital photo",
           "width": 800
         },
         {
           "file": "joshuatree04",
-          "title": "Joshua Tree National Park - DSLR digital",
+          "title": "Joshua Tree National Park 4",
+          "year": "2011",
+          "medium": "Digital photo",
           "width": 800
         }
       ]
@@ -1166,63 +1322,63 @@
           "file": "cabo-01",
           "title": "Cabo San Lucas 1",
           "year": "2008",
-          "medium": "35mm film print",
+          "medium": "35mm film print scan",
           "width": 882
         },
         {
           "file": "cabo-02",
           "title": "Cabo San Lucas 2",
           "year": "2008",
-          "medium": "35mm film print",
+          "medium": "35mm film print scan",
           "width": 894
         },
         {
           "file": "cabo-03",
           "title": "Cabo San Lucas 3",
           "year": "2008",
-          "medium": "35mm film print",
+          "medium": "35mm film print scan",
           "width": 891
         },
         {
           "file": "cabo-04",
           "title": "Cabo San Lucas 4",
           "year": "2008",
-          "medium": "35mm film print",
+          "medium": "35mm film print scan",
           "width": 406
         },
         {
           "file": "cabo-05",
           "title": "Cabo San Lucas 5",
           "year": "2008",
-          "medium": "35mm film print",
+          "medium": "35mm film print scan",
           "width": 894
         },
         {
           "file": "cabo-06",
           "title": "Cabo San Lucas 6",
           "year": "2008",
-          "medium": "35mm film print",
+          "medium": "35mm film print scan",
           "width": 900
         },
         {
           "file": "cabo-07",
           "title": "Cabo San Lucas 7",
           "year": "2008",
-          "medium": "35mm film print",
+          "medium": "35mm film print scan",
           "width": 405
         },
         {
           "file": "cabo-08",
           "title": "Cabo San Lucas 8",
           "year": "2008",
-          "medium": "35mm film print",
+          "medium": "35mm film print scan",
           "width": 405
         },
         {
           "file": "cabo-09",
           "title": "Cabo San Lucas 9",
           "year": "2008",
-          "medium": "35mm film print",
+          "medium": "35mm film print scan",
           "width": 402
         }
       ]
@@ -1238,87 +1394,121 @@
       "images": [
         {
           "file": "bradfield-1",
-          "title": "High Bradfield - 35mm film",
+          "title": "High Bradfield",
+          "year": "2008",
+          "medium": "35mm film print scan",
           "width": 407
         },
         {
           "file": "bradfield-3",
-          "title": "High Bradfield - 35mm film",
+          "title": "High Bradfield",
+          "year": "2008",
+          "medium": "35mm film print scan",
           "width": 898
         },
         {
           "file": "bradfield-4",
-          "title": "High Bradfield - 35mm film",
+          "title": "High Bradfield",
+          "year": "2008",
+          "medium": "35mm film print scan",
           "width": 906
         },
         {
           "file": "bradfield-6",
-          "title": "High Bradfield - Polaroid instant film",
+          "title": "High Bradfield",
+          "year": "2008",
+          "medium": "Polaroid print scan",
           "width": 498
         },
         {
           "file": "bradfield-5",
-          "title": "High Bradfield - 35mm film",
+          "title": "High Bradfield",
+          "year": "2008",
+          "medium": "35mm film print scan",
           "width": 898
         },
         {
           "file": "bradfield-2",
-          "title": "High Bradfield - 35mm film",
+          "title": "High Bradfield",
+          "year": "2008",
+          "medium": "35mm film print scan",
           "width": 399
         },
         {
           "file": "liverpool-5",
-          "title": "Liverpool - Polaroid instant film",
+          "title": "Liverpool",
+          "year": "2008",
+          "medium": "Polaroid print scan",
           "width": 497
         },
         {
           "file": "liverpool-1",
-          "title": "Liverpool - 35mm film",
+          "title": "Liverpool",
+          "year": "2008",
+          "medium": "35mm film print scan",
           "width": 852
         },
         {
           "file": "liverpool-2",
-          "title": "Liverpool - 35mm film",
+          "title": "Liverpool",
+          "year": "2008",
+          "medium": "35mm film print scan",
           "width": 403
         },
         {
           "file": "liverpool-3",
-          "title": "Liverpool - 35mm film",
+          "title": "Liverpool",
+          "year": "2008",
+          "medium": "35mm film print scan",
           "width": 893
         },
         {
           "file": "liverpool-4",
-          "title": "Liverpool - 35mm film",
+          "title": "Liverpool",
+          "year": "2008",
+          "medium": "35mm film print scan",
           "width": 398
         },
         {
           "file": "birmingham-1",
-          "title": "Birmingham - 35mm film",
+          "title": "Birmingham",
+          "year": "2008",
+          "medium": "35mm film print scan",
           "width": 892
         },
         {
           "file": "birmingham-2",
-          "title": "Birmingham - 35mm film",
+          "title": "Birmingham",
+          "year": "2008",
+          "medium": "35mm film print scan",
           "width": 436
         },
         {
           "file": "birmingham-4",
-          "title": "Birmingham - Polaroid instant film",
+          "title": "Birmingham",
+          "year": "2008",
+          "medium": "Polaroid print scan",
           "width": 500
         },
         {
           "file": "birmingham-3",
-          "title": "Birmingham - 35mm film",
+          "title": "Birmingham",
+          "year": "2008",
+          "medium": "35mm film print scan",
           "width": 396
         },
         {
           "file": "kenilworth-1",
-          "title": "Kenilworth - Polaroid instant film",
+          "title": "Kenilworth -",
+          "year": "2008",
+          "medium": "Polaroid print scan",
           "width": 498
         },
         {
           "file": "sheffield-1",
-          "title": "Sheffield - 35mm film",
+          "title": "Sheffield",
+          "year": "2008",
+          "medium": "35mm film print scan",
           "width": 413
         }
       ]
@@ -1413,28 +1603,28 @@
           "file": "bogueinletpier-08",
           "title": "Bogue Inlet Pier 8",
           "year": "2007",
-          "medium": "35mm film print",
+          "medium": "35mm film print scan",
           "width": 404
         },
         {
           "file": "bogueinletpier-09",
           "title": "Men Fishing on Bogue Inlet Pier",
           "year": "2007",
-          "medium": "35mm film print",
+          "medium": "35mm film print scan",
           "width": 920
         },
         {
           "file": "bogueinletpier-10",
           "title": "King Fishermen on Bogue Inlet Pier",
           "year": "2007",
-          "medium": "35mm film print",
+          "medium": "35mm film print scan",
           "width": 395
         },
         {
           "file": "bogueinletpier-11",
           "title": "Jimmy on Bogue Inlet Pier",
           "year": "2007",
-          "medium": "35mm film print",
+          "medium": "35mm film print scan",
           "width": 894
         },
         {
@@ -1522,70 +1712,70 @@
           "file": "kylandscape-01",
           "title": "Running Cows in Bardstown",
           "year": "2007",
-          "medium": "35mm film print",
+          "medium": "35mm film print scan",
           "width": 890
         },
         {
           "file": "kylandscape-02",
           "title": "Black and White Horses",
           "year": "2007",
-          "medium": "35mm film print",
+          "medium": "35mm film print scan",
           "width": 883
         },
         {
           "file": "kylandscape-03",
           "title": "KY Landscape 3",
           "year": "2007",
-          "medium": "35mm film print",
+          "medium": "35mm film print scan",
           "width": 888
         },
         {
           "file": "kylandscape-04",
           "title": "KY Landscape 4",
           "year": "2007",
-          "medium": "35mm film print",
+          "medium": "35mm film print scan",
           "width": 882
         },
         {
           "file": "kylandscape-05",
           "title": "Tree Leaning Over a Creek",
           "year": "2007",
-          "medium": "35mm film print",
+          "medium": "35mm film print scan",
           "width": 883
         },
         {
           "file": "kylandscape-06",
           "title": "Country Roads and Fences",
           "year": "2007",
-          "medium": "35mm film print",
+          "medium": "35mm film print scan",
           "width": 879
         },
         {
           "file": "kylandscape-07",
           "title": "KY Landscape 7",
           "year": "2007",
-          "medium": "35mm film print",
+          "medium": "35mm film print scan",
           "width": 828
         },
         {
           "file": "kylandscape-08",
           "title": "After the Harvest",
           "year": "2007",
-          "medium": "35mm film print",
+          "medium": "35mm film print scan",
           "width": 825
         },
         {
           "file": "kylandscape-09",
           "title": "Kentucky Horse Park, Lexington",
           "year": "2007",
-          "medium": "35mm film print",
+          "medium": "35mm film print scan",
           "width": 879
         },
         {
           "file": "kylandscape-10",
           "title": "Cows and Sheep in the Evening",
           "year": "2007",
-          "medium": "35mm film print",
+          "medium": "35mm film print scan",
           "width": 824
         }
       ]
