@@ -31,7 +31,7 @@
           @click.stop.prevent="() => lightboxNav(-1)"
         >
           <span class="sr-text">Previous</span>
-          <ArrowIcon class="galleria__lightbox__icon--prev" />
+          <ArrowIcon class="galleria__lightbox__icon--prev" title="Previous image" />
         </button>
         <div v-if="lightImg.title" class="galleria__lightbox__title">
           {{ lightImg.title }}
@@ -44,7 +44,7 @@
           @click.stop.prevent="() => lightboxNav(1)"
         >
           <span class="sr-text">Next</span>
-          <ArrowIcon class="galleria__lightbox__icon--next" />
+          <ArrowIcon class="galleria__lightbox__icon--next" title="Next image" />
         </button>
       </div>
       <button

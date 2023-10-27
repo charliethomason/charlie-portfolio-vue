@@ -71,15 +71,9 @@
 
   &__link-row {
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
     justify-content: flex-start;
-
-    li {
-      margin-left: 10px;
-
-      &:first-child {
-        margin-left: 0;
-      }
-    }
   }
 
   &__link {
@@ -160,45 +154,8 @@
 
 @include mobile-sm {
   .contact {
-    $contact: &;
-
     &__photo {
       width: 150px;
-    }
-
-    &__name {
-      font-size: 24px;
-    }
-
-    &__subtitle {
-      font-size: 16px;
-    }
-
-    &__link-row {
-      flex-wrap: wrap;
-      max-width: 200px;
-      margin: -10px auto 0;
-
-      li {
-        margin-top: 10px;
-      }
-    }
-
-    &__link {
-      svg {
-        height: 35px;
-        width: 35px;
-      }
-
-      &:hover,
-      &:focus {
-        #{$contact}__tooltip {
-          bottom: auto;
-          left: -9999px;
-          top: -9999px;
-          transform: none;
-        }
-      }
     }
   }
 }

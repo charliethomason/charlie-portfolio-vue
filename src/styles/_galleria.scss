@@ -159,8 +159,13 @@
     &__nav {
       @include buttonReset;
 
-      &:hover #{$lightbox}__icon-shape {
-        fill: $green-light;
+      &:hover #{$lightbox}__icon {
+        &-shape {
+          fill: $white;
+        }
+        &-symbol {
+          fill: $violet;
+        }
       }
     }
 
@@ -176,7 +181,7 @@
       }
 
       &-shape {
-        fill: $white;
+        fill: $green-light;
       }
       &-symbol {
         fill: $black;
