@@ -1,5 +1,6 @@
+const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const VueLoaderPlugin = require("vue-loader/lib/plugin");
+const { VueLoaderPlugin } = require("vue-loader");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const path = require("path");
 
@@ -56,7 +57,12 @@ module.exports = {
       meta: {
         charset: "utf-8",
         viewport: "width=device-width, initial-scale=1, minimum-scale=1"
-      }
+      },
+      favicon: "./src/img/favicon.ico"
+    }),
+    new webpack.DefinePlugin({
+      __VUE_OPTIONS_API__: true,
+      __VUE_PROD_DEVTOOLS__: false
     })
   ],
   devServer: {

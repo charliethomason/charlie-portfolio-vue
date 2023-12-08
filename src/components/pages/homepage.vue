@@ -9,7 +9,7 @@
         <div class="contact__subtitle">{{ homeData.subtitle }}</div>
         <ul class="contact__link-row">
           <li v-for="(icon, i) in homeData.contact" :key="i">
-            <icon-link :label="icon.label" :href="icon.href" :icon="icons[icon.icon]" />
+            <icon-link :label="icon.label" :href="icon.href" :icon="icons[icon.label]" />
           </li>
         </ul>
       </div>
