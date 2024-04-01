@@ -7,29 +7,31 @@
       @change="updateFilters"
     />
     <ul class="galleries">
-      <router-link
-        v-for="(gallery, i) in filteredGalleres"
-        :key="i"
-        tag="li"
-        :to="`/${meta.id}/${gallery.id}`"
-        class="galleries__item"
+      <li
+        v-for="gallery in filteredGalleres"
+        :key="gallery.id"
       >
-        <a class="galleries__link">
-          <img
-            :src="require('../../img/' + meta.id + '/galleries/galleries-' + gallery.id + '.jpg')"
-            :alt="`${gallery.title} gallery`"
-            class="galleries__img"
-          />
-          <div class="galleries__text" aria-hidden="true">
-            <h2 class="galleries__title">{{ gallery.title }}</h2>
-            <div v-if="gallery.subtitle" class="parallelogram">
-              <span>{{ gallery.subtitle }}</span>
+        <router-link
+          :to="`/${meta.id}/${gallery.id}`"
+          class="galleries__link"
+        >
+          <a class="galleries__link">
+            <img
+              :src="require('../../img/' + meta.id + '/galleries/galleries-' + gallery.id + '.jpg')"
+              :alt="`${gallery.title} gallery`"
+              class="galleries__img"
+            />
+            <div class="galleries__text" aria-hidden="true">
+              <h2 class="galleries__title">{{ gallery.title }}</h2>
+              <div v-if="gallery.subtitle" class="parallelogram">
+                <span>{{ gallery.subtitle }}</span>
+              </div>
+              <div class="galleries__meta">{{ gallery.dates }}</div>
+              <div class="galleries__meta">{{ gallery.images.length }} images</div>
             </div>
-            <div class="galleries__meta">{{ gallery.dates }}</div>
-            <div class="galleries__meta">{{ gallery.images.length }} images</div>
-          </div>
-        </a>
-      </router-link>
+          </a>
+        </router-link>
+      </li>
     </ul>
     <footer-note />
   </div>
