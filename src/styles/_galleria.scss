@@ -257,6 +257,11 @@
         background-color: $green;
       }
     }
+    &__loader {
+      position: absolute;
+      left: 0;
+      right: 0;
+    }
   }
 }
 @include tablet-max-landscape {
