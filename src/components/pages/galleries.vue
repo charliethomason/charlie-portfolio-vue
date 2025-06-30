@@ -15,19 +15,18 @@
           :to="`/${meta.id}/${gallery.id}`"
           class="galleries__link"
         >
-          <img
-            :src="require('../../img/' + meta.id + '/galleries/galleries-' + gallery.id + '.jpg')"
-            :alt="`${gallery.title} gallery`"
-            class="galleries__img"
-          />
-          <div class="galleries__text" aria-hidden="true">
-            <h2 class="galleries__title">{{ gallery.title }}</h2>
-            <div v-if="gallery.subtitle" class="parallelogram">
-              <span>{{ gallery.subtitle }}</span>
+          <card :heading="gallery.title" link>
+            <img
+              :src="require('../../img/' + meta.id + '/galleries/galleries-' + gallery.id + '.jpg')"
+              :alt="`${gallery.title} gallery`"
+              class="galleries__img"
+            />
+            <div class="galleries__text" aria-hidden="true">
+              <div class="galleries__meta">{{ gallery.subtitle }}</div>
+              <div class="galleries__meta">{{ gallery.dates }}</div>
+              <div class="galleries__meta">{{ gallery.images.length }} images</div>
             </div>
-            <div class="galleries__meta">{{ gallery.dates }}</div>
-            <div class="galleries__meta">{{ gallery.images.length }} images</div>
-          </div>
+          </card>
         </router-link>
       </li>
     </ul>
@@ -39,10 +38,15 @@
 import data from "../../js/data";
 import FooterNote from "../elements/footer.vue";
 import Filters from "../elements/filters.vue";
+import Card from "../elements/card.vue";
 
 export default {
   name: "Galleries",
-  components: { FooterNote, Filters },
+  components: {
+    FooterNote,
+    Filters,
+    Card
+  },
   data() {
     return {
       selectedFilter: null

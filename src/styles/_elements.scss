@@ -1,15 +1,17 @@
 /* Card */
 .card {
+  $root: &;
+
   background-color: $grey-dark;
   border-bottom: 2px solid $grey-medium;
-  border-radius: 5px;
+  border-radius: 10px;
   color: $white;
   font-size: 16px;
 
   &__heading {
     align-items: center;
     background-color: $green;
-    border-radius: 5px 5px 0 0;
+    border-radius: 10px 10px 0 0;
     color: $white;
     display: flex;
     font: bold 24px/32px $cormorant;
@@ -21,7 +23,7 @@
 
   &__content {
     line-height: 1.5;
-    padding: 15px 20px;
+    padding: 20px;
 
     a {
       color: $green-light;
@@ -33,48 +35,21 @@
     }
   }
   p {
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 
     &:last-child {
       padding-bottom: 0;
     }
   }
-}
 
-/* Parallelogram */
-@mixin parallelogramHover {
-  background-color: $white;
-  color: $violet;
-  text-decoration: none;
-}
-.parallelogram {
-  background-color: $green;
-  border: none;
-  color: #fff;
-  display: inline-block;
-  font-size: 14px;
-  font-weight: bold;
-  height: 25px;
-  line-height: 14px;
-  margin: 0 5px;
-  padding: 5px 8px;
-  text-decoration: none;
-  transition: all $ease-out;
-  transform: skew(-25deg);
-  white-space: nowrap;
+  &--link {
+    &:hover, &:focus {
+      background-color: $black;
 
-  span {
-    display: inline-block;
-    transform: skew(25deg);
-  }
-
-  &:hover, &:focus {
-    @include parallelogramHover;
-  }
-
-  &.active {
-    background-color: $violet;
-    color: $white;
+      #{$root}__heading {
+        background-color: $violet;
+      }
+    }
   }
 }
 
@@ -83,6 +58,25 @@
   align-items: center;
   display: flex;
   flex-wrap: wrap;
+  gap: 10px;
   justify-content: center;
   margin-bottom: 20px;
+
+  &__btn {
+    background-color: $green-dark;
+    border: none;
+    border-radius: 5px;
+    color: $white;
+    font-weight: bold;
+    padding: 5px 10px;
+
+    &:hover, &:focus {
+      background-color: $violet;
+    }
+
+    &.active {
+      background-color: $white;
+      color: $violet;
+    }
+  }
 }

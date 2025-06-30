@@ -23,7 +23,7 @@ $ease-out: 300ms ease-out;
 }
 
 @mixin triangleShape {
-	content: '';
+	content: "";
 	display: block;
 	height: 0;
 	position: absolute;

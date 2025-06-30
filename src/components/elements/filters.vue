@@ -5,7 +5,7 @@
       :key="filter.id"
     >
       <button
-        :class="{ parallelogram: true, active: filter.id === selected }"
+        :class="{ filters__btn: true, active: filter.id === selected }"
         @click="() => onClick(filter.id)"
       >
         <span>{{ filter.label }}</span>
