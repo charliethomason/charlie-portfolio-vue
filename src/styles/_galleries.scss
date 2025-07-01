@@ -25,17 +25,13 @@
 
   &__img {
     display: block;
-    max-width: 200px;
+    height: 200px;
+    width: 200px;
   }
 
   &__text {
     flex-grow: 1;
+    font: 14px/20px $roboto;
     margin-left: 20px;
-  }
-
-  &__meta {
-    color: $white;
-    font: 16px/20px $roboto;
-    margin-top: 5px;
   }
 }

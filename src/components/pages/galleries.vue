@@ -22,9 +22,9 @@
               class="galleries__img"
             />
             <div class="galleries__text" aria-hidden="true">
-              <div class="galleries__meta">{{ gallery.subtitle }}</div>
-              <div class="galleries__meta">{{ gallery.dates }}</div>
-              <div class="galleries__meta">{{ gallery.images.length }} images</div>
+              <div class="galleries__info">{{ gallery.info }}</div>
+              <div class="pill">{{ gallery.dates }}</div>
+              <div class="pill">{{ gallery.images.length }} images</div>
             </div>
           </card>
         </router-link>
