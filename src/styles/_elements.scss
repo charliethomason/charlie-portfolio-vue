@@ -150,3 +150,13 @@
     }
   }
 }
+
+.toggle {
+  [type="checkbox"] {
+    @include safeHide;
+  }
+  .theme-icon {
+    height: 16px;
+    stroke: $white;
+  }
+}
