@@ -44,8 +44,6 @@
     }
   },
   "browserslist": [
-    "> 1%",
-    "last 2 version",
-    "not ie <= 9"
+    "defaults"
   ]
 }

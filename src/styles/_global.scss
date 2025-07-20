@@ -123,6 +123,6 @@ body {
   @include mobile-header;
 }
 
-@include mobile-sm {
+@include mobile-med {
   @include mobile-header;
 }

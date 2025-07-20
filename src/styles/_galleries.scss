@@ -33,5 +33,27 @@
     flex-grow: 1;
     font: 14px/20px $roboto;
     margin-left: 20px;
+
+    .pill {
+      margin: 10px 10px 0 0;
+    }
+  }
+
+  &__info {
+    padding-bottom: 10px;
+  }
+}
+@include mobile-sm {
+  .galleries {
+    &__img {
+      height: 125px;
+      width: 125px;
+    }
+    &__text {
+      margin-left: 10px;
+    }
+    .card__content {
+      padding: 10px;
+    }
   }
 }

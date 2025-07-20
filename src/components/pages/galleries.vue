@@ -23,8 +23,9 @@
             />
             <div class="galleries__text" aria-hidden="true">
               <div class="galleries__info">{{ gallery.info }}</div>
-              <div class="pill">{{ gallery.dates }}</div>
-              <div class="pill">{{ gallery.images.length }} images</div>
+              <!-- <div class="pill">{{ gallery.dates }}</div>
+              <div class="pill">{{ gallery.images.length }} images</div> -->
+              <info-list :info="gallery.infoList" />
             </div>
           </card>
         </router-link>
@@ -39,13 +40,15 @@ import data from "../../js/data";
 import FooterNote from "../elements/footer.vue";
 import Filters from "../elements/filters.vue";
 import Card from "../elements/card.vue";
+import InfoList from "../elements/info-list.vue";
 
 export default {
   name: "Galleries",
   components: {
     FooterNote,
     Filters,
-    Card
+    Card,
+    InfoList
   },
   data() {
     return {
@@ -65,10 +68,18 @@ export default {
     galleries() {
       const { galleries } = this.type;
       return Object.keys(galleries)
-        .map(key => ({
-          ...galleries[key],
-          id: key
-        }));
+        .map(key => {
+          const { dates, images, ...gallery } = galleries[key];
+          return {
+            ...gallery,
+            images,
+            id: key,
+            infoList: [
+              { term: "Dates", desc: dates },
+              { term: "Images", desc: images.length }
+            ]
+          };
+        });
     },
     filteredGalleres() {
       return this.galleries.filter(gal => {
