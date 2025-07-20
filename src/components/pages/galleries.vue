@@ -22,9 +22,8 @@
               class="galleries__img"
             />
             <div class="galleries__text" aria-hidden="true">
+              <p><strong>{{ gallery.subtitle }}</strong></p>
               <div class="galleries__info">{{ gallery.info }}</div>
-              <!-- <div class="pill">{{ gallery.dates }}</div>
-              <div class="pill">{{ gallery.images.length }} images</div> -->
               <info-list :info="gallery.infoList" />
             </div>
           </card>
@@ -69,14 +68,15 @@ export default {
       const { galleries } = this.type;
       return Object.keys(galleries)
         .map(key => {
-          const { dates, images, ...gallery } = galleries[key];
+          const { dates, images, meta: { filters } } = galleries[key];
+          const tags = filters.join(", ");
           return {
-            ...gallery,
-            images,
+            ...galleries[key],
             id: key,
             infoList: [
               { term: "Dates", desc: dates },
-              { term: "Images", desc: images.length }
+              { term: "Images", desc: images.length },
+              ...(filters.length ? [{ term: "Tags", desc: tags }] : [])
             ]
           };
         });

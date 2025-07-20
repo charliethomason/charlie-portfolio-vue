@@ -106,14 +106,6 @@
   }
 }
 
-@include mobile {
-  .contact {
-    &__link-row {
-      justify-content: center;
-    }
-  }
-}
-
 @include mobile-med {
   .contact {
     &__photo {

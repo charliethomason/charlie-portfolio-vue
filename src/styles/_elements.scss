@@ -22,6 +22,7 @@
   }
 
   &__content {
+    font-size: 16px;
     line-height: 1.5;
     padding: 20px;
 
@@ -52,14 +53,28 @@
     }
   }
 }
+@include mobile-med {
+  .card {
+    &__heading {
+      font-size: 20px;
+      line-height: 24px;
+    }
+    &__content {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+}
 
 /* Pills */
 .pill {
+  align-items: center;
   background-color: $black;
   border: none;
   border-radius: 5px;
   color: $white;
-  display: inline-block;
+  display: inline-flex;
+  font-size: 16px;
   padding: 5px 10px;
 }
 
@@ -70,12 +85,28 @@
   flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
-  margin-bottom: 20px;
+  margin: 10px auto 20px;
+
+  &__legend {
+    font-weight: bold;
+    float: left;
+  }
+
+  &__icon {
+    height: 20px;
+    fill: $white;
+    stroke: $white;
+  }
 
   &__btn {
     background-color: $green-dark;
     color: $white;
+    cursor: pointer;
     font-weight: bold;
+
+    [type="radio"] {
+      @include safeHide;
+    }
 
     &:hover, &:focus-visible {
       background-color: $violet;
@@ -84,13 +115,19 @@
     &.active {
       background-color: $white;
       color: $violet;
+      padding-left: 5px;
     }
+  }
+
+  &__check-icon {
+    fill: none;
+    height: 16px;
+    stroke: $violet;
   }
 }
 
 /* InfoList */
 .info-list {
-  border-top: 1px solid $grey-medium;
   display: grid;
   grid-template-rows: repeat(auto-fill, minmax(0, max-content));
   grid-template-columns: repeat(2, 1fr);
@@ -98,10 +135,18 @@
   &__term {
     border-bottom: 1px solid $grey-medium;
     font-weight: bold;
-    padding: 5px;
+    padding: 5px 5px 5px 0;
+
+    &:last-of-type {
+      border-bottom: none;
+    }
   }
   &__desc {
     border-bottom: 1px solid $grey-medium;
-    padding: 5px;
+    padding: 5px 0px 5px 5px;
+
+    &:last-of-type {
+      border-bottom: none;
+    }
   }
 }

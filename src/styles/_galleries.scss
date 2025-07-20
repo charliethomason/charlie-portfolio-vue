@@ -31,7 +31,6 @@
 
   &__text {
     flex-grow: 1;
-    font: 14px/20px $roboto;
     margin-left: 20px;
 
     .pill {
@@ -51,9 +50,6 @@
     }
     &__text {
       margin-left: 10px;
-    }
-    .card__content {
-      padding: 10px;
     }
   }
 }
