@@ -65,6 +65,13 @@
     }
   }
 }
+@include lightTheme {
+  .card {
+    &__heading {
+      color: $black;
+    }
+  }
+}
 
 /* Pills */
 .pill {
@@ -125,6 +132,21 @@
     stroke: $violet;
   }
 }
+@include lightTheme {
+  .filters {
+    &__btn {
+      color: $black;
+
+      &.active {
+        background-color: $violet;
+        color: $black;
+      }
+    }
+    &__check-icon {
+      stroke: $black;
+    }
+  }
+}
 
 /* InfoList */
 .info-list {
@@ -156,7 +178,26 @@
     @include safeHide;
   }
   .theme-icon {
-    height: 16px;
+    cursor: pointer;
+    height: 24px;
+    padding: 4px;
     stroke: $white;
+
+    &.active {
+      background-color: $black;
+      border-radius: 5px; 
+      stroke: $teal;
+    }
+  }
+}
+@include lightTheme {
+  .toggle {
+    .theme-icon {
+      stroke: $black;
+
+      &.active {
+        stroke: $violet;
+      }
+    }
   }
 }

@@ -1,5 +1,5 @@
 <template>
-<svg class="theme-icon" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg :class="['theme-icon theme-icon--light', className]" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
   <path d="M22 12L23 12" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
   <path d="M12 2V1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -13,6 +13,11 @@
 </template>
 <script>
 export default {
-  name: "SunIcon"
+  name: "SunIcon",
+  props: {
+    className: {
+      type: String
+    }
+  }
 }
 </script>

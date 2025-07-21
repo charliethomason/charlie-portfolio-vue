@@ -13,6 +13,7 @@ body {
   flex-direction: column;
   justify-content: center;
   padding: 5px 10px 10px;
+  position: relative;
 
   &__logo {
     @include nounderline;
@@ -21,6 +22,12 @@ body {
     display: block;
     height: 75px;
     width: 440px;
+  }
+
+  .toggle {
+    position: absolute;
+    right: 10px;
+    top: 10px;
   }
 }
 
@@ -47,13 +54,19 @@ body {
       color: $white;
     }
 
-    &--active {
+    &.active {
       background-color: $white;
       color: $violet;
+    }
+  }
+}
+@include lightTheme {
+  .nav {
+    &__link {
+      color: $black;
 
-      &:focus {
-        background-color: $white;
-        box-shadow: none;
+      &.active {
+        background-color: $black;
         color: $violet;
       }
     }

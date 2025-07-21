@@ -68,14 +68,6 @@
       fill: $black;
     }
 
-    .rounded-square {
-      background-color: $teal;
-
-      path {
-        fill: $black;
-      }
-    }
-
     &:hover,
     &:focus {
 
@@ -88,14 +80,6 @@
         fill: $black;
       }
 
-      .rounded-square {
-        background-color: $white;
-
-        path {
-          fill: $violet;
-        }
-      }
-
       #{$contact}__tooltip {
         bottom: 100%;
         left: 50%;
@@ -105,7 +89,18 @@
     }
   }
 }
-
+@include lightTheme {
+  .contact {
+    &__link {
+      &:hover, &:focus {
+        svg {
+          fill: $violet;
+          background-color: $black;
+        }
+      }
+    }
+  }
+}
 @include mobile-med {
   .contact {
     &__photo {

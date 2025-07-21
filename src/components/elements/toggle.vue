@@ -1,10 +1,14 @@
 <template>
 <fieldset class="toggle">
   <label>
-    <input type="checkbox" :checked="selected" @change.stop="onChange" />
-    <span class="sr-text">Dark theme toggle</span>
-    <sun-icon v-if="!selected" />
-    <moon-icon v-if="selected" />
+    <input
+      type="checkbox"
+      :checked="enableDark"
+      @change.stop="() => onChange(!enableDark)"
+    />
+    <span class="sr-text">Enable dark theme</span>
+    <sun-icon :class-name="iconClasses(false)" />
+    <moon-icon :class-name="iconClasses(true)" />
   </label>
 </fieldset>
 </template>
@@ -14,14 +18,33 @@ import MoonIcon from "../../img/svg-icons/moon.vue";
 export default {
   name: "Toggle",
   components: { SunIcon, MoonIcon },
-  props: {
-    selected: {
-      type: Boolean
+  data() {
+    return {
+      enableDark: true
     }
   },
   methods: {
-    onChange() {
-      this.$emit("change", !this.selected);
+    updateTheme(theme) {
+      this.theme = theme;
+      document.documentElement.setAttribute("data-theme", theme);
+      window.localStorage.setItem("ctTheme", theme);
+    },
+    onChange(enableDark) {
+      const newTheme = enableDark ? "dark": "light";
+      this.enableDark = enableDark;
+      this.updateTheme(newTheme);
+    },
+    iconClasses(enableDark) {
+      return this.enableDark === enableDark
+        ? "active"
+        : null;
+    }
+  },
+  mounted() {
+    const ctTheme = window.localStorage.getItem("ctTheme");
+    if (!!ctTheme) {
+      this.enableDark = ctTheme === "dark";
+      this.updateTheme(ctTheme);
     }
   }
 }

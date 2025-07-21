@@ -3,7 +3,7 @@
     <a href="/" class="header__logo" title="Charlie Thomason">
       <span class="sr-text">Charlie Thomason</span>
     </a>
-    <toggle :selected="darkTheme" @change="updateTheme" />
+    <toggle />
     <main-nav :active="active" />
   </header>
 </template>
@@ -17,17 +17,7 @@ export default {
   props: {
     active: {
       type: String,
-      default: "index",
-    }
-  },
-  data() {
-    return {
-      darkTheme: true
-    };
-  },
-  methods: {
-    updateTheme(isDark) {
-      this.darkTheme = isDark;
+      default: "index"
     }
   }
 };

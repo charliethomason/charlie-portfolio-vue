@@ -30,3 +30,9 @@ $ease-out: 300ms ease-out;
 	top: 0;
 	width: 0;
 }
+
+@mixin lightTheme {
+	html[data-theme="light"] {
+		@content;
+	}
+}
