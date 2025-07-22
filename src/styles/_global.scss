@@ -4,6 +4,11 @@
 body {
   background-color: $grey-bg;
 }
+@include lightTheme {
+  body {
+    background-color: $grey-dark;
+  }
+}
 .header {
   align-items: center;
   background-color: $green;
@@ -13,6 +18,7 @@ body {
   flex-direction: column;
   justify-content: center;
   padding: 5px 10px 10px;
+  position: relative;
 
   &__logo {
     @include nounderline;
@@ -21,6 +27,28 @@ body {
     display: block;
     height: 75px;
     width: 440px;
+
+    &:focus {
+      @include focusRing;
+      outline: none;
+    }
+  }
+
+  .toggle {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+}
+@include lightTheme {
+  .header {
+    border-bottom-color: $green-light;
+  }
+}
+@include mobile-med {
+  .header .toggle {
+    top: auto;
+    bottom: 12px;
   }
 }
 
@@ -44,18 +72,27 @@ body {
     &:hover,
     &:focus {
       background-color: $violet;
-      box-shadow: inset 0 0 0 1px $teal;
       color: $white;
     }
 
-    &--active {
+    &.active {
       background-color: $white;
-      color: $green;
+      color: $violet;
 
       &:focus {
-        background-color: $white;
-        box-shadow: none;
-        color: $green;
+        @include focusRing;
+      }
+    }
+  }
+}
+@include lightTheme {
+  .nav {
+    &__link {
+      color: $black;
+
+      &.active {
+        background-color: $black;
+        color: $violet;
       }
     }
   }
@@ -123,6 +160,11 @@ body {
   @include mobile-header;
 }
 
-@include mobile-sm {
+@include mobile-med {
   @include mobile-header;
+
+  .h1 {
+    font-size: 28px;
+    line-height: 32px;
+  }
 }

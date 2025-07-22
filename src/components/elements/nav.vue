@@ -27,7 +27,7 @@ export default {
 		linkClasses(page) {
 			return {
 				"nav__link": true,
-				"nav__link--active": page.id === this.active
+				"active": page.id === this.active
 			};
 		}
 	}

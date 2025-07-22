@@ -1,15 +1,17 @@
 /* Card */
 .card {
+  $root: &;
+
   background-color: $grey-dark;
   border-bottom: 2px solid $grey-medium;
-  border-radius: 5px;
+  border-radius: 10px;
   color: $white;
   font-size: 16px;
 
   &__heading {
     align-items: center;
     background-color: $green;
-    border-radius: 5px 5px 0 0;
+    border-radius: 10px 10px 0 0;
     color: $white;
     display: flex;
     font: bold 24px/32px $cormorant;
@@ -20,8 +22,9 @@
   }
 
   &__content {
+    font-size: 16px;
     line-height: 1.5;
-    padding: 15px 20px;
+    padding: 20px;
 
     a {
       color: $green-light;
@@ -33,49 +36,55 @@
     }
   }
   p {
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 
     &:last-child {
       padding-bottom: 0;
     }
   }
+
+  &--link {
+    &:hover, &:focus {
+      background-color: $black;
+
+      #{$root}__heading {
+        background-color: $violet;
+      }
+    }
+  }
+}
+@include mobile-med {
+  .card {
+    &__heading {
+      font-size: 20px;
+      line-height: 24px;
+    }
+    &__content {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+}
+@include lightTheme {
+  .card {
+    background-color: $black;
+
+    &__heading {
+      color: $black;
+    }
+  }
 }
 
-/* Parallelogram */
-@mixin parallelogramHover {
-  background-color: $white;
-  color: $violet;
-  text-decoration: none;
-}
-.parallelogram {
-  background-color: $green;
+/* Pills */
+.pill {
+  align-items: center;
+  background-color: $black;
   border: none;
-  color: #fff;
-  display: inline-block;
-  font-size: 14px;
-  font-weight: bold;
-  height: 25px;
-  line-height: 14px;
-  margin: 0 5px;
-  padding: 5px 8px;
-  text-decoration: none;
-  transition: all $ease-out;
-  transform: skew(-25deg);
-  white-space: nowrap;
-
-  span {
-    display: inline-block;
-    transform: skew(25deg);
-  }
-
-  &:hover, &:focus {
-    @include parallelogramHover;
-  }
-
-  &.active {
-    background-color: $violet;
-    color: $white;
-  }
+  border-radius: 5px;
+  color: $white;
+  display: inline-flex;
+  font-size: 16px;
+  padding: 5px 10px;
 }
 
 /* Filters */
@@ -83,6 +92,126 @@
   align-items: center;
   display: flex;
   flex-wrap: wrap;
+  gap: 10px;
   justify-content: center;
-  margin-bottom: 20px;
+  margin: 10px auto 20px;
+
+  &__legend {
+    font-weight: bold;
+    float: left;
+  }
+
+  &__icon {
+    height: 20px;
+    fill: $white;
+    stroke: $white;
+  }
+
+  &__btn {
+    background-color: $green-dark;
+    color: $white;
+    cursor: pointer;
+    font-weight: bold;
+
+    [type="radio"] {
+      @include safeHide;
+    }
+
+    &:hover, &:focus-visible {
+      background-color: $violet;
+    }
+
+    &.active {
+      background-color: $white;
+      color: $violet;
+      padding-left: 5px;
+    }
+  }
+
+  &__check-icon {
+    fill: none;
+    height: 16px;
+    stroke: $violet;
+  }
+}
+@include lightTheme {
+  .filters {
+    &__btn {
+      color: $black;
+
+      &.active {
+        background-color: $black;
+        color: $violet;
+      }
+    }
+    &__check-icon {
+      stroke: $violet;
+    }
+  }
+}
+
+/* InfoList */
+.info-list {
+  display: grid;
+  grid-template-rows: repeat(auto-fill, minmax(0, max-content));
+  grid-template-columns: repeat(2, 1fr);
+
+  &__term {
+    border-bottom: 1px solid $grey-medium;
+    font-weight: bold;
+    padding: 5px 5px 5px 0;
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+  &__desc {
+    border-bottom: 1px solid $grey-medium;
+    padding: 5px 0px 5px 5px;
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+}
+
+.toggle {
+  border-radius: 5px; 
+
+  [type="checkbox"] {
+    @include safeHide;
+  }
+  &__label {
+    display: flex;
+  }
+  .theme-icon {
+    border-radius: 5px; 
+    cursor: pointer;
+    height: 24px;
+    padding: 4px;
+    stroke: $white;
+
+    &:hover {
+      background-color: $violet;
+    }
+
+    &.active {
+      background-color: $black;
+      stroke: $teal;
+    }
+  }
+  &:focus-within {
+    @include focusRing;
+  }
+}
+@include lightTheme {
+  .toggle {
+    .theme-icon {
+      stroke: $black;
+
+      &.active {
+        stroke: $violet;
+      }
+    }
+  }
 }

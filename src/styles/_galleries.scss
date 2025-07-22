@@ -1,108 +1,55 @@
 .galleries {
   $root: &;
 
-  display: grid;
-  gap: 5px;
-  grid-template-columns: repeat(5, 1fr);
   margin: 0 auto;
-  max-width: 1810px;
+  max-width: 600px;
+  padding: 0 20px;
+
+  li {
+    margin-bottom: 20px;
+  }
 
   &__link {
-    display: block;
-    position: relative;
-
-    &:hover,
-    &:focus {
+    &:hover, &:focus {
       text-decoration: none;
+    }
+  }
 
-      #{$root}__text {
-        min-height: 100%;
-      }
-      .parallelogram {
-        @include parallelogramHover;
-      }
-      #{$root}__meta {
-        display: block;
-      }
+  .card {
+    width: 100%;
+
+    &__content {
+      display: flex;
     }
   }
 
   &__img {
     display: block;
-    max-width: 100%;
+    height: 200px;
+    width: 200px;
   }
 
   &__text {
-    align-items: center;
-    background-color: $grey-transparent;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 10px 0 20px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    min-height: 0%;
-    transition: min-height $ease-out;
+    flex-grow: 1;
+    margin-left: 20px;
+
+    .pill {
+      margin: 10px 10px 0 0;
+    }
   }
 
-  &__title {
-    color: $white;
-    font: bold 22px/30px $cormorant;
-    letter-spacing: 0.07em;
-    margin-bottom: 5px;
-    text-align: center;
-    text-shadow: 1px 1px 1px $black;
-  }
-
-  &__meta {
-    color: $white;
-    display: none;
-    font: 14px/20px $roboto;
-    margin-top: 5px;
-  }
-}
-
-@include desktop {
-  .galleries {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@include tablet {
-  .galleries {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@include mobile-lg {
-  .galleries {
-    grid-template-columns: repeat(2, 1fr);
+  &__info {
+    padding-bottom: 10px;
   }
 }
 @include mobile-sm {
   .galleries {
-    $root: &;
-
-    display: flex;
-    flex-direction: column;
-
+    &__img {
+      height: 125px;
+      width: 125px;
+    }
     &__text {
-      display: flex;
-      position: static;
-      margin-bottom: 10px;
-      padding: 5px;
-    }
-    
-    &__meta {
-      display: block;
-    }
-
-    &__link {
-      &:hover, &:focus {
-        #{$root}__text {
-          background-color: $green;
-        }
-      }
+      margin-left: 10px;
     }
   }
 }

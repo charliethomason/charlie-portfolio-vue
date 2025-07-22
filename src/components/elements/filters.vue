@@ -1,21 +1,33 @@
 <template>
-  <ul class="filters">
-    <li
+  <fieldset class="filters">
+    <legend class="filters__legend">
+      <span class="sr-text">Filter</span>
+      <filter-icon />
+    </legend>
+    <label
       v-for="filter in filters"
       :key="filter.id"
+      :class="getClasses(filter.id)"
     >
-      <button
-        :class="{ parallelogram: true, active: filter.id === selected }"
-        @click="() => onClick(filter.id)"
-      >
-        <span>{{ filter.label }}</span>
-      </button>
-    </li>
-  </ul>
+      <input
+        type="radio"
+        name="filters"
+        :value="filter.id"
+        :checked="selected === filter.id"
+        @change.stop="() => onClick(filter.id)"
+        @click.stop="() => removeFilter(filter.id)"
+      />
+      <check-icon v-if="selected === filter.id" />
+      <span>{{ filter.label }}</span>
+    </label>
+  </fieldset>
 </template>
 <script>
+import FilterIcon from "../../img/svg-icons/filter.vue";
+import CheckIcon from "../../img/svg-icons/check.vue";
 export default {
   name: "Filters",
+  components: { FilterIcon, CheckIcon },
   props: {
     filters: {
       type: Array
@@ -24,10 +36,26 @@ export default {
       type: String
     }
   },
+  computed: {
+    currSelected() {
+      return this.selected;
+    }
+  },
   methods: {
-    onClick(filter) {
-      const newFilter = filter === this.selected ? null : filter;
-      this.$emit("change", newFilter);
+    onClick(filterId) {
+      this.$emit("change", filterId);
+    },
+    removeFilter(filterId) {
+      if (this.selected === filterId) {
+        this.$emit("change", null);
+      }
+    },
+    getClasses(filterId) {
+      return {
+        "pill": true,
+        "filters__btn": true,
+        "active": filterId === this.selected
+      }
     }
   }
 }

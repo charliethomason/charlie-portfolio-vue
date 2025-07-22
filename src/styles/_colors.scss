@@ -1,12 +1,41 @@
-$clear: transparent;
-$black: #000;
-$white: #fff;
-$grey-bg: #191919;
-$grey-dark: #292929;
-$grey-medium: #777;
-$grey-transparent: rgba(0,0,0,0.6);
-$teal: #399;
-$green-light: #6b0;
-$green: #351;
-$green-dark: #241;
-$violet: #519;
+html[data-theme="dark"] {
+  --clear: transparent;
+  --black: #000;
+  --white: #fff;
+  --grey-bg: #191919;
+  --grey-dark: #292929;
+  --grey-medium: #777;
+  --grey-transparent: rgba(0,0,0,0.6);
+  --teal: #399;
+  --green-light: #6b0;
+  --green: #351;
+  --green-dark: #241;
+  --violet: #519;
+}
+html[data-theme="light"] {
+  --clear: transparent;
+  --black: #fff;
+  --white: #000;
+  --grey-bg: #e1e1e1;
+  --grey-dark: #d7d7d7;
+  --grey-medium: #777;
+  --grey-transparent: rgba(255,255,255,0.6);
+  --teal: #351;
+  --green-light: #590;
+  --green: #1d7aad;
+  --green-dark: #241;
+  --violet: #519;
+}
+
+$clear: var(--clear);
+$black: var(--black);
+$white: var(--white);
+$grey-bg: var(--grey-bg);
+$grey-dark: var(--grey-dark);
+$grey-medium: var(--grey-medium);
+$grey-transparent: var(--grey-transparent);
+$teal: var(--teal);
+$green-light: var(--green-light);
+$green: var(--green);
+$green-dark: var(--green-dark);
+$violet: var(--violet);

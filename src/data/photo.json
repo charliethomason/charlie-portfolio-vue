@@ -2,7 +2,7 @@
   "filters": [
     {
       "id": "35mm",
-      "label": "35mm film negative scan"
+      "label": "35mm film"
     },
     {
       "id": "polaroid",

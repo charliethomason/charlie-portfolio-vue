@@ -23,10 +23,20 @@ $ease-out: 300ms ease-out;
 }
 
 @mixin triangleShape {
-	content: '';
+	content: "";
 	display: block;
 	height: 0;
 	position: absolute;
 	top: 0;
 	width: 0;
+}
+
+@mixin lightTheme {
+	html[data-theme="light"] {
+		@content;
+	}
+}
+
+@mixin focusRing {
+	box-shadow: 0 0 0 2px $violet;
 }

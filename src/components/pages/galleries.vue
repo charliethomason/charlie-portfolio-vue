@@ -15,19 +15,18 @@
           :to="`/${meta.id}/${gallery.id}`"
           class="galleries__link"
         >
-          <img
-            :src="require('../../img/' + meta.id + '/galleries/galleries-' + gallery.id + '.jpg')"
-            :alt="`${gallery.title} gallery`"
-            class="galleries__img"
-          />
-          <div class="galleries__text" aria-hidden="true">
-            <h2 class="galleries__title">{{ gallery.title }}</h2>
-            <div v-if="gallery.subtitle" class="parallelogram">
-              <span>{{ gallery.subtitle }}</span>
+          <card :heading="gallery.title" link>
+            <img
+              :src="require('../../img/' + meta.id + '/galleries/galleries-' + gallery.id + '.jpg')"
+              :alt="`${gallery.title} gallery`"
+              class="galleries__img"
+            />
+            <div class="galleries__text" aria-hidden="true">
+              <p><strong>{{ gallery.subtitle }}</strong></p>
+              <div class="galleries__info">{{ gallery.info }}</div>
+              <info-list :info="gallery.infoList" />
             </div>
-            <div class="galleries__meta">{{ gallery.dates }}</div>
-            <div class="galleries__meta">{{ gallery.images.length }} images</div>
-          </div>
+          </card>
         </router-link>
       </li>
     </ul>
@@ -39,10 +38,17 @@
 import data from "../../js/data";
 import FooterNote from "../elements/footer.vue";
 import Filters from "../elements/filters.vue";
+import Card from "../elements/card.vue";
+import InfoList from "../elements/info-list.vue";
 
 export default {
   name: "Galleries",
-  components: { FooterNote, Filters },
+  components: {
+    FooterNote,
+    Filters,
+    Card,
+    InfoList
+  },
   data() {
     return {
       selectedFilter: null
@@ -61,10 +67,19 @@ export default {
     galleries() {
       const { galleries } = this.type;
       return Object.keys(galleries)
-        .map(key => ({
-          ...galleries[key],
-          id: key
-        }));
+        .map(key => {
+          const { dates, images, meta: { filters } } = galleries[key];
+          const tags = filters.join(", ");
+          return {
+            ...galleries[key],
+            id: key,
+            infoList: [
+              { term: "Dates", desc: dates },
+              { term: "Images", desc: images.length },
+              ...(filters.length ? [{ term: "Tags", desc: tags }] : [])
+            ]
+          };
+        });
     },
     filteredGalleres() {
       return this.galleries.filter(gal => {
