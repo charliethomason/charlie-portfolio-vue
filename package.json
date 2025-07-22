@@ -1,6 +1,6 @@
 {
   "name": "charlie-portfolio-vue",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "description": "Development repo for the portfolio site of Charlie Thomason at charliethomason.com. Built with Vue.js v3.3 and Vue Router v4.2",
   "main": "src/js/index.js",
   "author": "Charlie Thomason",
