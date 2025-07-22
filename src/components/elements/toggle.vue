@@ -1,9 +1,10 @@
 <template>
 <fieldset class="toggle">
-  <label>
+  <label class="toggle__label">
     <input
       type="checkbox"
       :checked="enableDark"
+      name="dark"
       @change.stop="() => onChange(!enableDark)"
     />
     <span class="sr-text">Enable dark theme</span>

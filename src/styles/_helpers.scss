@@ -36,3 +36,7 @@ $ease-out: 300ms ease-out;
 		@content;
 	}
 }
+
+@mixin focusRing {
+	box-shadow: 0 0 0 2px $violet;
+}

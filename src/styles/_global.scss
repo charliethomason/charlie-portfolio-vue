@@ -4,6 +4,11 @@
 body {
   background-color: $grey-bg;
 }
+@include lightTheme {
+  body {
+    background-color: $grey-dark;
+  }
+}
 .header {
   align-items: center;
   background-color: $green;
@@ -22,12 +27,28 @@ body {
     display: block;
     height: 75px;
     width: 440px;
+
+    &:focus {
+      @include focusRing;
+      outline: none;
+    }
   }
 
   .toggle {
     position: absolute;
     right: 10px;
     top: 10px;
+  }
+}
+@include lightTheme {
+  .header {
+    border-bottom-color: $green-light;
+  }
+}
+@include mobile-med {
+  .header .toggle {
+    top: auto;
+    bottom: 12px;
   }
 }
 
@@ -57,6 +78,10 @@ body {
     &.active {
       background-color: $white;
       color: $violet;
+
+      &:focus {
+        @include focusRing;
+      }
     }
   }
 }

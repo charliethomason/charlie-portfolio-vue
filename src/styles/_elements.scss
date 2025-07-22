@@ -67,6 +67,8 @@
 }
 @include lightTheme {
   .card {
+    background-color: $black;
+
     &__heading {
       color: $black;
     }
@@ -138,12 +140,12 @@
       color: $black;
 
       &.active {
-        background-color: $violet;
-        color: $black;
+        background-color: $black;
+        color: $violet;
       }
     }
     &__check-icon {
-      stroke: $black;
+      stroke: $violet;
     }
   }
 }
@@ -174,20 +176,32 @@
 }
 
 .toggle {
+  border-radius: 5px; 
+
   [type="checkbox"] {
     @include safeHide;
   }
+  &__label {
+    display: flex;
+  }
   .theme-icon {
+    border-radius: 5px; 
     cursor: pointer;
     height: 24px;
     padding: 4px;
     stroke: $white;
 
+    &:hover {
+      background-color: $violet;
+    }
+
     &.active {
       background-color: $black;
-      border-radius: 5px; 
       stroke: $teal;
     }
+  }
+  &:focus-within {
+    @include focusRing;
   }
 }
 @include lightTheme {
